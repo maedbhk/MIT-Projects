@@ -44,3 +44,7 @@ The Child Mind Institute has launched the Healthy Brain Network, an ongoing init
     * are these data being transitioned to datalad?
 * How does a new user get access to the dataset?
     * anyone with gablab group permissions should be able to access the data
+
+* directories on openmind - HBN
+    * `/om4/group/gablab/data/hbn_bids`
+    * `/nese/mit/group/sig/projects`

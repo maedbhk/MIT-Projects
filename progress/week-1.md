@@ -20,7 +20,7 @@ Available info on UK Biobank and ABCD is pretty comprehensive, need more details
 * [Reproschema](https://github.com/ReproNim/reproschema)
 
 ## Project Ideas
-* [Cerebellum and neuropsychiatric disorders](../projects/cerebellum_neuropsych.md)
+* [Cerebellum and neuropsychiatric disorders](../projects/cerebellum-neuropsych.md)
 * COVID-19 and the cerebellum
-* [Cerebellum and development](../projects/cerebellum_development.md)
+* [Cerebellum and development](../projects/cerebellum-development.md)
 * [Predicting self-harm from hospital longitudinal EMR data](../projects/chop.md)
