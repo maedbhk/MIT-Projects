@@ -1,0 +1,72 @@
+project: 
+  type: website
+
+website:
+  page-navigation: true  
+  title: "MIT Projects"
+  site-url: https://nasa-openscapes.github.io/2021-Cloud-Hackathon
+  
+  repo-url: https://github.com/nasa-openscapes/2021-Cloud-Hackathon
+  repo-actions: [edit, issue]
+  
+  page-footer: "MIT Projects" 
+ 
+  # navbar: 
+  #   background: light
+  #   right: 
+  #     - sidebar:welcome
+  #     - icon: github
+  #       href: https://github.com/nasa-openscapes/2021-Cloud-Hackathon
+ 
+  sidebar:
+    logo: assets/images/logo_mk.png
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://www.maedbhking.com/home
+        text: "Personal Website"
+      - icon: github
+        href: https://github.com/nasa-openscapes/2021-Cloud-Hackathon
+        text: "MIT Projects repo"
+    
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Welcome"
+        contents:
+          - index.md
+      - section: "Progress"
+        contents:
+          - progress/index.md
+          - progress/week-0.md
+          - progress/week-1.md
+          - progress/week-2.md
+      - section: "Datasets"
+        contents:
+          - datasets/index.md
+          - datasets/abcd.md
+          - datasets/uk-biobank.md
+          - datasets/healthy-brains.md
+      - section: "Projects"
+        contents:
+          - projects/index.md
+          - projects/cerebellum-development.md
+          - projects/cerebellum-neuropsych.md
+          - projects/chop.md
+          - projects/precision-medicine-overview.md
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
+    code-background: true
+    code-copy: true
+    css: styles.css
+    toc: true
+
+filters:
+  - include-files.lua
+  - quarto

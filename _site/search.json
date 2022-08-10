@@ -1,0 +1,170 @@
+[
+  {
+    "objectID": "progress/week-1.html",
+    "href": "progress/week-1.html",
+    "title": "Week 1",
+    "section": "",
+    "text": "Spent time familiarizing myself with software and tools that are used in sensein lab (e.g., datalad) and mcgovern (openmind)\nExplored datasets and applied for access to NIMH, UK Biobank, and CHOP. Talked with Hoda about UK Biobank, will meet in person soon. Need to contact Steve and/or Debbie (have not met them yet). Available info on UK Biobank and ABCD is pretty comprehensive, need more details about CHOP (will know more when I get access).\nHave been reading the precision medicine literature, familiarizing myself more with recent developments in the field\nPlan on compiling a set of papers relating to neuroethics that I think will be pertinent to future projects (especially CHOP-related project)"
+  },
+  {
+    "objectID": "progress/week-1.html#softwaretools",
+    "href": "progress/week-1.html#softwaretools",
+    "title": "Week 1",
+    "section": "Software/Tools",
+    "text": "Software/Tools\n\nDatalad\n\nhow many datasets are currently hosted on datalad?\n\nOpenmind\n\ngot an account + took the course. I’ve used slurm a lot previously (used savio cluster at berkeley and I’m familiar with submitting jobs, running bash scripts etc.\n\nSingularity\n\nare there any general-use singularity containers on openmind for common neuroimaging preprocessing? (fMRIPrep, freesurfer etc.)\n\nconda\nReproschema"
+  },
+  {
+    "objectID": "progress/week-1.html#project-ideas",
+    "href": "progress/week-1.html#project-ideas",
+    "title": "Week 1",
+    "section": "Project Ideas",
+    "text": "Project Ideas\n\nCerebellum and neuropsychiatric disorders\nCOVID-19 and the cerebellum\nCerebellum and development\nPredicting self-harm from hospital longitudinal EMR data"
+  },
+  {
+    "objectID": "progress/week-0.html",
+    "href": "progress/week-0.html",
+    "title": "Week 0",
+    "section": "",
+    "text": "The projects that I undertook during my PhD were aligned with the goals of basic science research. Specifically, I used task-based fMRI data to build predictive models of the cerebellum, with the goal of understanding its role in cognitive function. I primarily used neuroimaging methods and techniques to build these models, however, along the way, I recognized the utility of incorporating other modalities, namely transcriptomics, behavior, and neuropsychology to address my research questions. For example, I worked with gene samples from the Allen Human Brain Atlas, and although the data were sparse for the cerebellum, it allowed me to imagine another lens by which I could investigate cerebellar functional organization. I was also involved in two patient studies that were particularly impactful for me. Both projects were collaborations between multiple research groups invested in testing a novel theory of cerebellar function. In multiple experiments, we tested patients with cerebellar degeneration (e.g. spinocerebellar ataxia) on a series of tightly controlled behavioral experiments instead of simple clinical batteries. It was my first experience interacting with patient populations for the purposes of scientific research, and it motivated me to seriously consider the potential of translating basic science research, across multiple modalities, into patient-centered healthcare outcomes.  I am excited at the prospect of pursuing an ICoN computational fellowship in the Ghosh and Gabrieli research groups for multiple reasons. First, regardless of where my career takes me, I am keen to use the expertise I cultivated during my PhD to work on large-scale and innovative projects that exist at the intersection of health sciences, technology, and data science. Second, I am eager to work in a highly collaborative environment under the leadership of ICoN center faculty members. One of the appeals of the fellowship is that there are very clear overall objectives that are shared across the faculty, research scientists, and postdocs, all of whom are contributing unique skill sets and expertise to the work. Third, I will have the opportunity to extensively build my knowledge across a wide range of areas: clinical assessment, endophenotyping, advanced machine learning models, and cross-integration of multiple modalities (e.g. behavior, transcriptomics, neuroimaging, video/speech analysis).  Finally, it is an exciting time to work in precision medicine, and although there is an abundance of data and computing power, what is lacking are models of individual human behavior that can inform risk predictors of health. Therefore, the prospect of working in collaboration with the Children’s Hospital of Philadelphia is incredibly compelling as it facilitates the development of behavioral tests whilst simultaneously evaluating diagnostic models in a continuous fashion. Importantly, any collaboration with clinicians will keep patient wellbeing at the forefront of our work."
+  },
+  {
+    "objectID": "progress/week-0.html#project-goals",
+    "href": "progress/week-0.html#project-goals",
+    "title": "Week 0",
+    "section": "Project Goals",
+    "text": "Project Goals\nOne of the goals of the Ghosh/Gabrieli lab is to develop biologically-driven risk predictors and monitors of mental health. This will be done using multi-modal datasets that correlate genetic information with clinical evaluations through endophenotypes learned from neuroimaging, behavior, actigraphy signals and speech/vocal recordings. Mental health disorders encompass an enormous landscape of behavioral symptoms and clinical assessment. To start, I would be interested in narrowing the scope to a set of symptoms that can be assessed across multiple modalities. Perserverative behavior is a symptom that underlies numerous mental health disorders, including ADHD, OCD, autism, and schizophrenia, and it is measurable via multiple modalities. For example, perseveration has been studied using fMRI and is thought to be the consequence of frontal failure to modulate striatal outputs during controlled, purposive action, resulting in the continued reselection of previously activated outputs (Shallice, 1988). Another modality that has been used to study preservation is behavior. Cognitive tasks including the Wisconsin Card Sorting task and the Trail Making task, have been leveraged to study perseveration in typical and atypical development (Benitz et al. 2016). More recently, novel tools have been developed that automate the labeling of effector movement, gaze, and facial expression in real time using technology like deeplabcut and mediapipe. This technology could potentially allow us to identify perseverative behaviors across adult and developmental populations. It is possible to imagine combining live and longitudinal information from large-scale video and speech datasets to build prognostic computational models that identify and predict perseverative behaviors across a large range of mental health disorders. Furthermore, based on what we already know from neuroimaging and behavior, we could validate these models using biologically-driven data that include large-scale networks of the cortex and subcortex, and behavioral variation.  In the context of this project, I am particularly interested in the following questions (posed in the original proposal):\n\nConsidering the practicalities of precision healthcare, should we expect neuroimaging data to be incorporated into every individual’s health care assessment? To what extent does brain imaging even improve prognostic applications? Large scale cortical and subcortical networks have provided us with valuable insights about brain organization and topography in both healthy and patient populations, however, it is not clear what role these data will play in diagnostic applications. Will we be able to reliably identify macro circuits that drive behavioral (and genetic) variation? And if so, will we be able to use these circuits to inform predictive and diagnostic models of mental illness?\nHow good are behavioral assessments? Are there cognitive tasks that better capture symptoms compared to self-report clinical questionnaires. This is a question that we have been exploring in the motor world, specifically in the context of identifying cognitive impairments in patients with cerebellar degeneration. Subtle deficits are often masked by self-report questionnaires, and are then only revealed in carefully controlled behavioral experiments that test very specific cognitive processes.\nI also believe there is great scope to automate the analysis of human behavior to aid psychiatric diagnoses. Some of this work is already underway in the motor world (e.g., automating clinical assessment of spinocerebellar ataxia and Parkinson’s disease). I can imagine building models that identify symptoms of neurodevelopmental and neuropsychiatric disorders (e.g., perseveration, hyperfocus, task switching etc.) on continuous and longitudinal video data collected in naturalistic settings. These models of complex behavior could then be validated by biologically-driven data and used to inform clinical tools that are then adopted by healthcare professionals."
+  },
+  {
+    "objectID": "progress/week-0.html#other-considerations",
+    "href": "progress/week-0.html#other-considerations",
+    "title": "Week 0",
+    "section": "Other considerations",
+    "text": "Other considerations\n\nFinally, there are a number of ethical considerations that I would like to consider as I venture into the realm of precision medicine. Translational work is a new area of research for me and I am aware that precision medicine is a quickly evolving field that raises important questions about ethical responsibility:\nData privacy: Who stands to benefit, and who is harmed? What possible solutions help protect individuals’ and communities’ ownership over their own data? I think this question is especially relevant for neural data that is not (as of yet) being used to track, manipulate, or identify individuals.\nAI and healthcare: with such heavy reliance on technology in developed nations, I think it’ll be important to consider the concerns associated with bias and morality of AI, and how it may actually challenge equitable access to healthcare.\nCommunicating uncertainty: How do we communicate uncertainty about our translational results, especially when models are continuously updated with new information. It’ll be important to understand the uncertainty arising from technical procedures: small/incomplete sample sizes, sparse longitudinal datasets, instrument variability etc.\nTo what extent can we engage with diverse communities in translating neuroscience research to the health space. Can we bring together neuroscientists, physicians, ethicists, engineers, mental health workers, and caregivers to understand the ethical impact of data- and model-driven precision medicine?"
+  },
+  {
+    "objectID": "progress/index.html",
+    "href": "progress/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Keeping track of projects: what I’ve done, what’s planned, what’s in progress.."
+  },
+  {
+    "objectID": "progress/index.html#weeks",
+    "href": "progress/index.html#weeks",
+    "title": "Overview",
+    "section": "Weeks:",
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2"
+  },
+  {
+    "objectID": "projects/precision-medicine-overview.html",
+    "href": "projects/precision-medicine-overview.html",
+    "title": "Intro to Precision Medicine",
+    "section": "",
+    "text": "What is precision medicine?\n\nPrecision medicine is the approach of predicting and diagnosing mental health disorders using:\n\nmicrobiome, inflammation, genomics, neural markers (fMRI, MRI, EEG, pupillometry), behavior, clinical symptoms\n\n\n\n\nWhat are inflammation markers?\n\nCytokine, chemokine, interleukin, interferon, tumor necrosis factor, colony-stimulating factor, growth factor (IGF, VEGF, NGF, FGF, TNF)\nYou can assess inflammation/cytokine/chemokine factors in plasma or serum samples.\n\n\n\nWhat is a polygenic risk score?\n\nrepresents the total number of genetic variants that an individual has to assess their heritable risk of developing a particular disease.\n\n\n\nWhat is an endophenotype?\n\nintermediate phenotype - quantitative biological trait that is reliable in reflecting the function of a discrete biological system, and is reasonably heritable, and is much more closely related to the root cause of the disease than the broad clinical phenotype.\nbiological or psychological phenomena of a disorder believed to be in the causal chain between genetic contributions to a disorder and diagnosable symptoms of psychopathology.\nmeasurable biomarkers that are correlated with an illness, in part because of the shared underlying genetic influences.\nWhat conditions need to be met?\n\nAssociated with illness in the population\nHeritable\nPrimarily state-independent\nCo-segregate with illness in families\nFound in unaffected family members at a higher rate than general pop.\nExamples of endophenotypes for MDD (major depressive disorder): learning/memory impairments, reduced reward functioning, increased stress sensitivity, REM sleep abnormalities, dysfunctions in serotonergic, catecholaminergic, HPA axis, corticotropin-releasing hormone systems, intracellular signal transduction measures.\n\n\n\n\nSources of biomarkers:\n\nStress data - cortisol\narousal/attention - pupil dilation\nReaction time / accuracy - behavior\nStrength - grip force\nPulse/heart rate\nOxygen\nSpeech/voice data\nHandwriting\nPlasma (inflammation markers)\nSaliva\nMovement - sleep cycles\nTemperature\nSkin conductance (galvanic skin response)\nTranscriptomics\nfMRI BOLD signal\nCortical thickness/anatomy\nMobility data (tracked with phone)\nInternet search history (tracked with phone)\nSocial media engagement (reddit, facebook etc)\nElectronic health records (hospital admissions etc.)\nSingle nucleotide polymorphisms (SNPs)\n\n\n\nWhat is the overarching goal of pHealth?\nImproved risk assessment and early detection of mental illness.\n\n\nHow will this goal be achieved?\nOur aim is to develop biologically driven risk predictors and monitors of mental health. Using these datasets, we will relate genetic information to clinical evaluations through endophenotypes that span brain imaging, cognitive and behavioral testing, and information from wearable devices and speech recordings.\n\n\nWhat are the short term goals?\n\nTo find biotypes based on combining genetic and brain imaging data\nTo develop risk predictors that integrate biological and behavioral information.\nHow will these goals be achieved?\nTo test these models, we would deploy them in research clinics.\nThe outcome of this work will feed into a more longitudinal goal of capturing real-world behavior and interventions in order to build models to monitor and deliver interventions that are tuned to individual trajectories.\n\n\n\nWhat is the long term goal?\nThe long term goal is to create an intelligent assistive framework for mental health management that supports integration of multiple sources of live and longitudinal data, learns phenotypic associations and builds interpretable, predictive models, and suggests individualized actions towards targeted goals.\n\n\nWhat is the problem?\n\nClinical assessment is resource intensive and inaccessible to those who need it most. When accessible, initial assessments are ineffective: do not consider societal and community options to boost wellbeing.\nWhy are ML approaches often ineffective?\n\nML diagnostic approaches often focus on specific disorders rather than symptoms.\nML approaches are often devoid of connections to underlying biology\n\n\n\n\nWhat is the opportunity?\n\nThe advent and growth of consortial data collections that include genomic assays, clinical and behavioral data together with brain imaging offer a unique opportunity to understand genotypic and phenotypic variation in a large population.\nDatasets:\n\nUK Biobank, adolescent brain cognitive development study, genus dataset, healthy brain networks\n\n\n\n\nConsiderations:\n\nHolistic approaches:\n\nsocietal, cultural, community-based interventions in conjunction with (instead of) ML-guided healthcare\n\nEthics:\n\ndata anonymity? Who do the tools serve? Are they biased against certain groups?\nhow is model uncertainty communicated to scientists and non-scientists alike?"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Intro to Precision Medicine\nCerebellum and neuropsychiatric disorders\nCerebellum and development\nPredicting self-harm from hospital longitudinal EMR data"
+  },
+  {
+    "objectID": "projects/chop.html",
+    "href": "projects/chop.html",
+    "title": "CHOP",
+    "section": "",
+    "text": "Build computational models using clinical/other characteristics (e.g., previous hospital admissions, comorbidities, cognitive function, diagnoses, immunizations, allergies, medications, other illnesses, demographics) to identify risk predictors for self-harm.\nBased on modeling, do any significant clusters emerge that are dissociable from one another based on clinical features?\nCan modeling reveal whether risk predictors for self-harm vary depending on certain clinical features?\nCan any of the subtypes be predicted by unique neural signatures?"
+  },
+  {
+    "objectID": "projects/cerebellum-neuropsych.html",
+    "href": "projects/cerebellum-neuropsych.html",
+    "title": "Cerebellum and Neuropsychiatric Disorders",
+    "section": "",
+    "text": "To my knowledge, there hasn’t been a study comprehensively investigating unique signatures of neuropsychiatric, neurological, and neurodevelopmental disorders in the cerebellum. There have been many piecemeal studies reporting altered functional connectivity and grey matter volume changes across these disorders, and some large-scale studies targeting specific disorders. However, with the availability of datasets like UK Biobank and ABCD, it is possible to investigate whether there are unique signatures in the cerebellum that can dissociate between neuropsychiatric, neurological, and neurodevelopmental disorders."
+  },
+  {
+    "objectID": "projects/cerebellum-neuropsych.html#new-ways-of-thinking-about-diagnosis",
+    "href": "projects/cerebellum-neuropsych.html#new-ways-of-thinking-about-diagnosis",
+    "title": "Cerebellum and Neuropsychiatric Disorders",
+    "section": "New ways of thinking about diagnosis",
+    "text": "New ways of thinking about diagnosis\n\nRDoC (Research domain criteria initiative): The aim is to understand the nature of mental health and illness in terms of varying degrees of dysfunction in fundamental psychological/biological system (i.e. major domains of neurobehavioral functioning), rather than within established diagnostic categories.\nRDoC Domains: negative valence systems, positive valence systems, cognitive systems, social processes, arousal and regulatory systems,\nSome examples of RDoC constructs: reward responsiveness, reward prediction error, attention, perception, cognitive control, performance monitoring, social communication etc.)\nRDoC: aims to address the heterogeneity in the current nosology by providing a biologically-based, rather than symptom-based, framework for understanding mental disorders"
+  },
+  {
+    "objectID": "projects/cerebellum-neuropsych.html#conventional-way-of-thinking-about-diagnosis",
+    "href": "projects/cerebellum-neuropsych.html#conventional-way-of-thinking-about-diagnosis",
+    "title": "Cerebellum and Neuropsychiatric Disorders",
+    "section": "Conventional way of thinking about diagnosis:",
+    "text": "Conventional way of thinking about diagnosis:\n\nDiagnosis is based on clinical observation: identifying symptoms that cluster together, determining when symptoms appear, resolve, recur, become chronic.\nProblem: difficult to deconstruct clusters of complex behaviors and link them to neurobiological systems. By linking basic biological and behavioral components, it will become possible to construct valid, reliable phenotypes (measurable traits or characteristics) for mental disorders.\nMental disorders are biological disorders involving brain circuits that implicate specific domains of cognition, emotion, or behavior."
+  },
+  {
+    "objectID": "projects/cerebellum-neuropsych.html#questions-1",
+    "href": "projects/cerebellum-neuropsych.html#questions-1",
+    "title": "Cerebellum and Neuropsychiatric Disorders",
+    "section": "Questions:",
+    "text": "Questions:\nTo what extent are disorders characterized by UK Biobank accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]."
+  },
+  {
+    "objectID": "projects/cerebellum-development.html",
+    "href": "projects/cerebellum-development.html",
+    "title": "Cerebellum and Development",
+    "section": "",
+    "text": "Questions:\nTo what extent are disorders characterized by Healthy Brains accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]."
+  },
+  {
+    "objectID": "datasets/uk-biobank.html",
+    "href": "datasets/uk-biobank.html",
+    "title": "UK Biobank",
+    "section": "",
+    "text": "UK Biobank is a large-scale biomedical database and research resource, containing in-depth genetic and health information from half a million UK participants.\n\nPopulation:\nData collected:\n\nPopulation: M/F ages 9-65\n\nOnline questionnaire data (n=330,000)\n\nDiet, cognitive function, occupational history, mental health, digestive health, chronic pain, food preferences, neurodevelopmental issues, sleep, pain\n\nGenetic data\n\nWhole genome sequencing data (n=200,000), whole exome sequencing data (n=450,000)\n\nHealth-related outcomes data (n=230,000)\n\nPrimary care data containing coded clinical events (consultations, diagnoses, procedures, laboratory tests), prescribed medication (referrals) - info on Covid-19 now.\nHospital inpatient data - diagnosis, date of admission, underlying conditions, discharge information.\nFirst occurrences of medical conditions\nDeath data\nCancer data\n\n\nImaging data (n=50,000)\n\nMRI (DTI maybe?) also scans of other body parts: liver, muscle, heart, abdomen\nPost-covid scans on n=2000 participants\n\nBaseline data (n=500,000)\n\nMeasurements, hand grip, spirometry, bone density\nBlood, urine, saliva,\nDiet preferences\n\nCOVID-19 data\n\nMRI scans on n=2000 participants, what else has been collected?\n\nBlood + Urine (n=500,000)\n\nSaliva for 100,000\n\nActivity Monitor (n=100,000)\n\nPhysical activity data over a 7-day period collected via a wrist-worn activity monitor\n\nBiomarker data (n=500,000)\n\nAlso n=20,000 who completed a 4-5 year follow-up assessment.\n34 biomarkers chosen (e.g., HbA1c for diabetes).\nBlood count (hematological assays)\nInfectious disease markers\nMetabolomic biomarkers\nTelomere length\n\n\n\n\n\n\nWhich data are on openmind?\n\nImaging (rest, task, naturalistic)\nDemographic info\nCognitive/Behavioral results\nClinical disorders\n\nWhat is the format?\n\nraw, derivatives\n\nHave imaging (MRI/fMRI) data been preprocessed?\n\nfmriprep\nfreesurfer\nfirst-level glms\n\nWhere are the data stored on openmind?\n\nare these data being transitioned to datalad?\n\nHow does a new user get access to the dataset?"
+  },
+  {
+    "objectID": "datasets/index.html",
+    "href": "datasets/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "The following datasets are used by the Senseable Intelligence group at MIT"
+  },
+  {
+    "objectID": "datasets/index.html#list-of-datasets",
+    "href": "datasets/index.html#list-of-datasets",
+    "title": "Overview",
+    "section": "List of Datasets:",
+    "text": "List of Datasets:\n\nABCD\nHealthy Brain Networks\nUK Biobank"
+  },
+  {
+    "objectID": "datasets/healthy-brains.html",
+    "href": "datasets/healthy-brains.html",
+    "title": "Healthy Brains Network",
+    "section": "",
+    "text": "The Child Mind Institute has launched the Healthy Brain Network, an ongoing initiative focused on creating and sharing a biobank comprised of data from 10,000 New York City area children and adolescents (ages 5-21).\n\nPopulation: ages 5-21, children who likely have one or more psychiatric symptoms\nData collected:\n\nMRI + fMRI: movies (~10 min), predictive eye estimation regression\nPhenotypic assessment\nPhysical activity\nBehavioral measures (questionnaires)\nFamily structures (stress, trauma)\nSubstance use/addiction\nCognition and language tasks\nDisorder-specific questionnaires\nElectroencephalography\nDigital Voice and Video Recordings\nGenetics\nActigraphy\nCognitive Tasks (e.g., sequence learning), naturalistic stimuli\nEyetracking: pupil dilation and eye position\n\n\n\n\n\nPhenotypic Assessment Protocol\n\n\n\n\n\n\nWhich data are on openmind?\n\nImaging (rest, naturalistic)\nDemographic info\nCognitive/Behavioral results\nClinical disorders\n\nWhat is the format?\n\nraw, derivatives\n\nWhich releases are available?\n\ncurrently there are 10 releases of HBN imaging and phenotypic data\n\nHave imaging data been preprocessed?\n\nfmriprep\nfreesurfer\nfirst-level glms\n\nMRI data have been preprocessed using Mindboggle and are available in S3 under the directory\nWhere are the data stored on openmind?\n\nare these data being transitioned to datalad?\n\nHow does a new user get access to the dataset?\n\nanyone with gablab group permissions should be able to access the data"
+  },
+  {
+    "objectID": "datasets/abcd.html",
+    "href": "datasets/abcd.html",
+    "title": "ABCD",
+    "section": "",
+    "text": "The ABCD Study is a prospective longitudinal study starting at the ages of 9-10 and following participants for 10 years. The study includes a diverse sample of nearly 12,000 youth enrolled at 21 research sites across the country.\n\nPopulation: (n=12,000) Longitudinal study (starts at ages 9/10 for 10 years)\nBrain development: structural, task fMRI, resting state fMRI)\nSocial, emotional, cognitive development, substance use and attitudes, physical health, environmental factors\nLocal databases have been linked with ABCD dataset providing info about environment, poverty, pollution, school, policy for example [useful in providing context]\n\n\n\n\n\nAre the data on openmind?\nSee this community collection (ABCC) on derivatives from ABCD"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MIT Projects",
+    "section": "",
+    "text": "In an attempt to document my projects, from conception to publication, I’m compiling project ideas, and weekly progress in one place as a reference template for myself and for anyone interested in what I’m working on\nThis website is made with quarto and inspired by https://github.com/NASA-Openscapes/2021-Cloud-Hackathon"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Our Team",
+    "section": "",
+    "text": "This effort was supported by the whole NASA Openscapes Mentors cohort, with the following main folks listed alphabetically.\n\n\n\nAffiliations: NSIDC DAAC, University of Colorado \n\n\n\n\nAffiliations: USGS, LP DAAC\n\n\n\n\nAffiliations: NSIDC\n\n\n\n\nAffiliations: Openscapes, NCEAS, UC Santa Barbara\n\n\n\n\nAffiliations: PO.DAAC\n\n\n\n\nAffiliations: PO.DAAC, NASA Jet Propulsion Laboratory/California Institute of Technology\n\n\n\n\nAffiliations: Openscapes, Metadata Game Changers, University of Colorado\n\n\n\n\nAffiliations: NSIDC DAAC, CIRES, University of Colorado\n\n\n\n\nAffiliations: Atmospheric Science Data Center (ASDC), NASA Langley Research Center (LaRC)"
+  },
+  {
+    "objectID": "team.html#hackathon-helpers",
+    "href": "team.html#hackathon-helpers",
+    "title": "Our Team",
+    "section": "Hackathon Helpers",
+    "text": "Hackathon Helpers\n\nMike Gangl, PO.DAAC\nJinbo Wang, JPL\nCelia Ou, PO.DAAC\nEd, Armstrong, JPL"
+  }
+]
