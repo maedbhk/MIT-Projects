@@ -9,6 +9,7 @@ title: Week 2
 * Effectively communicate scientific uncertainty to both experts and non-experts alike
 * Create models that are accessible to other researchers, FAIR, and demographically diverse
 * Address ethical questions that may arise throughout the entire process: as studies are being designed, data analyzed, and results disseminated
+* How can the results of this work be translated 
 
 ## Project Ideas
 * 1) can unique cerebellar fingerprints dissociate neuropsychiatric and neurodevelopmental disorders, above and beyond what would be expected from cortical fingerprints? I think I'd be first interested in analyzing the structural data before addressing functional connectivity
