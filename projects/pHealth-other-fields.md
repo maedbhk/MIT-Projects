@@ -2,6 +2,8 @@
 title: pHealth in other fields
 ---
 
+> Much of the points below came from a [review paper](https://pubmed.ncbi.nlm.nih.gov/33091314/) by MacEachern and Forkert (2020)
+
 ## Examples of pHealth in practice
 * One of the first fields to use a precision medicine approach to treat human disease was transfusion medicine, where the discovery of blood types in the early 1900s revolutionized blood transfusions, allowing for matching of donor and recipient blood types, and avoiding complications associated with mismatched donor and recipient blood [Giangrande et al. 2000](https://onlinelibrary.wiley.com/doi/full/10.1046/j.1365-2141.2000.02139.x)
 * pHealth has enabled gene therapy for infants with spinal muscular atrophy (SMA) type I

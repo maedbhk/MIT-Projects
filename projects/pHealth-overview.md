@@ -2,12 +2,12 @@
 title: Intro to Precision Medicine
 ---
 
-Some of these ideas come from a grant that Satra shared called *Risk Predictors of Mental Health through Multimodal Biotyping Intelligent Assistive Framework for Mental Health Management*
+> Some of these ideas come from a grant that Satra shared called *Risk Predictors of Mental Health through Multimodal Biotyping Intelligent Assistive Framework for Mental Health Management*
 
 ### What is precision medicine?
 * Precision medicine is the approach of predicting and diagnosing mental health disorders using: 
     * microbiome, inflammation, genomics, neural markers (fMRI, MRI, EEG, pupillometry), behavior, clinical symptoms
-    
+
 ### What is the overarching goal of pHealth? 
 Improved risk assessment and early detection of mental illness. 
 

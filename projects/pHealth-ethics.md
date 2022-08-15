@@ -4,6 +4,8 @@ title: Ethical Considerations for pHealth
 
 **Anyone doing precision medicine must never lose sight of the individual who is relying on experts (e.g., scientists, clinicians) to do no harm in providing them with the best possible healthcare outcomes.**
 
+> Much of the points below came from a [review paper](https://pubmed.ncbi.nlm.nih.gov/33091314/) by MacEachern and Forkert (2020)
+
 1. ML approaches require large amounts of data, therefore data will be collected from many locations and transferred to a central location for storage and processing. essential that the datasets do not contain patient-identifying information. in the future, this could be overcome using distributed machine learning approaches (e.g., travelling ML model) - trains locally on the available data, before moving to the next center with available data [Tuladhar et al. 2020](https://www.sciencedirect.com/science/article/pii/S1532046420300526?via%3Dihub)
 2. ML models as "black boxes", especially with increased complexity of the input data. this raises legal and ethical questions as clinicians and other researchers may not fully understand how an ML model came to a particular conclusion about a patient's health. 
 3. As physicians can be held legally responsible for their decisions, error in ML models is of course a concern. Who is responsible for an error induced in an ML model? These tools (for the time being) will support and assist physicians in making decisions about patient care, they are not yet designed to operate autonomously. 

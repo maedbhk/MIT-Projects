@@ -49,13 +49,19 @@ website:
           - datasets/abcd.md
           - datasets/uk-biobank.md
           - datasets/healthy-brains.md
+          - datasets/abide.md
+          - datasets/adhd-200.md
       - section: "Projects"
         contents:
           - projects/index.md
           - projects/cerebellum-development.md
           - projects/cerebellum-neuropsych.md
           - projects/chop.md
-          - projects/precision-medicine-overview.md
+          - projects/pHealth-overview.md
+          - projects/pHealth-terminology.md
+          - projects/pHealth-ethics.md
+          - projects/pHealth-other-fields.md
+          - projects/RDoC.md
 
 format:
   html:
