@@ -25,7 +25,7 @@ The Child Mind Institute has launched the Healthy Brain Network, an ongoing init
 
 ![Phenotypic Assessment Protocol](http://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/images/R9_assessments.png){fig-align="center"}
 
-### Openmind/Datalad
+### Data Storage
 * Which data are on openmind?
     * Imaging (rest, naturalistic)
     * Demographic info

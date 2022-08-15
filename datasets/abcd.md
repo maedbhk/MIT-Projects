@@ -12,7 +12,7 @@ The ABCD Study is a prospective longitudinal study starting at the ages of 9-10 
 * Social, emotional, cognitive development, substance use and attitudes, physical health, environmental factors
 * Local databases have been linked with ABCD dataset providing info about environment, poverty, pollution, school, policy for example [useful in providing context]
 
-### Openmind
+### Data Storage
 * Are the data on openmind?
 * See this community collection [(ABCC)](https://collection3165.readthedocs.io/en/stable/) on derivatives from ABCD 
 

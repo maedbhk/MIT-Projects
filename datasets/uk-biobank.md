@@ -41,7 +41,7 @@ UK Biobank is a large-scale biomedical database and research resource, containin
     * Metabolomic biomarkers
     * Telomere length
 
-### Openmind/Datalad
+### Data Storage
 * Which data are on openmind?
     * Imaging (rest, task, naturalistic)
     * Demographic info
