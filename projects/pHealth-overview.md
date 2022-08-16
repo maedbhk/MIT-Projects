@@ -14,6 +14,8 @@ Improved risk assessment and early detection of mental illness.
 ### How will this goal be achieved? 
 Our aim is to develop biologically driven risk predictors and monitors of mental health. Using these datasets, we will relate genetic information to clinical evaluations through endophenotypes that span brain imaging, cognitive and behavioral testing, and information from wearable devices and speech recordings.
 
+Developing these kinds of models are not without significant challenges but the potential outcome is enormous: providing useful brain measures, and new categories of disorders. 
+
 ### What are the short term goals? 
 * To find biotypes based on combining genetic and brain imaging data
 * To develop risk predictors that integrate biological and behavioral information.

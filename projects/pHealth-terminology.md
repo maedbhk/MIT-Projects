@@ -2,13 +2,6 @@
 title: pHealth terminology
 ---
 
-### Inflammation markers
-* Cytokine, chemokine, interleukin, interferon, tumor necrosis factor, colony-stimulating factor, growth factor (IGF, VEGF, NGF, FGF, TNF)
-* You can assess inflammation/cytokine/chemokine factors in plasma or serum samples. 
-
-### Polygenic risk score
-* represents the total number of genetic variants that an individual has to assess their heritable risk of developing a particular disease.
-
 ### Endophenotype
 * intermediate phenotype - quantitative biological trait that is reliable in reflecting the function of a discrete biological system, and is reasonably heritable, and is much more closely related to the root cause of the disease than the broad clinical phenotype.
 * biological or psychological phenomena of a disorder believed to be in the causal chain between genetic contributions to a disorder and diagnosable symptoms of psychopathology. 
@@ -43,3 +36,10 @@ title: pHealth terminology
 * Social media engagement (reddit, facebook etc)
 * Electronic health records (hospital admissions etc.)
 * Single nucleotide polymorphisms (SNPs) 
+
+### Inflammation markers
+* Cytokine, chemokine, interleukin, interferon, tumor necrosis factor, colony-stimulating factor, growth factor (IGF, VEGF, NGF, FGF, TNF)
+* You can assess inflammation/cytokine/chemokine factors in plasma or serum samples. 
+
+### Polygenic risk score
+* represents the total number of genetic variants that an individual has to assess their heritable risk of developing a particular disease.
