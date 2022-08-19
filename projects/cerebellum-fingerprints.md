@@ -15,6 +15,8 @@ title: Cerebellar fingerprints of neurodevelopmental disorders
 There has been great interest recently in the idea of the cerebellum as a locus in neurodevelopmental disorders. Structural and functional abnormalities in the cerebellum are consistently reported across neurodevelopmental disorders, and in particular, autism spectrum disorder (ASD) has been linked to cerebellar abnormality. For example, children and adults with ASD show atypical fMRI activation of cortico-cerebellar networks during biological motion perception [Jack et al. 2017](https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.23493) and perception of social interaction [Kana et al. 2015](https://molecularautism.biomedcentral.com/articles/10.1186/s13229-015-0052-x). Furthermore, behavioral studies have found that children with ASD display abnormal conditioned reponses in delayed eyeblink conditioning, a conditioning paradigm that strongly implicates the cerebellum. 
 
 
+
+
 For example, [Tran et al. 2017](https://www.nature.com/articles/s41598-017-18316-8) tested delayed eyeblink conditioning, a task which is depenedent on the cerebellum, on a group of very preterm children and adults. They found that in this group, there were significant deficits in the acquisition of conditioned responses, therefore suggesting that 'motor' cerebellar behavioral abnormalities coexist with non-motor abnormalities. 
     * children with ASD also display abnormal conditioned responses in the eyeblink conditioning paradigm
     * it has been suggested that the language and social deficits observed in children with complex disorders are a consequence of deficits in multi-sensory integration. 
