@@ -9,7 +9,5 @@ To my knowledge, there hasn’t been a study comprehensively investigating uniqu
 * Are particular regions of the cerebellum more susceptible to [brain aging](https://www.nature.com/articles/s41593-019-0471-7), and how does this relate to different neuropsychiatric/neurological/neurodevelopmental disorders?
 * Is there a relationship between sexual dimorphism/asymmetry and neuropsychiatric disorders in the cerebellum? 
 * In predicting X disorder, how much variance is explained by unique cerebellar signatures, relative to other biomarkers (e.g., behavior, occupational history, digestive health)
-
-## Questions:
-To what extent are disorders characterized by UK Biobank accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]. 
+* To what extent are disorders characterized by UK Biobank accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]. 
 
