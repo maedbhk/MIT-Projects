@@ -277,14 +277,7 @@
     "href": "literature-review/cerebellum-neuropsych.html",
     "title": "Cerebellum and Neuropsychiatric Disorders",
     "section": "",
-    "text": "To my knowledge, there hasn’t been a study comprehensively investigating unique signatures of neuropsychiatric, neurological, and neurodevelopmental disorders in the cerebellum. There have been many piecemeal studies reporting altered functional connectivity and grey matter volume changes across these disorders, and some large-scale studies targeting specific disorders. However, with the availability of datasets like UK Biobank and ABCD, it is possible to investigate whether there are unique signatures in the cerebellum that can dissociate between neuropsychiatric, neurological, and neurodevelopmental disorders."
-  },
-  {
-    "objectID": "literature-review/cerebellum-neuropsych.html#questions-1",
-    "href": "literature-review/cerebellum-neuropsych.html#questions-1",
-    "title": "Cerebellum and Neuropsychiatric Disorders",
-    "section": "Questions:",
-    "text": "Questions:\nTo what extent are disorders characterized by UK Biobank accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]."
+    "text": "Questions:\n\nAre volume-, network-, region-, gradient-based changes in the cerebellum contributing to disease/symptom etiology that are unique from corresponding changes in the neocortex?\nAre particular regions of the cerebellum more susceptible to brain aging, and how does this relate to different neuropsychiatric/neurological/neurodevelopmental disorders?\nIs there a relationship between sexual dimorphism/asymmetry and neuropsychiatric disorders in the cerebellum?\nIn predicting X disorder, how much variance is explained by unique cerebellar signatures, relative to other biomarkers (e.g., behavior, occupational history, digestive health)\nTo what extent are disorders characterized by UK Biobank accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]."
   },
   {
     "objectID": "literature-review/cerebellum-development.html",
