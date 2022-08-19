@@ -4,7 +4,7 @@ project:
 website:
   page-navigation: true  
   title: "MIT Projects"
-  site-url: https://nasa-openscapes.github.io/2021-Cloud-Hackathon
+  site-url: https://maedbhk.github.io/MIT-Projects/
   
   repo-url: https://github.com/maedbhk/MIT-Projects
   repo-actions: [edit, issue]
@@ -16,7 +16,7 @@ website:
   #   right: 
   #     - sidebar:welcome
   #     - icon: github
-  #       href: https://github.com/nasa-openscapes/2021-Cloud-Hackathon
+  #       href: https://maedbhk.github.io/MIT-Projects/
  
   sidebar:
     logo: assets/images/logo_mk.png
