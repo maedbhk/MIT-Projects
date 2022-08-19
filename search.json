@@ -60,7 +60,7 @@
     "href": "progress/week-2.html",
     "title": "Week 2",
     "section": "",
-    "text": "Inform clinical outcomes through computational modeling\nCommunicate importance and relevence of research findings to patient population whose biodata are being collected and analyzed\nWork with clinicians to offer risk assessment predictors to patients based on outputs of biologically-driven models\nEffectively communicate scientific uncertainty to both experts and non-experts alike\nCreate models that are accessible to other researchers, FAIR, and demographically diverse\nAddress ethical questions that may arise throughout the entire process: as studies are being designed, data analyzed, and results disseminated\nHow can the results of this work be translated"
+    "text": "Inform clinical outcomes through computational modeling\nCommunicate importance and relevence of research findings to patient population whose biodata are being collected and analyzed\nWork with clinicians to offer risk assessment predictors to patients based on outputs of biologically-driven models\nEffectively communicate scientific uncertainty to both experts and non-experts alike\nCreate models that are accessible to other researchers, FAIR, and demographically diverse\nAddress ethical questions that may arise throughout the entire process: as studies are being designed, data analyzed, and results disseminated\nHow can the results of this work be translated to a clinical application?\nAre our findings clinically useful? If not, have we at least learned something interesting about the brain with this question?"
   },
   {
     "objectID": "progress/week-2.html#project-ideas",
@@ -70,60 +70,18 @@
     "text": "Project Ideas\n\n\ncan unique cerebellar fingerprints dissociate neuropsychiatric and neurodevelopmental disorders, above and beyond what would be expected from cortical fingerprints? I think I’d be first interested in analyzing the structural data before addressing functional connectivity\n\n\ninspired by RDoC, can we use topic models (e.g., latent dirichlet allocation) to identify latent clinical characteristics derived from HBN behavioral and/or cognitive measures (e.g., positive and negative affect scale, GRIT scale, Wechsler intelligence scale) with the goal of providing individualized risk assessments.\n\n\nIf we can identify groups/clusters by modeling behavioral/cognitive characteristics, can we identify corresponding dissociable neural signatures (whole-brain, not necessarily cerebellum-focused)?\n\n\nRelative to the neocortex, are there differences across disorders in neural signatures/fingerprints from early childhood to adolescence? For example, in developmental disorders (e.g., adhd, autism) do we see more significant changes in cerebellum (as indexed by reduction in grey matter) during early childhood relative to corresponding changes in the neocortex."
   },
   {
-    "objectID": "projects/precision-medicine-overview.html",
-    "href": "projects/precision-medicine-overview.html",
-    "title": "Intro to Precision Medicine",
+    "objectID": "projects/cerebellum-fingerprints.html",
+    "href": "projects/cerebellum-fingerprints.html",
+    "title": "Cerebellar fingerprints of neurodevelopmental disorders",
     "section": "",
-    "text": "What is precision medicine?\n\nPrecision medicine is the approach of predicting and diagnosing mental health disorders using:\n\nmicrobiome, inflammation, genomics, neural markers (fMRI, MRI, EEG, pupillometry), behavior, clinical symptoms\n\n\n\n\nWhat are inflammation markers?\n\nCytokine, chemokine, interleukin, interferon, tumor necrosis factor, colony-stimulating factor, growth factor (IGF, VEGF, NGF, FGF, TNF)\nYou can assess inflammation/cytokine/chemokine factors in plasma or serum samples.\n\n\n\nWhat is a polygenic risk score?\n\nrepresents the total number of genetic variants that an individual has to assess their heritable risk of developing a particular disease.\n\n\n\nWhat is an endophenotype?\n\nintermediate phenotype - quantitative biological trait that is reliable in reflecting the function of a discrete biological system, and is reasonably heritable, and is much more closely related to the root cause of the disease than the broad clinical phenotype.\nbiological or psychological phenomena of a disorder believed to be in the causal chain between genetic contributions to a disorder and diagnosable symptoms of psychopathology.\nmeasurable biomarkers that are correlated with an illness, in part because of the shared underlying genetic influences.\nWhat conditions need to be met?\n\nAssociated with illness in the population\nHeritable\nPrimarily state-independent\nCo-segregate with illness in families\nFound in unaffected family members at a higher rate than general pop.\nExamples of endophenotypes for MDD (major depressive disorder): learning/memory impairments, reduced reward functioning, increased stress sensitivity, REM sleep abnormalities, dysfunctions in serotonergic, catecholaminergic, HPA axis, corticotropin-releasing hormone systems, intracellular signal transduction measures.\n\n\n\n\nSources of biomarkers:\n\nStress data - cortisol\narousal/attention - pupil dilation\nReaction time / accuracy - behavior\nStrength - grip force\nPulse/heart rate\nOxygen\nSpeech/voice data\nHandwriting\nPlasma (inflammation markers)\nSaliva\nMovement - sleep cycles\nTemperature\nSkin conductance (galvanic skin response)\nTranscriptomics\nfMRI BOLD signal\nCortical thickness/anatomy\nMobility data (tracked with phone)\nInternet search history (tracked with phone)\nSocial media engagement (reddit, facebook etc)\nElectronic health records (hospital admissions etc.)\nSingle nucleotide polymorphisms (SNPs)\n\n\n\nWhat is the overarching goal of pHealth?\nImproved risk assessment and early detection of mental illness.\n\n\nHow will this goal be achieved?\nOur aim is to develop biologically driven risk predictors and monitors of mental health. Using these datasets, we will relate genetic information to clinical evaluations through endophenotypes that span brain imaging, cognitive and behavioral testing, and information from wearable devices and speech recordings.\n\n\nWhat are the short term goals?\n\nTo find biotypes based on combining genetic and brain imaging data\nTo develop risk predictors that integrate biological and behavioral information.\nHow will these goals be achieved?\nTo test these models, we would deploy them in research clinics.\nThe outcome of this work will feed into a more longitudinal goal of capturing real-world behavior and interventions in order to build models to monitor and deliver interventions that are tuned to individual trajectories.\n\n\n\nWhat is the long term goal?\nThe long term goal is to create an intelligent assistive framework for mental health management that supports integration of multiple sources of live and longitudinal data, learns phenotypic associations and builds interpretable, predictive models, and suggests individualized actions towards targeted goals.\n\n\nWhat is the problem?\n\nClinical assessment is resource intensive and inaccessible to those who need it most. When accessible, initial assessments are ineffective: do not consider societal and community options to boost wellbeing.\nWhy are ML approaches often ineffective?\n\nML diagnostic approaches often focus on specific disorders rather than symptoms.\nML approaches are often devoid of connections to underlying biology\n\n\n\n\nWhat is the opportunity?\n\nThe advent and growth of consortial data collections that include genomic assays, clinical and behavioral data together with brain imaging offer a unique opportunity to understand genotypic and phenotypic variation in a large population.\nDatasets:\n\nUK Biobank, adolescent brain cognitive development study, genus dataset, healthy brain networks\n\n\n\n\nConsiderations:\n\nHolistic approaches:\n\nsocietal, cultural, community-based interventions in conjunction with (instead of) ML-guided healthcare\n\nEthics:\n\ndata anonymity? Who do the tools serve? Are they biased against certain groups?\nhow is model uncertainty communicated to scientists and non-scientists alike?"
+    "text": "another important consideration in the healthy brains network: preterm birth\nbehavioral/cognitive tasks that measure: eye blink reflexes, sensory/tactile processing, timing, sensory integration, fine motor coordination,\nPROTRACTED DEVELOPMENT OF CEREBELLUM: prenatal information in the database (and early infancy) - could there be specific events (environmental, molecular etc) that resulted in disruption of cerebellar circuitry? and could disruption of the circuit at different timepoints result in different clinical outcomes? either severity of disorder or different presentation of disorder?\ncomplex brain disorders with a cerebellar locus follow different developmental trajectories."
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Overview",
-    "section": "",
-    "text": "Intro to Precision Medicine\nCerebellum and neuropsychiatric disorders\nCerebellum and development\nPredicting self-harm from hospital longitudinal EMR data"
-  },
-  {
-    "objectID": "projects/chop.html",
-    "href": "projects/chop.html",
-    "title": "CHOP",
-    "section": "",
-    "text": "Build computational models using clinical/other characteristics (e.g., previous hospital admissions, comorbidities, cognitive function, diagnoses, immunizations, allergies, medications, other illnesses, demographics) to identify risk predictors for self-harm.\nBased on modeling, do any significant clusters emerge that are dissociable from one another based on clinical features?\nCan modeling reveal whether risk predictors for self-harm vary depending on certain clinical features?\nCan any of the subtypes be predicted by unique neural signatures?"
-  },
-  {
-    "objectID": "projects/cerebellum-neuropsych.html",
-    "href": "projects/cerebellum-neuropsych.html",
-    "title": "Cerebellum and Neuropsychiatric Disorders",
-    "section": "",
-    "text": "To my knowledge, there hasn’t been a study comprehensively investigating unique signatures of neuropsychiatric, neurological, and neurodevelopmental disorders in the cerebellum. There have been many piecemeal studies reporting altered functional connectivity and grey matter volume changes across these disorders, and some large-scale studies targeting specific disorders. However, with the availability of datasets like UK Biobank and ABCD, it is possible to investigate whether there are unique signatures in the cerebellum that can dissociate between neuropsychiatric, neurological, and neurodevelopmental disorders."
-  },
-  {
-    "objectID": "projects/cerebellum-neuropsych.html#new-ways-of-thinking-about-diagnosis",
-    "href": "projects/cerebellum-neuropsych.html#new-ways-of-thinking-about-diagnosis",
-    "title": "Cerebellum and Neuropsychiatric Disorders",
-    "section": "New ways of thinking about diagnosis",
-    "text": "New ways of thinking about diagnosis\n\nRDoC (Research domain criteria initiative): The aim is to understand the nature of mental health and illness in terms of varying degrees of dysfunction in fundamental psychological/biological system (i.e. major domains of neurobehavioral functioning), rather than within established diagnostic categories.\nRDoC Domains: negative valence systems, positive valence systems, cognitive systems, social processes, arousal and regulatory systems,\nSome examples of RDoC constructs: reward responsiveness, reward prediction error, attention, perception, cognitive control, performance monitoring, social communication etc.)\nRDoC: aims to address the heterogeneity in the current nosology by providing a biologically-based, rather than symptom-based, framework for understanding mental disorders"
-  },
-  {
-    "objectID": "projects/cerebellum-neuropsych.html#conventional-way-of-thinking-about-diagnosis",
-    "href": "projects/cerebellum-neuropsych.html#conventional-way-of-thinking-about-diagnosis",
-    "title": "Cerebellum and Neuropsychiatric Disorders",
-    "section": "Conventional way of thinking about diagnosis:",
-    "text": "Conventional way of thinking about diagnosis:\n\nDiagnosis is based on clinical observation: identifying symptoms that cluster together, determining when symptoms appear, resolve, recur, become chronic.\nProblem: difficult to deconstruct clusters of complex behaviors and link them to neurobiological systems. By linking basic biological and behavioral components, it will become possible to construct valid, reliable phenotypes (measurable traits or characteristics) for mental disorders.\nMental disorders are biological disorders involving brain circuits that implicate specific domains of cognition, emotion, or behavior."
-  },
-  {
-    "objectID": "projects/cerebellum-neuropsych.html#questions-1",
-    "href": "projects/cerebellum-neuropsych.html#questions-1",
-    "title": "Cerebellum and Neuropsychiatric Disorders",
-    "section": "Questions:",
-    "text": "Questions:\nTo what extent are disorders characterized by UK Biobank accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]."
-  },
-  {
-    "objectID": "projects/cerebellum-development.html",
-    "href": "projects/cerebellum-development.html",
-    "title": "Cerebellum and Development",
-    "section": "",
-    "text": "Questions:\nTo what extent are disorders characterized by Healthy Brains accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]."
+    "objectID": "datasets/abide.html#overview",
+    "href": "datasets/abide.html#overview",
+    "title": "abide",
+    "section": "Overview",
+    "text": "Overview\nThe ABIDE data provide subject information, including age, sex, and measures of symptom severity as assessed by the Autism Diagnostic Observation Schedule (ADOS).\nData are not (currently) on openmind.\n\nData Storage\n\nnot currently on openmind/datalad\npreprocessed using"
   },
   {
     "objectID": "datasets/uk-biobank.html",
@@ -144,7 +102,7 @@
     "href": "datasets/index.html#list-of-datasets",
     "title": "Overview",
     "section": "List of Datasets:",
-    "text": "List of Datasets:\n\nABCD\nHealthy Brain Networks\nUK Biobank"
+    "text": "List of Datasets:\n\nABCD\nHealthy Brain Networks\nUK Biobank\n‘adhd-200’\n‘autism brain imaging data exhcange’"
   },
   {
     "objectID": "datasets/healthy-brains.html",
@@ -159,6 +117,202 @@
     "title": "ABCD",
     "section": "",
     "text": "The ABCD Study is a prospective longitudinal study starting at the ages of 9-10 and following participants for 10 years. The study includes a diverse sample of nearly 12,000 youth enrolled at 21 research sites across the country.\n\nPopulation: (n=12,000) Longitudinal study (starts at ages 9/10 for 10 years)\nBrain development: structural, task fMRI, resting state fMRI)\nSocial, emotional, cognitive development, substance use and attitudes, physical health, environmental factors\nLocal databases have been linked with ABCD dataset providing info about environment, poverty, pollution, school, policy for example [useful in providing context]\n\n\n\n\n\nAre the data on openmind?\nSee this community collection (ABCC) on derivatives from ABCD"
+  },
+  {
+    "objectID": "datasets/adhd-200.html#overview",
+    "href": "datasets/adhd-200.html#overview",
+    "title": "ADHD-200",
+    "section": "Overview",
+    "text": "Overview\nThe ADHD-200 data set provides demographic and clinical information, including age, sex, and measures of symptom severity as assessed by the ADHD rating scale (ADHD-RS).\n\nData Storage\n\nnot currently on openmind/datalad\npreprocessed using"
+  },
+  {
+    "objectID": "literature-review/pHealth-terminology.html",
+    "href": "literature-review/pHealth-terminology.html",
+    "title": "pHealth terminology",
+    "section": "",
+    "text": "Sources of endophenoytpes:\n\nStress data - cortisol\narousal/attention - pupil dilation\nReaction time / accuracy - behavior\nStrength - grip force\nPulse/heart rate\nOxygen\nSpeech/voice data\nHandwriting\nPlasma (inflammation markers)\nSaliva\nMovement - sleep cycles\nTemperature\nSkin conductance (galvanic skin response)\nTranscriptomics\nfMRI BOLD signal\nCortical thickness/anatomy\nMobility data (tracked with phone)\nInternet search history (tracked with phone)\nSocial media engagement (reddit, facebook etc)\nElectronic health records (hospital admissions etc.)\nSingle nucleotide polymorphisms (SNPs)\n\n\n\nInflammation markers\n\nCytokine, chemokine, interleukin, interferon, tumor necrosis factor, colony-stimulating factor, growth factor (IGF, VEGF, NGF, FGF, TNF)\nYou can assess inflammation/cytokine/chemokine factors in plasma or serum samples.\n\n\n\nPolygenic risk score\n\nrepresents the total number of genetic variants that an individual has to assess their heritable risk of developing a particular disease."
+  },
+  {
+    "objectID": "literature-review/RDoC.html",
+    "href": "literature-review/RDoC.html",
+    "title": "RDoC",
+    "section": "",
+    "text": "RDoC (Research domain criteria initiative): The aim is to understand the nature of mental health and illness in terms of varying degrees of dysfunction in fundamental psychological/biological system (i.e. major domains of neurobehavioral functioning), rather than within established diagnostic categories.\nRDoC Domains: negative valence systems, positive valence systems, cognitive systems, social processes, arousal and regulatory systems,\nSome examples of RDoC constructs: reward responsiveness, reward prediction error, attention, perception, cognitive control, performance monitoring, social communication etc.)\nRDoC: aims to address the heterogeneity in the current nosology by providing a biologically-based, rather than symptom-based, framework for understanding mental disorders\nThe question now becomes one of when and how to build a long-term framework for research that can yield classification based on discoveries in genomics and neuroscience as well as clinical observation, with a goal of improving treatment outcomes (Insel et al. 2010)\nWhat does RDoC do?\n\nConceptualizes mental illnesses as brain disorders [of brain circuits]\nAssumes that dysfunction in neural circuits can be identified with the tools of clinical neuroscience\nThe framework assumes that data from genetics and clinical neuroscience will yield biosignatures that will augment clinical symptoms and signs for clinical management\n\nHow would this work in practice?\n\nClinician could supplement a clinical evaluation of what we now call an “anxiety disorder” with data from functional or structural imaging, genomic sequencing, and laboratory-based evaluations of fear conditioning and extinction to determine prognosis and appropriate treatment, analogous to what is done routinely today in many other areas of medicine\n\nHow could RDoC alter clinical practice?\n\nThe critical test is how well new molecular and neurobiological parameters predict prognosis or treatment response.\n\nWhat would be some examples of success?\n\nif a BDNF polymorphism identifies people with anxiety syndromes who do not respond to behavior therapy\nif a copy number variant defines a form of psychosis with high remission rates\nif neuroimaging yields a subtype of a mood disorder that consistently responds to lithium"
+  },
+  {
+    "objectID": "literature-review/RDoC.html#conventional-way-of-thinking-about-diagnosis",
+    "href": "literature-review/RDoC.html#conventional-way-of-thinking-about-diagnosis",
+    "title": "RDoC",
+    "section": "Conventional way of thinking about diagnosis:",
+    "text": "Conventional way of thinking about diagnosis:\n\nDiagnosis is based on clinical observation: identifying symptoms that cluster together, determining when symptoms appear, resolve, recur, become chronic.\nProblem: difficult to deconstruct clusters of complex behaviors and link them to neurobiological systems. By linking basic biological and behavioral components, it will become possible to construct valid, reliable phenotypes (measurable traits or characteristics) for mental disorders.\nMental disorders are biological disorders involving brain circuits that implicate specific domains of cognition, emotion, or behavior."
+  },
+  {
+    "objectID": "literature-review/EMR-selfharm.html",
+    "href": "literature-review/EMR-selfharm.html",
+    "title": "Identifying risk factors for self-harm using electronic medical records",
+    "section": "",
+    "text": "Build computational models using clinical/other characteristics (e.g., previous hospital admissions, comorbidities, cognitive function, diagnoses, immunizations, allergies, medications, other illnesses, demographics) to identify risk predictors for self-harm.\nBased on modeling, do any significant clusters emerge that are dissociable from one another based on clinical features?\nCan modeling reveal whether risk predictors for self-harm vary depending on certain clinical features?\nCan any of the subtypes be predicted by unique neural signatures?"
+  },
+  {
+    "objectID": "literature-review/index.html",
+    "href": "literature-review/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "pHealth: overview\npHealth: terminology\npHealth: ethical considerations\npHealth: examples from other fields\nResearch Domain Criteria (RDoC)\nCerebellum and neuropsychiatric disorders\nCerebellum and development\nPredicting self-harm from hospital longitudinal EMR data\nTranslational Neuroimaging"
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html",
+    "href": "literature-review/pHealth-other-fields.html",
+    "title": "pHealth in other fields",
+    "section": "",
+    "text": "Much of the points below came from a review paper by MacEachern and Forkert (2020)"
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html#examples-of-phealth-in-practice",
+    "href": "literature-review/pHealth-other-fields.html#examples-of-phealth-in-practice",
+    "title": "pHealth in other fields",
+    "section": "Examples of pHealth in practice",
+    "text": "Examples of pHealth in practice\n\nOne of the first fields to use a precision medicine approach to treat human disease was transfusion medicine, where the discovery of blood types in the early 1900s revolutionized blood transfusions, allowing for matching of donor and recipient blood types, and avoiding complications associated with mismatched donor and recipient blood Giangrande et al. 2000\npHealth has enabled gene therapy for infants with spinal muscular atrophy (SMA) type I"
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html#genetics-genomics-and-phealth",
+    "href": "literature-review/pHealth-other-fields.html#genetics-genomics-and-phealth",
+    "title": "pHealth in other fields",
+    "section": "Genetics, genomics and pHealth",
+    "text": "Genetics, genomics and pHealth\n\nGenetics is the study of genes and their roles in inheritance\nGenomics is the study of a person’s genome and the interactions within the genome and the greater environment\nOther fields now incorporate their data in pHealth:\n\nepigenetics, proteomics (protein), metabolomics (metabolics), radiomics (radiology), pharmacomics (pharmacology), microbiomics (microbiome)\n\nMulti-omics: inclusion of data from multiple domains"
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html#machine-learning",
+    "href": "literature-review/pHealth-other-fields.html#machine-learning",
+    "title": "pHealth in other fields",
+    "section": "Machine learning",
+    "text": "Machine learning\n\nMachine learning is a branch of artificial intelligence in which computer-based models are created to learn and identify patterns in high dimensional datasets to create prediction and classification models based on training data\nML is typically divided into supervised, unsupervised and reinforcement learning (RL)\nIn pHealth, supervised and unsupervised approaches are more common than RL, since the latter requires direct feedback"
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html#unsupervisedsupervised-learning",
+    "href": "literature-review/pHealth-other-fields.html#unsupervisedsupervised-learning",
+    "title": "pHealth in other fields",
+    "section": "Unsupervised/supervised learning?",
+    "text": "Unsupervised/supervised learning?\n\nUnsupervised learning aims to uncover patterns in unlabelled data - in doing so, it can automatically identify clusters of similar cases within a dataset (e.g., variational autoencoders, k-means, pca)\nSupervised learning aims to identify patterns in multi-dimensional data based on labelled data (e.g., healthy vs disease). A training dataset with ground truth labels is typically used to build a model and optimize performance of the ML model for the desired outcome. The uncovered (learned) patterns can then be used to classify new datasets or make data-driven, patient-individual predictions. Some popular supervised learning approaches: SVM, random forests, linear models, deep neural nets."
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html#artificial-neural-networks",
+    "href": "literature-review/pHealth-other-fields.html#artificial-neural-networks",
+    "title": "pHealth in other fields",
+    "section": "Artificial neural networks",
+    "text": "Artificial neural networks\n\nbasic make-up: input layer, multiple hidden layers, output layer\nnumber of “neurons” in the input layer is equal to the number of input features while the number of “neurons” in the output layer is equal to the number of classes in case of a classification problem (e.g., patients with/without a disease)\nArtificial neural networks with many hidden layers are typically referred to as deep neural networks.\nConvolutional neural networks apply convolutional filters in the first layers of the deep neural network that can automatically identify important temporal or spatial features in a dataset such as three-dimensional imaging data. Convolutional filters are optimized in the same fashion as network weights are optimized."
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html#ml-and-phealth",
+    "href": "literature-review/pHealth-other-fields.html#ml-and-phealth",
+    "title": "pHealth in other fields",
+    "section": "ML and pHealth",
+    "text": "ML and pHealth\n\nCertain conditions should be met in order for ML approaches to be useful for pHealth\n\ninput data must be high quality with small artifact or noise levels\nground truth labels must be correct (e.g., correct diagnosis/diagnostic labels)\ntraining set without missing features\nlarge datasets which enable the models to learn the true variation in the data with reduced risk that a few outliers affect the model negatively\nin classification for pHealth, both precision and accuracy are important and should both be optimized"
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html#advantages-and-limitations-of-ml-for-phealth",
+    "href": "literature-review/pHealth-other-fields.html#advantages-and-limitations-of-ml-for-phealth",
+    "title": "pHealth in other fields",
+    "section": "Advantages and limitations of ML for pHealth",
+    "text": "Advantages and limitations of ML for pHealth\n\nadvantages:\n\nno strict assumption about data distribution (models can combine multi-omics data)\nregularization is widely used in ML models, therefore, these models can usually handle noisy data and large variances\ncomplex ML models have the ability to identify multi-faceted, non-linear patterns in training data, which might not be observable to simple linear models\n\nlimitations:\n\nthe ability to identify non-linear patterns comes with reduced interpretation capabilities, compared to simple linear models (i.e. black box criticism)\nin overfitting training data, models often fail to generalize, this happens more often with complex models. deep neural networks with thousands (millions) of features often fail to generalize"
+  },
+  {
+    "objectID": "literature-review/pHealth-other-fields.html#ml-and-genomics",
+    "href": "literature-review/pHealth-other-fields.html#ml-and-genomics",
+    "title": "pHealth in other fields",
+    "section": "ML and genomics",
+    "text": "ML and genomics\n\nGWAS studies (genome-wide association studies): genomic information is examined to identify variants associated with a trait or phenotype. some work has shown that genotype-based disease risk assessment may be possible for diseases for which single nucleotide polymorphism (SNP) arrays carry a large risk proportion\nML models can also be applied to multi-modal data acquired through electronic medical records (EMRs) to identify patients with conditions that may benefit from early treatment or participation in randomized control trials or novel interventions."
+  },
+  {
+    "objectID": "literature-review/pHealth-overview.html",
+    "href": "literature-review/pHealth-overview.html",
+    "title": "Intro to Precision Medicine",
+    "section": "",
+    "text": "What is precision medicine?\n\nPrecision medicine is the approach of predicting and diagnosing mental health disorders using:\n\nmicrobiome, inflammation, genomics, neural markers (fMRI, MRI, EEG, pupillometry), behavior, clinical symptoms\n\n\n\n\nWhat is the overarching goal of pHealth?\nImproved risk assessment and early detection of mental illness.\n\n\nHow will this goal be achieved?\nOur aim is to develop biologically driven risk predictors and monitors of mental health. Using these datasets, we will relate genetic information to clinical evaluations through endophenotypes that span brain imaging, cognitive and behavioral testing, and information from wearable devices and speech recordings.\nDeveloping these kinds of models are not without significant challenges but the potential outcome is enormous: providing useful brain measures, and new categories of disorders.\n\n\nWhat are the short term goals?\n\nTo find biotypes based on combining genetic and brain imaging data\nTo develop risk predictors that integrate biological and behavioral information.\nHow will these goals be achieved?\nTo test these models, we would deploy them in research clinics.\nThe outcome of this work will feed into a more longitudinal goal of capturing real-world behavior and interventions in order to build models to monitor and deliver interventions that are tuned to individual trajectories.\n\n\n\nWhat is the long term goal?\nThe long term goal is to create an intelligent assistive framework for mental health management that supports integration of multiple sources of live and longitudinal data, learns phenotypic associations and builds interpretable, predictive models, and suggests individualized actions towards targeted goals.\n\n\nWhat is the problem?\n\nClinical assessment is resource intensive and inaccessible to those who need it most. When accessible, initial assessments are ineffective: do not consider societal and community options to boost wellbeing.\nWhy are ML approaches often ineffective?\n\nML diagnostic approaches often focus on specific disorders rather than symptoms.\nML approaches are often devoid of connections to underlying biology\n\n\n\n\nWhat is the opportunity?\n\nThe advent and growth of consortial data collections that include genomic assays, clinical and behavioral data together with brain imaging offer a unique opportunity to understand genotypic and phenotypic variation in a large population.\nDatasets:\n\nUK Biobank, adolescent brain cognitive development study, genus dataset, healthy brain networks\n\n\n\n\nConsiderations:\n\nHolistic approaches:\n\nsocietal, cultural, community-based interventions in conjunction with (instead of) ML-guided healthcare\n\nEthics:\n\ndata anonymity? Who do the tools serve? Are they biased against certain groups?\nhow is model uncertainty communicated to scientists and non-scientists alike?"
+  },
+  {
+    "objectID": "literature-review/pHealth-ethics.html",
+    "href": "literature-review/pHealth-ethics.html",
+    "title": "Ethical Considerations for pHealth",
+    "section": "",
+    "text": "Much of the points below came from a review paper by MacEachern and Forkert (2020)\n\n\nML approaches require large amounts of data, therefore data will be collected from many locations and transferred to a central location for storage and processing. essential that the datasets do not contain patient-identifying information. in the future, this could be overcome using distributed machine learning approaches (e.g., travelling ML model) - trains locally on the available data, before moving to the next center with available data Tuladhar et al. 2020\nML models as “black boxes”, especially with increased complexity of the input data. this raises legal and ethical questions as clinicians and other researchers may not fully understand how an ML model came to a particular conclusion about a patient’s health.\nAs physicians can be held legally responsible for their decisions, error in ML models is of course a concern. Who is responsible for an error induced in an ML model? These tools (for the time being) will support and assist physicians in making decisions about patient care, they are not yet designed to operate autonomously.\nThere are technical limitations to ML models, which is that these models are only as good as the data on which they were trained. However, these training datasets are often inherently noisy and biased. What this means is that models are being created that cannot generalize to more diverse test sets (other regions, diseases, demographics). The easiest way to avoid this problem is to increase the training set and include a diversity of samples, however, this often has logistical (e.g., privacy) challenges.\nFinancial cost is another major concern with pHealth, which will lead to disparities in access to care based on SES. Also, in-depth workups can lead to unintended consequences such as incidental findings that may lead to further testing, which may be invasive and unnecessary, inducing patient stress in the face of diagnostic uncertainty.\nCommunicating uncertainty. there is rarely a clear-cut answer in science, our interpretations operate on probability and likelihood. communicating uncertainty to scientists and non-scientists alike is challenging, especially when decisions are being made that will influence a person’s healthcare outcomes. Therefore, it is important that future machine learning models can identify the most important clinical features for a specific clinical question so that unnecessary assessments can be avoided, maximizing benefit and minimizing harm to patients.\nBias in datasets is one of the most pressing concerns for pHealth. bias can come about due to patient selection, affecting the accuracy and generalizability of the model. Additionally, the financial and practical aspects of implementing pHealth limits the models primarily to the developed world, excluding those in the developing world from the analyses, and any benefits that are offered.\nA yet unanswered question is whether discoveries made by pHealth will have individual impacts on human behavior with respect to disease prevention. For example, if a patient knows that they are at risk for heart disease based on underlying genetic or epigenetic factors, will they change their behavior? Also, it’s possible that such discoveries will create “patients-in-waiting” who are not yet sick but have been identified as high risk."
+  },
+  {
+    "objectID": "literature-review/translational-neuroimaging.html",
+    "href": "literature-review/translational-neuroimaging.html",
+    "title": "Translational Neuroimaging",
+    "section": "",
+    "text": "Much of the points below came from a review paper by Woo et al. (2017)"
+  },
+  {
+    "objectID": "literature-review/translational-neuroimaging.html#utility-for-phealth",
+    "href": "literature-review/translational-neuroimaging.html#utility-for-phealth",
+    "title": "Translational Neuroimaging",
+    "section": "Utility for pHealth",
+    "text": "Utility for pHealth\n\nMost translational neuroimaging studies have focused on diagnosis, identifing brain signatures that distinguish patients from healthy controls (if a model doesn’t differentiate patients from controls or predict symptoms, it is unclear whether it is a clinically relevent model at all)\nOther models (although fewer in number) are being developed for more difficult classification and prediction problems, not easily addressed using existing clinical measures:\n\nneuroimaging models for risk assessment\nearly detection\npredicting conversion to full-scale disorders\ndifferential diagnosis\nsub-typing of patients and predicting treatment response"
+  },
+  {
+    "objectID": "literature-review/translational-neuroimaging.html#example-studies",
+    "href": "literature-review/translational-neuroimaging.html#example-studies",
+    "title": "Translational Neuroimaging",
+    "section": "Example Studies",
+    "text": "Example Studies\n\nAlzheimer’s Disease:\n\nmodels have been able to predict who will later convert to a disease in advance of its onset.\nthese models are possible because of ADNI dataset, which has collected longitudinal data from people with mild cognitive impairment (MCI)\nthe SPARE-AD index (spatial pattern of abnormality for recognition of early alzheimer’s disease) is a particularly promising model. Specifically, the SPARE-AD model is a pattern classifier trained on spatial patterns of brain atrophy measured by structural MRI and indicates the presence of brain atrophy pattern, characteristic of AD. The model also predicts subsequent cognitive decline and transition to AD."
+  },
+  {
+    "objectID": "literature-review/translational-neuroimaging.html#differential-diagnosissubtyping-and-predicting-outcomes",
+    "href": "literature-review/translational-neuroimaging.html#differential-diagnosissubtyping-and-predicting-outcomes",
+    "title": "Translational Neuroimaging",
+    "section": "Differential diagnosis/subtyping and predicting outcomes",
+    "text": "Differential diagnosis/subtyping and predicting outcomes\n\nneuroimaging models can also be used for differential diagnosis and patient subtyping (i.e. stratification): these models are useful because they can provide important information among disorders and symptoms at the biological level, potentially identifying subgroups that are not reflected in existing diagnostic categories.\nmany neuropsychiatric and neurological disorders are comorbid, therefore differential diagnosis can assist in identifying distinguishing features of neuropathology, and provide a new way to examine overlap across disorders.\nsome studies have successfully grouped patients into ‘biotypes’, which usually means that these patients have differential disease course or treatment response. For example a study by Clementz et al. 2016 grouped patients with psychosis intro three transdiagnostic biotypes based on neuropsychology and EEG data, and another study by Drysdale et al. 2016 used resting state functional connectivity (rs-FC) to group patients with depression into 4 biotypes, based on differential responsiveness to transcranial magnetic stimulation.\nModels are also built with the goal of customizing treatment based on individual brain markers: this endeavour is central to pHealth. For example: studies using brain measures to predict who will respond to a particular treatment can identify brain biotypes useful for guiding treatment."
+  },
+  {
+    "objectID": "literature-review/translational-neuroimaging.html#what-are-next-steps-for-translational-neuroimaging",
+    "href": "literature-review/translational-neuroimaging.html#what-are-next-steps-for-translational-neuroimaging",
+    "title": "Translational Neuroimaging",
+    "section": "What are next steps for translational neuroimaging?",
+    "text": "What are next steps for translational neuroimaging?\n\nmodeling efforts must mature in order to provide clinically useful applications\n\ndiagnostic value:\n\nwhat qualifies a brain measure as being a sensitive marker? it must be diagnostic at the individual level.\nsensitivity refers to how robustly the measure responds when the outcome is present.\nspecificity refers to whether the measure responds only in the presence of the target outcome and not to others.\nin moving from evaluating brain measures in a research to clinical settings, it is important to consider both positive and negative predictive values\nwhat are the societal and clinical costs of false positives and negative errors?\n\ndeployability and scalability:\n\nbrain models that are useful for translation must be easily applicable to new individuals and shareable across groups\na recent (and encouraging) trend is named signatures for brain disorders. by naming neural signatures, it implies that models can be shared and annotated by many groups. one such example is SPARE-AD for Alzheimer’s disease the PDRP (Parkinson’s disease-related pattern)\n\ngeneralizability\n\nmodels useful for translation must be generalizable in several ways: 1) they must generalize to new individuals, 2) the most useful signatures should generalize across laboratories, scanners, and minor variants in testing conditions, 3) useful signatures will generalize meaningfully to other outcomes related to the same construct.\nwe need ecologically valid data sets.\n\n\nProcess-based predictive models:\n\nmost translational models are comprised of spatial patterns that map brain structure/function onto clinical outcomes.\nhowever, these models do not consider intermediate features or processes and are often minimally constrained by theories of brain function.\nthey provide little description of the division of labor across brain regions and the dynamics of information flow through the regions included in the model.\none promising direction is the development of signatures for basic mental processes - which can serve as intermediate features that are altered in various combinations of different disorders.\nthese models are necessary if we’re going to move beyond current diagnostic categories and establish specific forms of neuropathology that lead to specific functional problems across disorders (RDoC idea)."
+  },
+  {
+    "objectID": "literature-review/cerebellum-neuropsych.html",
+    "href": "literature-review/cerebellum-neuropsych.html",
+    "title": "Cerebellum and Neuropsychiatric Disorders",
+    "section": "",
+    "text": "To my knowledge, there hasn’t been a study comprehensively investigating unique signatures of neuropsychiatric, neurological, and neurodevelopmental disorders in the cerebellum. There have been many piecemeal studies reporting altered functional connectivity and grey matter volume changes across these disorders, and some large-scale studies targeting specific disorders. However, with the availability of datasets like UK Biobank and ABCD, it is possible to investigate whether there are unique signatures in the cerebellum that can dissociate between neuropsychiatric, neurological, and neurodevelopmental disorders."
+  },
+  {
+    "objectID": "literature-review/cerebellum-neuropsych.html#questions-1",
+    "href": "literature-review/cerebellum-neuropsych.html#questions-1",
+    "title": "Cerebellum and Neuropsychiatric Disorders",
+    "section": "Questions:",
+    "text": "Questions:\nTo what extent are disorders characterized by UK Biobank accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]."
+  },
+  {
+    "objectID": "literature-review/cerebellum-development.html",
+    "href": "literature-review/cerebellum-development.html",
+    "title": "Cerebellum and Development",
+    "section": "",
+    "text": "Subdivisions of the cerebellum have distinctive developmental trajectories with more phylogenetically recent regions maturing later (Tiemeier et al. 2010)\nWhy should we study the cerebellum during development: unique protracted developmental trajectories, sexual dimorphism, preferential vulnerability to environmental influences, implication in neurodevelopmental disorders.\nBecause the cerebellum reaches its peak volume later than the cerebrum [suggesting prolonged developmental course], it may be especially interesting to investigate differences in grey matter volume between cerebellum and cortex during this developmental window (across males + females too).\nThe larger size of the cerebellum in males and differences between sexes in longitudinal development may reflect sex-specific factors related to the higher risk for these disorders in males (Tiemeier et al. 2010)\nDifferent cerebellar regions have distinct growth patterns with varying degrees of sexual dimorphism. Cerebellum is at adult volume in females during 7-11 years but not males (Caviness et al. 1996).\nMales are particularly vulnerable to neurodevelopmental disorders (diagnosed at a higher rate with adhd, dyslexia etc)."
+  },
+  {
+    "objectID": "literature-review/cerebellum-development.html#cerebellum-and-vulnerability",
+    "href": "literature-review/cerebellum-development.html#cerebellum-and-vulnerability",
+    "title": "Cerebellum and Development",
+    "section": "Cerebellum and vulnerability",
+    "text": "Cerebellum and vulnerability\n\nrisk factors that impair cerebellar growth (e.g. neonatal brain injury) are correlated with poor overall developmental outcomes at later stages Sathyanesan et al. 2019\ncerebellum is especially suspectible and vulnerability to insult is due to its protracted developmental trajectory.\nthe cerebellum is among the first brain structures to begin cellular differentiation and one of the last to fully mature, therefore, the cerebellum is vulnerable to dysfunction due to genetic and epigenetic factors, a toxic in utero environment, focal or global neonatal brain injury\nthe complexity of risk factors acting over the course of development results in a broad range of cellular, morphological, and circuit abormalities.\nwhereas much of neocortical neurogenesis occurs prenatally Silbereis et al. 2016 , cerebellar neurogenesis continues until the 11th postnatal month Abraham et al. 2001\n85% of granule cells are generated after birth Kiessling et al. 2013\nthe cerebellum quadruples in volume between the 24th and the 38th gestational weeks, and its cortical surface increases 30 times Volpe et al. 2009\nthe cerebellum effectively doubles in size (increase in 108%) in the first 90 days after birth. this increase in size is underscored by an increase in cell density.\nthe external granule layer disappears by the end of the 18th postnatal month Rauf & Kernohan, 1944. The authors hypothesize that the persistence of the external granule layer past 20 postnatal months lead to the development of medulloblastomas (tumors that affect the cerebellum in children). Typically the EGL disappears first in the vermis and then later in the hemispheres.\nEarly postnatal development is also characterized by massive outgrowth of dendrites and axons, followed by synaptogenesis, glial proliferation, and myelination, predominately in the forebrain and cerebellum.\ndevelopmental disruption resulting in cerebellar atrophy could affect cerebello-cortical connectivity.\nthe synapse is an effective point of functional comparison between neocortex and cerebellum. many neurodevelopmental disorders involve deficits in synapse formation, maturation, and function.\n\na typical pyramidal cell in the neocortex has approx 8,000 synapses, whereas a single Purkinje cell may have 200,000 synapses.\nreduced number of synapses are characteristic of many neurodevelopmental disorders\nwe now know that granule cells encode rich sensory information, therefore, synaptic deficits in PCs likely correlate with sensory processing deficits in neurodevelopmental disorders."
+  },
+  {
+    "objectID": "literature-review/cerebellum-development.html#cerebellar-dysfunction",
+    "href": "literature-review/cerebellum-development.html#cerebellar-dysfunction",
+    "title": "Cerebellum and Development",
+    "section": "Cerebellar dysfunction",
+    "text": "Cerebellar dysfunction\n\nEvidence from Neuroimaging\n\nstructural and functional abnormalities are commonly reported. specific regions (e.g., vermis) seem to be more prone to ASD-like structural abnormalities.\nwithin the non-motor domain, children and adults with ASD have been reported to show atypical fMRI activation of cortico-cerebellar networks during biological motion perception Jack et al. 2017 and perception fo social interaction Kana et al. 2015.\nLimperopoulos et al have shown that perinatal cerebellar injury leads to volume reduction not only in cerebellar grey matter but also in cerebellar white matter and remote neocortical regions. These results suggest that changes in early cerebellar activity affect both cerebellar development and activity of neocortex.\nIt’s also possible that coordinated deficits in the cerebellum and cortex could arise due to a common molecular and/or environmental insult rather than co-dependence between structures.\nthe cerebellum is also implicated in downs syndrome - which is the most prevelent developmental disability with a known genetic origin. People with DS have smaller total cerebellar volumes, smaller frontal and temporal lobes and smaller hippocampal volumes. Similar to ASD, white matter structural changes are also observed in the adult DS brain.\n\nEvidence from Behavior\n\nin people with obvious ‘non-motor’ behavioral abnormalities, do ‘pure’ motor cerebellar abnormalities exist? For example, Tran et al. 2017 tested delayed eyeblink conditioning, a task which is depenedent on the cerebellum, on a group of very preterm children and adults. They found that in this group, there were significant deficits in the acquisition of conditioned responses, therefore suggesting that ‘motor’ cerebellar behavioral abnormalities coexist with non-motor abnormalities.\nchildren with ASD also display abnormal conditioned responses in the eyeblink conditioning paradigm\nit has been suggested that the language and social deficits observed in children with complex disorders are a consequence of deficits in multi-sensory integration.\none particular process that could be implicated in multisensory integration in children with ASD is timing. For example, this process may be impacted by a deficit in perceiving the temporal relationship between distinct sensory components of complex audio-visual stimuli such as language, and this deficit could also compound in social cognitive processes like theory of mind Stevenensen et al. 2014\n\nInter-regional morphogenesis\n\ninterestingly, the cerebellum and the thalamus initiate neuronal differentiation at about the same time - E10.5 Wong et al. 2018\ngiven their common neurogenic timetables, one could speculate that extensive connectivity and matching of developmental trajectories could indicate that early defects in the cerebellum might lead to structural and wiring alterations in the thalamus.\nit has been suggested that the cerebellum could interact its cortical targets using developmental cues that ‘match up’ regions of connectivity: with the goal of establishing a precise topography between subregions of the cerebellar nuclei and subnuclei of the thalamus."
+  },
+  {
+    "objectID": "literature-review/cerebellum-development.html#methods",
+    "href": "literature-review/cerebellum-development.html#methods",
+    "title": "Cerebellum and Development",
+    "section": "Methods",
+    "text": "Methods\n\nGAMLSS modeling as used in brain charting paper\nLDA (topic moddelling) as used in endophenotyping of adhd paper\nBrain age prediction as used in brain age paper - gradient tree boosting\n\n\nQuestions:\nTo what extent are disorders characterized by Healthy Brains accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]. * Do cerebellar anatomical differences reflect a generic developmental vulnerability or disorder-specific characteristics? * Are different cerebellar regions affected in neurodevelopmental disorders? And do these regions align with functional networks that are consistent with the characteristic symptoms of each disorder. * Are there differences in brain age across regions (functional, anatomical, network) of the cerebellum, and how does this differ across disorders? * The brain age paper provided some key insights across whole-brain regions but treated subcortical-cerebellum as one region, therefore, obscuring any within-cerebellum heterogeneity"
   },
   {
     "objectID": "index.html",
