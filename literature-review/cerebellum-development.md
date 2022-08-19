@@ -2,6 +2,8 @@
 title: Cerebellum and Development
 ---
 
+> Many of these observations come from the following paper: [Sathyanesan et al. 2019](https://www.nature.com/articles/s41583-019-0152-2)
+
 ## Introduction
 * Subdivisions of the cerebellum have distinctive developmental trajectories with more phylogenetically recent regions maturing later (Tiemeier et al. 2010)
 * Why should we study the cerebellum during development: unique protracted developmental trajectories, sexual dimorphism, preferential vulnerability to environmental influences, implication in neurodevelopmental disorders. 
