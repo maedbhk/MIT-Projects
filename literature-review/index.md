@@ -9,4 +9,5 @@ title: Overview
 * [Research Domain Criteria (RDoC)](RDoC.md)
 * [Cerebellum and neuropsychiatric disorders](cerebellum-neuropsych.md)
 * [Cerebellum and development](cerebellum-development.md)
-* [Predicting self-harm from hospital longitudinal EMR data](chop.md)
+* [Predicting self-harm from hospital longitudinal EMR data](EMR-selfharm.md)
+* [Translational Neuroimaging](translational-neuroimaging.md)

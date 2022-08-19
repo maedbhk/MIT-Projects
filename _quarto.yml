@@ -51,17 +51,22 @@ website:
           - datasets/healthy-brains.md
           - datasets/abide.md
           - datasets/adhd-200.md
-      - section: "Projects"
+      - section: "Literature Review"
         contents:
+          - literature-review/index.md
+          - literature-review/cerebellum-development.md
+          - literature-review/cerebellum-neuropsych.md
+          - literature-review/translational-neuroimaging.md
+          - literature-review/EMR-selfharm.md
+          - literature-review/pHealth-overview.md
+          - literature-review/pHealth-terminology.md
+          - literature-review/pHealth-ethics.md
+          - literature-review/pHealth-other-fields.md
+          - literature-review/RDoC.md
+      - section: "Projects"
+        contents: 
           - projects/index.md
-          - projects/cerebellum-development.md
-          - projects/cerebellum-neuropsych.md
-          - projects/chop.md
-          - projects/pHealth-overview.md
-          - projects/pHealth-terminology.md
-          - projects/pHealth-ethics.md
-          - projects/pHealth-other-fields.md
-          - projects/RDoC.md
+          - projects/biomarkers-cerebellum.md
 
 format:
   html:

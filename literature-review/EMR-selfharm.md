@@ -1,5 +1,5 @@
 ---
-title: CHOP
+title: Identifying risk factors for self-harm using electronic medical records
 ---
 
 * Build computational models using clinical/other characteristics (e.g., previous hospital admissions, comorbidities, cognitive function, diagnoses, immunizations, allergies, medications, other illnesses, demographics) to identify risk predictors for self-harm.

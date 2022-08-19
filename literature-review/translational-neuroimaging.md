@@ -34,6 +34,15 @@ title: Translational Neuroimaging
         * in moving from evaluating brain measures in a research to clinical settings, it is important to consider both positive and negative predictive values
         * what are the societal and clinical costs of false positives and negative errors?
     * deployability and scalability:
+        * brain models that are useful for translation must be easily applicable to new individuals and shareable across groups
+        * a recent (and encouraging) trend is named signatures for brain disorders. by naming neural signatures, it implies that models can be shared and annotated by many groups. one such example is SPARE-AD for Alzheimer's disease the PDRP (Parkinson's disease-related pattern)
     * generalizability 
+        * models useful for translation must be generalizable in several ways: 1) they must generalize to new individuals, 2) the most useful signatures should generalize across laboratories, scanners, and minor variants in testing conditions, 3) useful signatures will generalize meaningfully to other outcomes related to the same construct. 
+        * we need ecologically valid data sets. 
 
 * Process-based predictive models:
+    * most translational models are comprised of spatial patterns that map brain structure/function onto clinical outcomes. 
+    * however, these models do not consider intermediate features or processes and are often minimally constrained by theories of brain function. 
+    * they provide little description of the division of labor across brain regions and the dynamics of information flow through the regions included in the model. 
+    * one promising direction is the development of signatures for basic mental processes - which can serve as intermediate features that are altered in various combinations of different disorders. 
+    * these models are necessary if we're going to move beyond current diagnostic categories and establish specific forms of neuropathology that lead to specific functional problems across disorders (RDoC idea).
