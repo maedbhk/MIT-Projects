@@ -69,6 +69,10 @@ website:
         contents: 
           - projects/index.md
           - projects/cerebellum-fingerprints.md
+      - section: "Mentorship"
+        contents:
+          - mentorship/index.md
+          - mentorship/fall22_urop_recruitment.md
 
 format:
   html:
