@@ -21,6 +21,13 @@
     "text": "Project Ideas\n\nCerebellum and neuropsychiatric disorders\nCOVID-19 and the cerebellum\nCerebellum and development\nPredicting self-harm from hospital longitudinal EMR data"
   },
   {
+    "objectID": "progress/week-4.html",
+    "href": "progress/week-4.html",
+    "title": "Week 4",
+    "section": "",
+    "text": "To Do\n\nTry UMap in supervised mode to identify unique patterns in phenotypic data\nQuestions to address:\n\nWithin HBN assessment battery, which tests are most useful? (how does this vary across disorders?)\ncan further subtyping of individuals be done based on patterns in behavioral/cognitive assessments? (especially for 200 people who were not diagnosed due to an incomplete evaluation)\nwhat is the reliability in the KSADS assessment across child and parent measures?\n\nTest python implementation of SUIT on subset (n=10) of hbn participants (T1w + T2)\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions:\n\nDon’t yet have access to LORIS, will follow-up with Lindsay after labor day weekend\nCHOP Meeting - ask Satra to send email to folks there to set-up meeting sometime in Sep.?\nRemind Satra to provide info about other project that we forgot to discuss in our 09/01 meeting\nI’m happy to be included in other projects (meetings etc.) if any seem like a good fit for my interests/skills\nSet up weekly meetings w/Satra on Wednesdays\nI would like to recruit 1-2 undergrad students through UROP - can I hire for pay or academic credit alone?\nI requested edit access to sign up for a lab meeting slot: I’m thinking either end of this month or beginning of oct. I guess the neuroimaging subgroup would be most appropriate but perhaps also knowledge engineering as the meeting will be soliciting feedback about project ideas. Let me know what you think."
+  },
+  {
     "objectID": "progress/week-0.html",
     "href": "progress/week-0.html",
     "title": "Week 0",
@@ -60,7 +67,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4"
   },
   {
     "objectID": "progress/week-2.html",
