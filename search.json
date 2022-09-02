@@ -21,6 +21,13 @@
     "text": "Project Ideas\n\nCerebellum and neuropsychiatric disorders\nCOVID-19 and the cerebellum\nCerebellum and development\nPredicting self-harm from hospital longitudinal EMR data"
   },
   {
+    "objectID": "progress/week-5.html",
+    "href": "progress/week-5.html",
+    "title": "Week 5",
+    "section": "",
+    "text": "To Do\n\n\nTry UMap in supervised mode to identify unique patterns in phenotypic data\nQuestions to address:\n\nWithin HBN assessment battery, which tests are most useful? (how does this vary across disorders?)\ncan further subtyping of individuals be done based on patterns in behavioral/cognitive assessments? (especially for 200 people who were not diagnosed due to an incomplete evaluation)\nwhat is the reliability in the KSADS assessment across child and parent measures?\n\nTest python implementation of SUIT on subset (n=10) of hbn participants (T1w + T2)\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions:"
+  },
+  {
     "objectID": "progress/week-4.html",
     "href": "progress/week-4.html",
     "title": "Week 4",
