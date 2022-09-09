@@ -20,3 +20,5 @@ One of the primary reasons why we think of the cerebellum as being an important 
 
 * it has been suggested that the language and social deficits observed in children with complex disorders are a consequence of deficits in multi-sensory integration. 
 * one particular process that could be implicated in multisensory integration in children with ASD is timing. For example, this process may be impacted by a deficit in perceiving the temporal relationship between distinct sensory components of complex audio-visual stimuli such as language, and this deficit could also compound in social cognitive processes like theory of mind [Stevenensen et al. 2014](https://www.jneurosci.org/content/34/3/691.short)
+
+* what is the impact of environmental factors (e.g., parental behaviors, trauma, substance abuse etc.) on diagnosis of neurodevelopmental disorders? 

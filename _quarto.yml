@@ -45,6 +45,7 @@ website:
           - progress/week-2.md
           - progress/week-3.md
           - progress/week-4.md
+          - progress/week-5.md
       - section: "Datasets"
         contents:
           - datasets/index.md
@@ -73,6 +74,10 @@ website:
         contents:
           - mentorship/index.md
           - mentorship/fall22_urop_recruitment.md
+      - section: "Methods"
+        contents: 
+          - methods/feature-engineering.md
+          - methods/index.md
 
 format:
   html:
