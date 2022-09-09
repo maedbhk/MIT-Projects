@@ -257,11 +257,53 @@ ul.task-list{list-style: none;}
       </div>
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
-  projects/index.md
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../projects/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projects/cerebellum-fingerprints.html" class="sidebar-item-text sidebar-link">Cerebellar fingerprints of neurodevelopmental disorders</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Mentorship</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/fall22_urop_recruitment.html" class="sidebar-item-text sidebar-link">Fall22 Recruitment</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Methods</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/feature-engineering.html" class="sidebar-item-text sidebar-link">Feature Engineering</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/index.html" class="sidebar-item-text sidebar-link">Overview</a>
   </div>
 </li>
       </ul>
@@ -277,7 +319,7 @@ ul.task-list{list-style: none;}
   <ul>
   <li><a href="#done" id="toc-done" class="nav-link active" data-scroll-target="#done">Done</a></li>
   <li><a href="#to-do" id="toc-to-do" class="nav-link" data-scroll-target="#to-do">To Do</a></li>
-  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions:</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/progress/week-5.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -303,35 +345,33 @@ ul.task-list{list-style: none;}
 <section id="done" class="level3">
 <h3 class="anchored" data-anchor-id="done">Done</h3>
 <ul>
-<li>Build <a href="https://github.com/maedbhk/hbn_cerebellum">boilerplate ML pipeline</a> for building predictive models (tested so far on behavioral features from HBN)</li>
-<li>Cross-referenced pipeline with pydra-ml to determine that similar steps are being implemented</li>
-<li>Summary analysis on clinical diagnosis and demographics from HBN to determine adaquete sample sizes for cerebellar fingerprinting paper</li>
-<li>First pass using UMAP unsupervised learning on child measures (cognitive testing, physical fitness features etc.)</li>
-<li>Research on methods, focusing mostly on these three papers:
+<li>Wrote a predictive modeling pipeline using scikit-learn tools (and repurposing code I had written for previous projects). Worked reasonably well at doing basic model predictions on the HBN dataset. However, I explored pydra-ml, realized it was a lot better than what I had written, and decided to transition to using some of its functionality. My pipeline, for example, did not allow for model comparison as elegantly as pydra-ml. I was having difficulty doing preprocessing (using scikit-learn’s ColumnTransformer) within the framework and ended up trying to debug pydra-ml. This then led me down many hours of exploring (and learning) how to navigate pydra (not wasted time - I learned a lot).</li>
+<li>I also spent a lot of time on <a href="../methods/feature-engineering.html">feature engineering</a> this week, which I always forget (along with data cleaning, transformation etc.) takes more time than anticipated. <img src="https://imageio.forbes.com/blogs-images/gilpress/files/2016/03/Time-1200x511.jpg?format=jpg&amp;width=960" class="img-fluid" alt="time allocation in data analytics">.</li>
+<li>I have yet to incorporate jupyter notebooks into quarto framework (which I believe is possible) so I can’t share any of the initial prediction results here. Some of the questions I’ve addressed:
 <ul>
-<li>GAMLSS modeling as used in <a href="https://www.nature.com/articles/s41586-022-04554-y">brain charting paper</a></li>
-<li>LDA (topic modelling) as used in <a href="https://www.nature.com/articles/s41398-018-0179-6">endophenotyping of adhd paper</a></li>
-<li>Brain age prediction as used in <a href="https://www.nature.com/articles/s41593-019-0471-7">brain age paper</a> - gradient tree boosting</li>
+<li>Within HBN assessment battery, which tests are most useful? (how does this vary across disorders?)</li>
+<li>can further subtyping of individuals be done based on patterns in behavioral/cognitive assessments? (especially for 200 people who were not diagnosed due to an incomplete evaluation)</li>
 </ul></li>
+<li>I tested python implementation of SUIT on subset (n=10) of hbn participants (T1w + T2). There are still a few bugs to be ironed out in the python library (that don’t exist in matlab) - I will touch base with Joern about this in the next few days if I don’t figure it out myself. As we discussed in our last meeting, there are also deep learning approaches that are comparable (if not better) at isolating and segmenting the cerebellum. I haven’t investigated these approaches much but it might be necessary if we are analyzing cerebella of &gt;3000 participants, and if SUIT is not reliable.</li>
+<li>Wrote an <a href="../mentorship/fall22_urop_recruitment.html">ad</a> for two research assistants and circulated broadly (including UROP), have yet to receive any applications so likely that I will need to cast the net more widely.</li>
 </ul>
 </section>
 <section id="to-do" class="level3">
 <h3 class="anchored" data-anchor-id="to-do">To Do</h3>
 <ul>
-<li></li>
-<li>Try UMap in supervised mode to identify unique patterns in phenotypic data</li>
-<li>Questions to address:
+<li>Try UMap in supervised mode to identify unique patterns in phenotypic data
 <ul>
-<li>Within HBN assessment battery, which tests are most useful? (how does this vary across disorders?)</li>
-<li>can further subtyping of individuals be done based on patterns in behavioral/cognitive assessments? (especially for 200 people who were not diagnosed due to an incomplete evaluation)</li>
 <li>what is the reliability in the KSADS assessment across child and parent measures?</li>
 </ul></li>
-<li>Test python implementation of SUIT on subset (n=10) of hbn participants (T1w + T2)</li>
 <li>Perform VBM to measure local changes in structural abnormalities, following methods steps implemented in <a href="https://www.sciencedirect.com/science/article/pii/S2213158218303012">this paper</a> - correcting for brain size etc.</li>
 </ul>
 </section>
 <section id="questions" class="level3">
-<h3 class="anchored" data-anchor-id="questions">Questions:</h3>
+<h3 class="anchored" data-anchor-id="questions">Questions</h3>
+<ul>
+<li>Reached out to folks at HBN about getting LORIS access but haven’t heard from them yet. I’m analyzing the data from Openmind which I believe is up-to-date. I have access to all of the phenotypic data and I’ve been able to analyze some of the anatomical data that’s on OpenMind so I don’t think I’m missing anything, but would be nice to have full access so that I can stay current with any changes or updates.</li>
+<li>I’ve scheduled a meeting for next Wednesday to discuss some of the results from HBN and to talk about the CHOP project before our meeting with the Philadelphia group.</li>
+</ul>
 
 
 </section>

@@ -1,5 +1,61 @@
 [
   {
+    "objectID": "methods/feature-engineering.html",
+    "href": "methods/feature-engineering.html",
+    "title": "Feature Engineering",
+    "section": "",
+    "text": "preprocessing steps that transform raw data into features that can be used in ML algorithms such as predictive models.\nIt is during the feature engineering process that the most useful predictor variables are created an selected for the predictive model.\nfour main steps: feature creation, transformations, feature extraction, and feature selection"
+  },
+  {
+    "objectID": "methods/feature-engineering.html#feature-creation",
+    "href": "methods/feature-engineering.html#feature-creation",
+    "title": "Feature Engineering",
+    "section": "Feature creation",
+    "text": "Feature creation\n\nidentifiying variables that will be most useful in the predictive model\nsubjective process, requiring human intervention"
+  },
+  {
+    "objectID": "methods/feature-engineering.html#transformations",
+    "href": "methods/feature-engineering.html#transformations",
+    "title": "Feature Engineering",
+    "section": "Transformations",
+    "text": "Transformations\n\nmanipulating predictor variables to improve model performance (e.g., scaling etc.)"
+  },
+  {
+    "objectID": "methods/feature-engineering.html#feature-extraction",
+    "href": "methods/feature-engineering.html#feature-extraction",
+    "title": "Feature Engineering",
+    "section": "Feature extraction",
+    "text": "Feature extraction\n\nautomatic creation of new variables by extracting them from raw data - reducing the volume of data into a more manageable set for modeling (e.g., cluster analysis, edge detection, pca)"
+  },
+  {
+    "objectID": "methods/feature-engineering.html#feature-selection",
+    "href": "methods/feature-engineering.html#feature-selection",
+    "title": "Feature Engineering",
+    "section": "Feature Selection",
+    "text": "Feature Selection\n\nthese algorithms analyze and rank various features to determine which features are irrelevant and should be removed, which features are redundant etc. which features are most useful for the model and should therefore be prioritized."
+  },
+  {
+    "objectID": "methods/feature-engineering.html#why-is-feature-selection-important",
+    "href": "methods/feature-engineering.html#why-is-feature-selection-important",
+    "title": "Feature Engineering",
+    "section": "Why is feature selection important?",
+    "text": "Why is feature selection important?\n\nsimplify the model by reducing the number of parameters\ndecrease training time\nreduce overfitting by enhancing generalization\navoid the curse of dimensionality\n\nSupervised options:\n\nFiltering based on some criterion (correlation between variables) - feature importance\nSearch problem: wrapped-based solution that selects features using something like recursive feature elimination\nEmbedding/Intrinsic: algorithms like Lasso and random forest have built-in feature selection methods\n\nUnsupervised\n\nThese methods don’t have target variable - instead remove redundant variables\n\nDimensionality Reduction\n\nProject input data into a lower-dimensional feature space\n\n\n\n\n\n\nFeature Selection Techniques"
+  },
+  {
+    "objectID": "methods/feature-engineering.html#feature-selection-exploratory",
+    "href": "methods/feature-engineering.html#feature-selection-exploratory",
+    "title": "Feature Engineering",
+    "section": "Feature Selection: Exploratory",
+    "text": "Feature Selection: Exploratory\n\nFeature importance:\n\ngives you a score for each feature of your data, the higher the score, the more important or relevent that feature is to your target feature\ninbuilt sklearn classes: random forest classifiers from sklearn.ensemble import ExtraTreesClassifier\n\nCorrelation matrix heatmap\n\nshows how features are related to each other or the target feature sns.heatmap"
+  },
+  {
+    "objectID": "methods/index.html",
+    "href": "methods/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Instead of writing notes about methods in my lab notebook, I’m writing them here.."
+  },
+  {
     "objectID": "progress/week-1.html",
     "href": "progress/week-1.html",
     "title": "Week 1",
@@ -25,7 +81,7 @@
     "href": "progress/week-5.html",
     "title": "Week 5",
     "section": "",
-    "text": "To Do\n\n\nTry UMap in supervised mode to identify unique patterns in phenotypic data\nQuestions to address:\n\nWithin HBN assessment battery, which tests are most useful? (how does this vary across disorders?)\ncan further subtyping of individuals be done based on patterns in behavioral/cognitive assessments? (especially for 200 people who were not diagnosed due to an incomplete evaluation)\nwhat is the reliability in the KSADS assessment across child and parent measures?\n\nTest python implementation of SUIT on subset (n=10) of hbn participants (T1w + T2)\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions:"
+    "text": "To Do\n\nTry UMap in supervised mode to identify unique patterns in phenotypic data\n\nwhat is the reliability in the KSADS assessment across child and parent measures?\n\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions\n\nReached out to folks at HBN about getting LORIS access but haven’t heard from them yet. I’m analyzing the data from Openmind which I believe is up-to-date. I have access to all of the phenotypic data and I’ve been able to analyze some of the anatomical data that’s on OpenMind so I don’t think I’m missing anything, but would be nice to have full access so that I can stay current with any changes or updates.\nI’ve scheduled a meeting for next Wednesday to discuss some of the results from HBN and to talk about the CHOP project before our meeting with the Philadelphia group."
   },
   {
     "objectID": "progress/week-4.html",
@@ -98,6 +154,13 @@
     "text": "Project Ideas\n\n\ncan unique cerebellar fingerprints dissociate neuropsychiatric and neurodevelopmental disorders, above and beyond what would be expected from cortical fingerprints? I think I’d be first interested in analyzing the structural data before addressing functional connectivity\n\n\ninspired by RDoC, can we use topic models (e.g., latent dirichlet allocation) to identify latent clinical characteristics derived from HBN behavioral and/or cognitive measures (e.g., positive and negative affect scale, GRIT scale, Wechsler intelligence scale) with the goal of providing individualized risk assessments.\n\n\nIf we can identify groups/clusters by modeling behavioral/cognitive characteristics, can we identify corresponding dissociable neural signatures (whole-brain, not necessarily cerebellum-focused)?\n\n\nRelative to the neocortex, are there differences across disorders in neural signatures/fingerprints from early childhood to adolescence? For example, in developmental disorders (e.g., adhd, autism) do we see more significant changes in cerebellum (as indexed by reduction in grey matter) during early childhood relative to corresponding changes in the neocortex.\n\n\nNext steps: - Once I get access to HBN, I want to do a summary analysis of the phenotypic assessment data to determine the scope of the data (e.g., do some power analyses) - If it seems like there is a sufficient sample and enough complete behavioral measurements, I’ll likely plan on testing cerebellar isolation and segmentation of a few pilot participants (not clear to me yet what technical challenges we may face using SUIT on a developmental dataset). - test some topic models on the HBN phenotypic assessment data - I plan on publishing the website today at some stage so I’ll slack you the link, hopefully that will be an easier way to get a sense of what I’m working on"
   },
   {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Cerebellar Fingerprinting - Dec. 2022 finish analysis, early Spring - first draft\nCHOP project - May 2023 finish analysis, early Fall - first draft"
+  },
+  {
     "objectID": "projects/cerebellum-fingerprints.html",
     "href": "projects/cerebellum-fingerprints.html",
     "title": "Cerebellar fingerprints of neurodevelopmental disorders",
@@ -109,7 +172,7 @@
     "href": "projects/cerebellum-fingerprints.html#notes",
     "title": "Cerebellar fingerprints of neurodevelopmental disorders",
     "section": "Notes",
-    "text": "Notes\n\nanother important consideration in the healthy brains network: preterm birth\nbehavioral/cognitive tasks that measure: eye blink reflexes, sensory/tactile processing, timing, sensory integration, fine motor coordination,\nPROTRACTED DEVELOPMENT OF CEREBELLUM: prenatal information in the database (and early infancy) - could there be specific events (environmental, molecular etc) that resulted in disruption of cerebellar circuitry? and could disruption of the circuit at different timepoints result in different clinical outcomes? either severity of disorder or different presentation of disorder?\ncomplex brain disorders with a cerebellar locus follow different developmental trajectories.\nit has been suggested that the language and social deficits observed in children with complex disorders are a consequence of deficits in multi-sensory integration.\none particular process that could be implicated in multisensory integration in children with ASD is timing. For example, this process may be impacted by a deficit in perceiving the temporal relationship between distinct sensory components of complex audio-visual stimuli such as language, and this deficit could also compound in social cognitive processes like theory of mind Stevenensen et al. 2014"
+    "text": "Notes\n\nanother important consideration in the healthy brains network: preterm birth\nbehavioral/cognitive tasks that measure: eye blink reflexes, sensory/tactile processing, timing, sensory integration, fine motor coordination,\nPROTRACTED DEVELOPMENT OF CEREBELLUM: prenatal information in the database (and early infancy) - could there be specific events (environmental, molecular etc) that resulted in disruption of cerebellar circuitry? and could disruption of the circuit at different timepoints result in different clinical outcomes? either severity of disorder or different presentation of disorder?\ncomplex brain disorders with a cerebellar locus follow different developmental trajectories.\nit has been suggested that the language and social deficits observed in children with complex disorders are a consequence of deficits in multi-sensory integration.\none particular process that could be implicated in multisensory integration in children with ASD is timing. For example, this process may be impacted by a deficit in perceiving the temporal relationship between distinct sensory components of complex audio-visual stimuli such as language, and this deficit could also compound in social cognitive processes like theory of mind Stevenensen et al. 2014\nwhat is the impact of environmental factors (e.g., parental behaviors, trauma, substance abuse etc.) on diagnosis of neurodevelopmental disorders?"
   },
   {
     "objectID": "datasets/abide.html#overview",
@@ -355,6 +418,20 @@
     "title": "MIT Projects",
     "section": "",
     "text": "In an attempt to document my projects, from conception to publication, I’m compiling project ideas, and weekly progress in one place as a reference template for myself and for anyone interested in what I’m working on\nThis website is made with quarto and inspired by https://github.com/NASA-Openscapes/2021-Cloud-Hackathon"
+  },
+  {
+    "objectID": "mentorship/fall22_urop_recruitment.html",
+    "href": "mentorship/fall22_urop_recruitment.html",
+    "title": "Fall22 Recruitment",
+    "section": "",
+    "text": "Apply By: 09/20/’22\nStart Date: 10/01/’22 (ends Spring 2023, extension possible thru summer 2023)\nCompensation: Course/Academic Credit\nGroup: Sensible Intelligence Group, McGovern Institute, MIT\nKey Words: Python Programming; Big Data; Literature Review; Data Science; Neuroimaging; Neurodevelopmental Disorders\nProject Title: Using big data to build predictive models of developmental disorders\n\n\n\n\nThe Senseable Intelligence Group at the McGovern Institute for Brain Research is looking for UROP candidates to work on cutting-edge and clinically relevant neuroscience research. The aim of the project is to build computational models that integrate biological and behavioral information to develop risk predictors of neurodevelopmental disorders.\n\n\n\n\n\nRole (1) This role requires strong computational/programming expertise, and involves training and testing models on a multi-modal dataset that includes phenotypic assessments and brain-based markers.\nRole (2) This role requires previous experience in conducting literature reviews and writing brief reports. The research topics will range from neurodevelopmental disorders to translational neuroimaging and precision medicine. Knowledge of these topics is not required, but an interest in this research is highly encouraged.\n\n\n\n\n\nRole (1) Proficiency in Python programming, some machine learning and data science is required.\nRole (2) Basic research methods along with an ability to conduct a literature review is required. Foundational knowledge of psychology/cognition and neuroscience is highly preferred but not required.\n\n\n\n\nPlease send a statement of interest along with an updated resume to maedbh@mit.edu, using the subject title Fall 2022 UROP. As there are two openings for this project, please indicate in your application which (or both) of the two roles appeals most to you."
+  },
+  {
+    "objectID": "mentorship/index.html",
+    "href": "mentorship/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Fall22 Recruitment"
   },
   {
     "objectID": "team.html",
