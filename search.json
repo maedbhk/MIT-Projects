@@ -130,7 +130,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 5"
   },
   {
     "objectID": "progress/week-2.html",
@@ -152,6 +152,13 @@
     "title": "Week 2",
     "section": "Project Ideas",
     "text": "Project Ideas\n\n\ncan unique cerebellar fingerprints dissociate neuropsychiatric and neurodevelopmental disorders, above and beyond what would be expected from cortical fingerprints? I think I’d be first interested in analyzing the structural data before addressing functional connectivity\n\n\ninspired by RDoC, can we use topic models (e.g., latent dirichlet allocation) to identify latent clinical characteristics derived from HBN behavioral and/or cognitive measures (e.g., positive and negative affect scale, GRIT scale, Wechsler intelligence scale) with the goal of providing individualized risk assessments.\n\n\nIf we can identify groups/clusters by modeling behavioral/cognitive characteristics, can we identify corresponding dissociable neural signatures (whole-brain, not necessarily cerebellum-focused)?\n\n\nRelative to the neocortex, are there differences across disorders in neural signatures/fingerprints from early childhood to adolescence? For example, in developmental disorders (e.g., adhd, autism) do we see more significant changes in cerebellum (as indexed by reduction in grey matter) during early childhood relative to corresponding changes in the neocortex.\n\n\nNext steps: - Once I get access to HBN, I want to do a summary analysis of the phenotypic assessment data to determine the scope of the data (e.g., do some power analyses) - If it seems like there is a sufficient sample and enough complete behavioral measurements, I’ll likely plan on testing cerebellar isolation and segmentation of a few pilot participants (not clear to me yet what technical challenges we may face using SUIT on a developmental dataset). - test some topic models on the HBN phenotypic assessment data - I plan on publishing the website today at some stage so I’ll slack you the link, hopefully that will be an easier way to get a sense of what I’m working on"
+  },
+  {
+    "objectID": "progress/week-6.html",
+    "href": "progress/week-6.html",
+    "title": "Week 6",
+    "section": "",
+    "text": "To Do\n\nquestions to answer: what is the reliability in the KSADS assessment across child and parent measures? meant to get to this question during the week but didn’t have time.\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions\n\nIs there anything that I should do in advance of the CHOP meeting on Monday?\nWhat is the protocol for storing new analyses (SUITPy output) on >2000 participants? I was planning on analyzing n=30 from each subgroup of HBN (adhd, autism, control, mood, anxiety, intellectual etc) as a first step, but ultimately I will want to analyze the broader dataset and will need to run SUITPy on each participant."
   },
   {
     "objectID": "projects/index.html",
