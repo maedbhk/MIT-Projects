@@ -11,3 +11,5 @@ title: Overview
 * [Cerebellum and development](cerebellum-development.md)
 * [Predicting self-harm from hospital longitudinal EMR data](EMR-selfharm.md)
 * [Translational Neuroimaging](translational-neuroimaging.md)
+* [Subcortical Neuroimaging](subcortical-translational-neuroimaging.md)
+* [Developmental Neuroimaging](development-translational-neuroimaging.md)

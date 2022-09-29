@@ -3,7 +3,7 @@ title: Week 4
 ---
 
 ### Done
-* Build [boilerplate ML pipeline](https://github.com/maedbhk/hbn_cerebellum) for building predictive models (tested so far on behavioral features from HBN)
+* Build [boilerplate ML pipeline](https://github.com/maedbhk/healthy_brain_network) for building predictive models (tested so far on behavioral features from HBN)
 * Cross-referenced pipeline with pydra-ml to determine that similar steps are being implemented
 * Summary analysis on clinical diagnosis and demographics from HBN to determine adaquete sample sizes for cerebellar fingerprinting paper
 * First pass using UMAP unsupervised learning on child measures (cognitive testing, physical fitness features etc.)

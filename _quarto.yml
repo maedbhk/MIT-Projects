@@ -47,6 +47,7 @@ website:
           - progress/week-4.md
           - progress/week-5.md
           - progress/week-6.md
+          - progress/week-7.md
       - section: "Datasets"
         contents:
           - datasets/index.md
@@ -67,10 +68,14 @@ website:
           - literature-review/pHealth-ethics.md
           - literature-review/pHealth-other-fields.md
           - literature-review/RDoC.md
+          - literature-review/translational-neuroimaging.md
+          - literature-review/subcortical-translational-neuroimaging.md
+          - literature-review/development-translational-neuroimaging.md
       - section: "Projects"
         contents: 
           - projects/index.md
           - projects/cerebellum-fingerprints.md
+          - projects/chop.md
       - section: "Mentorship"
         contents:
           - mentorship/index.md
@@ -78,6 +83,9 @@ website:
       - section: "Methods"
         contents: 
           - methods/feature-engineering.md
+          - methods/model-evaluation.md
+          - methods/model-interpretability.md
+          - methods/unsupervised-learning.md
           - methods/index.md
 
 format:
