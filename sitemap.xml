@@ -1,143 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://maedbhk.github.io/MIT-Projects/methods/predictive-modeling.html</loc>
-    <lastmod>2022-09-16T17:10:23.885Z</lastmod>
-  </url>
-  <url>
-    <loc>https://maedbhk.github.io/MIT-Projects/methods/umap.html</loc>
-    <lastmod>2022-09-16T17:10:24.347Z</lastmod>
+    <loc>https://maedbhk.github.io/MIT-Projects/methods/model-interpretability.html</loc>
+    <lastmod>2022-09-29T15:07:34.390Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/feature-engineering.html</loc>
-    <lastmod>2022-09-16T17:10:24.766Z</lastmod>
+    <lastmod>2022-09-29T15:07:35.020Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/methods/model-evaluation.html</loc>
+    <lastmod>2022-09-29T15:07:35.615Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/index.html</loc>
-    <lastmod>2022-09-16T17:10:25.134Z</lastmod>
+    <lastmod>2022-09-29T15:07:36.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/methods/unsupervised-learning.html</loc>
+    <lastmod>2022-09-29T15:07:36.421Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-1.html</loc>
-    <lastmod>2022-09-16T17:10:25.591Z</lastmod>
+    <lastmod>2022-09-29T15:07:37.023Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-5.html</loc>
-    <lastmod>2022-09-16T17:10:26.004Z</lastmod>
+    <lastmod>2022-09-29T15:07:37.553Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-4.html</loc>
-    <lastmod>2022-09-16T17:10:26.411Z</lastmod>
+    <lastmod>2022-09-29T15:07:38.580Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-0.html</loc>
-    <lastmod>2022-09-16T17:10:26.822Z</lastmod>
+    <lastmod>2022-09-29T15:07:39.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/progress/week-7.html</loc>
+    <lastmod>2022-09-29T15:07:39.615Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-3.html</loc>
-    <lastmod>2022-09-16T17:10:27.191Z</lastmod>
+    <lastmod>2022-09-29T15:07:40.039Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/index.html</loc>
-    <lastmod>2022-09-16T17:10:27.776Z</lastmod>
+    <lastmod>2022-09-29T15:07:40.396Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-2.html</loc>
-    <lastmod>2022-09-16T17:10:28.133Z</lastmod>
+    <lastmod>2022-09-29T15:07:40.829Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-6.html</loc>
-    <lastmod>2022-09-16T17:10:28.519Z</lastmod>
+    <lastmod>2022-09-29T15:07:41.256Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/index.html</loc>
-    <lastmod>2022-09-16T17:10:28.886Z</lastmod>
+    <lastmod>2022-09-29T15:07:41.709Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/projects/chop.html</loc>
+    <lastmod>2022-09-29T15:07:42.238Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/cerebellum-fingerprints.html</loc>
-    <lastmod>2022-09-16T17:10:29.311Z</lastmod>
+    <lastmod>2022-09-29T15:07:42.664Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/abide.html</loc>
-    <lastmod>2022-09-16T17:10:29.645Z</lastmod>
+    <lastmod>2022-09-29T15:07:43.062Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/uk-biobank.html</loc>
-    <lastmod>2022-09-16T17:10:30.028Z</lastmod>
+    <lastmod>2022-09-29T15:07:43.536Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/index.html</loc>
-    <lastmod>2022-09-16T17:10:30.425Z</lastmod>
+    <lastmod>2022-09-29T15:07:43.958Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/healthy-brains.html</loc>
-    <lastmod>2022-09-16T17:10:30.812Z</lastmod>
+    <lastmod>2022-09-29T15:07:44.366Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/abcd.html</loc>
-    <lastmod>2022-09-16T17:10:31.168Z</lastmod>
+    <lastmod>2022-09-29T15:07:44.753Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/adhd-200.html</loc>
-    <lastmod>2022-09-16T17:10:31.722Z</lastmod>
+    <lastmod>2022-09-29T15:07:45.121Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/literature-review/development-translational-neuroimaging.html</loc>
+    <lastmod>2022-09-29T15:07:45.544Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/pHealth-terminology.html</loc>
-    <lastmod>2022-09-16T17:10:32.253Z</lastmod>
+    <lastmod>2022-09-29T15:07:45.990Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/RDoC.html</loc>
-    <lastmod>2022-09-16T17:10:33.013Z</lastmod>
+    <lastmod>2022-09-29T15:07:46.403Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/EMR-selfharm.html</loc>
-    <lastmod>2022-09-16T17:10:33.515Z</lastmod>
+    <lastmod>2022-09-29T15:07:46.768Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/index.html</loc>
-    <lastmod>2022-09-16T17:10:34.017Z</lastmod>
+    <lastmod>2022-09-29T15:07:47.162Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/pHealth-other-fields.html</loc>
-    <lastmod>2022-09-16T17:10:34.651Z</lastmod>
+    <lastmod>2022-09-29T15:07:47.577Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/pHealth-overview.html</loc>
-    <lastmod>2022-09-16T17:10:35.207Z</lastmod>
+    <lastmod>2022-09-29T15:07:47.986Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/pHealth-ethics.html</loc>
-    <lastmod>2022-09-16T17:10:35.773Z</lastmod>
+    <lastmod>2022-09-29T15:07:48.402Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/literature-review/subcortical-translational-neuroimaging.html</loc>
+    <lastmod>2022-09-29T15:07:48.803Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/translational-neuroimaging.html</loc>
-    <lastmod>2022-09-16T17:10:36.312Z</lastmod>
+    <lastmod>2022-09-29T15:07:49.251Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/cerebellum-neuropsych.html</loc>
-    <lastmod>2022-09-16T17:10:36.700Z</lastmod>
+    <lastmod>2022-09-29T15:07:49.593Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/cerebellum-development.html</loc>
-    <lastmod>2022-09-16T17:10:37.145Z</lastmod>
+    <lastmod>2022-09-29T15:07:50.296Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/index.html</loc>
-    <lastmod>2022-09-16T17:10:37.549Z</lastmod>
+    <lastmod>2022-09-29T15:07:50.757Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/fall22_urop_recruitment.html</loc>
-    <lastmod>2022-09-16T17:10:37.936Z</lastmod>
+    <lastmod>2022-09-29T15:07:51.171Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/index.html</loc>
-    <lastmod>2022-09-16T17:10:38.307Z</lastmod>
+    <lastmod>2022-09-29T15:07:51.576Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/further-resources.html</loc>
-    <lastmod>2022-09-16T17:10:38.716Z</lastmod>
+    <lastmod>2022-09-29T15:07:51.972Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/team.html</loc>
-    <lastmod>2022-09-16T17:10:39.143Z</lastmod>
+    <lastmod>2022-09-29T15:07:52.369Z</lastmod>
   </url>
 </urlset>

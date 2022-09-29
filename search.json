@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "methods/model-interpretability.html",
+    "href": "methods/model-interpretability.html",
+    "title": "Model Interpretability",
+    "section": "",
+    "text": "intrinsic or post hoc?\n\nintrinsic: is interpretability achieved by restricting the complexity of the model. ML models are considered “intrinsically” interpretable due to their simple structure (short decision trees or sparse linear models)\nposthoc: or by applying methods that analyze the model after training. ML models are considered “post hoc” models if they requir interpretation methods after model training. An example of such a model is permutation feature importance. Post hoc methods can be applied to intrinsically interpretable models. For example, permutation feature importance can be computed for decision trees.\n\ncounterfactual explanations: to explain the prediction of a data instance, the method finds a similar data point by changing some of the features for which the predicted outcome changes in a relevent way.\nintrinsically interpretable model: one solution to interpreting black box models is to approximate them (either globally or locally) with an interpretable model. the interpretable model is interpreted by looking at internal model parameters or feature summary statistics.\nthe interpretaton of regression weights in a linear model is a model-specific interpretation. by definition, the interpretation of intrinsically interpretable models is always model-specific.\nmodel-agnostic tools can be used on any machine learning model an are applied after the model has been trained (post hoc)."
+  },
+  {
+    "objectID": "methods/model-interpretability.html#scope-of-interpretability",
+    "href": "methods/model-interpretability.html#scope-of-interpretability",
+    "title": "Model Interpretability",
+    "section": "Scope of interpretability",
+    "text": "Scope of interpretability\n\nglobal model interpretablity helps to understand the distribution of target outcome based on the features (difficult to achieve in practice).\nany model that exceeds a handful of parameters or weights is unlikely to fit into the short-term memory of the average human. arguably, you cannot really imagine a linear model with 5 features - as it would mean drawing the estimated hyperplane mentally in a 5-dimensional space. any feature space with more than 3 dimensions is simply inconceivable for humans.\nwhen people try to comprehend a model, they consider only parts of it, such as weights in linear models.\n\n\nhow do parts of the model affect predictions?\n\nit’s impossible to memorize all the weights (plus the joint distribution of all features) - but we can understand a single weight. global model interpretability is usually out of reach, but we can at least understand a single weight.\nnot all models are interpretable at a parameter level - for linear models, the interpretable parts are the weights, for trees it’s the splists (selected features plus cut-off pointss), and leaf node predictions."
+  },
+  {
     "objectID": "methods/feature-engineering.html",
     "href": "methods/feature-engineering.html",
     "title": "Feature Engineering",
@@ -49,11 +63,32 @@
     "text": "Feature Selection: Exploratory\n\nFeature importance:\n\ngives you a score for each feature of your data, the higher the score, the more important or relevent that feature is to your target feature\ninbuilt sklearn classes: random forest classifiers from sklearn.ensemble import ExtraTreesClassifier\n\nCorrelation matrix heatmap\n\nshows how features are related to each other or the target feature sns.heatmap"
   },
   {
+    "objectID": "methods/model-evaluation.html",
+    "href": "methods/model-evaluation.html",
+    "title": "Model Evaluation",
+    "section": "",
+    "text": "accuracy: most used metric to valuate classification tasks in ML: ratio of the number of correct predictions to the total number of examples.\nit has limitations, which is why other metrics like precision, recall, F1-score etc. have been used to mitigate these problems."
+  },
+  {
+    "objectID": "methods/model-evaluation.html#what-is-uar",
+    "href": "methods/model-evaluation.html#what-is-uar",
+    "title": "Model Evaluation",
+    "section": "what is UAR?",
+    "text": "what is UAR?\n\nUAR stands for unweighted average recall - and this is a good metric to optimize when the sample class ratio is imbalanced and it is closely related to accuracy."
+  },
+  {
     "objectID": "methods/index.html",
     "href": "methods/index.html",
     "title": "Overview",
     "section": "",
     "text": "Instead of writing notes about methods in my lab notebook, I’m writing them here.."
+  },
+  {
+    "objectID": "methods/unsupervised-learning.html",
+    "href": "methods/unsupervised-learning.html",
+    "title": "Unsupervised Learning",
+    "section": "",
+    "text": "UMAP\n\ngeneral purpose manifold learning and dimension reduction algorithm (compatible wit scikit-learn)"
   },
   {
     "objectID": "progress/week-1.html",
@@ -112,6 +147,13 @@
     "text": "Other considerations\n\nFinally, there are a number of ethical considerations that I would like to consider as I venture into the realm of precision medicine. Translational work is a new area of research for me and I am aware that precision medicine is a quickly evolving field that raises important questions about ethical responsibility:\nData privacy: Who stands to benefit, and who is harmed? What possible solutions help protect individuals’ and communities’ ownership over their own data? I think this question is especially relevant for neural data that is not (as of yet) being used to track, manipulate, or identify individuals.\nAI and healthcare: with such heavy reliance on technology in developed nations, I think it’ll be important to consider the concerns associated with bias and morality of AI, and how it may actually challenge equitable access to healthcare.\nCommunicating uncertainty: How do we communicate uncertainty about our translational results, especially when models are continuously updated with new information. It’ll be important to understand the uncertainty arising from technical procedures: small/incomplete sample sizes, sparse longitudinal datasets, instrument variability etc.\nTo what extent can we engage with diverse communities in translating neuroscience research to the health space. Can we bring together neuroscientists, physicians, ethicists, engineers, mental health workers, and caregivers to understand the ethical impact of data- and model-driven precision medicine?"
   },
   {
+    "objectID": "progress/week-7.html",
+    "href": "progress/week-7.html",
+    "title": "Week 7",
+    "section": "",
+    "text": "questions/feedback\n\nwe had a neuroimaging meeting today and were discussing a centralized database to keep track of datasets, how to access them on openmind, whether they have been bids-ified etc. there were two suggestions for doing this: the gablab wiki on openmind or a page on sensein github. with both of these options, everyone in the lab would be able to contribute - do you have any preference?\nwe also talked about having access to each other’s repos for projects we’re currently working, not everyone (including me) have public repos for their ongoing projects (number of reasons for this) - one suggestion was that we make our repos public within the sensein github org. currently, we’re sharing snippets of code via slack instead of pointing to the scripts on our repos.\nRelated to ^^, could I be added as a member of the senesein github organization?"
+  },
+  {
     "objectID": "progress/week-3.html",
     "href": "progress/week-3.html",
     "title": "Week 3",
@@ -130,7 +172,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 5"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7"
   },
   {
     "objectID": "progress/week-2.html",
@@ -165,7 +207,14 @@
     "href": "projects/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Cerebellar Fingerprinting - Dec. 2022 finish analysis, early Spring - first draft\nCHOP project - May 2023 finish analysis, early Fall - first draft"
+    "text": "Cerebellar Fingerprinting - Early. 2023 finish analysis, early Summer - first draft\nCHOP project - May 2023 finish analysis, early Fall - first draft"
+  },
+  {
+    "objectID": "projects/chop.html",
+    "href": "projects/chop.html",
+    "title": "CHOP Project",
+    "section": "",
+    "text": "CHOP emergency department:\n\nWhat does this dataset contain?\n\nBehavioral Health screen - psychometrically developed by a company and used by CHOP since 2014 to give staff in the ER a sense of mental health burden for each child. Questions include environmental adversity and other data that are difficult to collect. Demographics are included.\nThey also have regular EHR - which I believe are medical notes made by clinician.\nGeocoded level data (which neighborhoods etc. environemental triggers)\n\nDataset summary:\n\nn = 20,000 children, ages 14-18\n50% of sample are Black\nprevelence of suicide attempt is 50%\n15% of the cohort have longitudinal data\n2500 children with two timepoints, 1500 with 3 or more timepoints\ndata have also been collected before and during covid, so this is another variable that could be of interest\nno guarantee that any information from the past will be include about developmental disorders (whatever is shared by children)\n\nquestions:\n\nwhich features are predictive of suicide attempt? drug use, bullying etc.\nare there environmental factors contributing to suicide attempt?\nwhat are the comorbidites of this sample?\nhow does suicidality aspect relate to p factor (what is p factor?)\n\ngoals:\n\nwith suicidality, comorbidities are the rule, not the exception\nclassification algorithms are good because they have clinical application and are interpretable\ncausal effects are target now for intervention\n\n\nMRI dataset\n\nwhat does this dataset contain?\n\nstructural data is collected clinically but not functionally. in total, there are about 100,000 scans at CHOP but many of the participants in the clinical dataset likely don’t have MRI scans.\nthere are also neonatal scans: 0-2 years of age + preterm children.\nlarge subset of children have 22Q (22q deletion syndrome) can affect any system of the body, however, most children wtih 22q have heart, immune, learning, speech, and/or behavior difficulties.\n\n\nStandarizing radiological reports\n\nradiological notes are still transcribed by people, use AI to translate\n\n\n\n\n\nIdeas from Czyz et al. 2021 * Can we identify reliable proximal markers of suicide risk to inform personalized interventions provided at crucial moments in the individual’s natural environment?\n* Validated indicators of proximal risk could lead to the development of adaptive interventions * Short-term risk prediction is a key concern for clinical providers and more research that incorporates proximal assessment is needed to provide insights about short-term precursors to suicidal ideation in order to facilitate early detection of risk as well as inform targeted interventions. * Are existing tools/models validated on diverse communities of adolescents? * There is a great need to ensure that screening tools serve youth from diverse backgrounds, identities, and cultures. * One major goal of this work would be to integrate screening into clinical practice. * Are there environmental predictors of suicide risk? Can this be identified using geocoded data? * Was covid a risk factor of suicide attempt?\n\n\n\n\n\nBoth Satra and I have received NTP approval – what are next steps with regard to data access?\nIs there a CHOP cluster for running scripts? If so, how do we get access?\nEven before looking at data, could we get an example of the behavioral health screening questionnaire?\nCan we confirm the types of data collected for the sample of 20,000 adolescents: BHS, demographics, geocoded information (zipcodes?), anything else I’m missing?"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html",
@@ -179,7 +228,7 @@
     "href": "projects/cerebellum-fingerprints.html#notes",
     "title": "Cerebellar fingerprints of neurodevelopmental disorders",
     "section": "Notes",
-    "text": "Notes\n\nanother important consideration in the healthy brains network: preterm birth\nbehavioral/cognitive tasks that measure: eye blink reflexes, sensory/tactile processing, timing, sensory integration, fine motor coordination,\nPROTRACTED DEVELOPMENT OF CEREBELLUM: prenatal information in the database (and early infancy) - could there be specific events (environmental, molecular etc) that resulted in disruption of cerebellar circuitry? and could disruption of the circuit at different timepoints result in different clinical outcomes? either severity of disorder or different presentation of disorder?\ncomplex brain disorders with a cerebellar locus follow different developmental trajectories.\nit has been suggested that the language and social deficits observed in children with complex disorders are a consequence of deficits in multi-sensory integration.\none particular process that could be implicated in multisensory integration in children with ASD is timing. For example, this process may be impacted by a deficit in perceiving the temporal relationship between distinct sensory components of complex audio-visual stimuli such as language, and this deficit could also compound in social cognitive processes like theory of mind Stevenensen et al. 2014\nwhat is the impact of environmental factors (e.g., parental behaviors, trauma, substance abuse etc.) on diagnosis of neurodevelopmental disorders?"
+    "text": "Notes\n\nanother important consideration in the healthy brains network: preterm birth\nbehavioral/cognitive tasks that measure: eye blink reflexes, sensory/tactile processing, timing, sensory integration, fine motor coordination,\nPROTRACTED DEVELOPMENT OF CEREBELLUM: prenatal information in the database (and early infancy) - could there be specific events (environmental, molecular etc) that resulted in disruption of cerebellar circuitry? and could disruption of the circuit at different timepoints result in different clinical outcomes? either severity of disorder or different presentation of disorder?\ncomplex brain disorders with a cerebellar locus follow different developmental trajectories.\nit has been suggested that the language and social deficits observed in children with complex disorders are a consequence of deficits in multi-sensory integration.\none particular process that could be implicated in multisensory integration in children with ASD is timing. For example, this process may be impacted by a deficit in perceiving the temporal relationship between distinct sensory components of complex audio-visual stimuli such as language, and this deficit could also compound in social cognitive processes like theory of mind Stevenensen et al. 2014\nwhat is the impact of environmental factors (e.g., parental behaviors, trauma, substance abuse etc.) on diagnosis of neurodevelopmental disorders?\ncognitive profiles are related to children’s learning ability Hulme & Snowling, 2009 - so a good test of whether a network can reliably represent individual differences in cognition is to test whether it will generalize to unseen data and predict children’s learning scores.\nages 7-11 is the peak age at which developmental disorders and cooccuring learning difficulties are first identified.\npossible methods:\n\narticicial neural network (Siugzdaite et al. (2020)[https://www.sciencedirect.com/science/article/pii/S0960982220301585] and summarized (here)[../literature-review/development-translational-neuroimaging.md]\npartial least squares (Dong et al. 2022)[https://www.sciencedirect.com/science/article/pii/S2213158222002418]\n\nquestions with behavioral dataset:\n\nwithin each assessment, and each domain, which measures are most successful in classifying disorders / predicting general cognitive functioning?\nacross all domains (language versus physiological status etc.), which are most successful at classifying disorders / predicting general cognitive functioning?\nwhich are more reliable: parent or child measures at classifying disorders / predicting general cognitive functioning?\nwhat are the features that best classify sex?"
   },
   {
     "objectID": "datasets/abide.html#overview",
@@ -231,6 +280,20 @@
     "text": "Overview\nThe ADHD-200 data set provides demographic and clinical information, including age, sex, and measures of symptom severity as assessed by the ADHD rating scale (ADHD-RS).\n\nData Storage\n\nnot currently on openmind/datalad\npreprocessed using"
   },
   {
+    "objectID": "literature-review/development-translational-neuroimaging.html",
+    "href": "literature-review/development-translational-neuroimaging.html",
+    "title": "Neurodevelopment and Translational Neuroimaging",
+    "section": "",
+    "text": "Much of the points below came from a article by Siugzdaite et al. (2020)"
+  },
+  {
+    "objectID": "literature-review/development-translational-neuroimaging.html#introduction",
+    "href": "literature-review/development-translational-neuroimaging.html#introduction",
+    "title": "Neurodevelopment and Translational Neuroimaging",
+    "section": "Introduction",
+    "text": "Introduction\n\n14-30% of children/adolescents live with a learning-related problem, associated with cognitive/behavioral problems. examples of these disorders are dyslexia, dyscalculia, language disorders. other diagnses related to neurodevelopmental disorders are adhd, asd.\nhow does the developing brain give rise to disorders?\nthere has been a lot of inconsistency in ascribing a range number of brain regions to individual neurodevelopmental disorders.\nfor example: adhd has been associated with grey matter differences within ACC, caudate nucleus, pallidum, striatum, cerebellum, PFC, premotor cortex etcs.\nwhy does this inconsistency exist? diagnostic groups are highly heterogeneous and overlapping and symptoms vary a lot within categories. there is no “purity” of developmental disorders.\nsolution: transdiagnostic approach?\n\nWhat is transdiagnostics?\nIdentifying underlying symptom dimensions that span multiple diagnoses.\nfor example, within neurodevelopmental learning disorders, primary focus is on identifying cognitive symptoms that underpin learning.\n\nanother reason for inconsistent brain-to-cognition mappings: they do not exist!\n\nequifinality: there could be many possible neural routes to the same cognitive profile or disorder\nmultifinality: the same local neural deficit could result in multiple different cognitive symptoms across individuals.\nthese concepts have not yet been translated into analytic approaches.\n\n\n\nGoal of the study\n\ntake a transdiagnostic approach to establish how brain differences relate to cognitive difficulties in childhood\nhow can the same pattern of neural deficits result in different cognitive profiles across children?\n\n\n\nMethod\n\ncognitive data from children with and without diagnoses were entered into an unsupervised ML algorithm called an artificial neural network – which preserves information about profiles within the dataset, captures non-linear relationships, and allows for measure to be differentially related across the sample. ideal method to use with transdiagnostic cohort.\nto determine how brain profiles relate to cognitive profiles, the same ANN was applied to whole-brain cortical morphology data\nArtificial neural network: cognitive data (z scored): age standarization mean and standard deviation from each assessments\nspecific type of network: self-organizing map - this algorithm represents multidimensional datasets as a two-dimensional map.\nCognitive profiles are robustly related to children’s learning ability, so a good test of whether the network can reliably represnt individual differences in cognition is to test whether it will generalize to unseen data and predict children’s learning scores.\nMapping brain profiles:\nWhole-brain cortical morphology metrics (cortical thickness, gyrification, sulci depth) were calculated for each child across a 68 parcel brain decomposition.\nFeature selction was performed before machine learning to reduce the risk of over-fitting with so many measures.\nLASSO regression reduced the number of indices down to 21 distint measures\n\n\n\nResults\n\nsummary of results:\n\nhold out CV revealed that cognitive profiles learned using ANN generalized to unseen data and were sig. predictive of childrens’ learning difficulties\nsimilarly, hold out CV showed that brain profiles generalized to unseen data and a child’s age-corrected brain profile was sig predictive of age-normed cognitive profile.\n\nthere were no one-to-one mappings: one brain profile could be associated with multiple cog profiles and vice versa\nalso, researchers found that the more central the hubs to a child’s brain organization, the milder or more specific the cognitive impairments. when these hubs were less well embedded, children showed the more severe cognitive symptoms and learning difficulties.\nchildren’s brain profiles predict their cognitive profile.\n\n\nWhat is the artificial neural network learning?\n\nis it learning about the severity of a particular set of brain values, or whether it had learned to identify peaks and troughs in individual profiles?"
+  },
+  {
     "objectID": "literature-review/pHealth-terminology.html",
     "href": "literature-review/pHealth-terminology.html",
     "title": "pHealth terminology",
@@ -263,7 +326,7 @@
     "href": "literature-review/index.html",
     "title": "Overview",
     "section": "",
-    "text": "pHealth: overview\npHealth: terminology\npHealth: ethical considerations\npHealth: examples from other fields\nResearch Domain Criteria (RDoC)\nCerebellum and neuropsychiatric disorders\nCerebellum and development\nPredicting self-harm from hospital longitudinal EMR data\nTranslational Neuroimaging"
+    "text": "pHealth: overview\npHealth: terminology\npHealth: ethical considerations\npHealth: examples from other fields\nResearch Domain Criteria (RDoC)\nCerebellum and neuropsychiatric disorders\nCerebellum and development\nPredicting self-harm from hospital longitudinal EMR data\nTranslational Neuroimaging\nSubcortical Neuroimaging\nDevelopmental Neuroimaging"
   },
   {
     "objectID": "literature-review/pHealth-other-fields.html",
@@ -341,6 +404,41 @@
     "title": "Ethical Considerations for pHealth",
     "section": "",
     "text": "Much of the points below came from a review paper by MacEachern and Forkert (2020)\n\n\nML approaches require large amounts of data, therefore data will be collected from many locations and transferred to a central location for storage and processing. essential that the datasets do not contain patient-identifying information. in the future, this could be overcome using distributed machine learning approaches (e.g., travelling ML model) - trains locally on the available data, before moving to the next center with available data Tuladhar et al. 2020\nML models as “black boxes”, especially with increased complexity of the input data. this raises legal and ethical questions as clinicians and other researchers may not fully understand how an ML model came to a particular conclusion about a patient’s health.\nAs physicians can be held legally responsible for their decisions, error in ML models is of course a concern. Who is responsible for an error induced in an ML model? These tools (for the time being) will support and assist physicians in making decisions about patient care, they are not yet designed to operate autonomously.\nThere are technical limitations to ML models, which is that these models are only as good as the data on which they were trained. However, these training datasets are often inherently noisy and biased. What this means is that models are being created that cannot generalize to more diverse test sets (other regions, diseases, demographics). The easiest way to avoid this problem is to increase the training set and include a diversity of samples, however, this often has logistical (e.g., privacy) challenges.\nFinancial cost is another major concern with pHealth, which will lead to disparities in access to care based on SES. Also, in-depth workups can lead to unintended consequences such as incidental findings that may lead to further testing, which may be invasive and unnecessary, inducing patient stress in the face of diagnostic uncertainty.\nCommunicating uncertainty. there is rarely a clear-cut answer in science, our interpretations operate on probability and likelihood. communicating uncertainty to scientists and non-scientists alike is challenging, especially when decisions are being made that will influence a person’s healthcare outcomes. Therefore, it is important that future machine learning models can identify the most important clinical features for a specific clinical question so that unnecessary assessments can be avoided, maximizing benefit and minimizing harm to patients.\nBias in datasets is one of the most pressing concerns for pHealth. bias can come about due to patient selection, affecting the accuracy and generalizability of the model. Additionally, the financial and practical aspects of implementing pHealth limits the models primarily to the developed world, excluding those in the developing world from the analyses, and any benefits that are offered.\nA yet unanswered question is whether discoveries made by pHealth will have individual impacts on human behavior with respect to disease prevention. For example, if a patient knows that they are at risk for heart disease based on underlying genetic or epigenetic factors, will they change their behavior? Also, it’s possible that such discoveries will create “patients-in-waiting” who are not yet sick but have been identified as high risk."
+  },
+  {
+    "objectID": "literature-review/subcortical-translational-neuroimaging.html",
+    "href": "literature-review/subcortical-translational-neuroimaging.html",
+    "title": "Subcortical Translational Neuroimaging",
+    "section": "",
+    "text": "Much of the points below came from a article by Klein-Fugge et al. (2022)"
+  },
+  {
+    "objectID": "literature-review/subcortical-translational-neuroimaging.html#overall-goal",
+    "href": "literature-review/subcortical-translational-neuroimaging.html#overall-goal",
+    "title": "Subcortical Translational Neuroimaging",
+    "section": "Overall goal",
+    "text": "Overall goal\n\nidentify specific relatoinship between dimensions of mental health and connectivity in precise subcortical networks"
+  },
+  {
+    "objectID": "literature-review/subcortical-translational-neuroimaging.html#gap",
+    "href": "literature-review/subcortical-translational-neuroimaging.html#gap",
+    "title": "Subcortical Translational Neuroimaging",
+    "section": "Gap",
+    "text": "Gap\n\npredictions in translational neuroimaging studies typically rely on a large number of brain regions, networks, or edges. impressive prediction accuracies come at the cost of reduced anatomical specificity.\nanother problem, unrelated to improving anatomical specificity, is relating baseline neural measures to mental well-being. disorders are ill-defined and span a broad range of impairments that are not consistently present in all patients diagnosed with the same disorder, and symptoms are partly overlapping between disorders.\n^^ one of the reasons why a classifier trained to distinguish a depressed from a non-depresse person reveals a broad network of regions instead of mapping onto well-defined and anatomically interpretable brain circuits.\nnew approach: focus on specific rather than broad symptom categories - may be possible to relate them to specific brain circuits"
+  },
+  {
+    "objectID": "literature-review/subcortical-translational-neuroimaging.html#approach-behavior",
+    "href": "literature-review/subcortical-translational-neuroimaging.html#approach-behavior",
+    "title": "Subcortical Translational Neuroimaging",
+    "section": "Approach: Behavior",
+    "text": "Approach: Behavior\n\nauthors examined variance in mental health dimensions along a continuum spanning the subclinical range..\nthey analysed 33 markers including measures from the NIH toolbox “emotion” Ususcales: psychological well-being, social relationships etc.)\nTo capture latent dimensions that produce mental well-being, they performed a factor analysis that resulted in four main factors: social and life satisfaction, negative emotions, sleep, anger and rejection\nvisualize factor loadings onto behavioral scores."
+  },
+  {
+    "objectID": "literature-review/subcortical-translational-neuroimaging.html#approach-latent-mental-health-dimensions-x-brain-connectivity",
+    "href": "literature-review/subcortical-translational-neuroimaging.html#approach-latent-mental-health-dimensions-x-brain-connectivity",
+    "title": "Subcortical Translational Neuroimaging",
+    "section": "Approach: Latent mental health dimensions x brain connectivity",
+    "text": "Approach: Latent mental health dimensions x brain connectivity\n\ndoes FC between specific amygdala nuclei and ROIs carry information about mental well-being as captured by four latent mental health dimensions?\ncan you predict mental health dimensions in held-out data using a weighting of FC values derived from an independent dataset?"
   },
   {
     "objectID": "literature-review/translational-neuroimaging.html",

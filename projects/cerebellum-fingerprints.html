@@ -24,7 +24,7 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../mentorship/index.html" rel="next">
+<link href="../projects/chop.html" rel="next">
 <link href="../projects/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -158,6 +158,11 @@ ul.task-list{list-style: none;}
   <a href="../progress/week-6.html" class="sidebar-item-text sidebar-link">Week 6</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-7.html" class="sidebar-item-text sidebar-link">Week 7</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -258,6 +263,21 @@ ul.task-list{list-style: none;}
   <a href="../literature-review/RDoC.html" class="sidebar-item-text sidebar-link">RDoC</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/subcortical-translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Subcortical Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/development-translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Neurodevelopment and Translational Neuroimaging</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -276,6 +296,11 @@ ul.task-list{list-style: none;}
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projects/cerebellum-fingerprints.html" class="sidebar-item-text sidebar-link active">Cerebellar fingerprints of neurodevelopmental disorders</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/chop.html" class="sidebar-item-text sidebar-link">CHOP Project</a>
   </div>
 </li>
       </ul>
@@ -311,6 +336,21 @@ ul.task-list{list-style: none;}
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../methods/feature-engineering.html" class="sidebar-item-text sidebar-link">Feature Engineering</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/model-evaluation.html" class="sidebar-item-text sidebar-link">Model Evaluation</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/model-interpretability.html" class="sidebar-item-text sidebar-link">Model Interpretability</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/unsupervised-learning.html" class="sidebar-item-text sidebar-link">Unsupervised Learning</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -368,6 +408,20 @@ ul.task-list{list-style: none;}
 <li><p>it has been suggested that the language and social deficits observed in children with complex disorders are a consequence of deficits in multi-sensory integration.</p></li>
 <li><p>one particular process that could be implicated in multisensory integration in children with ASD is timing. For example, this process may be impacted by a deficit in perceiving the temporal relationship between distinct sensory components of complex audio-visual stimuli such as language, and this deficit could also compound in social cognitive processes like theory of mind <a href="https://www.jneurosci.org/content/34/3/691.short">Stevenensen et al.&nbsp;2014</a></p></li>
 <li><p>what is the impact of environmental factors (e.g., parental behaviors, trauma, substance abuse etc.) on diagnosis of neurodevelopmental disorders?</p></li>
+<li><p>cognitive profiles are related to children’s learning ability <a href="https://books.google.com/books?hl=en&amp;lr=&amp;id=GfahZ6HS1rYC&amp;oi=fnd&amp;pg=PR6&amp;ots=1FQMuHF-Z0&amp;sig=gqyGkSLAqepLuvurhC4WSzNE6nc#v=onepage&amp;q&amp;f=false">Hulme &amp; Snowling, 2009</a> - so a good test of whether a network can reliably represent individual differences in cognition is to test whether it will generalize to unseen data and predict children’s learning scores.</p></li>
+<li><p>ages 7-11 is the peak age at which developmental disorders and cooccuring learning difficulties are first identified.</p></li>
+<li><p>possible methods:</p>
+<ul>
+<li>articicial neural network (Siugzdaite et al.&nbsp;(2020)[https://www.sciencedirect.com/science/article/pii/S0960982220301585] and summarized (here)[../literature-review/development-translational-neuroimaging.md]</li>
+<li>partial least squares (Dong et al.&nbsp;2022)[https://www.sciencedirect.com/science/article/pii/S2213158222002418]</li>
+</ul></li>
+<li><p>questions with behavioral dataset:</p>
+<ul>
+<li>within each assessment, and each domain, which measures are most successful in classifying disorders / predicting general cognitive functioning?</li>
+<li>across all domains (language versus physiological status etc.), which are most successful at classifying disorders / predicting general cognitive functioning?</li>
+<li>which are more reliable: parent or child measures at classifying disorders / predicting general cognitive functioning?</li>
+<li>what are the features that best classify sex?</li>
+</ul></li>
 </ul>
 
 
@@ -581,8 +635,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../mentorship/index.html" class="pagination-link">
-        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../projects/chop.html" class="pagination-link">
+        <span class="nav-page-text">CHOP Project</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
