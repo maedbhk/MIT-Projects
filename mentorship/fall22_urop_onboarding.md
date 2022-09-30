@@ -27,7 +27,7 @@ title: Fall22 Onboarding
 
 
 ### Getting oriented to the project
-* Brief overview of the project can be found (here)[../projects/cerebellum-fingerprints.md] - includes links to papers that are relevents
+* Brief overview of the project can be found [here](../projects/cerebellum-fingerprints.md) - includes links to papers that are relevents
 * some [terminology](../literature-review/pHealth-terminology.md) and an [overview](../literature-review/pHealth-overview.md) of precision medicine (or pHealth) that you may find useful and some [ethical considerations](../literature-review/pHealth-ethics.md) related to precision medicine
 * One goal of your work will be to identify research that is relevent to the current project, and to draw on existing literature to generate questions that are pertinent to current project
 * one starting place will be to review articles that use the healthy brain network dataset. 
