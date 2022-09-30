@@ -81,6 +81,7 @@ website:
         contents:
           - mentorship/index.md
           - mentorship/fall22_urop_recruitment.md
+          - mentorship/fall22_urop_onboarding.md
       - section: "Methods"
         contents: 
           - methods/feature-engineering.md

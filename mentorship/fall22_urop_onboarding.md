@@ -1,5 +1,5 @@
 ---
-title: Fall22 Onboarding - Role 1
+title: Fall22 Onboarding
 ---
 
 ### Group Meetings
@@ -15,7 +15,7 @@ title: Fall22 Onboarding - Role 1
 * End of semester write-up: present summary of what you researched at the end of the semester
 * Fill out [mentorship agreement](https://docs.google.com/document/d/11-YwvIdT35Qg0uNtHOTi5Hje1feyRdoV/edit?usp=sharing&ouid=110847987931723045299&rtpof=true&sd=true) within 15 days of starting
 
-### Reading Papers
+### Reading Papers (most relevent for Role 2)
 * Do you use a reference management software: paperpile, mendeley etc? 
 * This project draws on multiple fields, therefore the literature review will be at the intersection of neuroimaging methods, translational neuroimaging, neuropsychiatric disorders, and development. 
 * For tips on writing a good research paper (should also be helpful in reading papers too), see [Mensch & Kording's paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005619).
