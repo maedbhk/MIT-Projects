@@ -28,8 +28,8 @@ One of the primary reasons why we think of the cerebellum as being an important 
 * ages 7-11 is the peak age at which developmental disorders and cooccuring learning difficulties are first identified. 
 
 * possible methods: 
-    * articicial neural network (Siugzdaite et al. (2020)[https://www.sciencedirect.com/science/article/pii/S0960982220301585] and summarized (here)[../literature-review/development-translational-neuroimaging.md]
-    * partial least squares (Dong et al. 2022)[https://www.sciencedirect.com/science/article/pii/S2213158222002418]
+    * articicial neural network [Siugzdaite et al. (2020](https://www.sciencedirect.com/science/article/pii/S0960982220301585) and summarized [here](../literature-review/development-translational-neuroimaging.md)
+    * partial least squares [Dong et al. 2022](https://www.sciencedirect.com/science/article/pii/S2213158222002418)
 
 * questions with behavioral dataset: 
     * within each assessment, and each domain, which measures are most successful in classifying disorders / predicting general cognitive functioning? 
