@@ -48,6 +48,7 @@ website:
           - progress/week-5.md
           - progress/week-6.md
           - progress/week-7.md
+          - progress/week-8.md
       - section: "Datasets"
         contents:
           - datasets/index.md
