@@ -21,12 +21,10 @@ title: Fall22 Onboarding
 * For tips on writing a good research paper (should also be helpful in reading papers too), see [Mensch & Kording's paper](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005619).
 
 * For guidelines on how to quickly and efficiently read a research paper
+* [questions](https://docs.google.com/document/d/1C0BIUCnRUMB4GxSYUCGDSiff4WHgi4aK1XJ11zEYIjM/edit?usp=sharing) you can ask yourself as you're reading a paper
 
 ![Reading a research paper](../assets/images/reading-an-article.png){fig-align="center"}
 
-* questions you can ask yourself as you're reading a paper
-
-![Cheetsheet](https://docs.google.com/document/d/1C0BIUCnRUMB4GxSYUCGDSiff4WHgi4aK1XJ11zEYIjM/edit?usp=sharing){fig-align="center"}
 
 ### Getting oriented to the project
 * Brief overview of the project can be found (here)[../projects/cerebellum-fingerprints.md] - includes links to papers that are relevents
