@@ -30,6 +30,7 @@ One of the primary reasons why we think of the cerebellum as being an important 
 * possible methods: 
     * articicial neural network [Siugzdaite et al. (2020](https://www.sciencedirect.com/science/article/pii/S0960982220301585) and summarized [here](../literature-review/development-translational-neuroimaging.md)
     * partial least squares [Dong et al. 2022](https://www.sciencedirect.com/science/article/pii/S2213158222002418)
+    * important methodological considerations are covered in this recent paper by [Dhamala et al. 2022](https://www.sciencedirect.com/science/article/pii/S0006322322016328)
 
 * questions with behavioral dataset: 
     * within each assessment, and each domain, which measures are most successful in classifying disorders / predicting general cognitive functioning? 

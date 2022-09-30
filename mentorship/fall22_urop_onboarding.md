@@ -25,7 +25,6 @@ title: Fall22 Onboarding
 
 ![Reading a research paper](../assets/images/reading-an-article.png){fig-align="center"}
 
-
 ### Getting oriented to the project
 * Brief overview of the project can be found [here](../projects/cerebellum-fingerprints.md) - includes links to papers that are relevents
 * some [terminology](../literature-review/pHealth-terminology.md) and an [overview](../literature-review/pHealth-overview.md) of precision medicine (or pHealth) that you may find useful and some [ethical considerations](../literature-review/pHealth-ethics.md) related to precision medicine

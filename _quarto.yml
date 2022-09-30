@@ -72,6 +72,7 @@ website:
           - literature-review/translational-neuroimaging.md
           - literature-review/subcortical-translational-neuroimaging.md
           - literature-review/development-translational-neuroimaging.md
+          - literature-review/pHealth-methodology.md
       - section: "Projects"
         contents: 
           - projects/index.md
