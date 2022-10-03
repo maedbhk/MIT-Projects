@@ -2,6 +2,10 @@
 title: Fall22 Onboarding
 ---
 
+### First Steps
+* Add your name to the team's [website](https://sensein.group/team/) through a pull request [here](https://github.com/sensein/sensein.github.io/blob/master/docs/_data/team_members.ym)
+* Request access to [gablab slack](gablab.slack.com), look for channel `#satralab`
+
 ### Group Meetings
 * These are optional. You can attend remotely or in person.
 * Sensein group meetings (PI: Satra Ghosh): Tuesdays from 1-3pm in rm 46-tbd, [zoom link](https://mit.zoom.us/j/94441960929)
@@ -32,3 +36,19 @@ title: Fall22 Onboarding
 * one starting place will be to review articles that use the healthy brain network dataset. 
     * [Alexander et al. 2017](https://www.nature.com/articles/sdata2017181)
     * [O'Connor et al. 2017](https://academic.oup.com/gigascience/article/6/2/giw011/2865212)
+
+### Technical Onboarding (most relevent for Role 1)
+
+## Doing Research
+* Shell, git and other useful skills: https://missing.csail.mit.edu/ 
+* python, stats, machine learning, deep learning, nlp: Daniel's resources [here](https://docs.google.com/document/d/127Npk6Z2gV-p_ewwnRz7qDyvKKRI6vb6Yg3zKnOw16s/edit)
+
+## OpenMind: cluster where we store data and run scripts
+* Do course to get access and post certificate on [OpenMind github](https://github.mit.edu/MGHPCC/OpenMind/wiki/Getting-started)
+* request an account on openmind by submitting an issue: https://github.mit.edu/MGHPCC/OpenMind/issues
+* https://openmind.mit.edu/: this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful.
+
+## GitHub: `healthy_brain_network` repo
+* [Repo](https://github.com/maedbhk/healthy_brain_network) for `healthy_brain_network` project - accept collaborator invite.
+* Phenotypic data lives on openmind here: `/nese/mit/group/sig/projects/hbn/phenotype/`
+* You won't be able to access data here until you are given group permissions - I will apply for this once you have an openmind account
