@@ -44,9 +44,9 @@ title: Fall22 Onboarding
 * python, stats, machine learning, deep learning, nlp: Daniel's resources [here](https://docs.google.com/document/d/127Npk6Z2gV-p_ewwnRz7qDyvKKRI6vb6Yg3zKnOw16s/edit)
 
 ## OpenMind: cluster where we store data and run scripts
-* Do course to get access and post certificate on [OpenMind github](https://github.mit.edu/MGHPCC/OpenMind/wiki/Getting-started)
-* request an account on openmind by submitting an issue: https://github.mit.edu/MGHPCC/OpenMind/issues
-* https://openmind.mit.edu/: this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful.
+* Request openmind account + do course to get access and post certificate on [OpenMind github](https://github.mit.edu/MGHPCC/OpenMind/wiki/Getting-started)
+    * Account Request: Attn @s-b,@djarecka: "<mit_username> <mit_email>" PI: Satrajit Ghosh
+* [openmind website](https://openmind.mit.edu/): this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful.
 
 ## GitHub repo
 * [Repo](https://github.com/maedbhk/healthy_brain_network) for `healthy_brain_network` project - accept collaborator invite.
