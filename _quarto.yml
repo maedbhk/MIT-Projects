@@ -90,6 +90,10 @@ website:
           - methods/model-interpretability.md
           - methods/unsupervised-learning.md
           - methods/index.md
+      - section: "Openmind"
+        contents:
+          - openmind/setup.md
+          - openmind/index.md
 
 format:
   html:
