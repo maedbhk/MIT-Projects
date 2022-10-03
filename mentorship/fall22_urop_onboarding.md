@@ -48,7 +48,7 @@ title: Fall22 Onboarding
 * request an account on openmind by submitting an issue: https://github.mit.edu/MGHPCC/OpenMind/issues
 * https://openmind.mit.edu/: this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful.
 
-## GitHub: `healthy_brain_network` repo
+## GitHub repo
 * [Repo](https://github.com/maedbhk/healthy_brain_network) for `healthy_brain_network` project - accept collaborator invite.
 * Phenotypic data lives on openmind here: `/nese/mit/group/sig/projects/hbn/phenotype/`
 * You won't be able to access data here until you are given group permissions - I will apply for this once you have an openmind account
