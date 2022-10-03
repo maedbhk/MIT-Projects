@@ -91,6 +91,27 @@
     "text": "UMAP\n\ngeneral purpose manifold learning and dimension reduction algorithm (compatible wit scikit-learn)"
   },
   {
+    "objectID": "openmind/setup.html",
+    "href": "openmind/setup.html",
+    "title": "Notes on Openmind",
+    "section": "",
+    "text": "follow instructions set out on this webpage to set up SSH for github repo\nthen run command git clone git@github.com:maedbhk/healthy_brain_network.git"
+  },
+  {
+    "objectID": "openmind/setup.html#navigating-openmind",
+    "href": "openmind/setup.html#navigating-openmind",
+    "title": "Notes on Openmind",
+    "section": "Navigating openmind",
+    "text": "Navigating openmind\n\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype"
+  },
+  {
+    "objectID": "openmind/setup.html#setting-paths",
+    "href": "openmind/setup.html#setting-paths",
+    "title": "Notes on Openmind",
+    "section": "Setting Paths",
+    "text": "Setting Paths\nSet path in .bash_profile in your home directory. For example, my .bash_profile is saved at /home/maedbh (see below).\nTo activate: > source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /nese/mit/group/sig/projects/hbn/phenotype\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
+  },
+  {
     "objectID": "progress/week-1.html",
     "href": "progress/week-1.html",
     "title": "Week 1",

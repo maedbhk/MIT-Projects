@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MIT Projects - UK Biobank</title>
+<title>MIT Projects - Notes on Openmind</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,8 +24,8 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../datasets/healthy-brains.html" rel="next">
-<link href="../datasets/abcd.html" rel="prev">
+<link href="../openmind/index.html" rel="next">
+<link href="../methods/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,7 +67,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">UK Biobank</h1>
+      <h1 class="quarto-secondary-nav-title">Notes on Openmind</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -172,12 +172,12 @@ ul.task-list{list-style: none;}
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Datasets</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Datasets</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../datasets/index.html" class="sidebar-item-text sidebar-link">Overview</a>
@@ -190,7 +190,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../datasets/uk-biobank.html" class="sidebar-item-text sidebar-link active">UK Biobank</a>
+  <a href="../datasets/uk-biobank.html" class="sidebar-item-text sidebar-link">UK Biobank</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -375,15 +375,15 @@ ul.task-list{list-style: none;}
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">Openmind</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">Openmind</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../openmind/setup.html" class="sidebar-item-text sidebar-link">Notes on Openmind</a>
+  <a href="../openmind/setup.html" class="sidebar-item-text sidebar-link active">Notes on Openmind</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -402,20 +402,18 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#uk-biobank" id="toc-uk-biobank" class="nav-link active" data-scroll-target="#uk-biobank"><span>UK Biobank</span></a>
-  <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage">Data Storage</a></li>
-  </ul></li>
+  <li><a href="#cloning-a-github-repo-onto-openmind" id="toc-cloning-a-github-repo-onto-openmind" class="nav-link active" data-scroll-target="#cloning-a-github-repo-onto-openmind">Cloning a github repo onto openmind</a></li>
+  <li><a href="#navigating-openmind" id="toc-navigating-openmind" class="nav-link" data-scroll-target="#navigating-openmind">Navigating openmind</a></li>
+  <li><a href="#setting-paths" id="toc-setting-paths" class="nav-link" data-scroll-target="#setting-paths">Setting Paths</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/datasets/uk-biobank.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/openmind/setup.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">UK Biobank</h1>
+<h1 class="title d-none d-lg-block">Notes on Openmind</h1>
 </div>
 
 
@@ -429,97 +427,48 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<section id="uk-biobank" class="level2">
-<h2 class="anchored" data-anchor-id="uk-biobank"><a href="https://www.ukbiobank.ac.uk/">UK Biobank</a></h2>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>UK Biobank is a large-scale biomedical database and research resource, containing in-depth genetic and health information from half a million UK participants.</p>
+<section id="cloning-a-github-repo-onto-openmind" class="level2">
+<h2 class="anchored" data-anchor-id="cloning-a-github-repo-onto-openmind">Cloning a github repo onto openmind</h2>
 <ul>
-<li>Population:</li>
-<li>Data collected:
-<ul>
-<li>Population: M/F ages 9-65</li>
-</ul></li>
-<li><strong>Online questionnaire data</strong> (n=330,000)
-<ul>
-<li>Diet, cognitive function, occupational history, mental health, digestive health, chronic pain, food preferences, neurodevelopmental issues, sleep, pain</li>
-</ul></li>
-<li><strong>Genetic data</strong>
-<ul>
-<li>Whole genome sequencing data (n=200,000), whole exome sequencing data (n=450,000)</li>
-</ul></li>
-<li><strong>Health-related outcomes data</strong> (n=230,000)
-<ul>
-<li>Primary care data containing coded clinical events (consultations, diagnoses, procedures, laboratory tests), prescribed medication (referrals) - info on Covid-19 now.</li>
-<li>Hospital inpatient data - diagnosis, date of admission, underlying conditions, discharge information.</li>
-<li>First occurrences of medical conditions</li>
-<li>Death data</li>
-<li>Cancer data<br>
-</li>
-</ul></li>
-<li><strong>Imaging data</strong> (n=50,000)
-<ul>
-<li>MRI (DTI maybe?) also scans of other body parts: liver, muscle, heart, abdomen</li>
-<li>Post-covid scans on n=2000 participants</li>
-</ul></li>
-<li><strong>Baseline data</strong> (n=500,000)
-<ul>
-<li>Measurements, hand grip, spirometry, bone density</li>
-<li>Blood, urine, saliva,</li>
-<li>Diet preferences</li>
-</ul></li>
-<li><strong>COVID-19 data</strong>
-<ul>
-<li>MRI scans on n=2000 participants, what else has been collected?</li>
-</ul></li>
-<li><strong>Blood + Urine</strong> (n=500,000)
-<ul>
-<li>Saliva for 100,000</li>
-</ul></li>
-<li><strong>Activity Monitor</strong> (n=100,000)
-<ul>
-<li>Physical activity data over a 7-day period collected via a wrist-worn activity monitor</li>
-</ul></li>
-<li><strong>Biomarker data</strong> (n=500,000)
-<ul>
-<li>Also n=20,000 who completed a 4-5 year follow-up assessment.</li>
-<li>34 biomarkers chosen (e.g., HbA1c for diabetes).</li>
-<li>Blood count (hematological assays)</li>
-<li>Infectious disease markers</li>
-<li>Metabolomic biomarkers</li>
-<li>Telomere length</li>
-</ul></li>
+<li>follow instructions set out on this <a href="https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue">webpage</a> to set up SSH for github repo</li>
+<li>then run command <code>git clone git@github.com:maedbhk/healthy_brain_network.git</code></li>
 </ul>
 </section>
-<section id="data-storage" class="level3">
-<h3 class="anchored" data-anchor-id="data-storage">Data Storage</h3>
+<section id="navigating-openmind" class="level2">
+<h2 class="anchored" data-anchor-id="navigating-openmind">Navigating openmind</h2>
 <ul>
-<li>Which data are on openmind?
-<ul>
-<li>Imaging (rest, task, naturalistic)</li>
-<li>Demographic info</li>
-<li>Cognitive/Behavioral results</li>
-<li>Clinical disorders</li>
-</ul></li>
-<li>What is the format?
-<ul>
-<li>raw, derivatives</li>
-</ul></li>
-<li>Have imaging (MRI/fMRI) data been preprocessed?
-<ul>
-<li>fmriprep</li>
-<li>freesurfer</li>
-<li>first-level glms</li>
-</ul></li>
-<li>Where are the data stored on openmind?
-<ul>
-<li>are these data being transitioned to datalad?</li>
-</ul></li>
-<li>How does a new user get access to the dataset?</li>
+<li>code for <code>healthy_brain_network</code> is stored at <code>/om2/user/maedbh/healthy_brain_network</code></li>
+<li>phenotypic data for <code>healthy_brain_network</code> is stored at <code>/nese/mit/group/sig/projects/hbn/phenotype</code></li>
 </ul>
-
-
 </section>
+<section id="setting-paths" class="level2">
+<h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>
+<p>Set path in <code>.bash_profile</code> in your home directory. For example, my <code>.bash_profile</code> is saved at <code>/home/maedbh</code> (see below).</p>
+<p>To activate: &gt; source .bash_profile</p>
+<pre><code># .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+LANG=en_US.UTF-8
+PATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/
+
+alias cdcode="cd /om2/user/maedbh/healthy_brain_network"
+alias cddata="cd /nese/mit/group/sig/projects/hbn/phenotype"
+alias cdhome="cd /home/maedbh"
+alias cdenv="cd /home/maedbh/.local/share/virtualenvs"
+alias diskspace="du -hs $PWD/.[!.]* $PWD/* | sort -h"
+alias l="ls -alh"
+
+module load openmind/anaconda/3-2022.05
+if command -v pyenv 1&gt;/dev/null 2&gt;&amp;1; then
+  eval "$(pyenv init -)"
+fi</code></pre>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -725,13 +674,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../datasets/abcd.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">ABCD</span>
+      <a href="../methods/index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Overview</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../datasets/healthy-brains.html" class="pagination-link">
-        <span class="nav-page-text">Healthy Brains Network</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../openmind/index.html" class="pagination-link">
+        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
