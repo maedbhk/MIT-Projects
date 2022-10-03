@@ -4,7 +4,7 @@ title: Fall22 Onboarding
 
 ### First Steps
 * Add your name to the team's [website](https://sensein.group/team/) through a pull request [here](https://github.com/sensein/sensein.github.io/blob/master/docs/_data/team_members.ym)
-* Request access to [gablab slack](gablab.slack.com), look for channel `#satralab`
+* Request access to [gablab slack](https://mit.enterprise.slack.com/signin/find-workspaces), look for workspace `Gablab`, request access, once you have joined, search for channel `#satralab`
 
 ### Group Meetings
 * These are optional. You can attend remotely or in person.
@@ -45,7 +45,7 @@ title: Fall22 Onboarding
 
 ## OpenMind: cluster where we store data and run scripts
 * Request openmind account + do course to get access and post certificate on [OpenMind github](https://github.mit.edu/MGHPCC/OpenMind/wiki/Getting-started)
-    * Account Request: Attn @s-b,@djarecka: "<mit_username> <mit_email>" PI: Satrajit Ghosh
+    * Account Request Example: Attn @s-b,@djarecka: "maedbh maedbh@mit.edu" PI: Satrajit Ghosh
 * [openmind website](https://openmind.mit.edu/): this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful.
 
 ## GitHub repo
