@@ -7,15 +7,16 @@ title: Notes on Openmind
 * then run command `git clone git@github.com:maedbhk/healthy_brain_network.git`
 
 ## Navigating openmind
-* code for `healthy_brain_network` is stored at `/om2/user/maedbh/healthy_brain_network`
+* `ssh <username>@openmind.mit.edu`
+* `ssh <username>@openmind-dtn.mit.edu` ## to access data transfer node
+* code for `healthy_brain_network` is stored at `/om2/user/maedbh/healthy_brain_network` but you can clone the github repo in your own path `/om2/user/<username>`
 * phenotypic data for `healthy_brain_network` is stored at `/nese/mit/group/sig/projects/hbn/phenotype`
 
 ## Setting Paths
 Set path in `.bash_profile` in your home directory.
 For example, my `.bash_profile` is saved at `/home/maedbh` (see below). 
 
-To activate:
-> source .bash_profile
+To activate ```source .bash_profile```
 
 ```
 # .bash_profile
