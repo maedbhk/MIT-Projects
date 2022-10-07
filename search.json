@@ -102,14 +102,14 @@
     "href": "openmind/setup.html#navigating-openmind",
     "title": "Notes on Openmind",
     "section": "Navigating openmind",
-    "text": "Navigating openmind\n\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype"
+    "text": "Navigating openmind\n\nssh <username>@openmind.mit.edu\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you can clone the github repo in your own path /om2/user/<username>\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype"
   },
   {
     "objectID": "openmind/setup.html#setting-paths",
     "href": "openmind/setup.html#setting-paths",
     "title": "Notes on Openmind",
     "section": "Setting Paths",
-    "text": "Setting Paths\nSet path in .bash_profile in your home directory. For example, my .bash_profile is saved at /home/maedbh (see below).\nTo activate: > source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /nese/mit/group/sig/projects/hbn/phenotype\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
+    "text": "Setting Paths\nSet path in .bash_profile in your home directory. For example, my .bash_profile is saved at /home/maedbh (see below).\nTo activate source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /nese/mit/group/sig/projects/hbn/phenotype\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
   },
   {
     "objectID": "progress/week-1.html",
@@ -193,7 +193,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9"
   },
   {
     "objectID": "progress/week-2.html",
@@ -222,6 +222,20 @@
     "title": "Week 6",
     "section": "",
     "text": "To Do\n\nquestions to answer: what is the reliability in the KSADS assessment across child and parent measures? meant to get to this question during the week but didn’t have time.\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions\n\nIs there anything that I should do in advance of the CHOP meeting on Monday?\nWhat is the protocol for storing new analyses (SUITPy output) on >2000 participants? I was planning on analyzing n=30 from each subgroup of HBN (adhd, autism, control, mood, anxiety, intellectual etc) as a first step, but ultimately I will want to analyze the broader dataset and will need to run SUITPy on each participant."
+  },
+  {
+    "objectID": "progress/week-9.html",
+    "href": "progress/week-9.html",
+    "title": "Week 9",
+    "section": "",
+    "text": "Onboarded two research assistants, here is the updated onboarding document and orientation to openmind\nsome interesting observations from predictive modeling of hbn phenotypic assessments, you can look through the models in this notebook\n\nmodels are trained on different feature sets (decision tree classifier) and the target is whether a participant has/has not been diagnosed with a disorder\nSome observations:\n\nachievement vs intelligent gap such that intelligence is not a predictor of whether or not someone is diagnosed with a developmental disorder, but achievement is\nmany parental questionnaires are not useful in predicting outcome, for example, financial support, social status, basic demographics. Questionnaires that are relevent concern questions related to mood and feelings, anxiety etc.\n\n\nhave also observed feature importances for each of these models (along with permutation importance) - have not yet analyzed any of these features in depth, will be tasking research assistants with these next steps, particularly to investigate model predictions for specific subgroups, focusing on adhd + autism, and anxiety + mood disorders. One follow-up question I have is related to the achievement and intelligence prediction gap, and whether this is predominately driven by the children diagnosed with adhd.\nhave been working on pyBIDS + SUIT, figuring out how best to integrate matlab + python code. spent some time researching and building singularity containers (more involved than anticipated).\nwill work with Jeff to analyze some of the naturalistic data for HBN rather than resting state. In terms of SNR, I would rather start building connectivity models with movie data than resting state data. almost ready to run SUIT pipeline on larger subset of HBN participants, focusing on adhd + autism, anxiety + mood disorders.\nbroader connectivity question will focus on PFC-cerebellar connectivity across these sub-groups and across developmental stages, identifying whether changes in connectivity can predict clinical characteristics of these disorders, and if so, how these differences arise across the developmenal span."
+  },
+  {
+    "objectID": "progress/week-9.html#questions",
+    "href": "progress/week-9.html#questions",
+    "title": "Week 9",
+    "section": "Questions",
+    "text": "Questions\n\nMeeting with Jaan the week of Oct. 17th to discuss this paper, which should be relevent to CHOP project. I suggested our Wednesday meeting time so we could meet all three of us if that works for you? If that time doesn’t work for him, I can suggest 11am on Monday?"
   },
   {
     "objectID": "progress/week-8.html",
