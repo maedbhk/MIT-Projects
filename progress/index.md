@@ -15,3 +15,4 @@ Keeping track of projects: what I've done, what's planned, what's in progress..
 - [`Week 6`](week-6.md)
 - [`Week 7`](week-7.md)
 - [`Week 8`](week-8.md)
+- [`Week 9`](week-9.md)

@@ -3,7 +3,7 @@ title: Week 9
 ---
 
 ## Done and To Do
-*  Onboarded two research assistants, here is the updated [onboarding document](../mentorship/fall22_urop_onboarding.md).
+*  Onboarded two research assistants, here is the updated [onboarding document](../mentorship/fall22_urop_onboarding.md) and orientation to [openmind](../openmind/setup.md)
 * some interesting observations from predictive modeling of hbn phenotypic assessments, you can look through the models in this [notebook](../notebooks/phenotype_models.html)
     * models are trained on different feature sets (decision tree classifier) and the target is whether a participant has/has not been diagnosed with a disorder
     * Some observations: 
