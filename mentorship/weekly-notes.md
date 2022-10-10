@@ -1,5 +1,5 @@
 ---
-title: Notes
+title: Weekly Notes
 ---
 
 ## Week 1
