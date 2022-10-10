@@ -604,14 +604,14 @@
   {
     "objectID": "mentorship/weekly-notes.html",
     "href": "mentorship/weekly-notes.html",
-    "title": "Notes",
+    "title": "Weekly Notes",
     "section": "",
     "text": "Complete Onboarding Steps\nClone repo on OpenMind and set up virtual environment\n\n\n\n\n\nComplete Onboarding Steps, read introduction papers"
   },
   {
     "objectID": "mentorship/weekly-notes.html#week-2",
     "href": "mentorship/weekly-notes.html#week-2",
-    "title": "Notes",
+    "title": "Weekly Notes",
     "section": "Week 2",
     "text": "Week 2\n\nShreya and Opalina\n\nCheck out openmind setup for instructions on cloning repo to openmind and installing and activating a virtual environment\nCheck out the github repo for instructions on running machine learning scripts on hbn data\n\n\n\nAlyson\n\nCheck out predictive modeling results to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not"
   },
