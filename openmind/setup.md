@@ -1,20 +1,25 @@
 ---
-title: Notes on Openmind
+title: Getting Started on Openmind
 ---
 
-## Cloning a github repo onto openmind
-* follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
-* then run command `git clone git@github.com:maedbhk/healthy_brain_network.git`
-
-## Navigating openmind
+## First Steps
 * `ssh <username>@openmind.mit.edu`
-* `ssh <username>@openmind-dtn.mit.edu` ## to access data transfer node
-* code for `healthy_brain_network` is stored at `/om2/user/maedbh/healthy_brain_network` but you can clone the github repo in your own path `/om2/user/<username>`
+    * `ssh <username>@openmind-dtn.mit.edu` ## to access data transfer node
+* use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
+* code for `healthy_brain_network` is stored at `/om2/user/maedbh/healthy_brain_network` but you should clone the github repo in your own path `/om2/user/<username>`
+    * follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
+    * then run command `git clone git@github.com:maedbhk/healthy_brain_network.git` to clone the repo
+    * to install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)
+    * run command `module load openmind/anaconda/3-2022.05`
+    * then run `pipenv install` in top-level directory of `healthy_brain_network`
+    * to activate the virtual environment, run `pipenv shell`
 * phenotypic data for `healthy_brain_network` is stored at `/nese/mit/group/sig/projects/hbn/phenotype`
+    * fyi: I/O operations to `om` and `om2` are fast, which is why I store code here. `om4` and `nese` are slower but have large storage space, which is why data are stored on `nese`.
 
 ## Setting Paths
-Set path in `.bash_profile` in your home directory.
-For example, my `.bash_profile` is saved at `/home/maedbh` (see below). 
+* Set path in `.bash_profile` in your home directory (`cd /home/<username>`)
+* For example, my `.bash_profile` is saved at `/home/maedbh` (see below)
+* You can see that I have set aliases (for easier navigation around openmind), you don't have to do this but it can make things easier when you're working on openmind.
 
 To activate ```source .bash_profile```
 

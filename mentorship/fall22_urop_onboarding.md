@@ -46,9 +46,9 @@ title: Fall22 Onboarding
 ## OpenMind: cluster where we store data and run scripts
 * Request openmind account + do course to get access and post certificate on [OpenMind github](https://github.mit.edu/MGHPCC/OpenMind/wiki/Getting-started)
     * Account Request Example: Attn @s-b,@djarecka: "maedbh maedbh@mit.edu" PI: Satrajit Ghosh
-* [openmind website](https://openmind.mit.edu/): this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful.
+    * Verify which groups you're part of on openmind by typing `groups`: you should see `om_sig` and `gablab`. `om_sig` is Satra Ghosh's group and `gablab` is John Gabrieli's group.
+* Follow instructions on [openmind setup](../openmind/setup.md) for getting starting on openmind (cloning repo etc.)
+    * [openmind website](https://openmind.mit.edu/): this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful.
 
 ## GitHub repo
 * [Repo](https://github.com/maedbhk/healthy_brain_network) for `healthy_brain_network` project - accept collaborator invite.
-* Phenotypic data lives on openmind here: `/nese/mit/group/sig/projects/hbn/phenotype/`
-* You won't be able to access data here until you are given group permissions - I will apply for this once you have an openmind account
