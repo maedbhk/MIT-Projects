@@ -93,23 +93,16 @@
   {
     "objectID": "openmind/setup.html",
     "href": "openmind/setup.html",
-    "title": "Notes on Openmind",
+    "title": "Getting Started on Openmind",
     "section": "",
-    "text": "follow instructions set out on this webpage to set up SSH for github repo\nthen run command git clone git@github.com:maedbhk/healthy_brain_network.git"
-  },
-  {
-    "objectID": "openmind/setup.html#navigating-openmind",
-    "href": "openmind/setup.html#navigating-openmind",
-    "title": "Notes on Openmind",
-    "section": "Navigating openmind",
-    "text": "Navigating openmind\n\nssh <username>@openmind.mit.edu\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you can clone the github repo in your own path /om2/user/<username>\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype"
+    "text": "ssh <username>@openmind.mit.edu\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\n\nuse rsync if you need to transfer data from your local network to openmind (and vice versa)\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path /om2/user/<username>\n\nfollow instructions set out on this webpage to set up SSH for github repo\nthen run command git clone git@github.com:maedbhk/healthy_brain_network.git to clone the repo\nto install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)\nrun command module load openmind/anaconda/3-2022.05\nthen run pipenv install in top-level directory of healthy_brain_network\nto activate the virtual environment, run pipenv shell\n\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why data are stored on nese."
   },
   {
     "objectID": "openmind/setup.html#setting-paths",
     "href": "openmind/setup.html#setting-paths",
-    "title": "Notes on Openmind",
+    "title": "Getting Started on Openmind",
     "section": "Setting Paths",
-    "text": "Setting Paths\nSet path in .bash_profile in your home directory. For example, my .bash_profile is saved at /home/maedbh (see below).\nTo activate source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /nese/mit/group/sig/projects/hbn/phenotype\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
+    "text": "Setting Paths\n\nSet path in .bash_profile in your home directory (cd /home/<username>)\nFor example, my .bash_profile is saved at /home/maedbh (see below)\nYou can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.\n\nTo activate source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /nese/mit/group/sig/projects/hbn/phenotype\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
   },
   {
     "objectID": "progress/week-1.html",
@@ -627,14 +620,14 @@
     "href": "mentorship/fall22_urop_onboarding.html#openmind-cluster-where-we-store-data-and-run-scripts",
     "title": "Fall22 Onboarding",
     "section": "OpenMind: cluster where we store data and run scripts",
-    "text": "OpenMind: cluster where we store data and run scripts\n\nRequest openmind account + do course to get access and post certificate on OpenMind github\n\nAccount Request Example: Attn @s-b,@djarecka: “maedbh maedbh@mit.edu” PI: Satrajit Ghosh\n\nopenmind website: this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful."
+    "text": "OpenMind: cluster where we store data and run scripts\n\nRequest openmind account + do course to get access and post certificate on OpenMind github\n\nAccount Request Example: Attn @s-b,@djarecka: “maedbh maedbh@mit.edu” PI: Satrajit Ghosh\nVerify which groups you’re part of on openmind by typing groups: you should see om_sig and gablab. om_sig is Satra Ghosh’s group and gablab is John Gabrieli’s group.\n\nFollow instructions on openmind setup for getting starting on openmind (cloning repo etc.)\n\nopenmind website: this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful."
   },
   {
     "objectID": "mentorship/fall22_urop_onboarding.html#github-repo",
     "href": "mentorship/fall22_urop_onboarding.html#github-repo",
     "title": "Fall22 Onboarding",
     "section": "GitHub repo",
-    "text": "GitHub repo\n\nRepo for healthy_brain_network project - accept collaborator invite.\nPhenotypic data lives on openmind here: /nese/mit/group/sig/projects/hbn/phenotype/\nYou won’t be able to access data here until you are given group permissions - I will apply for this once you have an openmind account"
+    "text": "GitHub repo\n\nRepo for healthy_brain_network project - accept collaborator invite."
   },
   {
     "objectID": "team.html",

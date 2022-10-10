@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MIT Projects - Notes on Openmind</title>
+<title>MIT Projects - Getting Started on Openmind</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,7 +67,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Notes on Openmind</h1>
+      <h1 class="quarto-secondary-nav-title">Getting Started on Openmind</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -388,7 +388,7 @@ ul.task-list{list-style: none;}
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../openmind/setup.html" class="sidebar-item-text sidebar-link active">Notes on Openmind</a>
+  <a href="../openmind/setup.html" class="sidebar-item-text sidebar-link active">Getting Started on Openmind</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -407,8 +407,7 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#cloning-a-github-repo-onto-openmind" id="toc-cloning-a-github-repo-onto-openmind" class="nav-link active" data-scroll-target="#cloning-a-github-repo-onto-openmind">Cloning a github repo onto openmind</a></li>
-  <li><a href="#navigating-openmind" id="toc-navigating-openmind" class="nav-link" data-scroll-target="#navigating-openmind">Navigating openmind</a></li>
+  <li><a href="#first-steps" id="toc-first-steps" class="nav-link active" data-scroll-target="#first-steps">First Steps</a></li>
   <li><a href="#setting-paths" id="toc-setting-paths" class="nav-link" data-scroll-target="#setting-paths">Setting Paths</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/openmind/setup.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -418,7 +417,7 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Notes on Openmind</h1>
+<h1 class="title d-none d-lg-block">Getting Started on Openmind</h1>
 </div>
 
 
@@ -432,25 +431,36 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<section id="cloning-a-github-repo-onto-openmind" class="level2">
-<h2 class="anchored" data-anchor-id="cloning-a-github-repo-onto-openmind">Cloning a github repo onto openmind</h2>
+<section id="first-steps" class="level2">
+<h2 class="anchored" data-anchor-id="first-steps">First Steps</h2>
+<ul>
+<li><code>ssh &lt;username&gt;@openmind.mit.edu</code>
+<ul>
+<li><code>ssh &lt;username&gt;@openmind-dtn.mit.edu</code> ## to access data transfer node</li>
+</ul></li>
+<li>use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa)</li>
+<li>code for <code>healthy_brain_network</code> is stored at <code>/om2/user/maedbh/healthy_brain_network</code> but you should clone the github repo in your own path <code>/om2/user/&lt;username&gt;</code>
 <ul>
 <li>follow instructions set out on this <a href="https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue">webpage</a> to set up SSH for github repo</li>
-<li>then run command <code>git clone git@github.com:maedbhk/healthy_brain_network.git</code></li>
-</ul>
-</section>
-<section id="navigating-openmind" class="level2">
-<h2 class="anchored" data-anchor-id="navigating-openmind">Navigating openmind</h2>
+<li>then run command <code>git clone git@github.com:maedbhk/healthy_brain_network.git</code> to clone the repo</li>
+<li>to install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)</li>
+<li>run command <code>module load openmind/anaconda/3-2022.05</code></li>
+<li>then run <code>pipenv install</code> in top-level directory of <code>healthy_brain_network</code></li>
+<li>to activate the virtual environment, run <code>pipenv shell</code></li>
+</ul></li>
+<li>phenotypic data for <code>healthy_brain_network</code> is stored at <code>/nese/mit/group/sig/projects/hbn/phenotype</code>
 <ul>
-<li><code>ssh &lt;username&gt;@openmind.mit.edu</code></li>
-<li><code>ssh &lt;username&gt;@openmind-dtn.mit.edu</code> ## to access data transfer node</li>
-<li>code for <code>healthy_brain_network</code> is stored at <code>/om2/user/maedbh/healthy_brain_network</code> but you can clone the github repo in your own path <code>/om2/user/&lt;username&gt;</code></li>
-<li>phenotypic data for <code>healthy_brain_network</code> is stored at <code>/nese/mit/group/sig/projects/hbn/phenotype</code></li>
+<li>fyi: I/O operations to <code>om</code> and <code>om2</code> are fast, which is why I store code here. <code>om4</code> and <code>nese</code> are slower but have large storage space, which is why data are stored on <code>nese</code>.</li>
+</ul></li>
 </ul>
 </section>
 <section id="setting-paths" class="level2">
 <h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>
-<p>Set path in <code>.bash_profile</code> in your home directory. For example, my <code>.bash_profile</code> is saved at <code>/home/maedbh</code> (see below).</p>
+<ul>
+<li>Set path in <code>.bash_profile</code> in your home directory (<code>cd /home/&lt;username&gt;</code>)</li>
+<li>For example, my <code>.bash_profile</code> is saved at <code>/home/maedbh</code> (see below)</li>
+<li>You can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.</li>
+</ul>
 <p>To activate <code>source .bash_profile</code></p>
 <pre><code># .bash_profile
 
