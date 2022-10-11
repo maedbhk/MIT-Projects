@@ -95,7 +95,7 @@
     "href": "openmind/setup.html",
     "title": "Getting Started on Openmind",
     "section": "",
-    "text": "ssh <username>@openmind.mit.edu\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\n\nuse rsync if you need to transfer data from your local network to openmind (and vice versa)\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path /om2/user/<username>\n\nfollow instructions set out on this webpage to set up SSH for github repo\nthen run command git clone git@github.com:maedbhk/healthy_brain_network.git to clone the repo\nto install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)\nrun command module load openmind/anaconda/3-2022.05\nthen run pipenv install in top-level directory of healthy_brain_network\nto activate the virtual environment, run pipenv shell\n\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why data are stored on nese."
+    "text": "ssh <username>@openmind.mit.edu\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\n\nuse rsync if you need to transfer data from your local network to openmind (and vice versa)\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path /om2/user/<username>\n\nfollow instructions set out on this webpage to set up SSH for github repo\nthen run command git clone git@github.com:maedbhk/healthy_brain_network.git to clone the repo\nto install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)\nrun command module load openmind/anaconda/3-2022.05 (if pipenv is not installed with anaconda, then run pip install pipenv)\nthen run pipenv install in top-level directory of healthy_brain_network\nto activate the virtual environment, run pipenv shell\n\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why data are stored on nese."
   },
   {
     "objectID": "openmind/setup.html#setting-paths",
@@ -609,11 +609,11 @@
     "text": "Complete Onboarding Steps\nClone repo on OpenMind and set up virtual environment\n\n\n\n\n\nComplete Onboarding Steps, read introduction papers"
   },
   {
-    "objectID": "mentorship/weekly-notes.html#week-2",
-    "href": "mentorship/weekly-notes.html#week-2",
+    "objectID": "mentorship/weekly-notes.html#week-2-1010-",
+    "href": "mentorship/weekly-notes.html#week-2-1010-",
     "title": "Weekly Notes",
-    "section": "Week 2",
-    "text": "Week 2\n\nShreya and Opalina\n\nCheck out openmind setup for instructions on cloning repo to openmind and installing and activating a virtual environment\nCheck out the github repo for instructions on running machine learning scripts on hbn data\n\n\n\nAlyson\n\nCheck out predictive modeling results to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not"
+    "section": "Week 2 (10/10->)",
+    "text": "Week 2 (10/10->)\n\nShreya and Opalina\n\nCheck out openmind setup for instructions on cloning repo to openmind and installing and activating a virtual environment\nCheck out the github repo for instructions on running machine learning scripts on hbn data\n\n\n\nAlyson\n\nCheck out predictive modeling results to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not"
   },
   {
     "objectID": "mentorship/fall22_urop_onboarding.html",
