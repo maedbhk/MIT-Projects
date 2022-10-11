@@ -613,7 +613,7 @@
     "href": "mentorship/weekly-notes.html#week-2-1010-",
     "title": "Weekly Notes",
     "section": "Week 2 (10/10->)",
-    "text": "Week 2 (10/10->)\n\nShreya and Opalina\n\nCheck out openmind setup for instructions on cloning repo to openmind and installing and activating a virtual environment\nCheck out the github repo for instructions on running machine learning scripts on hbn data\n\n\n\nAlyson\n\nCheck out predictive modeling results to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not"
+    "text": "Week 2 (10/10->)\n\nShreya and Opalina\n\nCheck out openmind setup for instructions on cloning repo to openmind and installing and activating a virtual environment\nCheck out the github repo for instructions on running machine learning scripts on hbn data\nAs a general practice, create your own branches for code development and then submit pull requests when you want to merge to main branch\n\n\n\nAlyson\n\nCheck out predictive modeling results to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not"
   },
   {
     "objectID": "mentorship/fall22_urop_onboarding.html",
