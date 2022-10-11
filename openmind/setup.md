@@ -10,7 +10,7 @@ title: Getting Started on Openmind
     * follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
     * then run command `git clone git@github.com:maedbhk/healthy_brain_network.git` to clone the repo
     * to install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)
-    * run command `module load openmind/anaconda/3-2022.05`
+    * run command `module load openmind/anaconda/3-2022.05` (if pipenv is not installed with anaconda, then run `pip install pipenv`)
     * then run `pipenv install` in top-level directory of `healthy_brain_network`
     * to activate the virtual environment, run `pipenv shell`
 * phenotypic data for `healthy_brain_network` is stored at `/nese/mit/group/sig/projects/hbn/phenotype`
