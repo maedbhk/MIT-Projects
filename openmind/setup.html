@@ -456,26 +456,26 @@ ul.task-list{list-style: none;}
 <li><code>ssh &lt;username&gt;@openmind-dtn.mit.edu</code> ## to access data transfer node</li>
 </ul></li>
 <li>use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa)</li>
-<li>code for <code>healthy_brain_network</code> is stored at <code>/om2/user/maedbh/healthy_brain_network</code> but you should clone the github repo in your own path <code>/om2/user/&lt;username&gt;</code>
+<li>code for <strong>healthy_brain_network</strong> is stored at <strong>/om2/user/maedbh/healthy_brain_network</strong> but you should clone the github repo in your own path <strong>om2/user/“username”</strong>
 <ul>
 <li>follow instructions set out on this <a href="https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue">webpage</a> to set up SSH for github repo</li>
 <li>then run command <code>git clone git@github.com:maedbhk/healthy_brain_network.git</code> to clone the repo</li>
 <li>to install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)</li>
 <li>run command <code>module load openmind/anaconda/3-2022.05</code> (if pipenv is not installed with anaconda, then run <code>pip install pipenv</code>)</li>
-<li>then run <code>pipenv install</code> in top-level directory of <code>healthy_brain_network</code> (if you’re getting an error, it’s probably becuase you have not set your paths to /home/<username>/.local/bin. See ## Setting Paths below for more details)</username></li>
+<li>then run <code>pipenv install</code> in top-level directory of <strong>healthy_brain_network</strong> (if you’re getting an error, it’s probably becuase you have not set your paths to <strong>/home/“username”/.local/bi</strong>`. See <strong>Setting Paths</strong> below for more details)</li>
 <li>to activate the virtual environment, run <code>pipenv shell</code></li>
 </ul></li>
-<li>phenotypic data for <code>healthy_brain_network</code> is stored at <code>/nese/mit/group/sig/projects/hbn/phenotype</code>
+<li>phenotypic data for <strong>healthy_brain_network</strong> is stored at <strong>/nese/mit/group/sig/projects/hbn/phenotype</strong>
 <ul>
-<li>fyi: I/O operations to <code>om</code> and <code>om2</code> are fast, which is why I store code here. <code>om4</code> and <code>nese</code> are slower but have large storage space, which is why data are stored on <code>nese</code>.</li>
+<li>fyi: I/O operations to <strong>om</strong> and <strong>om2</strong> are fast, which is why I store code here. <strong>om4</strong> and <strong>nese</strong> are slower but have large storage space, which is why data are stored on <strong>nese</strong>.</li>
 </ul></li>
 </ul>
 </section>
 <section id="setting-paths" class="level2">
 <h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>
 <ul>
-<li>Create <code>.bash_profile</code> in your home directory (<code>cd /home/&lt;username&gt;</code> and <code>touch .bash_profile</code> if file doesn’t exist)</li>
-<li>For example, my <code>.bash_profile</code> is saved at <code>/home/maedbh</code> (see below)</li>
+<li>Create <strong>.bash_profile</strong> in your home directory (<code>cd /home/&lt;username&gt;</code> and <code>touch .bash_profile</code> if file doesn’t exist)</li>
+<li>For example, my <strong>.bash_profile</strong> is saved at <strong>/home/maedbh</strong> (see below)</li>
 <li>You can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.</li>
 <li>Make sure you set your PATH so that your scripts can find software saved to your .local/bin directory.</li>
 </ul>
