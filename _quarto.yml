@@ -58,6 +58,7 @@ website:
           - datasets/healthy-brains.md
           - datasets/abide.md
           - datasets/adhd-200.md
+          - datasets/chop.md
       - section: "Literature Review"
         contents:
           - literature-review/index.md
