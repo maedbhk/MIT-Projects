@@ -3,7 +3,7 @@ title: Fall22 Onboarding
 ---
 
 ### First Steps
-* Add your name to the team's [website](https://sensein.group/team/) through a pull request [here](https://github.com/sensein/sensein.github.io/blob/master/docs/_data/team_members.ym)
+* Add your name to the team's [website](https://sensein.group/team/) through a pull request [here](https://github.com/sensein/sensein.github.io/blob/master/docs/_data/team_members.yml)
 * Request access to [gablab slack](https://mit.enterprise.slack.com/signin/find-workspaces), look for workspace `Gablab`, request access, once you have joined, search for channel `#satralab`
 
 ### Group Meetings
