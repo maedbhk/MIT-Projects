@@ -91,20 +91,6 @@
     "text": "UMAP\n\ngeneral purpose manifold learning and dimension reduction algorithm (compatible wit scikit-learn)"
   },
   {
-    "objectID": "openmind/setup.html",
-    "href": "openmind/setup.html",
-    "title": "Getting Started on Openmind",
-    "section": "",
-    "text": "ssh <username>@openmind.mit.edu\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\n\nuse rsync if you need to transfer data from your local network to openmind (and vice versa)\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path om2/user/“username”\n\nfollow instructions set out on this webpage to set up SSH for github repo\nthen run command git clone git@github.com:maedbhk/healthy_brain_network.git to clone the repo\nto install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)\nrun command module load openmind/anaconda/3-2022.05 (if pipenv is not installed with anaconda, then run pip install pipenv)\nthen run pipenv install in top-level directory of healthy_brain_network (if you’re getting an error, it’s probably becuase you have not set your paths to /home/“username”/.local/bi`. See Setting Paths below for more details)\nto activate the virtual environment, run pipenv shell\n\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why data are stored on nese."
-  },
-  {
-    "objectID": "openmind/setup.html#setting-paths",
-    "href": "openmind/setup.html#setting-paths",
-    "title": "Getting Started on Openmind",
-    "section": "Setting Paths",
-    "text": "Setting Paths\n\nCreate .bash_profile in your home directory (cd /home/<username> and touch .bash_profile if file doesn’t exist)\nFor example, my .bash_profile is saved at /home/maedbh (see below)\nYou can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.\nMake sure you set your PATH so that your scripts can find software saved to your .local/bin directory.\n\nTo activate source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /nese/mit/group/sig/projects/hbn/phenotype\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
-  },
-  {
     "objectID": "progress/week-1.html",
     "href": "progress/week-1.html",
     "title": "Week 1",
@@ -602,11 +588,25 @@
     "text": "Apply By: 09/20/’22\nStart Date: 10/01/’22 (ends Spring 2023, extension possible thru summer 2023)\nCompensation: Course/Academic Credit\nGroup: Sensible Intelligence Group, McGovern Institute, MIT\nKey Words: Python Programming; Big Data; Literature Review; Data Science; Neuroimaging; Neurodevelopmental Disorders\nProject Title: Using big data to build predictive models of developmental disorders\n\n\n\n\nThe Senseable Intelligence Group at the McGovern Institute for Brain Research is looking for UROP candidates to work on cutting-edge and clinically relevant neuroscience research. The aim of the project is to build computational models that integrate biological and behavioral information to develop risk predictors of neurodevelopmental disorders.\n\n\n\n\n\nRole (1) This role requires strong computational/programming expertise, and involves training and testing models on a multi-modal dataset that includes phenotypic assessments and brain-based markers.\nRole (2) This role requires previous experience in conducting literature reviews and writing brief reports. The research topics will range from neurodevelopmental disorders to translational neuroimaging and precision medicine. Knowledge of these topics is not required, but an interest in this research is highly encouraged.\n\n\n\n\n\nRole (1) Proficiency in Python programming, some machine learning and data science is required.\nRole (2) Basic research methods along with an ability to conduct a literature review is required. Foundational knowledge of psychology/cognition and neuroscience is highly preferred but not required.\n\n\n\n\nPlease send a statement of interest along with an updated resume to maedbh@mit.edu, using the subject title Fall 2022 UROP. As there are two openings for this project, please indicate in your application which (or both) of the two roles appeals most to you."
   },
   {
+    "objectID": "mentorship/openmind.html",
+    "href": "mentorship/openmind.html",
+    "title": "Getting Started on Openmind",
+    "section": "",
+    "text": "ssh <username>@openmind.mit.edu\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\n\nuse rsync if you need to transfer data from your local network to openmind (and vice versa)\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path om2/user/“username”\n\nfollow instructions set out on this webpage to set up SSH for github repo\nthen run command git clone git@github.com:maedbhk/healthy_brain_network.git to clone the repo\nto install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)\nrun command module load openmind/anaconda/3-2022.05 (if pipenv is not installed with anaconda, then run pip install pipenv)\nthen run pipenv install in top-level directory of healthy_brain_network (if you’re getting an error, it’s probably becuase you have not set PATH to be /home/“username”/.local/bin in your .bash_profile. See Setting Paths below for more details)\nto activate the virtual environment, run pipenv shell\n\nphenotypic data for healthy_brain_network is stored at /nese/mit/group/sig/projects/hbn/phenotype\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why raw data are stored on nese."
+  },
+  {
+    "objectID": "mentorship/openmind.html#setting-paths",
+    "href": "mentorship/openmind.html#setting-paths",
+    "title": "Getting Started on Openmind",
+    "section": "Setting Paths",
+    "text": "Setting Paths\n\nCreate .bash_profile in your home directory (cd /home/<username> and touch .bash_profile if file doesn’t exist)\nFor example, my .bash_profile is saved at /home/maedbh (see below)\nYou can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.\nMake sure you set your PATH so that your scripts can find software saved to your .local/bin directory.\n\nTo activate source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /nese/mit/group/sig/projects/hbn/phenotype\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
+  },
+  {
     "objectID": "mentorship/index.html",
     "href": "mentorship/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Fall22 Recruitment\nFall22 Onboarding\nWeekly Notes"
+    "text": "Fall22 Recruitment\nFall22 Onboarding\nWeekly Notes\nOpenMind Setup"
   },
   {
     "objectID": "mentorship/weekly-notes.html",
