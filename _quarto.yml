@@ -73,12 +73,12 @@ website:
           - literature-review/translational-neuroimaging.md
           - literature-review/subcortical-translational-neuroimaging.md
           - literature-review/development-translational-neuroimaging.md
-          - literature-review/pHealth-methodology.md
+          - literature-review/methodology-pHealth.md
       - section: "Projects"
         contents: 
           - projects/index.md
           - projects/cerebellum-fingerprints.md
-          - projects/chop.md
+          - projects/EMR-selfharm.md
       - section: "Mentorship"
         contents:
           - mentorship/index.md
@@ -91,6 +91,7 @@ website:
           - methods/model-evaluation.md
           - methods/model-interpretability.md
           - methods/unsupervised-learning.md
+          - methods/modeling-EHR.md
           - methods/index.md
       - section: "Openmind"
         contents:
