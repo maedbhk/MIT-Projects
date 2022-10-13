@@ -1,12 +1,13 @@
 ---
 title: Identifying Risk Predictors for Self-Harm through Electronic Medical Records
 ---
+> Ideas from [Czyz et al. 2021](https://journals.sagepub.com/doi/full/10.1177/1073191120939168?casa_token=nZwwu0a6mM4AAAAA%3AUE4tkOVOBDe0BEXfvZDRMFSH-BjpA4Cq07RRlY9s_cZsfePwk9W9nE3Odc4qW9qh5UW5lCs4qj3dcA) and [Huang et al. 2020](https://arxiv.org/pdf/1904.05342.pdf)
+
 
 ### Dataset Overview
 * Overview of the data can be found [here](../datasets/chop.md)
 
 ### Project Goals
-> Ideas from [Czyz et al. 2021](https://journals.sagepub.com/doi/full/10.1177/1073191120939168?casa_token=nZwwu0a6mM4AAAAA%3AUE4tkOVOBDe0BEXfvZDRMFSH-BjpA4Cq07RRlY9s_cZsfePwk9W9nE3Odc4qW9qh5UW5lCs4qj3dcA)
 * Can we identify reliable proximal markers of suicide risk to inform personalized interventions provided at crucial moments in the individual's natural environment?    
     * Validated indicators of proximal risk could lead to the development of adaptive interventions
     * Short-term risk prediction is a key concern for clinical providers and more research that incorporates proximal assessment is needed to provide insights about short-term precursors to  suicidal ideation in order to facilitate early detection of risk as well as inform targeted interventions.
