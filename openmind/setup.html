@@ -213,6 +213,11 @@ ul.task-list{list-style: none;}
   <a href="../datasets/adhd-200.html" class="sidebar-item-text sidebar-link">ADHD-200</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/chop.html" class="sidebar-item-text sidebar-link">CHOP</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -457,7 +462,7 @@ ul.task-list{list-style: none;}
 <li>then run command <code>git clone git@github.com:maedbhk/healthy_brain_network.git</code> to clone the repo</li>
 <li>to install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)</li>
 <li>run command <code>module load openmind/anaconda/3-2022.05</code> (if pipenv is not installed with anaconda, then run <code>pip install pipenv</code>)</li>
-<li>then run <code>pipenv install</code> in top-level directory of <code>healthy_brain_network</code></li>
+<li>then run <code>pipenv install</code> in top-level directory of <code>healthy_brain_network</code> (if you’re getting an error, it’s probably becuase you have not set your paths to /home/<username>/.local/bin. See ## Setting Paths below for more details)</username></li>
 <li>to activate the virtual environment, run <code>pipenv shell</code></li>
 </ul></li>
 <li>phenotypic data for <code>healthy_brain_network</code> is stored at <code>/nese/mit/group/sig/projects/hbn/phenotype</code>
@@ -469,9 +474,10 @@ ul.task-list{list-style: none;}
 <section id="setting-paths" class="level2">
 <h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>
 <ul>
-<li>Set path in <code>.bash_profile</code> in your home directory (<code>cd /home/&lt;username&gt;</code>)</li>
+<li>Create <code>.bash_profile</code> in your home directory (<code>cd /home/&lt;username&gt;</code> and <code>touch .bash_profile</code> if file doesn’t exist)</li>
 <li>For example, my <code>.bash_profile</code> is saved at <code>/home/maedbh</code> (see below)</li>
 <li>You can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.</li>
+<li>Make sure you set your PATH so that your scripts can find software saved to your .local/bin directory.</li>
 </ul>
 <p>To activate <code>source .bash_profile</code></p>
 <pre><code># .bash_profile
