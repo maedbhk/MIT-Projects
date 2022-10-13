@@ -25,4 +25,7 @@ title: Identifying Risk Predictors for Self-Harm through Electronic Medical Reco
 * One idea for modeling the data is to use [clinicalBERT](https://arxiv.org/pdf/1904.05342.pdf), which models clinical notes to predict hospital readmission. This approach is largely focused on unstructured data, therefore it should be applied to electronic health records that contain text data, which are high-dimensional and sparse. 
 * To model structured data, we could use any number of machine learning pipelines. We are using [pydra-ml](https://github.com/nipype/pydra-ml) for another project, which is a lightweight and flexible machine learning pipeline that does predictive (and interpretable) modeling. 
 
+### Ethical considerations
+* Not only are there [methodological considerations](https://www.sciencedirect.com/science/article/pii/S0006322322016328) for anyone doing predictive modeling work in psychiatry, but there are significant [ethical considerations](../literature-review/pHealth-ethics.md). As we progress in this project, I hope to be mindful 
+
 
