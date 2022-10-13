@@ -86,6 +86,7 @@ website:
           - mentorship/fall22_urop_recruitment.md
           - mentorship/fall22_urop_onboarding.md
           - mentorship/weekly-notes.md
+          - mentorship/openmind.md
       - section: "Methods"
         contents: 
           - methods/feature-engineering.md
@@ -94,10 +95,6 @@ website:
           - methods/unsupervised-learning.md
           - methods/modeling-EHR.md
           - methods/index.md
-      - section: "Openmind"
-        contents:
-          - openmind/setup.md
-          - openmind/index.md
 
 format:
   html:

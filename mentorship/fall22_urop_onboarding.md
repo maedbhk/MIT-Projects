@@ -47,7 +47,7 @@ title: Fall22 Onboarding
 * Request openmind account + do course to get access and post certificate on [OpenMind github](https://github.mit.edu/MGHPCC/OpenMind/wiki/Getting-started)
     * Account Request Example: Attn @s-b,@djarecka: "maedbh maedbh@mit.edu" PI: Satrajit Ghosh
     * Verify which groups you're part of on openmind by typing `groups`: you should see `om_sig` and `gablab`. `om_sig` is Satra Ghosh's group and `gablab` is John Gabrieli's group.
-* Follow instructions on [openmind setup](../openmind/setup.md) for getting starting on openmind (cloning repo etc.)
+* Follow instructions on [openmind setup](openmind.md) for getting starting on openmind (cloning repo etc.)
     * [openmind website](https://openmind.mit.edu/): this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful.
 
 ## GitHub repo
