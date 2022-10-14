@@ -50,6 +50,7 @@ website:
           - progress/week-7.md
           - progress/week-8.md
           - progress/week-9.md
+          - progress/week-10.md
       - section: "Datasets"
         contents:
           - datasets/index.md
