@@ -4,6 +4,8 @@ title: CHOP
 ---
 
 ## Datasets
+> the following paper summarizes the [BHS dataset](https://journals.lww.com/pec-online/Fulltext/2022/02000/Evaluating_Adolescent_Substance_Use_and_Suicide_in.43.aspx) 
+> notes on the dataset can be found [here](../literature-review/EMR-selfharm.md)
 * CHOP emergency department: 
     * What does this dataset contain? 
         * Behavioral Health screen - used by CHOP since 2014 to give staff in the ER a sense of mental health burden for each child. Questions include environmental adversity and other data that are difficult to collect. Demographics are included.
