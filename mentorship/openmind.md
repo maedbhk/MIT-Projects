@@ -48,3 +48,11 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 ```
+
+## Using VS Code on OpenMind
+* Open VS Code and add the extensions on the sidebar: **Remote - SSH** and **Remote - SSH: Editing Configuration Files**
+* Go to **View** and open **Command Palette** 
+    * Click **Remote-SSH: Add New SSH Host**
+    * You'll be prompted to log in to OpenMind `ssh "username"@openmind.mit.edu`
+    * You'll get a notification saying host added and an option to **connect** 
+* Once you connect for the first time you'll be able to connect easily via **Remote Explorer** on the sidebar. You'll be prompted for your password every time you ssh in. 

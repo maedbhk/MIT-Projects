@@ -96,6 +96,11 @@ website:
           - methods/unsupervised-learning.md
           - methods/modeling-EHR.md
           - methods/index.md
+      - section: "Notebooks"
+        contents:
+          - index.md
+          - notebooks/clinical_dx.html
+          - notebooks/phenotype_models.html
 
 format:
   html:

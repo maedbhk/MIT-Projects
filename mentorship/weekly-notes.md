@@ -17,4 +17,5 @@ title: Weekly Notes
 * As a general practice, create your own branches for code development and then submit pull requests when you want to merge to `main` branch
 
 ### Alyson
-* Check out [predictive modeling results](../notebooks/phenotype_models.html) to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not
+* Check out [predictive modeling results](../notebooks/phenotype_models.html) to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not.
+
