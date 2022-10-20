@@ -101,6 +101,7 @@ website:
           - notebooks/index.md
           - notebooks/clinical_dx.html
           - notebooks/phenotype_models.html
+          - notebooks/iframe_figures/*
 
 format:
   html:
