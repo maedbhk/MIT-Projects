@@ -52,3 +52,6 @@ title: Fall22 Onboarding
 
 ## GitHub repo
 * [Repo](https://github.com/maedbhk/healthy_brain_network) for `healthy_brain_network` project - accept collaborator invite.
+
+## Notebooks
+* Check out [current results](../notebooks/clinical_dx.html)

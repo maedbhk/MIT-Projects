@@ -98,7 +98,7 @@ website:
           - methods/index.md
       - section: "Notebooks"
         contents:
-          - index.md
+          - notebooks/index.md
           - notebooks/clinical_dx.html
           - notebooks/phenotype_models.html
 
