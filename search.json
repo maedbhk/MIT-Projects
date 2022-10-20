@@ -91,6 +91,41 @@
     "text": "UMAP\n\ngeneral purpose manifold learning and dimension reduction algorithm (compatible wit scikit-learn)"
   },
   {
+    "objectID": "methods/modeling-EHR.html",
+    "href": "methods/modeling-EHR.html",
+    "title": "ClinicalBERT",
+    "section": "",
+    "text": "notes on paper by Huang et al. 2019"
+  },
+  {
+    "objectID": "methods/modeling-EHR.html#what-is-clinicalbert",
+    "href": "methods/modeling-EHR.html#what-is-clinicalbert",
+    "title": "ClinicalBERT",
+    "section": "What is clinicalBERT?",
+    "text": "What is clinicalBERT?\n\nClinicalBERT is a flexible framework used to represent clinical notes. It uncovers high-quality relationships between medical concepts, as judged by physicians.\nunstructured, high-dimensional and sparse information such as clinical notes are difficult to use in clinical machine learning models.\nClinical notes contain significant clinical value, compared to structured features, clinical notes provide a richer picture of the patient since they describe symptoms, reasons for diagnoses, radiology results, daily activities and patient history. Problem: for time-stretched physicians (example: those working in intensive unit) can’t digest/compile all of the information presented across EHR, therefore, the question is: can a model do it for them?\nUtility of clinicalBERT: actively predicting readmission has clinical significance, as it may improve efficiency and reduce the burden on intensive care unit doctors.\nClinicalBERT has developed a discharge support model that processes patient notes and dynamically assigns a risk score of whether the patient will be readmitted wtihin 30 days.\nClinicalBERT can also be adapted to other tasks such as diagnosis prediction, mortality risk estimation, and length-of-stay assessment."
+  },
+  {
+    "objectID": "methods/modeling-EHR.html#how-is-clinicalbert-different-from-other-models",
+    "href": "methods/modeling-EHR.html#how-is-clinicalbert-different-from-other-models",
+    "title": "ClinicalBERT",
+    "section": "How is ClinicalBERT different from other models?",
+    "text": "How is ClinicalBERT different from other models?\n\nMuch of the previous work has used information at discharge whereas ClinicalBERT can predict readmission during a patient’s stay.\nMakinga prediction using a discharge summary at the end of hte stay means that there are fewer opportunities to reduce the chance of readmission.\nClinicalBERT predicts readmission at any timepoint since the patient was admitted.\nCompared to two popular models of clinical text: Word2Vec and FastText, clinicalBERT more accurately captures clinical word similarity.\nWhere BERT is trained on BooksCorpus and Wikipedia, ClinicalBERT is also pre-trained on clinical notes."
+  },
+  {
+    "objectID": "methods/modeling-EHR.html#what-does-clinicalbert-do",
+    "href": "methods/modeling-EHR.html#what-does-clinicalbert-do",
+    "title": "ClinicalBERT",
+    "section": "What does ClinicalBERT do?",
+    "text": "What does ClinicalBERT do?\n\nLearns deep representations of clinical text, which can uncover clinical insights (predictions of disease), find relationships between treatments and outcomes\nTo evalute models on readmission prediction, a metric is defined based on a clinical challenge.\nmetric is alarm fatigue: useful classification rules for medicine have to have high positive predictive value (precision).\nThey evaluate model performance at a fixed positive predictive value\nThey find that ClinicalBERT outperforms competitive deep language models.\nImportantly, weights can be visualized to understand which elements of clinical notes are relevent to a prediction."
+  },
+  {
+    "objectID": "methods/modeling-EHR.html#questions",
+    "href": "methods/modeling-EHR.html#questions",
+    "title": "ClinicalBERT",
+    "section": "Questions:",
+    "text": "Questions:\n\nAfter pre-training, ClinicalBERT is fine-tuned on a clinical task (e.g. readmission prediction). What if someone wants to use another clinical task (length of hospital stay, mortality risk estimation), are those weights available?"
+  },
+  {
     "objectID": "progress/week-1.html",
     "href": "progress/week-1.html",
     "title": "Week 1",
@@ -152,6 +187,13 @@
     "title": "Week 0",
     "section": "Other considerations",
     "text": "Other considerations\n\nFinally, there are a number of ethical considerations that I would like to consider as I venture into the realm of precision medicine. Translational work is a new area of research for me and I am aware that precision medicine is a quickly evolving field that raises important questions about ethical responsibility:\nData privacy: Who stands to benefit, and who is harmed? What possible solutions help protect individuals’ and communities’ ownership over their own data? I think this question is especially relevant for neural data that is not (as of yet) being used to track, manipulate, or identify individuals.\nAI and healthcare: with such heavy reliance on technology in developed nations, I think it’ll be important to consider the concerns associated with bias and morality of AI, and how it may actually challenge equitable access to healthcare.\nCommunicating uncertainty: How do we communicate uncertainty about our translational results, especially when models are continuously updated with new information. It’ll be important to understand the uncertainty arising from technical procedures: small/incomplete sample sizes, sparse longitudinal datasets, instrument variability etc.\nTo what extent can we engage with diverse communities in translating neuroscience research to the health space. Can we bring together neuroscientists, physicians, ethicists, engineers, mental health workers, and caregivers to understand the ethical impact of data- and model-driven precision medicine?"
+  },
+  {
+    "objectID": "progress/week-11.html",
+    "href": "progress/week-11.html",
+    "title": "Week 11",
+    "section": "",
+    "text": "Meeting with Jaan about ClinicalBERT, notes here.\nWe chatted about:\n\n\nbuilding dashboards for predictive models that can help clinicians (e.g. displaying the data using https://superset.apache.org/)\n\n\nsimple models that can help detect features predictive of suicide attempt\n\n\nlonger-term strategy for deploying models that work across EHR data structured in different ways, in different health systems\n\n\nTo Do: connect with people at CHOP about OMOP common data model\nSpoke with Thea Singer about a profile for the Rappaport Foundation proposal"
   },
   {
     "objectID": "progress/week-7.html",
@@ -602,6 +644,13 @@
     "text": "Methods\n\nGAMLSS modeling as used in brain charting paper\nLDA (topic moddelling) as used in endophenotyping of adhd paper\nBrain age prediction as used in brain age paper - gradient tree boosting\n\n\nQuestions:\nTo what extent are disorders characterized by Healthy Brains accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]. * Do cerebellar anatomical differences reflect a generic developmental vulnerability or disorder-specific characteristics? * Are different cerebellar regions affected in neurodevelopmental disorders? And do these regions align with functional networks that are consistent with the characteristic symptoms of each disorder. * Are there differences in brain age across regions (functional, anatomical, network) of the cerebellum, and how does this differ across disorders? * The brain age paper provided some key insights across whole-brain regions but treated subcortical-cerebellum as one region, therefore, obscuring any within-cerebellum heterogeneity"
   },
   {
+    "objectID": "ethics/AI-hype.html",
+    "href": "ethics/AI-hype.html",
+    "title": "The Hype of AI in Medicine",
+    "section": "",
+    "text": "AI Hype"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "MIT Projects",
@@ -630,6 +679,13 @@
     "text": "Setting Paths\n\nCreate .bash_profile in your home directory (cd /home/<username> and touch .bash_profile if file doesn’t exist)\nFor example, my .bash_profile is saved at /home/maedbh (see below)\nYou can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.\nMake sure you set your PATH so that your scripts can find software saved to your .local/bin directory.\n\nTo activate source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /nese/mit/group/sig/projects/hbn/phenotype\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
   },
   {
+    "objectID": "mentorship/openmind.html#using-vs-code-on-openmind",
+    "href": "mentorship/openmind.html#using-vs-code-on-openmind",
+    "title": "Getting Started on Openmind",
+    "section": "Using VS Code on OpenMind",
+    "text": "Using VS Code on OpenMind\n\nOpen VS Code and add the extensions on the sidebar: Remote - SSH and Remote - SSH: Editing Configuration Files\nGo to View and open Command Palette\n\nClick Remote-SSH: Add New SSH Host\nYou’ll be prompted to log in to OpenMind ssh \"username\"@openmind.mit.edu\nYou’ll get a notification saying host added and an option to connect\n\nOnce you connect for the first time you’ll be able to connect easily via Remote Explorer on the sidebar. You’ll be prompted for your password every time you ssh in."
+  },
+  {
     "objectID": "mentorship/index.html",
     "href": "mentorship/index.html",
     "title": "Overview",
@@ -648,7 +704,7 @@
     "href": "mentorship/weekly-notes.html#week-2-1010-",
     "title": "Weekly Notes",
     "section": "Week 2 (10/10->)",
-    "text": "Week 2 (10/10->)\n\nShreya and Opalina\n\nCheck out openmind setup for instructions on cloning repo to openmind and installing and activating a virtual environment\nCheck out the github repo for instructions on running machine learning scripts on hbn data\nAs a general practice, create your own branches for code development and then submit pull requests when you want to merge to main branch\n\n\n\nAlyson\n\nCheck out predictive modeling results to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not"
+    "text": "Week 2 (10/10->)\n\nShreya and Opalina\n\nCheck out openmind setup for instructions on cloning repo to openmind and installing and activating a virtual environment\nCheck out the github repo for instructions on running machine learning scripts on hbn data\nAs a general practice, create your own branches for code development and then submit pull requests when you want to merge to main branch\n\n\n\nAlyson\n\nCheck out predictive modeling results to determine which questionnaires are important for classifying whether a participant has been diagnosed with a disorder or not."
   },
   {
     "objectID": "mentorship/fall22_urop_onboarding.html",
@@ -691,5 +747,12 @@
     "title": "Our Team",
     "section": "Hackathon Helpers",
     "text": "Hackathon Helpers\n\nMike Gangl, PO.DAAC\nJinbo Wang, JPL\nCelia Ou, PO.DAAC\nEd, Armstrong, JPL"
+  },
+  {
+    "objectID": "notebooks/index.html",
+    "href": "notebooks/index.html",
+    "title": "Notebooks",
+    "section": "",
+    "text": "Summary of Clinical Diagnosis\nSummary of Predictive Models"
   }
 ]

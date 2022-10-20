@@ -405,12 +405,36 @@ ul.task-list{list-style: none;}
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">Notebooks</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">MIT Projects</a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-clinicalbert" id="toc-what-is-clinicalbert" class="nav-link active" data-scroll-target="#what-is-clinicalbert">What is clinicalBERT?</a></li>
+  <li><a href="#how-is-clinicalbert-different-from-other-models" id="toc-how-is-clinicalbert-different-from-other-models" class="nav-link" data-scroll-target="#how-is-clinicalbert-different-from-other-models">How is ClinicalBERT different from other models?</a></li>
+  <li><a href="#what-does-clinicalbert-do" id="toc-what-does-clinicalbert-do" class="nav-link" data-scroll-target="#what-does-clinicalbert-do">What does ClinicalBERT do?</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions:</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/methods/modeling-EHR.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -431,8 +455,49 @@ ul.task-list{list-style: none;}
 
 </header>
 
+<blockquote class="blockquote">
+<p>notes on paper by <a href="https://arxiv.org/abs/1904.05342">Huang et al.&nbsp;2019</a></p>
+</blockquote>
+<section id="what-is-clinicalbert" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-clinicalbert">What is clinicalBERT?</h2>
+<ul>
+<li>ClinicalBERT is a flexible framework used to represent clinical notes. It uncovers high-quality relationships between medical concepts, as judged by physicians.</li>
+<li>unstructured, high-dimensional and sparse information such as clinical notes are difficult to use in clinical machine learning models.</li>
+<li>Clinical notes contain significant clinical value, compared to structured features, clinical notes provide a richer picture of the patient since they describe symptoms, reasons for diagnoses, radiology results, daily activities and patient history. Problem: for time-stretched physicians (example: those working in intensive unit) can’t digest/compile all of the information presented across EHR, therefore, the question is: can a model do it for them?</li>
+<li>Utility of clinicalBERT: actively predicting readmission has clinical significance, as it may improve efficiency and reduce the burden on intensive care unit doctors.</li>
+<li>ClinicalBERT has developed a discharge support model that processes patient notes and dynamically assigns a risk score of whether the patient will be readmitted wtihin 30 days.</li>
+<li>ClinicalBERT can also be adapted to other tasks such as diagnosis prediction, mortality risk estimation, and length-of-stay assessment.</li>
+</ul>
+</section>
+<section id="how-is-clinicalbert-different-from-other-models" class="level2">
+<h2 class="anchored" data-anchor-id="how-is-clinicalbert-different-from-other-models">How is ClinicalBERT different from other models?</h2>
+<ul>
+<li>Much of the previous work has used information at discharge whereas ClinicalBERT can predict readmission during a patient’s stay.</li>
+<li>Makinga prediction using a discharge summary at the end of hte stay means that there are fewer opportunities to reduce the chance of readmission.</li>
+<li>ClinicalBERT predicts readmission at any timepoint since the patient was admitted.</li>
+<li>Compared to two popular models of clinical text: Word2Vec and FastText, clinicalBERT more accurately captures clinical word similarity.</li>
+<li>Where BERT is trained on BooksCorpus and Wikipedia, ClinicalBERT is also pre-trained on clinical notes.</li>
+</ul>
+</section>
+<section id="what-does-clinicalbert-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-clinicalbert-do">What does ClinicalBERT do?</h2>
+<ul>
+<li>Learns deep representations of clinical text, which can uncover clinical insights (predictions of disease), find relationships between treatments and outcomes</li>
+<li>To evalute models on readmission prediction, a metric is defined based on a clinical challenge.</li>
+<li>metric is alarm fatigue: useful classification rules for medicine have to have high positive predictive value (precision).</li>
+<li><strong>They evaluate model performance at a fixed positive predictive value</strong></li>
+<li>They find that ClinicalBERT outperforms competitive deep language models.</li>
+<li>Importantly, weights can be visualized to understand which elements of clinical notes are relevent to a prediction.</li>
+</ul>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions:</h2>
+<ul>
+<li>After pre-training, ClinicalBERT is fine-tuned on a clinical task (e.g.&nbsp;readmission prediction). What if someone wants to use another clinical task (length of hospital stay, mortality risk estimation), are those weights available?</li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
