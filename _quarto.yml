@@ -51,6 +51,7 @@ website:
           - progress/week-8.md
           - progress/week-9.md
           - progress/week-10.md
+          - progress/week-11.md
       - section: "Datasets"
         contents:
           - datasets/index.md
@@ -99,30 +100,10 @@ website:
       - section: "Notebooks"
         contents:
           - notebooks/index.md
-          - notebooks/clinical_dx.html
-          - notebooks/phenotype_models.html
-          - notebooks/iframe_figures/figure_3.html
-          - notebooks/iframe_figures/figure_4.html
-          - notebooks/iframe_figures/figure_3.html
-          - notebooks/iframe_figures/figure_4.html
-          - notebooks/iframe_figures/figure_5.html
-          - notebooks/iframe_figures/figure_6.html
-          - notebooks/iframe_figures/figure_7.html
-          - notebooks/iframe_figures/figure_8.html
-          - notebooks/iframe_figures/figure_9.html
-          - notebooks/iframe_figures/figure_10.html
-          - notebooks/iframe_figures/figure_11.html
-          - notebooks/iframe_figures/figure_12.html
-          - notebooks/iframe_figures/figure_13.html
-          - notebooks/iframe_figures/figure_14.html
-          - notebooks/iframe_figures/figure_17.html
-          - notebooks/iframe_figures/figure_19.html
-          - notebooks/iframe_figures/figure_23.html
-          - notebooks/iframe_figures/figure_24.html
-          - notebooks/iframe_figures/figure_25.html
-          - notebooks/iframe_figures/figure_26.html
-          - notebooks/iframe_figures/figure_27.html
-          - notebooks/iframe_figures/figure_28.html
+      - section: "Ethics"
+        contents:
+          - ethics/AI-hype.md
+          - ethics/index.md
 
 format:
   html:

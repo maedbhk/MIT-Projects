@@ -10,3 +10,10 @@ title: Week 11
     * (3) longer-term strategy for deploying models that work across EHR data structured in different ways, in different health systems
 * To Do: connect with people at CHOP about [OMOP common data model](https://ohdsi.github.io/CommonDataModel/)
 * Spoke with Thea Singer about a profile for the Rappaport Foundation proposal
+* Updated phenotypic models with feature and permutation importances. Notebook is [here](../notebooks/phenotype_models.html)
+    * still having difficulty loading the images -- need to figure this out. 
+* Put together a short proposal/presentation for CHOP meeting, will present in Monday meeting
+
+## Questions
+* Training and test data for predictive modeling: all participants or filter for particular disorders?
+* Can we ask CHOP collaborators for more unstructured data for clinicalBERT model?
