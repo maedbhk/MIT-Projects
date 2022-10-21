@@ -193,7 +193,14 @@
     "href": "progress/week-11.html",
     "title": "Week 11",
     "section": "",
-    "text": "Meeting with Jaan about ClinicalBERT, notes here.\nWe chatted about:\n\n\nbuilding dashboards for predictive models that can help clinicians (e.g. displaying the data using https://superset.apache.org/)\n\n\nsimple models that can help detect features predictive of suicide attempt\n\n\nlonger-term strategy for deploying models that work across EHR data structured in different ways, in different health systems\n\n\nTo Do: connect with people at CHOP about OMOP common data model\nSpoke with Thea Singer about a profile for the Rappaport Foundation proposal"
+    "text": "Meeting with Jaan about ClinicalBERT, notes here.\nWe chatted about:\n\n\nbuilding dashboards for predictive models that can help clinicians (e.g. displaying the data using https://superset.apache.org/)\n\n\nsimple models that can help detect features predictive of suicide attempt\n\n\nlonger-term strategy for deploying models that work across EHR data structured in different ways, in different health systems\n\n\nTo Do: connect with people at CHOP about OMOP common data model\nSpoke with Thea Singer about a profile for the Rappaport Foundation proposal\nUpdated phenotypic models with feature and permutation importances. Notebook is here\n\nstill having difficulty loading the images – need to figure this out.\n\nPut together a short proposal/presentation for CHOP meeting, will present in Monday meeting"
+  },
+  {
+    "objectID": "progress/week-11.html#questions",
+    "href": "progress/week-11.html#questions",
+    "title": "Week 11",
+    "section": "Questions",
+    "text": "Questions\n\nTraining and test data for predictive modeling: all participants or filter for particular disorders?\nCan we ask CHOP collaborators for more unstructured data for clinicalBERT model?"
   },
   {
     "objectID": "progress/week-7.html",
