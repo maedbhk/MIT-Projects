@@ -2,7 +2,7 @@
 title: ClinicalBERT
 ---
 
-> notes on paper by [Huang et al. 2019](https://arxiv.org/abs/1904.05342)
+> notes on paper by [Huang et al. 2019](https://arxiv.org/abs/1904.05342) and a useful [medium post](https://medium.com/nwamaka-imasogie/clinicalbert-using-deep-learning-transformer-model-to-predict-hospital-readmission-c82ff0e4bb03#:~:text=ClinicalBERT%20is%20a%20Bidirectional%20Transformer,used%20for%20downstream%20predictive%20tasks.) on the paper
 
 ## What is clinicalBERT?
 * ClinicalBERT is a flexible framework used to represent clinical notes. It uncovers high-quality relationships between medical concepts, as judged by physicians. 
