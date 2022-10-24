@@ -37,7 +37,7 @@ LANG=en_US.UTF-8
 PATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/
 
 alias cdcode="cd /om2/user/maedbh/healthy_brain_network"
-alias cddata="cd /nese/mit/group/sig/projects/hbn/phenotype"
+alias cddata="cd /om2/user/maedbh/hbn_data/"
 alias cdhome="cd /home/maedbh"
 alias cdenv="cd /home/maedbh/.local/share/virtualenvs"
 alias diskspace="du -hs $PWD/.[!.]* $PWD/* | sort -h"
