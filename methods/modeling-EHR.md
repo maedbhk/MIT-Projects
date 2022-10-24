@@ -7,7 +7,7 @@ title: ClinicalBERT
 ## What is clinicalBERT?
 * ClinicalBERT is a flexible framework used to represent clinical notes. It uncovers high-quality relationships between medical concepts, as judged by physicians. 
 * unstructured, high-dimensional and sparse information such as clinical notes are difficult to use in clinical machine learning models. 
-* Clinical notes contain significant clinical value, compared to structured features, clinical notes provide a richer picture of the patient since they describe symptoms, reasons for diagnoses, radiology results, daily activities and patient history. Problem: for time-stretched physicians (example: those working in intensive unit) can't digest/compile all of the information presented across EHR, therefore, the question is: can a model do it for them? 
+* Clinical notes contain significant clinical value, compared to structured features, clinical notes provide a richer picture of the patient since they describe symptoms, reasons for diagnoses, radiology results, daily activities and patient history. Problem: for time-stretched physicians (example: thosyoue working in intensive unit) can't digest/compile all of the information presented across EHR, therefore, the question is: can a model do it for them? 
 * Utility of clinicalBERT: actively predicting readmission has clinical significance, as it may improve efficiency and reduce the burden on intensive care unit doctors. 
 * ClinicalBERT has developed a discharge support model that processes patient notes and dynamically assigns a risk score of whether the patient will be readmitted wtihin 30 days. 
 * ClinicalBERT can also be adapted to other tasks such as diagnosis prediction, mortality risk estimation, and length-of-stay assessment. 

@@ -13,7 +13,7 @@ title: Getting Started on Openmind
     * run command `module load openmind/anaconda/3-2022.05` (if pipenv is not installed with anaconda, then run `pip install pipenv`)
     * then run `pipenv install` in top-level directory of **healthy_brain_network** (if you're getting an error, it's probably becuase you have not set PATH to be **/home/"username"/.local/bin** in your **.bash_profile**. See **Setting Paths** below for more details)
     * to activate the virtual environment, run `pipenv shell`
-* phenotypic data for **healthy_brain_network** is stored at **/nese/mit/group/sig/projects/hbn/phenotype**
+* phenotypic data for **healthy_brain_network** is stored at **/om2/user/maedbh/hbn_data/**
     * fyi: I/O operations to **om** and **om2** are fast, which is why I store code here. **om4** and **nese** are slower but have large storage space, which is why raw data are stored on **nese**.
 
 ## Setting Paths
