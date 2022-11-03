@@ -77,6 +77,7 @@ website:
           - literature-review/subcortical-translational-neuroimaging.md
           - literature-review/development-translational-neuroimaging.md
           - literature-review/methodology-pHealth.md
+          - literature-review/precision-psychiatry-conference.md
       - section: "Projects"
         contents: 
           - projects/index.md
