@@ -25,7 +25,7 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../projects/index.html" rel="next">
-<link href="../literature-review/methodology-pHealth.html" rel="prev">
+<link href="../literature-review/suicide-prediction.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -310,6 +310,11 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../literature-review/suicide-prediction.html" class="sidebar-item-text sidebar-link">Suicide prediction using structured-unstructured interactions in EHR models</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../literature-review/precision-psychiatry-conference.html" class="sidebar-item-text sidebar-link active">Conference on Precision Psychiatry</a>
   </div>
 </li>
@@ -462,7 +467,6 @@ ul.task-list{list-style: none;}
   <li><a href="#thomas-insel-opening-remarks" id="toc-thomas-insel-opening-remarks" class="nav-link active" data-scroll-target="#thomas-insel-opening-remarks">Thomas Insel Opening Remarks</a></li>
   <li><a href="#leveraging-healthcare-data-lea-davis---vanderbilt" id="toc-leveraging-healthcare-data-lea-davis---vanderbilt" class="nav-link" data-scroll-target="#leveraging-healthcare-data-lea-davis---vanderbilt">Leveraging Healthcare Data (Lea Davis - Vanderbilt)</a></li>
   <li><a href="#nigam-shah" id="toc-nigam-shah" class="nav-link" data-scroll-target="#nigam-shah">Nigam Shah</a></li>
-  <li><a href="#david-sontag---mit" id="toc-david-sontag---mit" class="nav-link" data-scroll-target="#david-sontag---mit">David Sontag - MIT</a></li>
   <li><a href="#speaker---inverting-model-of-data-sharing" id="toc-speaker---inverting-model-of-data-sharing" class="nav-link" data-scroll-target="#speaker---inverting-model-of-data-sharing">speaker?? - Inverting model of data sharing</a></li>
   <li><a href="#laura-germine" id="toc-laura-germine" class="nav-link" data-scroll-target="#laura-germine">Laura Germine</a></li>
   </ul>
@@ -490,44 +494,51 @@ ul.task-list{list-style: none;}
 <section id="thomas-insel-opening-remarks" class="level3">
 <h3 class="anchored" data-anchor-id="thomas-insel-opening-remarks">Thomas Insel Opening Remarks</h3>
 <ul>
-<li><p>The road to better theraputics runs through better diagnostics</p></li>
-<li><p>Deconstructing diagnosis:</p></li>
-<li><p>ML gives us the tools to deconstruct diagnosis: from dsm consensus to data-driven biotypes</p>
+<li>The road to better theraputics runs through better diagnostics</li>
+</ul>
+<section id="deconstructing-diagnosis" class="level4">
+<h4 class="anchored" data-anchor-id="deconstructing-diagnosis">Deconstructing diagnosis:</h4>
+<ul>
+<li>ML gives us the tools to deconstruct diagnosis: from dsm consensus to data-driven biotypes
 <ul>
 <li>what are the risks? should be hypothesis-generated, huge opportunity for false discovery - we should be a little skeptical</li>
 <li>some examples: EMBARC - sertraline vs placebo (n=300), preRx variables as predictors.</li>
 <li>EEG predicts who will respond to an antidepressant vs.&nbsp;placebo.</li>
 <li>EEG markers may have relevence across disorder categories. EEG - lots of potential, could be housed in primary care offices.</li>
 </ul></li>
-<li><p>What are the tools that can be used in an ER, primary care office?</p>
+<li>What are the tools that can be used in an ER, primary care office?
 <ul>
 <li>EEG is one such tool</li>
 <li>fMRI will never do that</li>
 </ul></li>
-<li><p>Digital phenotyping</p>
+<li>Digital phenotyping
 <ul>
 <li>getting information from devices that we’re using, phones often know more about us than we know about ourselves</li>
 <li>ability to use voice and speech</li>
 </ul></li>
-<li><p>Tying precision medicine to treatment</p>
+<li>Tying precision medicine to treatment
 <ul>
 <li>Alto’s suite of biomarkers segment patients: from stratification to drug development</li>
 <li>power in improving diagnosis but also therapeutics</li>
 </ul></li>
-<li><p>psychiatry: new day for developing therapeutics, rather than just diagnosis</p></li>
-<li><p>Overall</p>
+<li>Psychiatry: new day for developing therapeutics, rather than just diagnosis</li>
+<li>Overall
 <ul>
 <li>Deconstructing diagnosis: from clinical consensus to stratification</li>
 <li>diagnosis from singular to multiplexed approaches based on biological, cognitive/behavioral, clinical, social data</li>
 <li>precision psychiatry goes beyond stratification/personalization to treatment development</li>
 <li>precision psychiatry: better diagnosis leads to better therapeutics resulting in better outcomes</li>
 </ul></li>
-<li><p>2030 era: in an era we will using different labels for psychopathology and different therapeutics</p></li>
-<li><p>thomas insel: we’re not very good at matching the treatments we have to the individuals who need them</p></li>
-<li><p>why have we done so badly when we have so much good stuff to offer?</p></li>
-<li><p>pnemounia problem: treating everyone with the same thing</p></li>
-<li><p>mental illness: most people who should and could be in care aren’t.</p></li>
-<li><p>we don’t see people until they’re in crisis</p>
+<li>2030 era: in an era we will using different labels for psychopathology and different therapeutics</li>
+</ul>
+<p><strong>We’re not very good at matching the treatments we have to the individuals who need them</strong></p>
+</section>
+<section id="why-have-we-done-so-badly-when-we-have-so-much-good-stuff-to-offer" class="level4">
+<h4 class="anchored" data-anchor-id="why-have-we-done-so-badly-when-we-have-so-much-good-stuff-to-offer">Why have we done so badly when we have so much good stuff to offer?</h4>
+<ul>
+<li>pnemounia problem: treating everyone with the same thing</li>
+<li>mental illness: most people who should and could be in care aren’t.</li>
+<li>we don’t see people until they’re in crisis
 <ul>
 <li>in contrast to other parts of medicine, the people we take care of are harder to treat (often treated against their free will, unlike cardiac patients)</li>
 <li>the model we’ve used is not working (works well in infectious diaseae, oncology)</li>
@@ -540,31 +551,39 @@ ul.task-list{list-style: none;}
 <li>our house is on fire and you’re telling us about the chemistry of the paint</li>
 <li>people, place, purpose, and prevention</li>
 </ul></li>
-<li><p>what is the role of the different stakeholders?</p>
+<li>what is the role of the different stakeholders?
 <ul>
 <li>project warpspeed: public/private venture</li>
 <li>can’t get to scale as an academic</li>
 <li>need to have time bounded projects: need to have goals by x date. people will be held accountable for results - that’s the world we should be in.</li>
 <li>thomas insel: frustrated by how slow it’s been - implementation cycle has been a failure. we hould at least be implementing the therapeutics we had from the 1990s.</li>
 </ul></li>
-<li><p>future proofing project (australia):</p>
+</ul>
+</section>
+<section id="policy-changescompanies" class="level4">
+<h4 class="anchored" data-anchor-id="policy-changescompanies">Policy Changes/Companies</h4>
+<ul>
+<li>future proofing project (australia):
 <ul>
 <li>tools for future proofing (social and emotional learning)</li>
 </ul></li>
-<li><p>diatic care: california</p>
+<li>diatic care: california
 <ul>
 <li>family visits instead of baby visits, preventive care to mitigate adverse childhood experiences</li>
 <li>aggressive care for people after first-episode psychosis (governer leadership)</li>
 </ul></li>
-<li><p>precision medicine companies: Alto neuroscience, compass pathways, humanest care, koko, karuna therapeutics</p></li>
+<li>precision medicine companies: Alto neuroscience, compass pathways, humanest care, koko, karuna therapeutics</li>
 </ul>
+</section>
 </section>
 <section id="leveraging-healthcare-data-lea-davis---vanderbilt" class="level3">
 <h3 class="anchored" data-anchor-id="leveraging-healthcare-data-lea-davis---vanderbilt">Leveraging Healthcare Data (Lea Davis - Vanderbilt)</h3>
 <ul>
-<li><p>studying genomics of complex phenotypes</p></li>
-<li><p>levaraging heterogeneity and comobordity in a real-world care setting</p></li>
-<li><p>psycheMERGE:</p>
+<li>studying genomics of complex phenotypes</li>
+<li>levaraging heterogeneity and comobordity in a real-world care setting</li>
+</ul>
+<section id="psychemerge" class="level4">
+<h4 class="anchored" data-anchor-id="psychemerge">psycheMERGE:</h4>
 <ul>
 <li>EHR data available linked with genotype samples (jordan smoller and chris de brie)</li>
 <li>21 sites and affiliated partners</li>
@@ -576,14 +595,13 @@ ul.task-list{list-style: none;}
 <li>average EHR ercord length year - 5 years</li>
 <li>average record length for genotyped patients - 12 years</li>
 <li>on average, 6 patient visits per year</li>
-</ul></li>
-<li><p>structure of healthcare in the US</p>
+<li>structure of healthcare in the US
 <ul>
 <li>primary care (health promotion, counseling, eduation)</li>
 <li>secondary care (assessment, screening to facilitate early detection)</li>
 <li>teriatry: treatment and management of chronic complex disease</li>
 </ul></li>
-<li><p>what is included in EHR?</p>
+<li>what is included in EHR?
 <ul>
 <li>billing codes (reason for clinical visit)</li>
 <li>note between provider and patient</li>
@@ -593,38 +611,47 @@ ul.task-list{list-style: none;}
 <li>labs and pathology</li>
 <li>inpatient visits</li>
 </ul></li>
-<li><p>health record is very dynamic - always being updated. behind the structure is a human process.</p></li>
-<li><p>breadth and depth of EHR data provide a unique view into a lifetime of comorbidities (particular for patients with psychiatric illness)</p></li>
-<li><p>phenomone-wide association study</p></li>
-<li><p>take advanttage of breadth of EHR data</p></li>
-<li><p>polgenic risk score for schizophrenia</p>
+<li>health record is very dynamic - always being updated. behind the structure is a human process.</li>
+<li>breadth and depth of EHR data provide a unique view into a lifetime of comorbidities (particular for patients with psychiatric illness)</li>
+</ul>
+</section>
+<section id="phenomone-wide-association-study" class="level4">
+<h4 class="anchored" data-anchor-id="phenomone-wide-association-study">phenomone-wide association study</h4>
+<ul>
+<li>take advanttage of breadth of EHR data</li>
+<li>polgenic risk score for schizophrenia
 <ul>
 <li>this score was strongly associated with schizophrenia</li>
 <li>translational sandbox: how well does this genetic tool perform in a clinical pop?</li>
 <li>phenotypes from EHR can be interrogated using polygenic scores</li>
 </ul></li>
-<li><p>can we use lab data to identify potential biomarkers that link genetic risk to mental health conditions and related outcomes?</p>
+<li>can we use lab data to identify potential biomarkers that link genetic risk to mental health conditions and related outcomes?
 <ul>
 <li>qualityLab and LabWAS - &gt; 1 billion lab observations comprised of 11,000 labs</li>
 <li>take genetic risk scores - identify them in individuals - and then test whether those genetic scores are associated with routinely collected labs</li>
 </ul></li>
-<li><p>take home messages</p>
+</ul>
+</section>
+<section id="take-home-messages" class="level4">
+<h4 class="anchored" data-anchor-id="take-home-messages">Take home messages</h4>
 <ul>
 <li>mental health is not biologically separable from physical health</li>
 <li>mental health can have independent effects on physical health and we don’t appreciate enough how the reverse is also true</li>
 <li>360 - coordinated care improves mental and physical outcomes - power of whole-person care</li>
 <li>genetics allows for a relationship between biology and mental health (e.g., depression + cardiovascular disease story) - biological relationship here (lens of genetics) - co-treatment of both can lead to improved outcomes</li>
 <li>psychiatry is underrepresented in primary care settings</li>
-</ul></li>
 </ul>
+</section>
 </section>
 <section id="nigam-shah" class="level3">
 <h3 class="anchored" data-anchor-id="nigam-shah">Nigam Shah</h3>
 <ul>
-<li><p>Leveraging healthcare data for precision medicine and psychiatry</p></li>
-<li><p>think of data as a timeline view (a live thing)</p></li>
-<li><p>using patient timeline objects to provide better care</p></li>
-<li><p>green button project:</p>
+<li>Leveraging healthcare data for precision medicine and psychiatry</li>
+<li>think of data as a timeline view (a live thing)</li>
+<li>using patient timeline objects to provide better care</li>
+</ul>
+<section id="green-button-project" class="level4">
+<h4 class="anchored" data-anchor-id="green-button-project">Green Button project:</h4>
 <ul>
 <li>given a specific case, provide a usmmary of similar patientss in stanfords clinical data warhouse - common treatmnt choices made, and observed outcomes</li>
 <li>green button = the idea</li>
@@ -632,13 +659,9 @@ ul.task-list{list-style: none;}
 <li>“what happened to other patients like me?”</li>
 <li>engineers, technocrats ask “how” quetions?</li>
 <li>if you want to make an impact, ask a “why” question?</li>
-</ul></li>
-<li><p>how do we get patients to the table more readily?</p></li>
+<li>how do we get patients to the table more readily?</li>
 </ul>
 </section>
-<section id="david-sontag---mit" class="level3">
-<h3 class="anchored" data-anchor-id="david-sontag---mit">David Sontag - MIT</h3>
-<p>technology/development angle, and clinical/empirical questions - evaluation - project-level conversation and higher CHOP conversation (Tammi - on admin side / clinician) - Annie Cardenaux (ADOS) - Eye-tracking data + EEG - movie watching - Mike and Adriana at CHOP</p>
 </section>
 <section id="speaker---inverting-model-of-data-sharing" class="level3">
 <h3 class="anchored" data-anchor-id="speaker---inverting-model-of-data-sharing">speaker?? - Inverting model of data sharing</h3>
@@ -883,8 +906,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../literature-review/methodology-pHealth.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Methodological considerations for precision medicine</span>
+      <a href="../literature-review/suicide-prediction.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Suicide prediction using structured-unstructured interactions in EHR models</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
