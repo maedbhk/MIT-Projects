@@ -52,6 +52,7 @@ website:
           - progress/week-9.md
           - progress/week-10.md
           - progress/week-11.md
+          - progress/week-12.md
       - section: "Datasets"
         contents:
           - datasets/index.md
@@ -70,7 +71,6 @@ website:
           - literature-review/EMR-selfharm.md
           - literature-review/pHealth-overview.md
           - literature-review/pHealth-terminology.md
-          - literature-review/pHealth-ethics.md
           - literature-review/pHealth-other-fields.md
           - literature-review/RDoC.md
           - literature-review/translational-neuroimaging.md
@@ -84,6 +84,7 @@ website:
           - projects/index.md
           - projects/cerebellum-fingerprints.md
           - projects/EMR-selfharm.md
+          - projects/adaptive-adhd.md
       - section: "Mentorship"
         contents:
           - mentorship/index.md
@@ -98,6 +99,7 @@ website:
           - methods/model-interpretability.md
           - methods/unsupervised-learning.md
           - methods/modeling-EHR.md
+          - methods/smote.md
           - methods/index.md
       - section: "Notebooks"
         contents:
@@ -105,6 +107,7 @@ website:
       - section: "Ethics"
         contents:
           - ethics/AI-hype.md
+          - ethics/pHealth-ethics.md
           - ethics/index.md
 
 format:

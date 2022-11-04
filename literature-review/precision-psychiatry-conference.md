@@ -111,6 +111,10 @@ title: Conference on Precision Psychiatry
 * think of data as a timeline view (a live thing)
 * using patient timeline objects to provide better care
 
+![EHR timeline](../assets/images/ehr-timeline.png){fig-align="center"}
+
+![EHR pipeline](../assets/images/ehr-pipeline.png){fig-align="center"}
+
 #### Green Button project: 
 * given a specific case, provide a usmmary of similar patientss in stanfords clinical data warhouse - common treatmnt choices made, and observed outcomes
 * green button = the idea
