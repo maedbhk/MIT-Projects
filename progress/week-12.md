@@ -14,4 +14,3 @@ title: Week 12
 
 ## Questions
 * can you add me to the google drive so that I can upload lab meeting slides? 
-* also, I wonder if there is a way to encourage more discussion at lab meeting? Would it be reasonable to suggest a no-laptop policy (unless people are taking notes)
