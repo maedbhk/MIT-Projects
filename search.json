@@ -333,7 +333,14 @@
     "href": "projects/adaptive-adhd.html#questions---child-behavior-checklist---teacher-report-form",
     "title": "Exploring ADHD",
     "section": "Questions - Child Behavior Checklist - Teacher Report Form",
-    "text": "Questions - Child Behavior Checklist - Teacher Report Form\n\nWhat information is captured in this questionnaire?\n\n\nSummary of cognitive performance\n\nOpalina: this is a particularly important question if you want to write some code to address this question * Many questionnaires (e.g., measures) have a total score providing an overall summary of how well a participant did overall on a questionnaire 1. For all of the measures that have a total score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?"
+    "text": "Questions - Child Behavior Checklist - Teacher Report Form\n\nWhat information is captured in this questionnaire?"
+  },
+  {
+    "objectID": "projects/adaptive-adhd.html#summary-of-cognitive-performance",
+    "href": "projects/adaptive-adhd.html#summary-of-cognitive-performance",
+    "title": "Exploring ADHD",
+    "section": "Summary of cognitive performance",
+    "text": "Summary of cognitive performance\nOpalina: this is a particularly important question if you want to write some code to address this question * Many questionnaires (e.g., measures) have a total score providing an overall summary of how well a participant did overall on a questionnaire 1. For all of the measures that have a total score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html",
