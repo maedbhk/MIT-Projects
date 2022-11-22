@@ -5,7 +5,7 @@ title: Exploring ADHD
 
 ## Questions - Intake Interview from Parent Measures
 
-> Some of these questions have been addressed [here](../notebooks/exploratory-features-adhd.ipynb)
+**Some of these questions have been addressed [here](../notebooks/exploratory-features-adhd.ipynb)**
 1. What % of children with adhd have parents with adhd? `PreInt_FamHx,m_adhd` `PreInt_FamHx,f_adhd`
 2. What is the SES/race/gender breakdown of children with adhd? 
 3. What are the kinds of professions / college education held by parents of kids with adhd?
@@ -29,7 +29,7 @@ title: Exploring ADHD
 ## Questions - Child Behavior Checklist - Teacher Report Form
 1. What information is captured in this questionnaire? 
 
-### Summary of cognitive performance
-> Opalina: this is a particularly important question if you want to write some code to address this question
+## Summary of cognitive performance
+**Opalina: this is a particularly important question if you want to write some code to address this question**
 * Many questionnaires (e.g., measures) have a `total` score providing an overall summary of how well a participant did overall on a questionnaire
 1. For all of the measures that have a `total` score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?
