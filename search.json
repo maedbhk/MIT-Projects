@@ -326,14 +326,14 @@
     "href": "projects/adaptive-adhd.html",
     "title": "Exploring ADHD",
     "section": "",
-    "text": "What % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd\nWhat is the SES/race/gender breakdown of children with adhd?\nWhat are the kinds of professions / college education held by parents of kids with adhd?\nSchool environment for children with adhd PhenX_School\nNeighborhood environment for children with adhd PhenX_Neighborhood\nHow do general scores of achievement and intelligence differ across adhd subtypes?\nWhat is the gender breakdown of adhd subtypes?\nGirls with adhd:\n\nage of first menstruation\nage of puberty onset\n\nwhat kind of school organizations are kids with adhd part of? PreInt_EduHx\nFamily history of mental illness PreInt_FamHx or other illness\n\nprimary diagnosis of mother, father, sibling\n\nHow well are they performing in different cognitive tasks? assess total score for each measure\nWhat % of children are taking medication for adhd?\nWhat type of allergies do children with adhd have?\nPrevious head injuries?\nSeverity of ADHD diagnosis\nAny information on whether people with adhd are night owls versus early risers?"
+    "text": "Some of these questions have been addressed here 1. What % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd 2. What is the SES/race/gender breakdown of children with adhd? 3. What are the kinds of professions / college education held by parents of kids with adhd? 4. School environment for children with adhd PhenX_School 5. Neighborhood environment for children with adhd PhenX_Neighborhood 6. How do general scores of achievement and intelligence differ across adhd subtypes? 7. What is the gender breakdown of adhd subtypes? 8. Girls with adhd: * age of first menstruation * age of puberty onset 9. what kind of school organizations are kids with adhd part of? PreInt_EduHx 10. Family history of mental illness PreInt_FamHx or other illness * primary diagnosis of mother, father, sibling 14. What % of children are taking medication for adhd? 15. What type of allergies do children with adhd have? 16. Previous head injuries? 17. Severity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.) 18. Any information on whether people with adhd are night owls versus early risers? 19. Any difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis?"
   },
   {
-    "objectID": "projects/adaptive-adhd.html#methods---hbn",
-    "href": "projects/adaptive-adhd.html#methods---hbn",
+    "objectID": "projects/adaptive-adhd.html#questions---child-behavior-checklist---teacher-report-form",
+    "href": "projects/adaptive-adhd.html#questions---child-behavior-checklist---teacher-report-form",
     "title": "Exploring ADHD",
-    "section": "Methods - HBN",
-    "text": "Methods - HBN\n\nMany questionnaires have a total score providing an overall summary - these questions can be used as features"
+    "section": "Questions - Child Behavior Checklist - Teacher Report Form",
+    "text": "Questions - Child Behavior Checklist - Teacher Report Form\n\nWhat information is captured in this questionnaire?\n\n\nSummary of cognitive performance\n\nOpalina: this is a particularly important question if you want to write some code to address this question * Many questionnaires (e.g., measures) have a total score providing an overall summary of how well a participant did overall on a questionnaire 1. For all of the measures that have a total score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html",
