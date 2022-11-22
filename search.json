@@ -86,9 +86,9 @@
   {
     "objectID": "methods/smote.html",
     "href": "methods/smote.html",
-    "title": "SMOTE for imbalanced classification with Python",
+    "title": "Working with imbalanced data",
     "section": "",
-    "text": "useful article on smote"
+    "text": "useful article on smote another useful article"
   },
   {
     "objectID": "methods/unsupervised-learning.html",
@@ -320,6 +320,20 @@
     "title": "Overview",
     "section": "",
     "text": "Cerebellar Fingerprinting - Early. 2023 finish analysis, early Summer - first draft\nCHOP project - May 2023 finish analysis, early Fall - first draft"
+  },
+  {
+    "objectID": "projects/adaptive-adhd.html",
+    "href": "projects/adaptive-adhd.html",
+    "title": "Exploring ADHD",
+    "section": "",
+    "text": "What % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd\nWhat is the SES/race/gender breakdown of children with adhd?\nWhat are the kinds of professions / college education held by parents of kids with adhd?\nSchool environment for children with adhd PhenX_School\nNeighborhood environment for children with adhd PhenX_Neighborhood\nHow do general scores of achievement and intelligence differ across adhd subtypes?\nWhat is the gender breakdown of adhd subtypes?\nGirls with adhd:\n\nage of first menstruation\nage of puberty onset\n\nwhat kind of school organizations are kids with adhd part of? PreInt_EduHx\nFamily history of mental illness PreInt_FamHx or other illness\n\nprimary diagnosis of mother, father, sibling\n\nHow well are they performing in different cognitive tasks? assess total score for each measure\nWhat % of children are taking medication for adhd?\nWhat type of allergies do children with adhd have?\nPrevious head injuries?\nSeverity of ADHD diagnosis\nAny information on whether people with adhd are night owls versus early risers?"
+  },
+  {
+    "objectID": "projects/adaptive-adhd.html#methods---hbn",
+    "href": "projects/adaptive-adhd.html#methods---hbn",
+    "title": "Exploring ADHD",
+    "section": "Methods - HBN",
+    "text": "Methods - HBN\n\nMany questionnaires have a total score providing an overall summary - these questions can be used as features"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html",
