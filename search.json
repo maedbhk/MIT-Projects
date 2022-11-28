@@ -830,7 +830,7 @@
     "href": "notebooks/phenotype_models_compare.html",
     "title": "MIT Projects",
     "section": "",
-    "text": "import os\nimport pandas as pd\nimport seaborn as sns\n\nfrom hbn.constants import Defaults\nfrom hbn.visualization import visualize\n\nimport warnings\nwarnings.filterwarnings(\"ignore\")\n\n%load_ext autoreload\n%autoreload 2\n\n%matplotlib inline\n\n# pio.renderers.default = 'iframe'\n\nimport ipywidgets as widgets       # interactive display\n%config InlineBackend.figure_format = 'svg' # other available formats are: 'retina', 'png', 'jpeg', 'pdf'"
+    "text": "import os\nimport pandas as pd\nimport seaborn as sns\n\nfrom hbn.constants import Defaults\nfrom hbn.visualization import visualize\n\nimport warnings\nwarnings.filterwarnings(\"ignore\")\n\n%load_ext autoreload\n%autoreload 2\n\n%matplotlib inline\n\n# pio.renderers.default = 'iframe'\n\nimport ipywidgets as widgets       # interactive display\n%config InlineBackend.figure_format = 'svg' # other available formats are: 'retina', 'png', 'jpeg', 'pdf'\n\nThe autoreload extension is already loaded. To reload it, use:\n  %reload_ext autoreload"
   },
   {
     "objectID": "notebooks/phenotype_models_compare.html#child-measures---language-tasks",
@@ -938,6 +938,62 @@
     "text": "Child Measures - Questionnaire_Measures_of_Emotional_and_Cognitive_Status\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures')]\n\ncols = ['Physical Fitness and Status', 'Neurologic Function', 'Physiologic Function', 'Vision', 'Motor Skills']\n\ndf1 = df1[df1['domains'].isin(cols)]\n\nvisualize.predictive_modeling(df=df1)\n\n\n                                                \n\n\n\n#import plotly.express as px\n\n# interactive visualization of features\n#@widgets.interact(\n #               feature=df_feature['features'].unique(),\n #               )\n\n#def visualize_features(feature):\n#    df = df_feature[df_feature['features']==feature]\n#    fig = px.line(df, x='feature_names_sum', y='feature_sum', markers=True, title=feature)\n#    fig.update_xaxes(showticklabels=False)\n#    fig.update_xaxes(type='category')\n    \n#    fig.show()"
   },
   {
+    "objectID": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html",
+    "href": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html",
+    "title": "MIT Projects",
+    "section": "",
+    "text": "import os\nimport pandas as pd\nimport seaborn as sns\n\nfrom hbn.constants import Defaults\nfrom hbn.visualization import visualize\n\nimport warnings\nwarnings.filterwarnings(\"ignore\")\n\n%load_ext autoreload\n%autoreload 2\n\n%matplotlib inline\n\n# pio.renderers.default = 'iframe'\n\nimport ipywidgets as widgets       # interactive display\n%config InlineBackend.figure_format = 'svg' # other available formats are: 'retina', 'png', 'jpeg', 'pdf'\n\nThe autoreload extension is already loaded. To reload it, use:\n  %reload_ext autoreload"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#child-measures---language-tasks",
+    "href": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#child-measures---language-tasks",
+    "title": "MIT Projects",
+    "section": "Child Measures - Language Tasks",
+    "text": "Child Measures - Language Tasks\n\n# Child Measures - Language Tasks\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures') & \n                  (df_classify['domains']=='Language Tasks')]\n\n\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#parent-measures---demographics",
+    "href": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#parent-measures---demographics",
+    "title": "MIT Projects",
+    "section": "Parent Measures - Demographics",
+    "text": "Parent Measures - Demographics\n\nmeasures = ['Affective Reactivity Index-Parent',\n       'Autism Spectrum Screening Questionnaire',\n       'Barratt Simplified Measure of Social Status',\n       'Child Behavior Checklist', 'Child Mind Institute Symptom Checker',\n       'Demographics',\n       'Extended Strengths and Weaknesses Assessment of Normal Behavior-Parent Report',\n       'Financial Support Questionnaire',\n       'Inventory of Callous-Unemotional Traits – Parent Report']\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Parent Measures') & \n                  (df_classify['domains']=='Demographic Questionnaire Measures')]\n\ndf1 = df1[df1['measures'].isin(measures)]\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#parent-measures---demographics-1",
+    "href": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#parent-measures---demographics-1",
+    "title": "MIT Projects",
+    "section": "Parent Measures - Demographics",
+    "text": "Parent Measures - Demographics\n\nmeasures = ['Mood and Feelings Questionnaire', 'Repetitive Behavior Scale',\n       'Screen for Child Anxiety Related Disorders - Parent report',\n       'Social Aptitudes Scale', 'Social Communication Questionnaire',\n       'Social Responsiveness Scale-2',\n       'Strengths and Difficulties Questionnaire (with impact supplement)',\n       'Strengths and Weaknesses Assessment of ADHD and Normal Behavior',\n       'The Columbia Impairment Scale-Parent Report Version',\n       'WHO Disability Assessment Schedule – Parent Report']\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Parent Measures') & \n                  (df_classify['domains']=='Demographic Questionnaire Measures')]\n\n\ndf1 = df1[df1['measures'].isin(measures)]\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#parent-measures---interview-of-emotional-and-psychological-function",
+    "href": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#parent-measures---interview-of-emotional-and-psychological-function",
+    "title": "MIT Projects",
+    "section": "Parent Measures - Interview of Emotional and Psychological Function",
+    "text": "Parent Measures - Interview of Emotional and Psychological Function\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Parent Measures') & \n                  (df_classify['domains']=='Interview of Emotional and Psychological Function')]\n\n\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#child-measures---cognitive-testing",
+    "href": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#child-measures---cognitive-testing",
+    "title": "MIT Projects",
+    "section": "Child Measures - Cognitive Testing",
+    "text": "Child Measures - Cognitive Testing\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures') & \n                  (df_classify['domains']=='Cognitive Testing')]\n\n\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#child-measures---questionnaire_measures_of_emotional_and_cognitive_status",
+    "href": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#child-measures---questionnaire_measures_of_emotional_and_cognitive_status",
+    "title": "MIT Projects",
+    "section": "Child Measures - Questionnaire_Measures_of_Emotional_and_Cognitive_Status",
+    "text": "Child Measures - Questionnaire_Measures_of_Emotional_and_Cognitive_Status\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures') & \n                  (df_classify['domains']=='Questionnaire Measures of Emotional and Cognitive Status')]\n\n\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#child-measures-all-other-domains",
+    "href": "notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html#child-measures-all-other-domains",
+    "title": "MIT Projects",
+    "section": "Child Measures : all other domains",
+    "text": "Child Measures : all other domains\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures')]\n\ncols = ['Physical Fitness and Status', 'Neurologic Function', 'Physiologic Function', 'Vision', 'Motor Skills']\n\ndf1 = df1[df1['domains'].isin(cols)]\n\nvisualize.predictive_modeling(df=df1)\n\n\n                                                \n\n\n\n#import plotly.express as px\n\n# interactive visualization of features\n#@widgets.interact(\n#                feature=df_feature['features'].unique(),\n#                )\n\n#def visualize_features(feature):\n#    df = df_feature[df_feature['features']==feature]\n#    fig = px.line(df, x='feature_names_sum', y='feature_sum', markers=True, title=feature)\n#    fig.update_xaxes(showticklabels=False)\n#    fig.update_xaxes(type='category')\n    \n #   fig.show()"
+  },
+  {
     "objectID": "notebooks/phenotype_models.html",
     "href": "notebooks/phenotype_models.html",
     "title": "MIT Projects",
@@ -1001,11 +1057,67 @@
     "text": "Child Measures : all other domains\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures')]\n\ncols = ['Physical Fitness and Status', 'Neurologic Function', 'Physiologic Function', 'Vision', 'Motor Skills']\n\ndf1 = df1[df1['domains'].isin(cols)]\n\nvisualize.predictive_modeling(df=df1)\n\n\n                                                \n\n\n\n#import plotly.express as px\n\n# interactive visualization of features\n#@widgets.interact(\n#                feature=df_feature['features'].unique(),\n#                )\n\n#def visualize_features(feature):\n#    df = df_feature[df_feature['features']==feature]\n#    fig = px.line(df, x='feature_names_sum', y='feature_sum', markers=True, title=feature)\n#    fig.update_xaxes(showticklabels=False)\n#    fig.update_xaxes(type='category')\n    \n #   fig.show()"
   },
   {
+    "objectID": "notebooks/phenotype_models_ASD.html",
+    "href": "notebooks/phenotype_models_ASD.html",
+    "title": "MIT Projects",
+    "section": "",
+    "text": "import os\nimport pandas as pd\nimport seaborn as sns\n\nfrom hbn.constants import Defaults\nfrom hbn.visualization import visualize\n\nimport warnings\nwarnings.filterwarnings(\"ignore\")\n\n%load_ext autoreload\n%autoreload 2\n\n%matplotlib inline\n\n# pio.renderers.default = 'iframe'\n\nimport ipywidgets as widgets       # interactive display\n%config InlineBackend.figure_format = 'svg' # other available formats are: 'retina', 'png', 'jpeg', 'pdf'"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_ASD.html#child-measures---language-tasks",
+    "href": "notebooks/phenotype_models_ASD.html#child-measures---language-tasks",
+    "title": "MIT Projects",
+    "section": "Child Measures - Language Tasks",
+    "text": "Child Measures - Language Tasks\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures') & \n                  (df_classify['domains']=='Language Tasks')]\n\n\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_ASD.html#parent-measures---demographics",
+    "href": "notebooks/phenotype_models_ASD.html#parent-measures---demographics",
+    "title": "MIT Projects",
+    "section": "Parent Measures - Demographics",
+    "text": "Parent Measures - Demographics\n\n\nmeasures = ['Affective Reactivity Index-Parent',\n       'Autism Spectrum Screening Questionnaire',\n       'Barratt Simplified Measure of Social Status',\n       'Child Behavior Checklist', 'Child Mind Institute Symptom Checker',\n       'Demographics',\n       'Extended Strengths and Weaknesses Assessment of Normal Behavior-Parent Report',\n       'Financial Support Questionnaire',\n       'Inventory of Callous-Unemotional Traits – Parent Report']\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Parent Measures') & \n                  (df_classify['domains']=='Demographic Questionnaire Measures')]\n\ndf1 = df1[df1['measures'].isin(measures)]\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_ASD.html#parent-measures---demographics-1",
+    "href": "notebooks/phenotype_models_ASD.html#parent-measures---demographics-1",
+    "title": "MIT Projects",
+    "section": "Parent Measures - Demographics",
+    "text": "Parent Measures - Demographics\n\nmeasures = ['Mood and Feelings Questionnaire', 'Repetitive Behavior Scale',\n       'Screen for Child Anxiety Related Disorders - Parent report',\n       'Social Aptitudes Scale', 'Social Communication Questionnaire',\n       'Social Responsiveness Scale-2',\n       'Strengths and Difficulties Questionnaire (with impact supplement)',\n       'Strengths and Weaknesses Assessment of ADHD and Normal Behavior',\n       'The Columbia Impairment Scale-Parent Report Version',\n       'WHO Disability Assessment Schedule – Parent Report']\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Parent Measures') & \n                  (df_classify['domains']=='Demographic Questionnaire Measures')]\n\n\ndf1 = df1[df1['measures'].isin(measures)]\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_ASD.html#parent-measures---interview-of-emotional-and-psychological-function",
+    "href": "notebooks/phenotype_models_ASD.html#parent-measures---interview-of-emotional-and-psychological-function",
+    "title": "MIT Projects",
+    "section": "Parent Measures - Interview of Emotional and Psychological Function",
+    "text": "Parent Measures - Interview of Emotional and Psychological Function\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Parent Measures') & \n                  (df_classify['domains']=='Interview of Emotional and Psychological Function')]\n\n\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_ASD.html#child-measures---cognitive-testing",
+    "href": "notebooks/phenotype_models_ASD.html#child-measures---cognitive-testing",
+    "title": "MIT Projects",
+    "section": "Child Measures - Cognitive Testing",
+    "text": "Child Measures - Cognitive Testing\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures') & \n                  (df_classify['domains']=='Cognitive Testing')]\n\n\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_ASD.html#child-measures---questionnaire_measures_of_emotional_and_cognitive_status",
+    "href": "notebooks/phenotype_models_ASD.html#child-measures---questionnaire_measures_of_emotional_and_cognitive_status",
+    "title": "MIT Projects",
+    "section": "Child Measures - Questionnaire_Measures_of_Emotional_and_Cognitive_Status",
+    "text": "Child Measures - Questionnaire_Measures_of_Emotional_and_Cognitive_Status\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures') & \n                  (df_classify['domains']=='Questionnaire Measures of Emotional and Cognitive Status')]\n\n\nvisualize.predictive_modeling(df=df1)"
+  },
+  {
+    "objectID": "notebooks/phenotype_models_ASD.html#child-measures---questionnaire_measures_of_emotional_and_cognitive_status-1",
+    "href": "notebooks/phenotype_models_ASD.html#child-measures---questionnaire_measures_of_emotional_and_cognitive_status-1",
+    "title": "MIT Projects",
+    "section": "Child Measures - Questionnaire_Measures_of_Emotional_and_Cognitive_Status",
+    "text": "Child Measures - Questionnaire_Measures_of_Emotional_and_Cognitive_Status\n\n\ndf1 = df_classify[(df_classify['target']=='DX_01_Cat_binarize') & \n                  (df_classify['assessment']=='Child Measures')]\n\ncols = ['Physical Fitness and Status', 'Neurologic Function', 'Physiologic Function', 'Vision', 'Motor Skills']\n\ndf1 = df1[df1['domains'].isin(cols)]\n\nvisualize.predictive_modeling(df=df1)\n\n\n                                                \n\n\n\n#import plotly.express as px\n\n# interactive visualization of features\n#@widgets.interact(\n #               feature=df_feature['features'].unique(),\n #               )\n\n#def visualize_features(feature):\n#    df = df_feature[df_feature['features']==feature]\n#    fig = px.line(df, x='feature_names_sum', y='feature_sum', markers=True, title=feature)\n#    fig.update_xaxes(showticklabels=False)\n#    fig.update_xaxes(type='category')\n    \n#    fig.show()"
+  },
+  {
     "objectID": "notebooks/index.html",
     "href": "notebooks/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Summary of Clinical Diagnosis\nSummary of Predictive Models\nExploratory notebook on ADHD\nPhenotype models: ADHD\nPhenotype models: Anxiety\nPhenotype models: Depression\nPhenotype models: Compare Diagnoses"
+    "text": "Summary of Clinical Diagnosis\nSummary of Predictive Models\nExploratory notebook on ADHD\nPhenotype models: ADHD\nPhenotype models: Anxiety\nPhenotype models: Depression\nPhenotype models: Depression\nPhenotype models: Learning Disorder - Reading Impairment\nPhenotype models: Compare Diagnoses"
   },
   {
     "objectID": "notebooks/exploratory-features-adhd.html",
