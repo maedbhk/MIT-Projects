@@ -1117,7 +1117,7 @@
     "href": "notebooks/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Summary of Clinical Diagnosis\nSummary of Predictive Models\nExploratory notebook on ADHD\nPhenotype models: ADHD\nPhenotype models: Anxiety\nPhenotype models: Depression\nPhenotype models: Depression\nPhenotype models: Learning Disorder - Reading Impairment\nPhenotype models: Compare Diagnoses"
+    "text": "Summary of Clinical Diagnosis\nSummary of Predictive Models\nExploratory notebook on ADHD\nPhenotype models: ADHD\nPhenotype models: Anxiety\nPhenotype models: Depression\nPhenotype models: ASD\nPhenotype models: Learning Disorder - Reading Impairment\nPhenotype models: Compare Diagnoses"
   },
   {
     "objectID": "notebooks/exploratory-features-adhd.html",
