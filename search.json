@@ -168,11 +168,25 @@
     "text": "To Do\n\nTry UMap in supervised mode to identify unique patterns in phenotypic data\n\nwhat is the reliability in the KSADS assessment across child and parent measures?\n\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions\n\nReached out to folks at HBN about getting LORIS access but haven’t heard from them yet. I’m analyzing the data from Openmind which I believe is up-to-date. I have access to all of the phenotypic data and I’ve been able to analyze some of the anatomical data that’s on OpenMind so I don’t think I’m missing anything, but would be nice to have full access so that I can stay current with any changes or updates.\nI’ve scheduled a meeting for next Wednesday to discuss some of the results from HBN and to talk about the CHOP project before our meeting with the Philadelphia group."
   },
   {
+    "objectID": "progress/week-14.html",
+    "href": "progress/week-14.html",
+    "title": "Week 14",
+    "section": "",
+    "text": "Worked with Lexi and Alyson on ADHD + adaptation project\n\nAlyson focused on ADHD across a few demographic variables: gender (e.g., ADHD subtypes inattentive vs. hyperactive (boys vs. girls)), SES (Low SES associated with higher exposure to environmental risk factors), and race (Cultural + ethnic factors influence perception, reponse, diagnosis, and treatment of ADHD)\nChallenge in categorizing high vs low creative jobs, more literature establishing low vs high attainment jobs.\n\nPredictive modeling of HBN data - certain questionnaires/measures are better at classifying whether or not someone has a diagnosis compared to no diagnosis (e.g., ADHD, Anxiety, Depression, ASD, Reading Impairment). Notebooks are here:\n\nADHD\nASD\nAnxiety\nDepression\nLearning Impairment\nModel Comparison"
+  },
+  {
     "objectID": "progress/week-4.html",
     "href": "progress/week-4.html",
     "title": "Week 4",
     "section": "",
     "text": "To Do\n\nTry UMap in supervised mode to identify unique patterns in phenotypic data\nQuestions to address:\n\nWithin HBN assessment battery, which tests are most useful? (how does this vary across disorders?)\ncan further subtyping of individuals be done based on patterns in behavioral/cognitive assessments? (especially for 200 people who were not diagnosed due to an incomplete evaluation)\nwhat is the reliability in the KSADS assessment across child and parent measures?\n\nTest python implementation of SUIT on subset (n=10) of hbn participants (T1w + T2)\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions:\n\nDon’t yet have access to LORIS, will follow-up with Lindsay after labor day weekend\nCHOP Meeting - ask Satra to send email to folks there to set-up meeting sometime in Sep.?\nRemind Satra to provide info about other project that we forgot to discuss in our 09/01 meeting\nI’m happy to be included in other projects (meetings etc.) if any seem like a good fit for my interests/skills\nSet up weekly meetings w/Satra on Wednesdays\nI would like to recruit 1-2 undergrad students through UROP - can I hire for pay or academic credit alone?\nI requested edit access to sign up for a lab meeting slot: I’m thinking either end of this month or beginning of oct. I guess the neuroimaging subgroup would be most appropriate but perhaps also knowledge engineering as the meeting will be soliciting feedback about project ideas. Let me know what you think."
+  },
+  {
+    "objectID": "progress/week-15.html",
+    "href": "progress/week-15.html",
+    "title": "Week 15",
+    "section": "",
+    "text": "ADHD project: waiting to get Biobank access to phenotypic data so that we can explore which professions adults with ADHD gravitate towards, in order to infer adaptive traits and attributes in this population. We also want to assess the modulating factors of race, gender, and SES on this question. I presented an exploratory notebook on ADHD from the HBN dataset. Some take-aways:\n\nsignificantly more males are diagnosed with ADHD than females. M/F ratio is smallest however for inattentive subtype\nOn average, children with ADHD have comorbidites and on average girls have slightly more than boys\nGirls with inattentive ADHD start puberty earlier than other ADHD subtypes (+ children without an ADHD diagnosis)\nvery few children (<15%) are diagnosed with a learning disorder\n50-60% of children with ADHD have individualized education plan compared with 20% of children without a diagnosis\nsurprisingly, very few (<1%) of children diagnosed with adhd have parents who also have a diagnosis of adhd. This figure is much lower than expected based on existing literature, therefore, likely that more parents have adhd (but have not received a formal diagnosis) or the reporting is incomplete.\n\nset up a data exploration notebook that uses python widgets to explore the different measures (e.g., questionnaires) from the HBN across different diagnoses \nworked on CHOP project proposal"
   },
   {
     "objectID": "progress/week-0.html",
@@ -249,7 +263,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 12\nWeek 12\nWeek 12"
   },
   {
     "objectID": "progress/week-2.html",
@@ -271,6 +285,13 @@
     "title": "Week 2",
     "section": "Project Ideas",
     "text": "Project Ideas\n\n\ncan unique cerebellar fingerprints dissociate neuropsychiatric and neurodevelopmental disorders, above and beyond what would be expected from cortical fingerprints? I think I’d be first interested in analyzing the structural data before addressing functional connectivity\n\n\ninspired by RDoC, can we use topic models (e.g., latent dirichlet allocation) to identify latent clinical characteristics derived from HBN behavioral and/or cognitive measures (e.g., positive and negative affect scale, GRIT scale, Wechsler intelligence scale) with the goal of providing individualized risk assessments.\n\n\nIf we can identify groups/clusters by modeling behavioral/cognitive characteristics, can we identify corresponding dissociable neural signatures (whole-brain, not necessarily cerebellum-focused)?\n\n\nRelative to the neocortex, are there differences across disorders in neural signatures/fingerprints from early childhood to adolescence? For example, in developmental disorders (e.g., adhd, autism) do we see more significant changes in cerebellum (as indexed by reduction in grey matter) during early childhood relative to corresponding changes in the neocortex.\n\n\nNext steps: - Once I get access to HBN, I want to do a summary analysis of the phenotypic assessment data to determine the scope of the data (e.g., do some power analyses) - If it seems like there is a sufficient sample and enough complete behavioral measurements, I’ll likely plan on testing cerebellar isolation and segmentation of a few pilot participants (not clear to me yet what technical challenges we may face using SUIT on a developmental dataset). - test some topic models on the HBN phenotypic assessment data - I plan on publishing the website today at some stage so I’ll slack you the link, hopefully that will be an easier way to get a sense of what I’m working on"
+  },
+  {
+    "objectID": "progress/week-13.html",
+    "href": "progress/week-13.html",
+    "title": "Week 13",
+    "section": "",
+    "text": "Working with Alyson (Wellesley RA) and Lexi on a potential collaboration exploring the adaptive traits of ADHD.\nquestions we’re exploring:\n\nWhat is the relationship between ADHD and profession choice?\nWhat professions are seen as “creative” (organizational psych)\nHow does race/SES/gender play a role in these issues?\nWhat role does IQ and severity of ADHD diagnosis play in all of these factors?\n\nworking with Lexi to get access to phenotypic data on UK Biobank to explore ADHD in an adult population\nset-up a predictive modeling workflow that can now flexibly take in any combination of measures from the HBN dataset and predict a number of target variables github repo. worked on documentation of repo to take it easier for RAs to access data and run models, also wrote-up openmind tutorial here"
   },
   {
     "objectID": "progress/week-6.html",
