@@ -2,8 +2,7 @@
 title: Exploring ADHD
 ---
 
-
-## Questions - Intake Interview from Parent Measures
+## Questions
 * **Some of these questions have been addressed [here](../notebooks/exploratory-features-adhd.ipynb)**
 * What % of children with adhd have parents with adhd? `PreInt_FamHx,m_adhd` `PreInt_FamHx,f_adhd`
 *  What is the SES/race/gender breakdown of children with adhd? 
@@ -21,14 +20,35 @@ title: Exploring ADHD
 * What % of children are taking medication for adhd? 
 * What type of allergies do children with adhd have?
 * Previous head injuries? 
+* Mother's nicotine use during pregnancy?
 * Severity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.)
 * Any information on whether people with adhd are night owls versus early risers?
 * Any difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis? 
+* Is there any evidence that children with ADHD spend longer on the internet than children without adhd, and what is the nature of internet usage?
 
 ## Questions - Child Behavior Checklist - Teacher Report Form
 * What information is captured in this questionnaire? 
+    * teacher / parent differences in CBCL in girls with ADHD - difference in reporting?
+    * what scales you use to diagnose ADHD result in different subtypes
+
+## Questions - Predictive modeling
+* ADHD: can subtypes be classified from one another?
+    * hypothesis: most questionnaires/measures will not be able to differentiate between adhd subtypes
+* ADHD: can gender be classified from one another?
+    * hypothesis: certain questionnaires will be able to identify between gender
+* are there boys/girls who have cognitive profiles similar to those with adhd but haven't been diagnosed with adhd?
+    * how do we address this question? determine a cognitive profile for each participant and do a similarity comparison between those diagnosed with adhd and those without, are there any participants who have a cognitive profile that is very similar to ADHD but were not given a diagnosis?
 
 ## Summary of cognitive performance
-* **Opalina: this is a particularly important question if you want to write some code to address this question**
-* Many questionnaires (e.g., measures) have a `total` score providing an overall summary of how well a participant did overall on a questionnaire
-* For all of the measures that have a `total` score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?
+* Many questionnaires (e.g., measures) have a `total` or `raw` score providing an overall summary of how well a participant did on a questionnaire
+* For all of the measures that have a `total` or `raw` score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?
+
+distance correlation (dcorr)
+* matrix of distances: 
+400 participants x all features (per questionnaire)
+* dcorr - how independent are two matrices (pairwise covariance matrices)
+* compare two matrices
+* how orthogonal are features wtihin a questionnaire? 
+* are questions are similar (constructs)?
+* deap portal - built on ABCD - curated tabular data
+* xcp pipeline 
