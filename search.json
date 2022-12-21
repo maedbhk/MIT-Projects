@@ -231,6 +231,13 @@
     "text": "questions/feedback\n\nwe had a neuroimaging meeting today and were discussing a centralized database to keep track of datasets, how to access them on openmind, whether they have been bids-ified etc. there were two suggestions for doing this: the gablab wiki on openmind or a page on sensein github. with both of these options, everyone in the lab would be able to contribute - do you have any preference?\nwe also talked about having access to each other’s repos for projects we’re currently working, not everyone (including me) have public repos for their ongoing projects (number of reasons for this) - one suggestion was that we make our repos public within the sensein github org. currently, we’re sharing snippets of code via slack instead of pointing to the scripts on our repos.\nRelated to ^^, could I be added as a member of the senesein github organization?"
   },
   {
+    "objectID": "progress/week-16.html",
+    "href": "progress/week-16.html",
+    "title": "Week 16",
+    "section": "",
+    "text": "worked on adaptive adhd project with Alyson + Lexi\n\nADHD + Adaptation/Evolution\n\nJensen et al, 1997 - Evolution and Revolution in Child Psychiatry: ADHD as a Disorder of Adaptation\nWilliams and Taylor - The evolution of hyperactivity, impulsivity and cognitive diversity\nArildskov et al. - Testing the evolutionary advantage theory of ADHD disorder traits\n\nADHD + creativity\n\nAshwood et al. - Adaptive Functioning in Children with ASD, ADHD, and ASD + ADHD\nBudding et al. - ADHD and Giftedness: A Neurocognitive Consideration of Twice Exceptionality\nTaylor et al. - Characteristics of ADHD Related to Exectuive Function: Differnetial Predicitions for Creativity-Related Traits\n\n\nEdited grad school statements for Gasser and Alisha\nWorked with Shreya on incorporating SMOTE + dirty cat to predictive modeling pipeline\nRead COVID + suicide attempt prediction papers shared by Ran, and incorporated comments into proposal"
+  },
+  {
     "objectID": "progress/week-3.html",
     "href": "progress/week-3.html",
     "title": "Week 3",
@@ -263,7 +270,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 12\nWeek 12\nWeek 12"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19"
   },
   {
     "objectID": "progress/week-2.html",
@@ -301,6 +308,13 @@
     "text": "To Do\n\nquestions to answer: what is the reliability in the KSADS assessment across child and parent measures? meant to get to this question during the week but didn’t have time.\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions\n\nIs there anything that I should do in advance of the CHOP meeting on Monday?\nWhat is the protocol for storing new analyses (SUITPy output) on >2000 participants? I was planning on analyzing n=30 from each subgroup of HBN (adhd, autism, control, mood, anxiety, intellectual etc) as a first step, but ultimately I will want to analyze the broader dataset and will need to run SUITPy on each participant."
   },
   {
+    "objectID": "progress/week-17.html",
+    "href": "progress/week-17.html",
+    "title": "Week 17",
+    "section": "",
+    "text": "Worked on adaptive ADHD project with Alyson + Lexi, specifically getting data from UK Biobank on professions.\n\nnot all of the data is on openmind so we’ve been requesting certain variables from UK Biobank (e.g., psychiatric diagnoses)\n\nAlyson has become interested in better understanding girls with ADHD and how their cognitive profiles are different from boys with ADHD. It’s an under-researched topic in the literature, and we have found some differences in the HBN dataset between girls and boys with ADHD. Some topics we discussed:\n\nBabinski (2019): Sex + Puberty Moderate Association Between ADHD and Depression\nDir (2019): Pubertal influences on neural activation during risky decision-making in ADHD\nOstojic (2016): Association Between Pubertal Onset and ADHD Symptoms\nCamara (2020): Relationship Between Sex Hormones, Reproductive Stages, and ADHD\nHamlat (2019): Pubertal Timing as Transdiagnostic Risk for Psychopathology\nHalkett (2021): Initial Engagement in Oral Sex/Intercourse in Girls with and without ADHD\nWhy are girls in the inattentive ADHD subtype diagnosed later than boys?\nAre there more ADHD subtypes beyond combined/hyperactive/inattentive?\n\nWrote a script to run SUIT (and SUITPy) on anatomical scans from HBN. Putting the derivatives from SUIT into a similar format as adopted in this functional fusion project\n\nSUIT has to run on the fmriprep derivatives and fmriprep hasn’t been run yet on all HBN participants. I’ve tested the script out on a subset of participants that Jeff processed with fmriprep\n\nWorked with Shreya on predictive modeling pipeline, spent some time figuring out imbalanced train and test sets, and multi-label classification"
+  },
+  {
     "objectID": "progress/week-9.html",
     "href": "progress/week-9.html",
     "title": "Week 9",
@@ -313,6 +327,13 @@
     "title": "Week 9",
     "section": "Questions",
     "text": "Questions\n\nMeeting with Jaan the week of Oct. 17th to discuss this paper, which should be relevent to CHOP project. I suggested our Wednesday meeting time so we could meet all three of us if that works for you? If that time doesn’t work for him, I can suggest 11am on Monday?"
+  },
+  {
+    "objectID": "progress/week-18.html",
+    "href": "progress/week-18.html",
+    "title": "Week 18",
+    "section": "",
+    "text": "Worked on calculating distance correlations between HBN questionnaires to determine how orthogonal featuers are within a questionnaire\n\nwhat is the redundancy across measures used to diagnose neurodevelopmental disorders?\n\nWorked with Opalina on her project to identify differences in cognitive performance across ADHD subtypes\n\nExperimented with radar plots and parallel coordinates plots to visualize multivariate data\n\nFocused on Child Behavior Checklist across ADHD subtypes and differences in reporting between parents and teachers\nAttended an interesting lecture on interactions between the immune system and neurodevelopmental disorders"
   },
   {
     "objectID": "progress/week-8.html",
@@ -347,21 +368,28 @@
     "href": "projects/adaptive-adhd.html",
     "title": "Exploring ADHD",
     "section": "",
-    "text": "Some of these questions have been addressed here\nWhat % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd\nWhat is the SES/race/gender breakdown of children with adhd?\nWhat are the kinds of professions / college education held by parents of kids with adhd?\nSchool environment for children with adhd PhenX_School\nNeighborhood environment for children with adhd PhenX_Neighborhood\nHow do general scores of achievement and intelligence differ across adhd subtypes?\nWhat is the gender breakdown of adhd subtypes?\nGirls with adhd:\n\nage of first menstruation\nage of puberty onset\n\nwhat kind of school organizations are kids with adhd part of? PreInt_EduHx\nFamily history of mental illness PreInt_FamHx or other illness\n\nprimary diagnosis of mother, father, sibling\n\nWhat % of children are taking medication for adhd?\nWhat type of allergies do children with adhd have?\nPrevious head injuries?\nSeverity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.)\nAny information on whether people with adhd are night owls versus early risers?\nAny difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis?"
+    "text": "Some of these questions have been addressed here\nWhat % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd\nWhat is the SES/race/gender breakdown of children with adhd?\nWhat are the kinds of professions / college education held by parents of kids with adhd?\nSchool environment for children with adhd PhenX_School\nNeighborhood environment for children with adhd PhenX_Neighborhood\nHow do general scores of achievement and intelligence differ across adhd subtypes?\nWhat is the gender breakdown of adhd subtypes?\nGirls with adhd:\n\nage of first menstruation\nage of puberty onset\n\nwhat kind of school organizations are kids with adhd part of? PreInt_EduHx\nFamily history of mental illness PreInt_FamHx or other illness\n\nprimary diagnosis of mother, father, sibling\n\nWhat % of children are taking medication for adhd?\nWhat type of allergies do children with adhd have?\nPrevious head injuries?\nMother’s nicotine use during pregnancy?\nSeverity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.)\nAny information on whether people with adhd are night owls versus early risers?\nAny difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis?\nIs there any evidence that children with ADHD spend longer on the internet than children without adhd, and what is the nature of internet usage?"
   },
   {
     "objectID": "projects/adaptive-adhd.html#questions---child-behavior-checklist---teacher-report-form",
     "href": "projects/adaptive-adhd.html#questions---child-behavior-checklist---teacher-report-form",
     "title": "Exploring ADHD",
     "section": "Questions - Child Behavior Checklist - Teacher Report Form",
-    "text": "Questions - Child Behavior Checklist - Teacher Report Form\n\nWhat information is captured in this questionnaire?"
+    "text": "Questions - Child Behavior Checklist - Teacher Report Form\n\nWhat information is captured in this questionnaire?\n\nteacher / parent differences in CBCL in girls with ADHD - difference in reporting?\nwhat scales you use to diagnose ADHD result in different subtypes"
+  },
+  {
+    "objectID": "projects/adaptive-adhd.html#questions---predictive-modeling",
+    "href": "projects/adaptive-adhd.html#questions---predictive-modeling",
+    "title": "Exploring ADHD",
+    "section": "Questions - Predictive modeling",
+    "text": "Questions - Predictive modeling\n\nADHD: can subtypes be classified from one another?\n\nhypothesis: most questionnaires/measures will not be able to differentiate between adhd subtypes\n\nADHD: can gender be classified from one another?\n\nhypothesis: certain questionnaires will be able to identify between gender\n\nare there boys/girls who have cognitive profiles similar to those with adhd but haven’t been diagnosed with adhd?\n\nhow do we address this question? determine a cognitive profile for each participant and do a similarity comparison between those diagnosed with adhd and those without, are there any participants who have a cognitive profile that is very similar to ADHD but were not given a diagnosis?"
   },
   {
     "objectID": "projects/adaptive-adhd.html#summary-of-cognitive-performance",
     "href": "projects/adaptive-adhd.html#summary-of-cognitive-performance",
     "title": "Exploring ADHD",
     "section": "Summary of cognitive performance",
-    "text": "Summary of cognitive performance\n\nOpalina: this is a particularly important question if you want to write some code to address this question\nMany questionnaires (e.g., measures) have a total score providing an overall summary of how well a participant did overall on a questionnaire\nFor all of the measures that have a total score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?"
+    "text": "Summary of cognitive performance\n\nMany questionnaires (e.g., measures) have a total or raw score providing an overall summary of how well a participant did on a questionnaire\nFor all of the measures that have a total or raw score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?\n\ndistance correlation (dcorr) * matrix of distances: 400 participants x all features (per questionnaire) * dcorr - how independent are two matrices (pairwise covariance matrices) * compare two matrices * how orthogonal are features wtihin a questionnaire? * are questions are similar (constructs)? * deap portal - built on ABCD - curated tabular data * xcp pipeline"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html",
@@ -453,6 +481,13 @@
     "title": "Neurodevelopment and Translational Neuroimaging",
     "section": "Introduction",
     "text": "Introduction\n\n14-30% of children/adolescents live with a learning-related problem, associated with cognitive/behavioral problems. examples of these disorders are dyslexia, dyscalculia, language disorders. other diagnses related to neurodevelopmental disorders are adhd, asd.\nhow does the developing brain give rise to disorders?\nthere has been a lot of inconsistency in ascribing a range number of brain regions to individual neurodevelopmental disorders.\nfor example: adhd has been associated with grey matter differences within ACC, caudate nucleus, pallidum, striatum, cerebellum, PFC, premotor cortex etcs.\nwhy does this inconsistency exist? diagnostic groups are highly heterogeneous and overlapping and symptoms vary a lot within categories. there is no “purity” of developmental disorders.\nsolution: transdiagnostic approach?\n\nWhat is transdiagnostics?\nIdentifying underlying symptom dimensions that span multiple diagnoses.\nfor example, within neurodevelopmental learning disorders, primary focus is on identifying cognitive symptoms that underpin learning.\n\nanother reason for inconsistent brain-to-cognition mappings: they do not exist!\n\nequifinality: there could be many possible neural routes to the same cognitive profile or disorder\nmultifinality: the same local neural deficit could result in multiple different cognitive symptoms across individuals.\nthese concepts have not yet been translated into analytic approaches.\n\n\n\nGoal of the study\n\ntake a transdiagnostic approach to establish how brain differences relate to cognitive difficulties in childhood\nhow can the same pattern of neural deficits result in different cognitive profiles across children?\n\n\n\nMethod\n\ncognitive data from children with and without diagnoses were entered into an unsupervised ML algorithm called an artificial neural network – which preserves information about profiles within the dataset, captures non-linear relationships, and allows for measure to be differentially related across the sample. ideal method to use with transdiagnostic cohort.\nto determine how brain profiles relate to cognitive profiles, the same ANN was applied to whole-brain cortical morphology data\nArtificial neural network: cognitive data (z scored): age standarization mean and standard deviation from each assessments\nspecific type of network: self-organizing map - this algorithm represents multidimensional datasets as a two-dimensional map.\nCognitive profiles are robustly related to children’s learning ability, so a good test of whether the network can reliably represnt individual differences in cognition is to test whether it will generalize to unseen data and predict children’s learning scores.\nMapping brain profiles:\nWhole-brain cortical morphology metrics (cortical thickness, gyrification, sulci depth) were calculated for each child across a 68 parcel brain decomposition.\nFeature selction was performed before machine learning to reduce the risk of over-fitting with so many measures.\nLASSO regression reduced the number of indices down to 21 distint measures\n\n\n\nResults\n\nsummary of results:\n\nhold out CV revealed that cognitive profiles learned using ANN generalized to unseen data and were sig. predictive of childrens’ learning difficulties\nsimilarly, hold out CV showed that brain profiles generalized to unseen data and a child’s age-corrected brain profile was sig predictive of age-normed cognitive profile.\n\nthere were no one-to-one mappings: one brain profile could be associated with multiple cog profiles and vice versa\nalso, researchers found that the more central the hubs to a child’s brain organization, the milder or more specific the cognitive impairments. when these hubs were less well embedded, children showed the more severe cognitive symptoms and learning difficulties.\nchildren’s brain profiles predict their cognitive profile.\n\n\nWhat is the artificial neural network learning?\n\nis it learning about the severity of a particular set of brain values, or whether it had learned to identify peaks and troughs in individual profiles?"
+  },
+  {
+    "objectID": "literature-review/SCSB_Colloquium_Series.html",
+    "href": "literature-review/SCSB_Colloquium_Series.html",
+    "title": "Neuroimmune interaction underlies both neurodevelopmental and immune-primed phenotypes - Jun Huh",
+    "section": "",
+    "text": "Pregnancy and Maternal Immune System\n\nfetus is a foreign body to the maternal immune system\nmaternal immune system must protect both the mother and fetus\nwhen this doesn’t work properly, there will be longlasting effects on the fetus\ninfecton during the late 1st trimester or 2nd trimester of pregnancy has been correlated wtih an increased frequency of neurodevelopmental disorders in children\nviral infection - inflammatory conditions - data on covid-19 during pregnancy: severity of maternal illness - might be increase in ASD in the future based on COVID infection\nwe need to study more what is happening during pregnancy and long lasting effects: not enough people studying this question\noverlap between ASD children and IBD - common venn diagram of immune responses\n\n\n\n\nPregnancy and Matneral Immune System\n\n\n\n\n\nPregnancy and Matneral Immune System\n\n\n\n\nMouse studies\n\nMIA offspring show increased susceptibility to bacteria-induced colitis\nincreased immune susceptibility of MIA offspring are postnatally determined\nmaternal gut bacteria: non-genetic contributors? free from bacteria in the womb and then we are exposed to bacteria immediately upon leaving the womb"
   },
   {
     "objectID": "literature-review/pHealth-terminology.html",
