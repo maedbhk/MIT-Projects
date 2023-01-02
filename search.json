@@ -350,6 +350,13 @@
     "text": "Questions\n\nI’m going to send the CHOP team an email today to enquire about next steps (apologies for the delay on that front) - I’ll send it to you first and let me know if there’s anything you’d like to add. I’ll include summary of meeting along with some follow up questions about data, and some specific project goals we can address, most of which is covered here\nperhaps you could send John a line about monthly meetings? I don’t want to bother him with too many emails."
   },
   {
+    "objectID": "progress/week-19.html",
+    "href": "progress/week-19.html",
+    "title": "Week 19",
+    "section": "",
+    "text": "Worked on ADHD predictive modeling results\n\nPhenotype models: ADHD\nPhenotype models: ADHD & Sex\nPhenotype models: Control & Sex\nPhenotype models: ADHD & Subtypes\nPhenotype models: ADHD\n\nWorked on adaptive adhd notebooks:\n\nIntake Interview\nChild Behavior Checklist - Parent vs Teacher\n\nStarted putting together a first draft results section for HBN predictive modeling paper"
+  },
+  {
     "objectID": "projects/EMR-selfharm.html",
     "href": "projects/EMR-selfharm.html",
     "title": "Identifying Risk Predictors for Self-Harm through Electronic Medical Records",
