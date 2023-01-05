@@ -20,3 +20,5 @@ title: Overview
 - [`Summary of Clinical Diagnosis`](clinical_dx.html)
 - [`Intake Interview`](intake-interview-adhd.html)
 - [`Child Behavior Checklist - Parent vs Teacher`](Child-Behavior-Checklist.html)
+- [`Child Measures - Total Scores`](Child_Measures_ADHD.html)
+- [`Parent Measures - Total Scores`](Parent_Measures_ADHD.html)
