@@ -175,6 +175,13 @@
     "text": "Worked with Lexi and Alyson on ADHD + adaptation project\n\nAlyson focused on ADHD across a few demographic variables: gender (e.g., ADHD subtypes inattentive vs. hyperactive (boys vs. girls)), SES (Low SES associated with higher exposure to environmental risk factors), and race (Cultural + ethnic factors influence perception, reponse, diagnosis, and treatment of ADHD)\nChallenge in categorizing high vs low creative jobs, more literature establishing low vs high attainment jobs.\n\nPredictive modeling of HBN data - certain questionnaires/measures are better at classifying whether or not someone has a diagnosis compared to no diagnosis (e.g., ADHD, Anxiety, Depression, ASD, Reading Impairment). Notebooks are here:\n\nADHD\nASD\nAnxiety\nDepression\nLearning Impairment\nModel Comparison"
   },
   {
+    "objectID": "progress/week-20.html",
+    "href": "progress/week-20.html",
+    "title": "Week 20",
+    "section": "",
+    "text": "Finished notebooks for alyson on gender differences in adhd\n\nChild Measures - ADHD\nParent Measures - ADHD\n\nRe-ran models (including all-feature smote model) that incorporate all feature sets (including teacher measures)\nTested out sentence transformers for CBCL (Parent and Teacher Measures)\nSketched out pipeline for fMRI analysis of HBN data (preprocessing steps + connectivity analysis)\nRequested additional Biobank data for adaptive ADHD project - working with Lexi to get these data into a pandas dataframe\nExplored ABCD repronim project to figure out which data are available (i.e. questionnaires) - need to think about some questions that can be tested on this dataset."
+  },
+  {
     "objectID": "progress/week-4.html",
     "href": "progress/week-4.html",
     "title": "Week 4",
@@ -270,7 +277,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20"
   },
   {
     "objectID": "progress/week-2.html",
