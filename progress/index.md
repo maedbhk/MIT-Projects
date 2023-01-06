@@ -26,3 +26,4 @@ Keeping track of projects: what I've done, what's planned, what's in progress..
 - [`Week 17`](week-17.md)
 - [`Week 18`](week-18.md)
 - [`Week 19`](week-19.md)
+- [`Week 20`](week-20.md)
