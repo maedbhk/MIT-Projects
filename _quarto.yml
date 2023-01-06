@@ -94,6 +94,9 @@ website:
           - projects/cerebellum-fingerprints.md
           - projects/EMR-selfharm.md
           - projects/adaptive-adhd.md
+          - projects/exploring-adhd.md
+          - projects/gender-adhd.md
+          - projects/phenotyping-project.md
       - section: "Mentorship"
         contents:
           - mentorship/index.md
