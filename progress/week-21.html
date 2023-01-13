@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MIT Projects - Week 3</title>
+<title>MIT Projects - Week 21</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,8 +24,8 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../progress/week-4.html" rel="next">
-<link href="../progress/week-2.html" rel="prev">
+<link href="../datasets/index.html" rel="next">
+<link href="../progress/week-20.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,7 +67,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Week 3</h1>
+      <h1 class="quarto-secondary-nav-title">Week 21</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -140,7 +140,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../progress/week-3.html" class="sidebar-item-text sidebar-link active">Week 3</a>
+  <a href="../progress/week-3.html" class="sidebar-item-text sidebar-link">Week 3</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -230,7 +230,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../progress/week-21.html" class="sidebar-item-text sidebar-link">Week 21</a>
+  <a href="../progress/week-21.html" class="sidebar-item-text sidebar-link active">Week 21</a>
   </div>
 </li>
       </ul>
@@ -538,14 +538,20 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#done-and-to-do" id="toc-done-and-to-do" class="nav-link active" data-scroll-target="#done-and-to-do">Done and To-DO:</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/progress/week-21.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Week 3</h1>
+<h1 class="title d-none d-lg-block">Week 21</h1>
 </div>
 
 
@@ -559,20 +565,29 @@ ul.task-list{list-style: none;}
 
 </header>
 
+<p>01/09-01/13</p>
+<section id="done-and-to-do" class="level1">
+<h1>Done and To-DO:</h1>
 <ul>
-<li>One of the projects that I’m interested in starting addresses the role of the cerebellum in neurodevelopmental disorders. Therefore, I’ve been reading up on <a href="../literature-review/cerebellum-development.html">cerebellar development</a> this week and a few papers struck me as particularly interesting:
+<li>Worked on item analysis of HBN questionnaires using <a href="https://www.sbert.net/">sentence transformers</a>
 <ul>
-<li><a href="https://www.nature.com/articles/s41583-019-0152-2">Sathyanesan et al.&nbsp;2019</a></li>
-<li><a href="https://www.jneurosci.org/content/34/3/691">Stevenson et al.&nbsp;2014</a></li>
-<li><a href="https://www.nature.com/articles/s41598-017-18316-8">Tran et al.&nbsp;2017</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S1053811909008933?via%3Dihub">Tiemeier et al.&nbsp;2010</a></li>
+<li>example notebook here: <a href="../notebooks/item-analysis.html">HBN item analysis</a></li>
+<li>to-do: between-questionnaire comparison, calculate similarity between questionnaires</li>
 </ul></li>
-<li>I’ve also been exploring <a href="../literature-review/pHealth-other-fields.html">precision medicine/pHealth</a> in other fields, namely genomics, as a way to understand the evoluation of this discipline.</li>
-<li>Although I haven’t delved into it much yet, I want to curate a set of guidelines that address <a href="../literature-review/pHealth-ethics.md">ethical considerations</a> in the work that we’re doing. My goal is that others can also contribute to this list.</li>
-<li>I liked this review paper by <a href="https://www.nature.com/articles/nn.4478/">Woo et al.&nbsp;(2017)</a> a lot. They trace the progress and limitations of translational neuroimaging, offering a roadmap for future utility in precision medicine, focusing on diagnostic value of models, scalability and deployability, and generalizability. I also hadn’t encountered the idea of process-based predictive models before, but it’s compelling to me if we’re going to move beyond DSM-categorization of mental illness to RDoC-like constructs across disorders. I note some of the paper’s key points <a href="../literature-review/translational-neuroimaging.html">here</a></li>
+<li>Worked on ADHD + profession question - did a deep dive into biobank phenotype data, almost finished “data wrangling” stage</li>
+<li>Working with Alyson on ADHD + gender differences question. She has done an extensive literature search on ADHD + gender and she has found that:
+<ul>
+<li>“Overall: There doesn’t seem to be many comprehensive papers about which measures are most useful in identifying ADHD populations even when not limiting for gender. Overall, even more general papers only examine a few measures, or they focus on a subset (rating scales, neuropsych testing, tasks). Also, these generally seem to focus on adults/young adults rather than children”</li>
+<li>Next steps: Alyson is going to draft a results section and I’ll continue doing analyses on this question</li>
+</ul></li>
+<li>Continuing to amend pipeline for fMRI analysis of HBN data, focusing specifically on connectivity analyses.
+<ul>
+<li>to-do: test out different approaches on subset of HBN participants</li>
+</ul></li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -777,13 +792,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../progress/week-2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 2</span>
+      <a href="../progress/week-20.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 20</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../progress/week-4.html" class="pagination-link">
-        <span class="nav-page-text">Week 4</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../datasets/index.html" class="pagination-link">
+        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

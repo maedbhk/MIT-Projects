@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MIT Projects - Week 3</title>
+<title>MIT Projects - Exploring ADHD</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,8 +24,6 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../progress/week-4.html" rel="next">
-<link href="../progress/week-2.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,7 +65,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Week 3</h1>
+      <h1 class="quarto-secondary-nav-title">Exploring ADHD</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -112,12 +110,12 @@ ul.task-list{list-style: none;}
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Progress</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Progress</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../progress/index.html" class="sidebar-item-text sidebar-link">Overview</a>
@@ -140,7 +138,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../progress/week-3.html" class="sidebar-item-text sidebar-link active">Week 3</a>
+  <a href="../progress/week-3.html" class="sidebar-item-text sidebar-link">Week 3</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -538,14 +536,23 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a></li>
+  <li><a href="#questions---child-behavior-checklist---teacher-report-form" id="toc-questions---child-behavior-checklist---teacher-report-form" class="nav-link" data-scroll-target="#questions---child-behavior-checklist---teacher-report-form">Questions - Child Behavior Checklist - Teacher Report Form</a></li>
+  <li><a href="#questions---predictive-modeling" id="toc-questions---predictive-modeling" class="nav-link" data-scroll-target="#questions---predictive-modeling">Questions - Predictive modeling</a></li>
+  <li><a href="#summary-of-cognitive-performance" id="toc-summary-of-cognitive-performance" class="nav-link" data-scroll-target="#summary-of-cognitive-performance">Summary of cognitive performance</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/projects/epxloring-adhd.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Week 3</h1>
+<h1 class="title d-none d-lg-block">Exploring ADHD</h1>
 </div>
 
 
@@ -559,20 +566,74 @@ ul.task-list{list-style: none;}
 
 </header>
 
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <ul>
-<li>One of the projects that I’m interested in starting addresses the role of the cerebellum in neurodevelopmental disorders. Therefore, I’ve been reading up on <a href="../literature-review/cerebellum-development.html">cerebellar development</a> this week and a few papers struck me as particularly interesting:
+<li><strong>Some of these questions have been addressed <a href="../notebooks/exploratory-features-adhd.html">here</a></strong></li>
+<li>What % of children with adhd have parents with adhd? <code>PreInt_FamHx,m_adhd</code> <code>PreInt_FamHx,f_adhd</code></li>
+<li>What is the SES/race/gender breakdown of children with adhd?</li>
+<li>What are the kinds of professions / college education held by parents of kids with adhd?</li>
+<li>School environment for children with adhd <code>PhenX_School</code></li>
+<li>Neighborhood environment for children with adhd <code>PhenX_Neighborhood</code></li>
+<li>How do general scores of achievement and intelligence differ across adhd subtypes?</li>
+<li>What is the gender breakdown of adhd subtypes?</li>
+<li>Girls with adhd:
 <ul>
-<li><a href="https://www.nature.com/articles/s41583-019-0152-2">Sathyanesan et al.&nbsp;2019</a></li>
-<li><a href="https://www.jneurosci.org/content/34/3/691">Stevenson et al.&nbsp;2014</a></li>
-<li><a href="https://www.nature.com/articles/s41598-017-18316-8">Tran et al.&nbsp;2017</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S1053811909008933?via%3Dihub">Tiemeier et al.&nbsp;2010</a></li>
+<li>age of first menstruation</li>
+<li>age of puberty onset</li>
 </ul></li>
-<li>I’ve also been exploring <a href="../literature-review/pHealth-other-fields.html">precision medicine/pHealth</a> in other fields, namely genomics, as a way to understand the evoluation of this discipline.</li>
-<li>Although I haven’t delved into it much yet, I want to curate a set of guidelines that address <a href="../literature-review/pHealth-ethics.md">ethical considerations</a> in the work that we’re doing. My goal is that others can also contribute to this list.</li>
-<li>I liked this review paper by <a href="https://www.nature.com/articles/nn.4478/">Woo et al.&nbsp;(2017)</a> a lot. They trace the progress and limitations of translational neuroimaging, offering a roadmap for future utility in precision medicine, focusing on diagnostic value of models, scalability and deployability, and generalizability. I also hadn’t encountered the idea of process-based predictive models before, but it’s compelling to me if we’re going to move beyond DSM-categorization of mental illness to RDoC-like constructs across disorders. I note some of the paper’s key points <a href="../literature-review/translational-neuroimaging.html">here</a></li>
+<li>what kind of school organizations are kids with adhd part of? <code>PreInt_EduHx</code></li>
+<li>Family history of mental illness <code>PreInt_FamHx</code> or other illness
+<ul>
+<li>primary diagnosis of mother, father, sibling</li>
+</ul></li>
+<li>What % of children are taking medication for adhd?</li>
+<li>What type of allergies do children with adhd have?</li>
+<li>Previous head injuries?</li>
+<li>Mother’s nicotine use during pregnancy?</li>
+<li>Severity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.)</li>
+<li>Any information on whether people with adhd are night owls versus early risers?</li>
+<li>Any difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis?</li>
+<li>Is there any evidence that children with ADHD spend longer on the internet than children without adhd, and what is the nature of internet usage?</li>
 </ul>
+</section>
+<section id="questions---child-behavior-checklist---teacher-report-form" class="level2">
+<h2 class="anchored" data-anchor-id="questions---child-behavior-checklist---teacher-report-form">Questions - Child Behavior Checklist - Teacher Report Form</h2>
+<ul>
+<li>What information is captured in this questionnaire?
+<ul>
+<li>teacher / parent differences in CBCL in girls with ADHD - difference in reporting?</li>
+<li>what scales you use to diagnose ADHD result in different subtypes</li>
+</ul></li>
+</ul>
+</section>
+<section id="questions---predictive-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="questions---predictive-modeling">Questions - Predictive modeling</h2>
+<ul>
+<li>ADHD: can subtypes be classified from one another?
+<ul>
+<li>hypothesis: most questionnaires/measures will not be able to differentiate between adhd subtypes</li>
+</ul></li>
+<li>ADHD: can gender be classified from one another?
+<ul>
+<li>hypothesis: certain questionnaires will be able to identify between gender</li>
+</ul></li>
+<li>are there boys/girls who have cognitive profiles similar to those with adhd but haven’t been diagnosed with adhd?
+<ul>
+<li>how do we address this question? determine a cognitive profile for each participant and do a similarity comparison between those diagnosed with adhd and those without, are there any participants who have a cognitive profile that is very similar to ADHD but were not given a diagnosis?</li>
+</ul></li>
+</ul>
+</section>
+<section id="summary-of-cognitive-performance" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-cognitive-performance">Summary of cognitive performance</h2>
+<ul>
+<li>Many questionnaires (e.g., measures) have a <code>total</code> or <code>raw</code> score providing an overall summary of how well a participant did on a questionnaire</li>
+<li>For all of the measures that have a <code>total</code> or <code>raw</code> score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?</li>
+</ul>
+<p>distance correlation (dcorr) * matrix of distances: 400 participants x all features (per questionnaire) * dcorr - how independent are two matrices (pairwise covariance matrices) * compare two matrices * how orthogonal are features wtihin a questionnaire? * are questions are similar (constructs)? * deap portal - built on ABCD - curated tabular data * xcp pipeline</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -775,18 +836,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../progress/week-2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 2</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../progress/week-4.html" class="pagination-link">
-        <span class="nav-page-text">Week 4</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
