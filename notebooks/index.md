@@ -16,6 +16,9 @@ title: Overview
 - [`Phenotype models: ADHD & Subtypes`](phenotype_models_ADHD-subtypes.html)
 - [`Phenotype models: ADHD`](phenotype_models_ADHD.html)
 
+## Item Analysis
+- [`Item analysis of HBN questionnaires`](item-analysis.html)
+
 ## Summary Results - ADHD
 - [`Summary of Clinical Diagnosis`](clinical_dx.html)
 - [`Intake Interview`](intake-interview-adhd.html)
