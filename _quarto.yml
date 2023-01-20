@@ -62,6 +62,7 @@ website:
           - progress/week-19.md
           - progress/week-20.md
           - progress/week-21.md
+          - progress/week-22.md
       - section: "Datasets"
         contents:
           - datasets/index.md

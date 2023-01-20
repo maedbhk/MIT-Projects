@@ -3,18 +3,54 @@ title: Getting Started on Openmind
 ---
 
 ## First Steps
-* `ssh <username>@openmind.mit.edu`
+* `ssh <username>@openmind.mit.edu` ## to log in to OpenMind        
     * `ssh <username>@openmind-dtn.mit.edu` ## to access data transfer node
-* use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
-* code for **healthy_brain_network** is stored at **/om2/user/maedbh/healthy_brain_network** but you should clone the github repo in your own path **om2/user/"username"**
-    * follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
-    * then run command `git clone git@github.com:maedbhk/healthy_brain_network.git` to clone the repo
-    * to install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)
-    * run command `module load openmind/anaconda/3-2022.05` (if pipenv is not installed with anaconda, then run `pip install pipenv`)
-    * then run `pipenv install` in top-level directory of **healthy_brain_network** (if you're getting an error, it's probably becuase you have not set PATH to be **/home/"username"/.local/bin** in your **.bash_profile**. See **Setting Paths** below for more details)
-    * to activate the virtual environment, run `pipenv shell`
+    * fyi: use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
+* code for **healthy_brain_network** is stored at **/om2/user/maedbh/healthy_brain_network** but you should clone the github repo in your own path 
+```
+    cd om2/user/"username"
+    git clone git@github.com:maedbhk/healthy_brain_network.git
+```
+* Follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
 * phenotypic data for **healthy_brain_network** is stored at **/om2/user/maedbh/hbn_data/**
     * fyi: I/O operations to **om** and **om2** are fast, which is why I store code here. **om4** and **nese** are slower but have large storage space, which is why raw data are stored on **nese**.
+
+## Installing and activating virtual environments
+* To install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python)
+```
+    module load openmind/anaconda/3-2022.05`
+```
+* You can use either **pipenv** or **conda** to activate the virtual environment for the project
+
+> If you want to use **pipenv**
+```
+    # navigate to top-level directory of project
+    cd om2/user/"username"/healthy_brain_network
+
+    # make sure **pipenv** library is installed
+    pip install pipenv
+
+    # install virtual environment
+    pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/"username"/.local/bin** in your **.bash_profile**. See **Setting Paths** below for more details)
+
+    # activate the virtual environment
+    pipenv shell
+```
+> If you want to use **conda**
+```
+    # navigate to top-level directory of project
+    cd om2/user/"username"/healthy_brain_network
+
+    # load anaconda (or miniconda)
+    module load openmind/anaconda/3-2022.05`
+
+    # in this repo, install a conda environment from environment.yml
+    conda env create -f environment.yml
+
+    # activate the conda virtual environment
+    conda activate healthy-brain-network
+```
+
 
 ## Setting Paths
 * Create **.bash_profile** in your home directory (`cd /home/<username>` and `touch .bash_profile` if file doesn't exist)
