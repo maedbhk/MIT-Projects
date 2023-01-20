@@ -233,6 +233,11 @@ ul.task-list{list-style: none;}
   <a href="../progress/week-21.html" class="sidebar-item-text sidebar-link">Week 21</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-22.html" class="sidebar-item-text sidebar-link">Week 22</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -543,6 +548,7 @@ ul.task-list{list-style: none;}
    
   <ul>
   <li><a href="#first-steps" id="toc-first-steps" class="nav-link active" data-scroll-target="#first-steps">First Steps</a></li>
+  <li><a href="#installing-and-activating-virtual-environments" id="toc-installing-and-activating-virtual-environments" class="nav-link" data-scroll-target="#installing-and-activating-virtual-environments">Installing and activating virtual environments</a></li>
   <li><a href="#setting-paths" id="toc-setting-paths" class="nav-link" data-scroll-target="#setting-paths">Setting Paths</a></li>
   <li><a href="#using-vs-code-on-openmind" id="toc-using-vs-code-on-openmind" class="nav-link" data-scroll-target="#using-vs-code-on-openmind">Using VS Code on OpenMind</a></li>
   </ul>
@@ -570,25 +576,60 @@ ul.task-list{list-style: none;}
 <section id="first-steps" class="level2">
 <h2 class="anchored" data-anchor-id="first-steps">First Steps</h2>
 <ul>
-<li><code>ssh &lt;username&gt;@openmind.mit.edu</code>
+<li><code>ssh &lt;username&gt;@openmind.mit.edu</code> ## to log in to OpenMind
 <ul>
 <li><code>ssh &lt;username&gt;@openmind-dtn.mit.edu</code> ## to access data transfer node</li>
+<li>fyi: use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa)</li>
 </ul></li>
-<li>use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa)</li>
-<li>code for <strong>healthy_brain_network</strong> is stored at <strong>/om2/user/maedbh/healthy_brain_network</strong> but you should clone the github repo in your own path <strong>om2/user/“username”</strong>
+<li>code for <strong>healthy_brain_network</strong> is stored at <strong>/om2/user/maedbh/healthy_brain_network</strong> but you should clone the github repo in your own path</li>
+</ul>
+<pre><code>    cd om2/user/"username"
+    git clone git@github.com:maedbhk/healthy_brain_network.git</code></pre>
 <ul>
-<li>follow instructions set out on this <a href="https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue">webpage</a> to set up SSH for github repo</li>
-<li>then run command <code>git clone git@github.com:maedbhk/healthy_brain_network.git</code> to clone the repo</li>
-<li>to install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)</li>
-<li>run command <code>module load openmind/anaconda/3-2022.05</code> (if pipenv is not installed with anaconda, then run <code>pip install pipenv</code>)</li>
-<li>then run <code>pipenv install</code> in top-level directory of <strong>healthy_brain_network</strong> (if you’re getting an error, it’s probably becuase you have not set PATH to be <strong>/home/“username”/.local/bin</strong> in your <strong>.bash_profile</strong>. See <strong>Setting Paths</strong> below for more details)</li>
-<li>to activate the virtual environment, run <code>pipenv shell</code></li>
-</ul></li>
+<li>Follow instructions set out on this <a href="https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue">webpage</a> to set up SSH for github repo</li>
 <li>phenotypic data for <strong>healthy_brain_network</strong> is stored at <strong>/om2/user/maedbh/hbn_data/</strong>
 <ul>
 <li>fyi: I/O operations to <strong>om</strong> and <strong>om2</strong> are fast, which is why I store code here. <strong>om4</strong> and <strong>nese</strong> are slower but have large storage space, which is why raw data are stored on <strong>nese</strong>.</li>
 </ul></li>
 </ul>
+</section>
+<section id="installing-and-activating-virtual-environments" class="level2">
+<h2 class="anchored" data-anchor-id="installing-and-activating-virtual-environments">Installing and activating virtual environments</h2>
+<ul>
+<li>To install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python)</li>
+</ul>
+<pre><code>    module load openmind/anaconda/3-2022.05`</code></pre>
+<ul>
+<li>You can use either <strong>pipenv</strong> or <strong>conda</strong> to activate the virtual environment for the project</li>
+</ul>
+<blockquote class="blockquote">
+<p>If you want to use <strong>pipenv</strong></p>
+</blockquote>
+<pre><code>    # navigate to top-level directory of project
+    cd om2/user/"username"/healthy_brain_network
+
+    # make sure **pipenv** library is installed
+    pip install pipenv
+
+    # install virtual environment
+    pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/"username"/.local/bin** in your **.bash_profile**. See **Setting Paths** below for more details)
+
+    # activate the virtual environment
+    pipenv shell</code></pre>
+<blockquote class="blockquote">
+<p>If you want to use <strong>conda</strong></p>
+</blockquote>
+<pre><code>    # navigate to top-level directory of project
+    cd om2/user/"username"/healthy_brain_network
+
+    # load anaconda (or miniconda)
+    module load openmind/anaconda/3-2022.05`
+
+    # in this repo, install a conda environment from environment.yml
+    conda env create -f environment.yml
+
+    # activate the conda virtual environment
+    conda activate healthy-brain-network</code></pre>
 </section>
 <section id="setting-paths" class="level2">
 <h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>

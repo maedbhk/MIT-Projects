@@ -252,6 +252,20 @@
     "text": "worked on adaptive adhd project with Alyson + Lexi\n\nADHD + Adaptation/Evolution\n\nJensen et al, 1997 - Evolution and Revolution in Child Psychiatry: ADHD as a Disorder of Adaptation\nWilliams and Taylor - The evolution of hyperactivity, impulsivity and cognitive diversity\nArildskov et al. - Testing the evolutionary advantage theory of ADHD disorder traits\n\nADHD + creativity\n\nAshwood et al. - Adaptive Functioning in Children with ASD, ADHD, and ASD + ADHD\nBudding et al. - ADHD and Giftedness: A Neurocognitive Consideration of Twice Exceptionality\nTaylor et al. - Characteristics of ADHD Related to Exectuive Function: Differnetial Predicitions for Creativity-Related Traits\n\n\nEdited grad school statements for Gasser and Alisha\nWorked with Shreya on incorporating SMOTE + dirty cat to predictive modeling pipeline\nRead COVID + suicide attempt prediction papers shared by Ran, and incorporated comments into proposal"
   },
   {
+    "objectID": "progress/week-22.html",
+    "href": "progress/week-22.html",
+    "title": "Week 22",
+    "section": "",
+    "text": "01/16-01/20"
+  },
+  {
+    "objectID": "progress/week-22.html#done-and-to-do",
+    "href": "progress/week-22.html#done-and-to-do",
+    "title": "Week 22",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nHBN item analysis:\n\nWorked on item analysis of HBN data testing out tf-idf and distance correlation on questions and answers\napplied hierarchical clustering to answer and question matrices, separately for each question\nrewrote some old scripts to preprocess questionnaire data to make item analysis more parsimonious\n\nLiterature review:\n\nspent some time reading up on the diagnosis/questionnaire literature to identify similar constructs across measures\nHampel et al 2023\nMorin et al. 1999\nLangley et al. 2013\nReed et al 2015\n\nRerunning all models (again) including smote and new feature sets. Also tested out LOFO"
+  },
+  {
     "objectID": "progress/week-3.html",
     "href": "progress/week-3.html",
     "title": "Week 3",
@@ -284,7 +298,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 20"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 20\nWeek 20"
   },
   {
     "objectID": "progress/week-2.html",
@@ -823,7 +837,14 @@
     "href": "mentorship/openmind.html",
     "title": "Getting Started on Openmind",
     "section": "",
-    "text": "ssh <username>@openmind.mit.edu\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\n\nuse rsync if you need to transfer data from your local network to openmind (and vice versa)\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path om2/user/“username”\n\nfollow instructions set out on this webpage to set up SSH for github repo\nthen run command git clone git@github.com:maedbhk/healthy_brain_network.git to clone the repo\nto install the virtual environment, you need to make sure the python module is loaded (openmind uses anaconda for running Python)\nrun command module load openmind/anaconda/3-2022.05 (if pipenv is not installed with anaconda, then run pip install pipenv)\nthen run pipenv install in top-level directory of healthy_brain_network (if you’re getting an error, it’s probably becuase you have not set PATH to be /home/“username”/.local/bin in your .bash_profile. See Setting Paths below for more details)\nto activate the virtual environment, run pipenv shell\n\nphenotypic data for healthy_brain_network is stored at /om2/user/maedbh/hbn_data/\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why raw data are stored on nese."
+    "text": "ssh <username>@openmind.mit.edu ## to log in to OpenMind\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\nfyi: use rsync if you need to transfer data from your local network to openmind (and vice versa)\n\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path\n\n    cd om2/user/\"username\"\n    git clone git@github.com:maedbhk/healthy_brain_network.git\n\nFollow instructions set out on this webpage to set up SSH for github repo\nphenotypic data for healthy_brain_network is stored at /om2/user/maedbh/hbn_data/\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why raw data are stored on nese."
+  },
+  {
+    "objectID": "mentorship/openmind.html#installing-and-activating-virtual-environments",
+    "href": "mentorship/openmind.html#installing-and-activating-virtual-environments",
+    "title": "Getting Started on Openmind",
+    "section": "Installing and activating virtual environments",
+    "text": "Installing and activating virtual environments\n\nTo install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python)\n\n    module load openmind/anaconda/3-2022.05`\n\nYou can use either pipenv or conda to activate the virtual environment for the project\n\n\nIf you want to use pipenv\n\n    # navigate to top-level directory of project\n    cd om2/user/\"username\"/healthy_brain_network\n\n    # make sure **pipenv** library is installed\n    pip install pipenv\n\n    # install virtual environment\n    pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/\"username\"/.local/bin** in your **.bash_profile**. See **Setting Paths** below for more details)\n\n    # activate the virtual environment\n    pipenv shell\n\nIf you want to use conda\n\n    # navigate to top-level directory of project\n    cd om2/user/\"username\"/healthy_brain_network\n\n    # load anaconda (or miniconda)\n    module load openmind/anaconda/3-2022.05`\n\n    # in this repo, install a conda environment from environment.yml\n    conda env create -f environment.yml\n\n    # activate the conda virtual environment\n    conda activate healthy-brain-network"
   },
   {
     "objectID": "mentorship/openmind.html#setting-paths",
