@@ -556,6 +556,7 @@ ul.task-list{list-style: none;}
   <ul>
   <li><a href="#first-steps" id="toc-first-steps" class="nav-link active" data-scroll-target="#first-steps">First Steps</a></li>
   <li><a href="#installing-and-activating-virtual-environments" id="toc-installing-and-activating-virtual-environments" class="nav-link" data-scroll-target="#installing-and-activating-virtual-environments">Installing and activating virtual environments</a></li>
+  <li><a href="#download-miniconda-on-openmind" id="toc-download-miniconda-on-openmind" class="nav-link" data-scroll-target="#download-miniconda-on-openmind">Download miniconda on OpenMind</a></li>
   <li><a href="#setting-paths" id="toc-setting-paths" class="nav-link" data-scroll-target="#setting-paths">Setting Paths</a></li>
   <li><a href="#using-vs-code-on-openmind" id="toc-using-vs-code-on-openmind" class="nav-link" data-scroll-target="#using-vs-code-on-openmind">Using VS Code on OpenMind</a></li>
   </ul>
@@ -629,14 +630,21 @@ ul.task-list{list-style: none;}
 <pre><code>    # navigate to top-level directory of project
     cd om2/user/"username"/healthy_brain_network
 
-    # load anaconda (or miniconda)
-    module load openmind/anaconda/3-2022.05`
+    # load your own version of miniconda
+    # see section below: `Download miniconda on OpenMind`
 
     # in this repo, install a conda environment from environment.yml
     conda env create -f environment.yml
 
     # activate the conda virtual environment
     conda activate healthy-brain-network</code></pre>
+</section>
+<section id="download-miniconda-on-openmind" class="level2">
+<h2 class="anchored" data-anchor-id="download-miniconda-on-openmind">Download miniconda on OpenMind</h2>
+<pre><code>    wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
+    bash Miniconda3-latest-Linux-x86_64.sh
+
+    # save the distrubtion (when prompted) to **/om2/user/"username"/miniconda**</code></pre>
 </section>
 <section id="setting-paths" class="level2">
 <h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>
