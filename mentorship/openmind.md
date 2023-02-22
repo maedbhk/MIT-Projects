@@ -36,13 +36,14 @@ title: Getting Started on Openmind
     # activate the virtual environment
     pipenv shell
 ```
+
 > If you want to use **conda**
 ```
     # navigate to top-level directory of project
     cd om2/user/"username"/healthy_brain_network
 
-    # load anaconda (or miniconda)
-    module load openmind/anaconda/3-2022.05`
+    # load your own version of miniconda
+    # see section below: `Download miniconda on OpenMind`
 
     # in this repo, install a conda environment from environment.yml
     conda env create -f environment.yml
@@ -51,6 +52,13 @@ title: Getting Started on Openmind
     conda activate healthy-brain-network
 ```
 
+## Download miniconda on OpenMind
+```
+    wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
+    bash Miniconda3-latest-Linux-x86_64.sh
+
+    # save the distrubtion (when prompted) to **/om2/user/"username"/miniconda**
+```
 
 ## Setting Paths
 * Create **.bash_profile** in your home directory (`cd /home/<username>` and `touch .bash_profile` if file doesn't exist)

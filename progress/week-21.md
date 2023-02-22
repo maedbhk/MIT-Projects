@@ -6,7 +6,7 @@ title: Week 21
 
 # Done and To-DO:
 * Worked on item analysis of HBN questionnaires using [sentence transformers](https://www.sbert.net/)
-    * example notebook here: [HBN item analysis](../notebooks/item-analysis.ipynb)
+    * example notebook here: [HBN item analysis](../notebooks/item-analysis.html)
     * to-do: between-questionnaire comparison, calculate similarity between questionnaires
 * Worked on ADHD + profession question - did a deep dive into biobank phenotype data, almost finished "data wrangling" stage
 * Working with Alyson on ADHD + gender differences question. She has done an extensive literature search on ADHD + gender and she has found that:
