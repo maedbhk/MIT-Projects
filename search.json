@@ -525,8 +525,8 @@
     "text": "Overview\nThe ADHD-200 data set provides demographic and clinical information, including age, sex, and measures of symptom severity as assessed by the ADHD rating scale (ADHD-RS).\n\nData Storage\n\nnot currently on openmind/datalad\npreprocessed using"
   },
   {
-    "objectID": "About-Me/index.html",
-    "href": "About-Me/index.html",
+    "objectID": "about-me.html",
+    "href": "about-me.html",
     "title": "About Me",
     "section": "",
     "text": "I’m an Integrative Computational Neuroscience (ICoN) Fellow at MIT using computational approaches to identify biologically‐driven risk predictors of neurodevelopmental (e.g., ADHD) and neuropsychiatric (e.g., depression and anxiety) disorders.\nI received my PhD from the University of California, Berkeley in 2022 where I used machine learning and statistics to build models of brain function.\nI’m passionate about using my experience as an educator and academic mentor to communicate complex ideas to both non‐expert and expert audiences. I have a strong record of publishing in scientific journals (>600 citations) and presenting at research conferences (>10 proceedings). I have also taught neuroscience to diverse audiences, from undergraduate students at UC Berkeley to incarcarated students at San Quentin State Prison.\nFinally, I strongly believe in using data‐driven solutions to formulate and recommend policy, especially as it pertains to mental health solutions.\nMore information: * For an up-to-date list of my publications, browse my google scholar profile * For video recordings of some recent talks, see my youtube channel * For an overview of my plans while at MIT, please check out this profile released by McGovern Institute"
@@ -844,7 +844,7 @@
     "href": "index.html",
     "title": "MIT Projects",
     "section": "",
-    "text": "In an attempt to document my projects, from conception to publication, I’m compiling project ideas, and weekly progress in one place as a reference template for myself and for anyone interested in what I’m doing in my work as an ICoN Fellow at MIT.\nFor more information about me, navigate here page\nThis website is made with quarto and inspired by https://github.com/NASA-Openscapes/2021-Cloud-Hackathon"
+    "text": "In an attempt to document my projects, from conception to publication, I’m compiling project ideas, and weekly progress in one place as a reference template for myself and for anyone interested in what I’m doing in my work as an ICoN Fellow at MIT.\nFor more information about who I am and what motivates me, navigate here\nThis website is made with quarto and inspired by https://github.com/NASA-Openscapes/2021-Cloud-Hackathon"
   },
   {
     "objectID": "mentorship/fall22_urop_recruitment.html",
