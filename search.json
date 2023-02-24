@@ -529,7 +529,14 @@
     "href": "about-me.html",
     "title": "About Me",
     "section": "",
-    "text": "I’m an Integrative Computational Neuroscience (ICoN) Fellow at MIT using computational approaches to identify biologically‐driven risk predictors of neurodevelopmental (e.g., ADHD) and neuropsychiatric (e.g., depression and anxiety) disorders.\nI received my PhD from the University of California, Berkeley in 2022 where I used machine learning and statistics to build models of brain function.\nI’m passionate about using my experience as an educator and academic mentor to communicate complex ideas to both non‐expert and expert audiences. I have a strong record of publishing in scientific journals (>600 citations) and presenting at research conferences (>10 proceedings). I have also taught neuroscience to diverse audiences, from undergraduate students at UC Berkeley to incarcarated students at San Quentin State Prison.\nFinally, I strongly believe in using data‐driven solutions to formulate and recommend policy, especially as it pertains to mental health solutions.\nMore information: * For an up-to-date list of my publications, browse my google scholar profile * For video recordings of some recent talks, see my youtube channel * For an overview of my plans while at MIT, please check out this profile released by McGovern Institute"
+    "text": "I’m an Integrative Computational Neuroscience (ICoN) Fellow at MIT using computational approaches to identify biologically‐driven risk predictors of neurodevelopmental (e.g., ADHD) and neuropsychiatric (e.g., depression and anxiety) disorders.\nI received my PhD from the University of California, Berkeley in 2022 where I used machine learning and statistics to build models of brain function.\nI’m passionate about using my experience as an educator and academic mentor to communicate complex ideas to both non‐expert and expert audiences. I have a strong record of publishing in scientific journals (>600 citations) and presenting at research conferences (>10 proceedings). I have also taught neuroscience to diverse audiences, from undergraduate students at UC Berkeley to incarcarated students at San Quentin State Prison.\nFinally, I strongly believe in using data‐driven solutions to formulate and recommend policy, especially as it pertains to mental health solutions."
+  },
+  {
+    "objectID": "about-me.html#more-information",
+    "href": "about-me.html#more-information",
+    "title": "About Me",
+    "section": "More information:",
+    "text": "More information:\n\nFor an up-to-date list of my publications, browse my google scholar profile\nFor video recordings of some recent talks, see my youtube channel\nFor an overview of my plans while at MIT, please check out this profile released by McGovern Institute"
   },
   {
     "objectID": "literature-review/development-translational-neuroimaging.html",
