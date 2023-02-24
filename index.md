@@ -13,6 +13,6 @@ In an attempt to document my projects, from conception to publication, I'm compi
 and weekly progress in one place as a reference template for myself and for anyone interested in 
 what I'm doing in my work as an ICoN Fellow at MIT.
 
-For more information about me, [navigate here](About-Me/index.md) page
+For more information about who I am and what motivates me, [navigate here](about-me.md)
   
 This website is made with [quarto](https://quarto.org) and inspired by <https://github.com/NASA-Openscapes/2021-Cloud-Hackathon> 

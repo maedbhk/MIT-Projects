@@ -37,6 +37,7 @@ website:
       - section: "Welcome"
         contents:
           - index.md
+          - about-me.md
       - section: "Progress"
         contents:
           - progress/index.md

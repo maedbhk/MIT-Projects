@@ -13,7 +13,7 @@ I have a strong record of publishing in scientific journals (>600 citations) and
 
 Finally, I strongly believe in using data‐driven solutions to formulate and recommend policy, especially as it pertains to mental health solutions. 
 
-More information: 
+## More information: 
 * For an up-to-date list of my publications, browse my [google scholar profile](https://scholar.google.com/citations?user=YS9zF8gAAAAJ&hl=en)
 * For video recordings of some recent talks, see my [youtube channel](https://www.youtube.com/@maedbhking6900/featured)
 * For an overview of my plans while at MIT, please check out this [profile](assets/images/ICoN_profile.png) released by McGovern Institute
