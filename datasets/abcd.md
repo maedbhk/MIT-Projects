@@ -15,9 +15,3 @@ The ABCD Study is a prospective longitudinal study starting at the ages of 9-10 
 ### Data Storage
 * Are the data on openmind?
 * See this community collection [(ABCC)](https://collection3165.readthedocs.io/en/stable/) on derivatives from ABCD 
-
-<!-- Open your terminal
-
-```{.bash}
-git clone https://github.com/YOUR-USERNAME/2021-Cloud-Hackathon
-``` -->

@@ -1,0 +1,14 @@
+---
+title: Week 28
+---
+
+02/27-03/03
+
+## Done and To-Do
+* Tackled item analysis of phenotypic data this week - trickier than I thought given the chaotic naming schema of the data dictionaries (all excel sheets, inconsistently labelled)
+    * I think reproschema would be useful for these dictionaries, submitted a UROP add to hire someone for this project (NLP + items + reproschema of HBN data dictionaries)
+    * **Posting**: Title: Using natural language processing to investigate neurodevelopmental disorders. Overview: The Senseable Intelligence Group at the McGovern Institute for Brain Research is looking for UROP candidates to work (remote or in-person) on cutting-edge and clinically relevant neuroscience research. The aim of the project is to apply natural language processing to clinical questionnaires that capture rich phenotypic information about children with developmental disorders (e.g., ADHD, Autism Spectrum Disorder). This role requires strong computational/programming expertise. At a minimum, the candidate should be very familiar with Jupyter Notebooks, pandas, numpy, Github. Candidates who have machine learning experience including natural language processing (e.g., SentenceTransformers) and unsupervised learning (e.g., UMAP) are preferred. However, an interest in learning more about these methods is also highly desirable."
+* Had a productive meeting with Kseniia from Arno's research group. She's working on similar questions and we discussed potential collaborations, specifically wrt to the item analysis and subtype work. She sent me a [link to a csv](https://github.com/charlie42/diagnosis-predictor/blob/main/references/item-names.csv) containing item names (linking HBN questions to question keys -- a possible solution to the chaotic data dictionarie problem I was encountering). However, there are still some small bugs to be ironed out so spent some time programmatically fixing the csv so that it is more versatile for our purposes. 
+* Talked with Jeff about running ["The Script"](https://github.com/sensein/TheScript) on HBN participants. I'm going to take the lead on this for now. I have written another script to do SUIT processing on these data but haven't tested it at scale, spent some time trying to borrow from Dorota's script to inform SUIT script. 
+* Finished running a bunch of HBN models that now incorporate demographic variables: race, ethnicity, sex, age -- notebooks available soon (waiting for last model to finish)
+    * While I have been running models separately for each measure (across many diagnoses and target variables: diagnosis, sex), Shreya has been running larger models (throwing in all features) and testing out different classifiers

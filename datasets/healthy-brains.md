@@ -8,8 +8,8 @@ The Child Mind Institute has launched the Healthy Brain Network, an ongoing init
 
 * Population: ages 5-21, children who likely have one or more psychiatric symptoms
 * Data collected: 
-    * MRI + fMRI: movies (~10 min), predictive eye estimation regression
-    * Phenotypic assessment
+    * MRI + fMRI: movies (~10 min), predictive eye estimation regression - 3444 participants
+    * Phenotypic assessment - 4080 participants
     * Physical activity
     * Behavioral measures (questionnaires)
     * Family structures (stress, trauma)
@@ -36,9 +36,9 @@ The Child Mind Institute has launched the Healthy Brain Network, an ongoing init
 * Which releases are available?
     * currently there are [10 releases](http://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/sharing_neuro.html#Direct%20Down) of HBN imaging and phenotypic data
 * Have imaging data been preprocessed?
-    * fmriprep
-    * freesurfer
-    * first-level glms
+    * fmriprep (no)
+    * freesurfer (no)
+    * first-level glms (no)
 * MRI data have been preprocessed using Mindboggle and are available in S3 under the [directory](/fcp-indi/data/Projects/HBN/derivatives/Freesurfer_version6.0.0)
 * Where are the data stored on openmind?
     * are these data being transitioned to datalad?
@@ -48,3 +48,7 @@ The Child Mind Institute has launched the Healthy Brain Network, an ongoing init
 * directories on openmind - HBN
     * `/om4/group/gablab/data/hbn_bids`
     * `/nese/mit/group/sig/projects`
+
+### MRI and fMRI Data Preprocessing
+* Use [xcp-D package](https://xcp-d.readthedocs.io/en/latest/) to do post-processing of resting state data (basically picks up where fMRIPrep left off)
+* This package also works on outputs from [minimially preprocessed HCP data](https://www.humanconnectome.org/study/hcp-lifespan-development/data-releases)
