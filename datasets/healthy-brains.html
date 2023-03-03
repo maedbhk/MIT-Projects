@@ -248,6 +248,31 @@ ul.task-list{list-style: none;}
   <a href="../progress/week-23.html" class="sidebar-item-text sidebar-link">Week 23</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-24.html" class="sidebar-item-text sidebar-link">Week 24</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-25.html" class="sidebar-item-text sidebar-link">Week 25</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-26.html" class="sidebar-item-text sidebar-link">Week 26</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-27.html" class="sidebar-item-text sidebar-link">Week 27</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-28.html" class="sidebar-item-text sidebar-link">Week 28</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -563,6 +588,7 @@ ul.task-list{list-style: none;}
   <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage">Data Storage</a></li>
+  <li><a href="#mri-and-fmri-data-preprocessing" id="toc-mri-and-fmri-data-preprocessing" class="nav-link" data-scroll-target="#mri-and-fmri-data-preprocessing">MRI and fMRI Data Preprocessing</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/datasets/healthy-brains.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -595,8 +621,8 @@ ul.task-list{list-style: none;}
 <li>Population: ages 5-21, children who likely have one or more psychiatric symptoms</li>
 <li>Data collected:
 <ul>
-<li>MRI + fMRI: movies (~10 min), predictive eye estimation regression</li>
-<li>Phenotypic assessment</li>
+<li>MRI + fMRI: movies (~10 min), predictive eye estimation regression - 3444 participants</li>
+<li>Phenotypic assessment - 4080 participants</li>
 <li>Physical activity</li>
 <li>Behavioral measures (questionnaires)</li>
 <li>Family structures (stress, trauma)</li>
@@ -638,9 +664,9 @@ ul.task-list{list-style: none;}
 </ul></li>
 <li>Have imaging data been preprocessed?
 <ul>
-<li>fmriprep</li>
-<li>freesurfer</li>
-<li>first-level glms</li>
+<li>fmriprep (no)</li>
+<li>freesurfer (no)</li>
+<li>first-level glms (no)</li>
 </ul></li>
 <li>MRI data have been preprocessed using Mindboggle and are available in S3 under the <a href="../fcp-indi/data/Projects/HBN/derivatives/Freesurfer_version6.0.0">directory</a></li>
 <li>Where are the data stored on openmind?
@@ -656,6 +682,13 @@ ul.task-list{list-style: none;}
 <li><code>/om4/group/gablab/data/hbn_bids</code></li>
 <li><code>/nese/mit/group/sig/projects</code></li>
 </ul></li>
+</ul>
+</section>
+<section id="mri-and-fmri-data-preprocessing" class="level3">
+<h3 class="anchored" data-anchor-id="mri-and-fmri-data-preprocessing">MRI and fMRI Data Preprocessing</h3>
+<ul>
+<li>Use <a href="https://xcp-d.readthedocs.io/en/latest/">xcp-D package</a> to do post-processing of resting state data (basically picks up where fMRIPrep left off)</li>
+<li>This package also works on outputs from <a href="https://www.humanconnectome.org/study/hcp-lifespan-development/data-releases">minimially preprocessed HCP data</a></li>
 </ul>
 
 

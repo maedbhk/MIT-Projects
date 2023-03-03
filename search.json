@@ -133,6 +133,20 @@
     "text": "Questions:\n\nAfter pre-training, ClinicalBERT is fine-tuned on a clinical task (e.g. readmission prediction). What if someone wants to use another clinical task (length of hospital stay, mortality risk estimation), are those weights available?"
   },
   {
+    "objectID": "progress/week-24.html",
+    "href": "progress/week-24.html",
+    "title": "Week 24",
+    "section": "",
+    "text": "01/30-02/03"
+  },
+  {
+    "objectID": "progress/week-24.html#done-and-to-do",
+    "href": "progress/week-24.html#done-and-to-do",
+    "title": "Week 24",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nRe ran hbn models including age as a feature (it does make a difference for some)\nadded new results to hbn paper draft (very tentative) - compiling relevant references (+ papers to read)\nworked on results block for adhd + gender differences paper - ran new models for males and females separately (to determine which measures best classify adhd subtypes, and whether there are differences across males/females)\nwrote a job description for the item analysis project (response similarity across questionnaires) — then talked to Sooyoung who expressed interest as it is a good machine learning project + has reproschema component (e.g, putting HBN data dictionaries into standardized format)\nread some transdiagnostic papers (will link them later)\nstarted looking into ABCD phenotypic data — will focus on cbcl for now"
+  },
+  {
     "objectID": "progress/week-1.html",
     "href": "progress/week-1.html",
     "title": "Week 1",
@@ -203,6 +217,20 @@
     "text": "Done and To-DO:\n\nWorked on item analysis of HBN questionnaires using sentence transformers\n\nexample notebook here: HBN item analysis\nto-do: between-questionnaire comparison, calculate similarity between questionnaires\n\nWorked on ADHD + profession question - did a deep dive into biobank phenotype data, almost finished “data wrangling” stage\nWorking with Alyson on ADHD + gender differences question. She has done an extensive literature search on ADHD + gender and she has found that:\n\n“Overall: There doesn’t seem to be many comprehensive papers about which measures are most useful in identifying ADHD populations even when not limiting for gender. Overall, even more general papers only examine a few measures, or they focus on a subset (rating scales, neuropsych testing, tasks). Also, these generally seem to focus on adults/young adults rather than children”\nNext steps: Alyson is going to draft a results section and I’ll continue doing analyses on this question\n\nContinuing to amend pipeline for fMRI analysis of HBN data, focusing specifically on connectivity analyses.\n\nto-do: test out different approaches on subset of HBN participants"
   },
   {
+    "objectID": "progress/week-25.html",
+    "href": "progress/week-25.html",
+    "title": "Week 25",
+    "section": "",
+    "text": "02/06-02/10"
+  },
+  {
+    "objectID": "progress/week-25.html#done-and-to-do",
+    "href": "progress/week-25.html#done-and-to-do",
+    "title": "Week 25",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nmostly writing tentative results blocks and literature review for gender differences paper + phenotypic/multi-modal paper\ngender differences paper reading:\n\nSex Differences in Mental Health Problems and Psychiatric Hospitalization in Autistic Young Adults\nGender inclusivity in women’s health research\n\nphenotypic/multi-modal paper reading:\n\nImproving the study of brain-behavior relationships by revisiting basic assumptions\nCoordinated cortical thickness alterations across six neurodevelopmental and psychiatric disorders\nBroad transcriptomic dysregulation occurs across the cerebral cortex in ASD"
+  },
+  {
     "objectID": "progress/week-0.html",
     "href": "progress/week-0.html",
     "title": "Week 0",
@@ -266,6 +294,20 @@
     "text": "Done and To-Do\n\nHBN item analysis:\n\nWorked on item analysis of HBN data testing out tf-idf and distance correlation on questions and answers\napplied hierarchical clustering to answer and question matrices, separately for each question\nrewrote some old scripts to preprocess questionnaire data to make item analysis more parsimonious\n\nLiterature review:\n\nspent some time reading up on the diagnosis/questionnaire literature to identify similar constructs across measures\nHampel et al 2023\nMorin et al. 1999\nLangley et al. 2013\nReed et al 2015\n\nRerunning all models (again) including smote and new feature sets. Also tested out LOFO"
   },
   {
+    "objectID": "progress/week-26.html",
+    "href": "progress/week-26.html",
+    "title": "Week 26",
+    "section": "",
+    "text": "02/13-02/17"
+  },
+  {
+    "objectID": "progress/week-26.html#done-and-to-do",
+    "href": "progress/week-26.html#done-and-to-do",
+    "title": "Week 26",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nworked with Shreya on running new phenotypic models to incorporate categorical features (using dirtycat) and testing on different classifiers, models were taking a long time to run, spent some time troubleshooting ways to reduce run time, reducing number of splits helped + parallelizing code\nPlayed around with chatGPT for gender differences and ADHD paper\n\nmet with Alyson to discuss paper draft. I’m working on putting results blocks together and she’s working on the write-up\ntalked about expected gender differences across HBN measures - compiling information about each measure from the literature\ndiscussed diagnostic bias vs. gender differences? need to come up with a good method to address whether the former is true"
+  },
+  {
     "objectID": "progress/week-3.html",
     "href": "progress/week-3.html",
     "title": "Week 3",
@@ -298,7 +340,21 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28"
+  },
+  {
+    "objectID": "progress/week-27.html",
+    "href": "progress/week-27.html",
+    "title": "Week 27",
+    "section": "",
+    "text": "02/20-02/24"
+  },
+  {
+    "objectID": "progress/week-27.html#done-and-to-do",
+    "href": "progress/week-27.html#done-and-to-do",
+    "title": "Week 27",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nEdited an abstract for Alyson for Wellesley senior thesis conference\nRead CHOP-related papers:\n\nYouth Suicide During the First Year of the COVID-19 Pandemic\nSelf-Harm in Children and Adolescents who Presented at Emergency Units During\n\nPreprocessing ABCD + CBCL data - next step is to incorporate these data into modeling workflow that I wrote for HBN\nRevisiting ADHD + Professions project w/Lexi - bit of a task to preprocess these data, ideal project for an RA\nFellows lunch with Lisa Yang - she asked specifically about CHOP project, gave her high level view of progress + plans\nHosted MBA Sloan Fellows as part of MBA Idea week, group of 4 visited the lab and I gave them a high-level presentation about work we’re doing, connected some of them with relevant folks (Omar, Daniel etc.)"
   },
   {
     "objectID": "progress/week-2.html",
@@ -355,6 +411,20 @@
     "title": "Week 23",
     "section": "Done and To-Do",
     "text": "Done and To-Do\n\nWorked on notebooks for phenotype models + item analyis\n\ncompare models across diagnoses\ncompare CBCL models across diagnoses\nitem analysis\n\nWorked on gender differences + ADHD project with Alyson, I’m working on building blocks for results section, and Alyson is drafting an introduction\nDid some more preprocessing of UK Biobank phenotypic data for adaptive adhd project but will focus on this more extensively next week in anticipation of meeting with Lexi\nSlides of CHOP presentation available here"
+  },
+  {
+    "objectID": "progress/week-28.html",
+    "href": "progress/week-28.html",
+    "title": "Week 28",
+    "section": "",
+    "text": "02/27-03/03"
+  },
+  {
+    "objectID": "progress/week-28.html#done-and-to-do",
+    "href": "progress/week-28.html#done-and-to-do",
+    "title": "Week 28",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nTackled item analysis of phenotypic data this week - trickier than I thought given the chaotic naming schema of the data dictionaries (all excel sheets, inconsistently labelled)\n\nI think reproschema would be useful for these dictionaries, submitted a UROP add to hire someone for this project (NLP + items + reproschema of HBN data dictionaries)\nPosting: Title: Using natural language processing to investigate neurodevelopmental disorders. Overview: The Senseable Intelligence Group at the McGovern Institute for Brain Research is looking for UROP candidates to work (remote or in-person) on cutting-edge and clinically relevant neuroscience research. The aim of the project is to apply natural language processing to clinical questionnaires that capture rich phenotypic information about children with developmental disorders (e.g., ADHD, Autism Spectrum Disorder). This role requires strong computational/programming expertise. At a minimum, the candidate should be very familiar with Jupyter Notebooks, pandas, numpy, Github. Candidates who have machine learning experience including natural language processing (e.g., SentenceTransformers) and unsupervised learning (e.g., UMAP) are preferred. However, an interest in learning more about these methods is also highly desirable.”\n\nHad a productive meeting with Kseniia from Arno’s research group. She’s working on similar questions and we discussed potential collaborations, specifically wrt to the item analysis and subtype work. She sent me a link to a csv containing item names (linking HBN questions to question keys – a possible solution to the chaotic data dictionarie problem I was encountering). However, there are still some small bugs to be ironed out so spent some time programmatically fixing the csv so that it is more versatile for our purposes.\nTalked with Jeff about running “The Script” on HBN participants. I’m going to take the lead on this for now. I have written another script to do SUIT processing on these data but haven’t tested it at scale, spent some time trying to borrow from Dorota’s script to inform SUIT script.\nFinished running a bunch of HBN models that now incorporate demographic variables: race, ethnicity, sex, age – notebooks available soon (waiting for last model to finish)\n\nWhile I have been running models separately for each measure (across many diagnoses and target variables: diagnosis, sex), Shreya has been running larger models (throwing in all features) and testing out different classifiers"
   },
   {
     "objectID": "progress/week-9.html",
@@ -508,7 +578,7 @@
     "href": "datasets/healthy-brains.html",
     "title": "Healthy Brains Network",
     "section": "",
-    "text": "The Child Mind Institute has launched the Healthy Brain Network, an ongoing initiative focused on creating and sharing a biobank comprised of data from 10,000 New York City area children and adolescents (ages 5-21).\n\nPopulation: ages 5-21, children who likely have one or more psychiatric symptoms\nData collected:\n\nMRI + fMRI: movies (~10 min), predictive eye estimation regression\nPhenotypic assessment\nPhysical activity\nBehavioral measures (questionnaires)\nFamily structures (stress, trauma)\nSubstance use/addiction\nCognition and language tasks\nDisorder-specific questionnaires\nElectroencephalography\nDigital Voice and Video Recordings\nGenetics\nActigraphy\nCognitive Tasks (e.g., sequence learning), naturalistic stimuli\nEyetracking: pupil dilation and eye position\n\n\n\n\n\nPhenotypic Assessment Protocol\n\n\n\n\n\n\nWhich data are on openmind?\n\nImaging (rest, naturalistic)\nDemographic info\nCognitive/Behavioral results\nClinical disorders\n\nWhat is the format?\n\nraw, derivatives\n\nWhich releases are available?\n\ncurrently there are 10 releases of HBN imaging and phenotypic data\n\nHave imaging data been preprocessed?\n\nfmriprep\nfreesurfer\nfirst-level glms\n\nMRI data have been preprocessed using Mindboggle and are available in S3 under the directory\nWhere are the data stored on openmind?\n\nare these data being transitioned to datalad?\n\nHow does a new user get access to the dataset?\n\nanyone with gablab group permissions should be able to access the data\n\ndirectories on openmind - HBN\n\n/om4/group/gablab/data/hbn_bids\n/nese/mit/group/sig/projects"
+    "text": "The Child Mind Institute has launched the Healthy Brain Network, an ongoing initiative focused on creating and sharing a biobank comprised of data from 10,000 New York City area children and adolescents (ages 5-21).\n\nPopulation: ages 5-21, children who likely have one or more psychiatric symptoms\nData collected:\n\nMRI + fMRI: movies (~10 min), predictive eye estimation regression - 3444 participants\nPhenotypic assessment - 4080 participants\nPhysical activity\nBehavioral measures (questionnaires)\nFamily structures (stress, trauma)\nSubstance use/addiction\nCognition and language tasks\nDisorder-specific questionnaires\nElectroencephalography\nDigital Voice and Video Recordings\nGenetics\nActigraphy\nCognitive Tasks (e.g., sequence learning), naturalistic stimuli\nEyetracking: pupil dilation and eye position\n\n\n\n\n\nPhenotypic Assessment Protocol\n\n\n\n\n\n\nWhich data are on openmind?\n\nImaging (rest, naturalistic)\nDemographic info\nCognitive/Behavioral results\nClinical disorders\n\nWhat is the format?\n\nraw, derivatives\n\nWhich releases are available?\n\ncurrently there are 10 releases of HBN imaging and phenotypic data\n\nHave imaging data been preprocessed?\n\nfmriprep (no)\nfreesurfer (no)\nfirst-level glms (no)\n\nMRI data have been preprocessed using Mindboggle and are available in S3 under the directory\nWhere are the data stored on openmind?\n\nare these data being transitioned to datalad?\n\nHow does a new user get access to the dataset?\n\nanyone with gablab group permissions should be able to access the data\n\ndirectories on openmind - HBN\n\n/om4/group/gablab/data/hbn_bids\n/nese/mit/group/sig/projects\n\n\n\n\n\n\nUse xcp-D package to do post-processing of resting state data (basically picks up where fMRIPrep left off)\nThis package also works on outputs from minimially preprocessed HCP data"
   },
   {
     "objectID": "datasets/abcd.html",
