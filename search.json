@@ -490,6 +490,13 @@
     "text": "Method\n\nFirst, convert UK SOC 2000 codes into U.S. SOC/O*NET job titles using Computer Assisted Structured Coding Tool CASCOT\nSecond, manually check and match occupations in these two systems based on detailed job descriptions (e.g., job tasks and activities), based on the International Labor Organization’s International Standard Classification of Occupations (ISCO) to ensure accuracy and reliability of the crosswalk in the first step.\nFor the 502,538 participants, you should be able to match ONET job titles for 274,223 individuals. The remaining 192,010 individuals who did not provide SOC codes and 36,305 who had SOC 2000 codes but no sufficient information to match the O*NET job titles should be excluded.\nFor full methods details, see Section Materials and methods - Phenotype measurement and definitions in paper by Song et al. 2022"
   },
   {
+    "objectID": "projects/adhd_professions.html#prepreocessing-steps",
+    "href": "projects/adhd_professions.html#prepreocessing-steps",
+    "title": "ADHD + Professions",
+    "section": "Prepreocessing Steps",
+    "text": "Prepreocessing Steps\n\nFor initial steps on preprocessing the UKBiobank + ONET data, see the README in the google drive folder for this project"
+  },
+  {
     "objectID": "projects/EMR-selfharm.html",
     "href": "projects/EMR-selfharm.html",
     "title": "Identifying Risk Predictors for Self-Harm through Electronic Medical Records",
