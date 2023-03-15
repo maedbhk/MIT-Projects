@@ -2,6 +2,8 @@
 title: Getting Started on Openmind
 ---
 
+> Example repo here is **healthy_brain_network** but can be applied to any github repo that uses a Pipfile or Conda environment
+
 ## First Steps
 * `ssh <username>@openmind.mit.edu` ## to log in to OpenMind        
     * `ssh <username>@openmind-dtn.mit.edu` ## to access data transfer node
@@ -52,12 +54,19 @@ title: Getting Started on Openmind
     conda activate healthy-brain-network
 ```
 
-## Download miniconda on OpenMind
+## Download miniconda on OpenMind and add to PATH
 ```
     wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
     bash Miniconda3-latest-Linux-x86_64.sh
 
     # save the distrubtion (when prompted) to **/om2/user/"username"/miniconda**
+
+    # to permanently enable the conda command from your distribution of miniconda:
+    $ echo ". /om2/user/"username"/miniconda3/etc/profile.d/conda.sh" >> ~/.bash_profile
+
+    # to put conda's bse (root) environment on PATH:
+    $ echo "conda activate" >> ~/.bash_profile
+
 ```
 
 ## Setting Paths
@@ -78,12 +87,12 @@ fi
 
 # User specific environment and startup programs
 LANG=en_US.UTF-8
-PATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/
+PATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/"username"/.local/bin/
 
-alias cdcode="cd /om2/user/maedbh/healthy_brain_network"
-alias cddata="cd /om2/user/maedbh/hbn_data/"
-alias cdhome="cd /home/maedbh"
-alias cdenv="cd /home/maedbh/.local/share/virtualenvs"
+alias cdcode="cd /om2/user/"username"/healthy_brain_network"
+alias cddata="cd /om2/user/"username"/hbn_data/"
+alias cdhome="cd /home/"username""
+alias cdenv="cd /home/"username"/.local/share/virtualenvs"
 alias diskspace="du -hs $PWD/.[!.]* $PWD/* | sort -h"
 alias l="ls -alh"
 
