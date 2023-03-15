@@ -469,6 +469,27 @@
     "text": "Worked on ADHD predictive modeling results\n\nPhenotype models: ADHD\nPhenotype models: ADHD & Sex\nPhenotype models: Control & Sex\nPhenotype models: ADHD & Subtypes\nPhenotype models: ADHD\n\nWorked on adaptive adhd notebooks:\n\nIntake Interview\nChild Behavior Checklist - Parent vs Teacher\n\nStarted putting together a first draft results section for HBN predictive modeling paper"
   },
   {
+    "objectID": "projects/adhd_professions.html",
+    "href": "projects/adhd_professions.html",
+    "title": "ADHD + Professions",
+    "section": "",
+    "text": "Is there a relationship between the type of occupation someone holds and whether or not they have ADHD?\n\nThe hypothesis is that people with ADHD are more likely to hold jobs that have the following traits/attributes: short-term planning, entrepreneurship, creativity, flexibility, self-employment. Job status will also be modulated by the following demographic variables: race/ethnicity, sex, age, socioeconomic status (SES)\n\nOccupation will be coded by the following attainment phenotypes: complexity, autonomy, innovation, and three types of job demands (information demands, emotional demands, and physical demands  based on the method outlined by Song et al. 2022"
+  },
+  {
+    "objectID": "projects/adhd_professions.html#dataset",
+    "href": "projects/adhd_professions.html#dataset",
+    "title": "ADHD + Professions",
+    "section": "Dataset",
+    "text": "Dataset\n\nUK Biobank cohort is a population-based cohort study in the United Kingdom, which involves above 500,000 participants aged 40 years or older during their recruitment between 2006 to 2010\nIn the UK Biobank data, participants’ jobs were coded using the four-digit UK Standard Occupational Code (SOC) 2000 (Field ID 132) based on detailed job information (e.g., job tasks and activities) collected during participants’ baseline visits to assessment centers for the discovery sample\n\nadditional reading\n\nONET is based on the U.S. SOC system and includes hundreds of job characteristic measures for over 1100 occupations, sufficiently representing the national labor force in the United States, and has been used in many other countries via similar occupational classification systems\n\nadditional reading"
+  },
+  {
+    "objectID": "projects/adhd_professions.html#method",
+    "href": "projects/adhd_professions.html#method",
+    "title": "ADHD + Professions",
+    "section": "Method",
+    "text": "Method\n\nFirst, convert UK SOC 2000 codes into U.S. SOC/O*NET job titles using Computer Assisted Structured Coding Tool CASCOT\nSecond, manually check and match occupations in these two systems based on detailed job descriptions (e.g., job tasks and activities), based on the International Labor Organization’s International Standard Classification of Occupations (ISCO) to ensure accuracy and reliability of the crosswalk in the first step.\nFor the 502,538 participants, you should be able to match ONET job titles for 274,223 individuals. The remaining 192,010 individuals who did not provide SOC codes and 36,305 who had SOC 2000 codes but no sufficient information to match the O*NET job titles should be excluded.\nFor full methods details, see Section Materials and methods - Phenotype measurement and definitions in paper by Song et al. 2022"
+  },
+  {
     "objectID": "projects/EMR-selfharm.html",
     "href": "projects/EMR-selfharm.html",
     "title": "Identifying Risk Predictors for Self-Harm through Electronic Medical Records",
@@ -924,6 +945,34 @@
     "text": "In an attempt to document my projects, from conception to publication, I’m compiling project ideas, and weekly progress in one place as a reference template for myself and for anyone interested in what I’m doing in my work as an ICoN Fellow at MIT.\nFor more information about who I am and what motivates me, navigate here\nThis website is made with quarto and inspired by https://github.com/NASA-Openscapes/2021-Cloud-Hackathon"
   },
   {
+    "objectID": "mentorship/spr23_urop_onboarding.html",
+    "href": "mentorship/spr23_urop_onboarding.html",
+    "title": "Spring23 Onboarding",
+    "section": "",
+    "text": "Add your name to the team’s website through a pull request here\nRequest access to gablab slack, look for workspace Gablab, request access, once you have joined, search for channel #satralab"
+  },
+  {
+    "objectID": "mentorship/spr23_urop_onboarding.html#doing-research",
+    "href": "mentorship/spr23_urop_onboarding.html#doing-research",
+    "title": "Spring23 Onboarding",
+    "section": "Doing Research",
+    "text": "Doing Research\n\nShell, git and other useful skills: https://missing.csail.mit.edu/\npython, stats, machine learning, deep learning, nlp: Daniel’s resources here\nFor tips on writing a good research paper (should also be helpful in reading papers too), see Mensch & Kording’s paper.\nFor guidelines on how to quickly and efficiently read a research paper\nquestions you can ask yourself as you’re reading a paper"
+  },
+  {
+    "objectID": "mentorship/spr23_urop_onboarding.html#openmind-cluster-where-we-store-data-and-run-scripts",
+    "href": "mentorship/spr23_urop_onboarding.html#openmind-cluster-where-we-store-data-and-run-scripts",
+    "title": "Spring23 Onboarding",
+    "section": "OpenMind: cluster where we store data and run scripts",
+    "text": "OpenMind: cluster where we store data and run scripts\n\nRequest openmind account + do course to get access and post certificate on OpenMind github\n\nAccount Request Example: Attn @s-b,@djarecka: “maedbh maedbh@mit.edu” PI: Satrajit Ghosh\nVerify which groups you’re part of on openmind by typing groups: you should see om_sig and gablab. om_sig is Satra Ghosh’s group and gablab is John Gabrieli’s group.\n\nFollow instructions on openmind setup for getting starting on openmind (bash scripts etc.)\n\nopenmind website: this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful."
+  },
+  {
+    "objectID": "mentorship/spr23_urop_onboarding.html#projects",
+    "href": "mentorship/spr23_urop_onboarding.html#projects",
+    "title": "Spring23 Onboarding",
+    "section": "Projects:",
+    "text": "Projects:\n\nADHD + Professions\nItem analysis of questionnaires"
+  },
+  {
     "objectID": "mentorship/fall22_urop_recruitment.html",
     "href": "mentorship/fall22_urop_recruitment.html",
     "title": "Fall22 Recruitment",
@@ -935,7 +984,14 @@
     "href": "mentorship/openmind.html",
     "title": "Getting Started on Openmind",
     "section": "",
-    "text": "ssh <username>@openmind.mit.edu ## to log in to OpenMind\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\nfyi: use rsync if you need to transfer data from your local network to openmind (and vice versa)\n\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path\n\n    cd om2/user/\"username\"\n    git clone git@github.com:maedbhk/healthy_brain_network.git\n\nFollow instructions set out on this webpage to set up SSH for github repo\nphenotypic data for healthy_brain_network is stored at /om2/user/maedbh/hbn_data/\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why raw data are stored on nese."
+    "text": "Example repo here is healthy_brain_network but can be applied to any github repo that uses a Pipfile or Conda environment"
+  },
+  {
+    "objectID": "mentorship/openmind.html#first-steps",
+    "href": "mentorship/openmind.html#first-steps",
+    "title": "Getting Started on Openmind",
+    "section": "First Steps",
+    "text": "First Steps\n\nssh <username>@openmind.mit.edu ## to log in to OpenMind\n\nssh <username>@openmind-dtn.mit.edu ## to access data transfer node\nfyi: use rsync if you need to transfer data from your local network to openmind (and vice versa)\n\ncode for healthy_brain_network is stored at /om2/user/maedbh/healthy_brain_network but you should clone the github repo in your own path\n\n    cd om2/user/\"username\"\n    git clone git@github.com:maedbhk/healthy_brain_network.git\n\nFollow instructions set out on this webpage to set up SSH for github repo\nphenotypic data for healthy_brain_network is stored at /om2/user/maedbh/hbn_data/\n\nfyi: I/O operations to om and om2 are fast, which is why I store code here. om4 and nese are slower but have large storage space, which is why raw data are stored on nese."
   },
   {
     "objectID": "mentorship/openmind.html#installing-and-activating-virtual-environments",
@@ -945,18 +1001,18 @@
     "text": "Installing and activating virtual environments\n\nTo install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python)\n\n    module load openmind/anaconda/3-2022.05`\n\nYou can use either pipenv or conda to activate the virtual environment for the project\n\n\nIf you want to use pipenv\n\n    # navigate to top-level directory of project\n    cd om2/user/\"username\"/healthy_brain_network\n\n    # make sure **pipenv** library is installed\n    pip install pipenv\n\n    # install virtual environment\n    pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/\"username\"/.local/bin** in your **.bash_profile**. See **Setting Paths** below for more details)\n\n    # activate the virtual environment\n    pipenv shell\n\nIf you want to use conda\n\n    # navigate to top-level directory of project\n    cd om2/user/\"username\"/healthy_brain_network\n\n    # load your own version of miniconda\n    # see section below: `Download miniconda on OpenMind`\n\n    # in this repo, install a conda environment from environment.yml\n    conda env create -f environment.yml\n\n    # activate the conda virtual environment\n    conda activate healthy-brain-network"
   },
   {
-    "objectID": "mentorship/openmind.html#download-miniconda-on-openmind",
-    "href": "mentorship/openmind.html#download-miniconda-on-openmind",
+    "objectID": "mentorship/openmind.html#download-miniconda-on-openmind-and-add-to-path",
+    "href": "mentorship/openmind.html#download-miniconda-on-openmind-and-add-to-path",
     "title": "Getting Started on Openmind",
-    "section": "Download miniconda on OpenMind",
-    "text": "Download miniconda on OpenMind\n    wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh\n    bash Miniconda3-latest-Linux-x86_64.sh\n\n    # save the distrubtion (when prompted) to **/om2/user/\"username\"/miniconda**"
+    "section": "Download miniconda on OpenMind and add to PATH",
+    "text": "Download miniconda on OpenMind and add to PATH\n    wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh\n    bash Miniconda3-latest-Linux-x86_64.sh\n\n    # save the distrubtion (when prompted) to **/om2/user/\"username\"/miniconda**\n\n    # to permanently enable the conda command from your distribution of miniconda:\n    $ echo \". /om2/user/\"username\"/miniconda3/etc/profile.d/conda.sh\" >> ~/.bash_profile\n\n    # to put conda's bse (root) environment on PATH:\n    $ echo \"conda activate\" >> ~/.bash_profile"
   },
   {
     "objectID": "mentorship/openmind.html#setting-paths",
     "href": "mentorship/openmind.html#setting-paths",
     "title": "Getting Started on Openmind",
     "section": "Setting Paths",
-    "text": "Setting Paths\n\nCreate .bash_profile in your home directory (cd /home/<username> and touch .bash_profile if file doesn’t exist)\nFor example, my .bash_profile is saved at /home/maedbh (see below)\nYou can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.\nMake sure you set your PATH so that your scripts can find software saved to your .local/bin directory.\n\nTo activate source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/\n\nalias cdcode=\"cd /om2/user/maedbh/healthy_brain_network\"\nalias cddata=\"cd /om2/user/maedbh/hbn_data/\"\nalias cdhome=\"cd /home/maedbh\"\nalias cdenv=\"cd /home/maedbh/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
+    "text": "Setting Paths\n\nCreate .bash_profile in your home directory (cd /home/<username> and touch .bash_profile if file doesn’t exist)\nFor example, my .bash_profile is saved at /home/maedbh (see below)\nYou can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.\nMake sure you set your PATH so that your scripts can find software saved to your .local/bin directory.\n\nTo activate source .bash_profile\n# .bash_profile\n\n# Get the aliases and functions\nif [ -f ~/.bashrc ]; then\n        . ~/.bashrc\nfi\n\n# User specific environment and startup programs\nLANG=en_US.UTF-8\nPATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/\"username\"/.local/bin/\n\nalias cdcode=\"cd /om2/user/\"username\"/healthy_brain_network\"\nalias cddata=\"cd /om2/user/\"username\"/hbn_data/\"\nalias cdhome=\"cd /home/\"username\"\"\nalias cdenv=\"cd /home/\"username\"/.local/share/virtualenvs\"\nalias diskspace=\"du -hs $PWD/.[!.]* $PWD/* | sort -h\"\nalias l=\"ls -alh\"\n\nmodule load openmind/anaconda/3-2022.05\nif command -v pyenv 1>/dev/null 2>&1; then\n  eval \"$(pyenv init -)\"\nfi"
   },
   {
     "objectID": "mentorship/openmind.html#using-vs-code-on-openmind",
@@ -970,7 +1026,7 @@
     "href": "mentorship/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Fall22 Recruitment\nFall22 Onboarding\nWeekly Notes\nOpenMind Setup"
+    "text": "Fall22 Recruitment\nFall22 Onboarding\nSpr23 Onboarding\nOpenMind Setup"
   },
   {
     "objectID": "mentorship/weekly-notes.html",
