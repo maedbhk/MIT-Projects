@@ -20,3 +20,6 @@ title: ADHD + Professions
 * Second, manually check and match occupations in these two systems based on detailed job descriptions (e.g., job tasks and activities), based on the International Labor Organization’s International Standard Classification of Occupations (ISCO) to ensure accuracy and reliability of the crosswalk in the first step. 
 * For the 502,538 participants, you should be able to match ONET job titles for 274,223 individuals. The remaining 192,010 individuals who did not provide SOC codes and 36,305 who had SOC 2000 codes but no sufficient information to match the O*NET job titles should be excluded.
 * For full methods details, see Section **Materials and methods - Phenotype measurement and definitions** in paper by [Song et al. 2022](https://www.nature.com/articles/s41598-022-12905-y#Sec13)
+
+## Prepreocessing Steps
+* For initial steps on preprocessing the UKBiobank + ONET data, see the [README](https://docs.google.com/document/d/1XHfzZfYWWTyBBXoaoCP8GV7GkbRlqR5-y0PlxnH0GrM/edit?usp=sharing) in the [google drive folder](https://drive.google.com/drive/folders/1GJ19jQPlMCjbq0QI2vZNj8vPKelzJZKB?usp=sharing) for this project
