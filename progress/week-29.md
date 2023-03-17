@@ -2,6 +2,8 @@
 title: Week 29
 ---
 
+03/06 - /03/10
+
 ## Done and to-do
 * Met with Lexi to discuss adhd + professions project - wrote an add to hire an RA to work on this project
 * Results block for alyson on adhd + gender differences - determine whether there’s a diagnostic bias, worked on schematic figure

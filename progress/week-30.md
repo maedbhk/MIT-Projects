@@ -2,6 +2,8 @@
 title: Week 30
 ---
 
+03/12 - 03/17
+
 ## Done and to-do
 * Alyson paper: New models with SMOTE + full demos + all features (Parent/Child/Teacher) to classify sex and ADHD diagnosis
     * worked on unsupervised learning (UMAP) to subtype ADHD + Sex (nothing concrete yet..)
