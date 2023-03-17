@@ -196,6 +196,13 @@
     "text": "Finished notebooks for alyson on gender differences in adhd\n\nChild Measures - ADHD\nParent Measures - ADHD\n\nRe-ran models (including all-feature smote model) that incorporate all feature sets (including teacher measures)\nTested out sentence transformers for CBCL (Parent and Teacher Measures)\nSketched out pipeline for fMRI analysis of HBN data (preprocessing steps + connectivity analysis)\nRequested additional Biobank data for adaptive ADHD project - working with Lexi to get these data into a pandas dataframe\nExplored ABCD repronim project to figure out which data are available (i.e. questionnaires) - need to think about some questions that can be tested on this dataset."
   },
   {
+    "objectID": "progress/week-30.html",
+    "href": "progress/week-30.html",
+    "title": "Week 30",
+    "section": "",
+    "text": "Alyson paper: New models with SMOTE + full demos + all features (Parent/Child/Teacher) to classify sex and ADHD diagnosis\n\nworked on unsupervised learning (UMAP) to subtype ADHD + Sex (nothing concrete yet..)\n\nHBN + fMRIPrep: wrote preprocessing script to incorporate SUIT derivatives into fMRIPrep output\n\nplan on running xcp as post-processing for some of the HBN particpants, interested first in parcellating data using Yeo/Buckner (7,17) parcellations for cortex and cerebellum, will run on a subset of participants with ADHD\n\nHBN phenotype models: working with Shreya to incorporate multi-label classification into pydra-ml so that we can predict multiple diagnoses (and subtypes) rather than binary of diagnosis/no diagnosis\nTo-do: run HBN models that do not contain total/overall scores per questionnaire. This is a bit tricky as these overall scores are coded differently across questionnaires, perhaps this will be made easier by moving HBN to reproschema. Hired an RA (freshman CS) to work on this project.\nMet with Lexi to discuss ADHD + Professions project. Hired an RA (freshman CS) to work on this project.\n\nWe want to use the method employed in this paper in which they convert UK SOC 2000 codes (from the UK Biobank) into U.S. SOC/O*NET job titles using Computer Assisted Structured Coding Tool CASCOT. The data for both of these datasets are publicly available (UKBiobank requires DUA) however the authors (when contacted) were unwilling to share either the data or the code. We’ve emailed back and forth a few times but haven’t had much luck so far, something to discuss when we next meet. It would be really useful for this project to have the traits and attributes (e.g., innovation, complexity) associated with UK Biobank occupations."
+  },
+  {
     "objectID": "progress/week-4.html",
     "href": "progress/week-4.html",
     "title": "Week 4",
@@ -340,7 +347,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 27\nWeek 28"
   },
   {
     "objectID": "progress/week-27.html",
@@ -467,6 +474,13 @@
     "title": "Week 19",
     "section": "",
     "text": "Worked on ADHD predictive modeling results\n\nPhenotype models: ADHD\nPhenotype models: ADHD & Sex\nPhenotype models: Control & Sex\nPhenotype models: ADHD & Subtypes\nPhenotype models: ADHD\n\nWorked on adaptive adhd notebooks:\n\nIntake Interview\nChild Behavior Checklist - Parent vs Teacher\n\nStarted putting together a first draft results section for HBN predictive modeling paper"
+  },
+  {
+    "objectID": "progress/week-29.html",
+    "href": "progress/week-29.html",
+    "title": "Week 29",
+    "section": "",
+    "text": "Met with Lexi to discuss adhd + professions project - wrote an add to hire an RA to work on this project\nResults block for alyson on adhd + gender differences - determine whether there’s a diagnostic bias, worked on schematic figure\nWorked on “the script” for HBN preprocessing + SUIT analysis\nItem analysis + HBN phenotypes, worked on notebook and wrote an add to hire and RA to work on this project (specifically reproschema + HBN questionnaires)\nFinished preprocessing Kseniia’s csv linking HBN keys to questions and committed to her github\nRan models w/without SMOTE and w/without demographics"
   },
   {
     "objectID": "projects/adhd_professions.html",

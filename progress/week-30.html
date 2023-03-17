@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MIT Projects - Week 15</title>
+<title>MIT Projects - Week 30</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,8 +24,8 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../progress/week-16.html" rel="next">
-<link href="../progress/week-14.html" rel="prev">
+<link href="../datasets/index.html" rel="next">
+<link href="../progress/week-29.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,7 +67,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Week 15</h1>
+      <h1 class="quarto-secondary-nav-title">Week 30</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -205,7 +205,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../progress/week-15.html" class="sidebar-item-text sidebar-link active">Week 15</a>
+  <a href="../progress/week-15.html" class="sidebar-item-text sidebar-link">Week 15</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -280,7 +280,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../progress/week-30.html" class="sidebar-item-text sidebar-link">Week 30</a>
+  <a href="../progress/week-30.html" class="sidebar-item-text sidebar-link active">Week 30</a>
   </div>
 </li>
       </ul>
@@ -595,14 +595,20 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#done-and-to-do" id="toc-done-and-to-do" class="nav-link active" data-scroll-target="#done-and-to-do">Done and to-do</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/progress/week-30.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Week 15</h1>
+<h1 class="title d-none d-lg-block">Week 30</h1>
 </div>
 
 
@@ -616,21 +622,27 @@ ul.task-list{list-style: none;}
 
 </header>
 
+<section id="done-and-to-do" class="level2">
+<h2 class="anchored" data-anchor-id="done-and-to-do">Done and to-do</h2>
 <ul>
-<li>ADHD project: waiting to get Biobank access to phenotypic data so that we can explore which professions adults with ADHD gravitate towards, in order to infer adaptive traits and attributes in this population. We also want to assess the modulating factors of race, gender, and SES on this question. I presented an <a href="../notebooks/exploratory-features-adhd.html">exploratory notebook on ADHD</a> from the HBN dataset. Some take-aways:
+<li>Alyson paper: New models with SMOTE + full demos + all features (Parent/Child/Teacher) to classify sex and ADHD diagnosis
 <ul>
-<li>significantly more males are diagnosed with ADHD than females. M/F ratio is smallest however for inattentive subtype</li>
-<li>On average, children with ADHD have comorbidites and on average girls have slightly more than boys</li>
-<li>Girls with inattentive ADHD start puberty earlier than other ADHD subtypes (+ children without an ADHD diagnosis)</li>
-<li>very few children (&lt;15%) are diagnosed with a learning disorder</li>
-<li>50-60% of children with ADHD have individualized education plan compared with 20% of children without a diagnosis</li>
-<li>surprisingly, very few (&lt;1%) of children diagnosed with adhd have parents who also have a diagnosis of adhd. This figure is much lower than expected based on existing literature, therefore, likely that more parents have adhd (but have not received a formal diagnosis) or the reporting is incomplete.</li>
+<li>worked on unsupervised learning (UMAP) to subtype ADHD + Sex (nothing concrete yet..)</li>
 </ul></li>
-<li>set up a data exploration notebook that uses python widgets to explore the different measures (e.g., questionnaires) from the HBN across different diagnoses <img src="../assets/images/python-widgets.png" class="img-fluid" data-fig-align="center" alt="Data Exploration of HBN Data"></li>
-<li>worked on CHOP <a href="https://docs.google.com/document/d/1CzxTSEouYnGT0CYMLGUu2MB_hBWzjMqXCRwUsE_4jzg/edit?usp=sharing">project proposal</a></li>
+<li>HBN + fMRIPrep: wrote preprocessing script to incorporate SUIT derivatives into fMRIPrep output
+<ul>
+<li>plan on running <a href="https://xcp-d.readthedocs.io/en/latest/">xcp</a> as post-processing for some of the HBN particpants, interested first in parcellating data using Yeo/Buckner (7,17) parcellations for cortex and cerebellum, will run on a subset of participants with ADHD</li>
+</ul></li>
+<li>HBN phenotype models: working with Shreya to incorporate multi-label classification into pydra-ml so that we can predict multiple diagnoses (and subtypes) rather than binary of diagnosis/no diagnosis</li>
+<li>To-do: run HBN models that do not contain total/overall scores per questionnaire. This is a bit tricky as these overall scores are coded differently across questionnaires, perhaps this will be made easier by moving HBN to reproschema. <a href="../mentorship/spr23_urop_onboarding.html">Hired an RA (freshman CS)</a> to work on this project.</li>
+<li>Met with Lexi to discuss <a href="../projects/adhd_professions.html">ADHD + Professions project</a>. <a href="../mentorship/spr23_urop_onboarding.html">Hired an RA (freshman CS)</a> to work on this project.
+<ul>
+<li>We want to use the method employed <a href="https://www.nature.com/articles/s41598-022-12905-y">in this paper</a> in which they convert UK SOC 2000 codes (from the UK Biobank) into <a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1744-6570.2001.tb00100.x">U.S. SOC/O*NET job</a> titles using Computer Assisted Structured Coding Tool <a href="https://warwick.ac.uk/fac/soc/ier/software/cascot/">CASCOT</a>. The data for both of these datasets are publicly available (UKBiobank requires DUA) however the authors (when contacted) were unwilling to share either the data or the code. We’ve emailed back and forth a few times but haven’t had much luck so far, something to discuss when we next meet. It would be really useful for this project to have the traits and attributes (e.g., innovation, complexity) associated with UK Biobank occupations.</li>
+</ul></li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -835,13 +847,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../progress/week-14.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 14</span>
+      <a href="../progress/week-29.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Week 29</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../progress/week-16.html" class="pagination-link">
-        <span class="nav-page-text">Week 16</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../datasets/index.html" class="pagination-link">
+        <span class="nav-page-text">Overview</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
