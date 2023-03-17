@@ -70,6 +70,8 @@ website:
           - progress/week-26.md
           - progress/week-27.md
           - progress/week-28.md
+          - progress/week-29.md
+          - progress/week-30.md
       - section: "Datasets"
         contents:
           - datasets/index.md
