@@ -169,6 +169,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="../index.html" class="sidebar-item-text sidebar-link">MIT Projects</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about-me.html" class="sidebar-item-text sidebar-link">About Me</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -302,6 +307,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../progress/week-23.html" class="sidebar-item-text sidebar-link">Week 23</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-24.html" class="sidebar-item-text sidebar-link">Week 24</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-25.html" class="sidebar-item-text sidebar-link">Week 25</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-26.html" class="sidebar-item-text sidebar-link">Week 26</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-27.html" class="sidebar-item-text sidebar-link">Week 27</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-28.html" class="sidebar-item-text sidebar-link">Week 28</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-29.html" class="sidebar-item-text sidebar-link">Week 29</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/week-30.html" class="sidebar-item-text sidebar-link">Week 30</a>
   </div>
 </li>
       </ul>
@@ -511,6 +551,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../mentorship/spr23_urop_onboarding.html" class="sidebar-item-text sidebar-link">Spring23 Onboarding</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../mentorship/weekly-notes.html" class="sidebar-item-text sidebar-link">Weekly Notes</a>
   </div>
 </li>
@@ -622,6 +667,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#comorbidities" id="toc-comorbidities" class="nav-link" data-scroll-target="#comorbidities">Comorbidities</a></li>
   <li><a href="#cgas-score-general-cognitive-functioning" id="toc-cgas-score-general-cognitive-functioning" class="nav-link" data-scroll-target="#cgas-score-general-cognitive-functioning">CGAS Score (General Cognitive Functioning)</a></li>
   <li><a href="#year-of-enrollment" id="toc-year-of-enrollment" class="nav-link" data-scroll-target="#year-of-enrollment">Year of Enrollment</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#results-from-predictive-models" id="toc-results-from-predictive-models" class="nav-link" data-scroll-target="#results-from-predictive-models">Results from Predictive Models</a></li>
+  <li><a href="#predictive-modeling---adhd-for-child-parent-teacher-demographics" id="toc-predictive-modeling---adhd-for-child-parent-teacher-demographics" class="nav-link" data-scroll-target="#predictive-modeling---adhd-for-child-parent-teacher-demographics">Predictive Modeling - ADHD for Child, Parent, Teacher, Demographics</a></li>
+  <li><a href="#predictive-modeling---depression-asd-anxiety-reading-impairment-for-child-parent-teacher-demographics" id="toc-predictive-modeling---depression-asd-anxiety-reading-impairment-for-child-parent-teacher-demographics" class="nav-link" data-scroll-target="#predictive-modeling---depression-asd-anxiety-reading-impairment-for-child-parent-teacher-demographics">Predictive Modeling - Depression, ASD, Anxiety, Reading Impairment for Child, Parent, Teacher, Demographics</a></li>
+  <li><a href="#interpreting-model-features---under-construction" id="toc-interpreting-model-features---under-construction" class="nav-link" data-scroll-target="#interpreting-model-features---under-construction">Interpreting Model Features - UNDER CONSTRUCTION</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.dev/maedbhk/MIT-Projects/blob/main/notebooks/figures-ADHD+gender.ipynb" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -631,110 +681,108 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <div class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.io <span class="im">as</span> pio</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.gridspec <span class="im">import</span> GridSpec</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.patches <span class="im">as</span> mpatches</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tabulate <span class="im">import</span> tabulate</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> hbn.visualization <span class="im">import</span> visualize <span class="im">as</span> vis</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>load_ext autoreload</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>autoreload <span class="dv">2</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.express <span class="im">as</span> px</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.io <span class="im">as</span> pio</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.gridspec <span class="im">import</span> GridSpec</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.patches <span class="im">as</span> mpatches</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> tabulate <span class="im">import</span> tabulate</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> hbn.constants <span class="im">import</span> Defaults</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> hbn.visualization <span class="im">import</span> visualize <span class="im">as</span> vis</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>load_ext autoreload</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>autoreload <span class="dv">2</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>warnings.filterwarnings(<span class="st">'ignore'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">## GET DATA</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> hbn.data <span class="im">import</span> make_dataset</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># HARDCODE PARTICIPANTS + FEATURE_SPEC</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>participants <span class="op">=</span> make_dataset.get_participants(</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                            split<span class="op">=</span><span class="st">'all'</span>, </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                            disorders<span class="op">=</span>[<span class="st">'ADHD-Combined_Type'</span>, </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'ADHD-Inattentive_Type'</span>, </span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'ADHD-Hyperactive_Impulsive_Type'</span>, </span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'Other_Specified_Attention-Deficit_Hyperactivity_Disorder'</span>,</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'No_Diagnosis_Given'</span>]</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>                                        )</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># get summary of clinical diagnosis + other demographics</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>df_all <span class="op">=</span> make_dataset.make_summary(save<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>df_all[<span class="st">'Age'</span>] <span class="op">=</span> df_all[<span class="st">'Age'</span>].<span class="bu">round</span>()</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="co">#df_all = make_dataset._add_race_ethnicity(dataframe=df_all)</span></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>df_CGAS <span class="op">=</span> make_dataset.add_CGAS_Score(df_all)</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co"># get participants</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>df_part <span class="op">=</span> pd.DataFrame(participants, columns<span class="op">=</span>[<span class="st">'Identifiers'</span>])</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="co"># filter large dataframe to include only ADHD + No Diagnosis</span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df_all.merge(df_part, on<span class="op">=</span><span class="st">'Identifiers'</span>)</span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>df_CGAS <span class="op">=</span> df_CGAS.merge(df_part, on<span class="op">=</span><span class="st">'Identifiers'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">## GET DATA</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> hbn.data <span class="im">import</span> make_dataset</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># HARDCODE PARTICIPANTS + FEATURE_SPEC</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>participants <span class="op">=</span> make_dataset.get_participants(</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                            split<span class="op">=</span><span class="st">'all'</span>, </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>                            disorders<span class="op">=</span>[<span class="st">'ADHD-Combined_Type'</span>, </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'ADHD-Inattentive_Type'</span>, </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'ADHD-Hyperactive_Impulsive_Type'</span>, </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'Other_Specified_Attention-Deficit_Hyperactivity_Disorder'</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>                                        <span class="st">'No_Diagnosis_Given'</span>]</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>                                        )</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># get summary of clinical diagnosis + other demographics</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>df_all <span class="op">=</span> make_dataset.make_summary(save<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>df_all[<span class="st">'Age'</span>] <span class="op">=</span> df_all[<span class="st">'Age'</span>].<span class="bu">round</span>()</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">#df_all = make_dataset._add_race_ethnicity(dataframe=df_all)</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>df_CGAS <span class="op">=</span> make_dataset.add_CGAS_Score(df_all)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="co"># get participants</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>df_part <span class="op">=</span> pd.DataFrame(participants, columns<span class="op">=</span>[<span class="st">'Identifiers'</span>])</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="co"># filter large dataframe to include only ADHD + No Diagnosis</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df_all.merge(df_part, on<span class="op">=</span><span class="st">'Identifiers'</span>)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>df_CGAS <span class="op">=</span> df_CGAS.merge(df_part, on<span class="op">=</span><span class="st">'Identifiers'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">## summary stats</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>sample_size <span class="op">=</span> <span class="bu">len</span>(df_all[<span class="st">'Identifiers'</span>].unique())</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'total sample size of healthy brain network dataset is </span><span class="sc">{</span>sample_size<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>num_ADHD <span class="op">=</span> <span class="bu">len</span>(df[df[<span class="st">'DX_01_Cat_new'</span>]<span class="op">==</span><span class="st">'ADHD'</span>])</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>num_no_diagnosis <span class="op">=</span> <span class="bu">len</span>(df[df[<span class="st">'DX_01_Cat_new'</span>]<span class="op">==</span><span class="st">'No Diagnosis Given'</span>])</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'there are </span><span class="sc">{</span>num_ADHD<span class="sc">}</span><span class="ss"> participants with ADHD and </span><span class="sc">{</span>num_no_diagnosis<span class="sc">}</span><span class="ss"> with No Diagnosis</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co"># print out summaries</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> diagnosis <span class="kw">in</span> [<span class="st">'ADHD'</span>, <span class="st">'No Diagnosis Given'</span>]:</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'PARTICIPANTS WITH </span><span class="sc">{</span>diagnosis<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    tmp <span class="op">=</span> df[df[<span class="st">'DX_01_Cat_new'</span>]<span class="op">==</span>diagnosis]</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    sex <span class="op">=</span> tmp[<span class="st">'Sex'</span>].value_counts()</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'1. there are </span><span class="sc">{</span>sex<span class="sc">.</span>male<span class="sc">}</span><span class="ss"> males and </span><span class="sc">{</span>sex<span class="sc">.</span>female<span class="sc">}</span><span class="ss"> females</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    ages_6_10 <span class="op">=</span> <span class="bu">len</span>(tmp[tmp[<span class="st">'Age'</span>].<span class="bu">round</span>()<span class="op">&lt;=</span><span class="dv">10</span>])</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    ages_10_21 <span class="op">=</span> <span class="bu">len</span>(tmp[tmp[<span class="st">'Age'</span>].<span class="bu">round</span>()<span class="op">&gt;</span><span class="dv">10</span>])</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'2. there are </span><span class="sc">{</span>ages_6_10<span class="sc">}</span><span class="ss"> children ages 6-10 and </span><span class="sc">{</span>ages_10_21<span class="sc">}</span><span class="ss"> children ages 11-21</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    num_sites <span class="op">=</span> <span class="bu">len</span>(tmp[<span class="st">'Site'</span>].unique())</span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    sites <span class="op">=</span> tmp[<span class="st">'Site'</span>].value_counts()</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    site_numbers <span class="op">=</span> sites.index.tolist()</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    site_count <span class="op">=</span> sites.tolist()</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'3. there are </span><span class="sc">{</span>num_sites<span class="sc">}</span><span class="ss"> study sites and following # of participants collected across the following sites are </span><span class="sc">{</span>site_count<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>site_numbers<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    years <span class="op">=</span> tmp[<span class="st">'Enroll_Year'</span>].value_counts().index.astype(<span class="bu">str</span>).<span class="bu">str</span>.strip(<span class="st">'.0'</span>).astype(<span class="bu">int</span>).tolist()</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    num_years <span class="op">=</span> <span class="bu">len</span>(tmp[<span class="st">'Enroll_Year'</span>].unique())</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'4. data were collected across </span><span class="sc">{</span>num_years<span class="sc">}</span><span class="ss"> years: </span><span class="sc">{</span>years<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    num_subtypes <span class="op">=</span> <span class="bu">len</span>(tmp[<span class="st">'DX_01'</span>].unique())</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>    subtypes <span class="op">=</span> tmp[<span class="st">'DX_01'</span>].unique()</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'5. there are </span><span class="sc">{</span>num_subtypes<span class="sc">}</span><span class="ss"> unique subtypes: </span><span class="sc">{</span>subtypes<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    comorbid <span class="op">=</span> <span class="bu">round</span>((tmp[<span class="st">'comorbidities'</span>].value_counts() <span class="op">/</span> <span class="bu">len</span>(tmp)) <span class="op">*</span> <span class="dv">100</span>)</span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>    num_comorbid <span class="op">=</span> comorbid[<span class="dv">1</span>:].<span class="bu">sum</span>()</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'6. approximately </span><span class="sc">{</span>num_comorbid<span class="sc">}</span><span class="ss">% have disorder combordities</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    disorder_cat <span class="op">=</span> <span class="bu">round</span>((tmp[<span class="st">'DX_01'</span>].value_counts() <span class="op">/</span> <span class="bu">len</span>(tmp)) <span class="op">*</span> <span class="dv">100</span>).head(<span class="dv">1</span>)</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'7. most prevalent subtype is </span><span class="sc">{</span>disorder_cat<span class="sc">.</span>index[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>disorder_cat<span class="sc">.</span>values[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">% of sample</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>    disorder <span class="op">=</span> <span class="bu">round</span>((tmp[<span class="st">'DX_01_Cat_new'</span>].value_counts() <span class="op">/</span> <span class="bu">len</span>(tmp)) <span class="op">*</span> <span class="dv">100</span>).head(<span class="dv">1</span>)</span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'8. most prevalent category of diagnosis is </span><span class="sc">{</span>disorder<span class="sc">.</span>index[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>disorder<span class="sc">.</span>values[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">% of sample</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>    tmp_CGAS <span class="op">=</span> df_CGAS[df_CGAS[<span class="st">'DX_01_Cat_new'</span>]<span class="op">==</span>diagnosis]</span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>    sex <span class="op">=</span> tmp_CGAS.groupby([<span class="st">'Sex'</span>]).agg({<span class="st">'CGAS_Score'</span>: <span class="st">'mean'</span>})</span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>    f_cgas <span class="op">=</span> sex.loc[<span class="st">'male'</span>].values[<span class="dv">0</span>]</span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>    m_cgas <span class="op">=</span> sex.loc[<span class="st">'female'</span>].values[<span class="dv">0</span>]</span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'9. females have an average general functioning score (CGAS) of </span><span class="sc">{</span><span class="bu">round</span>(f_cgas)<span class="sc">}</span><span class="ss">% and males </span><span class="sc">{</span><span class="bu">round</span>(m_cgas)<span class="sc">}</span><span class="ss">%</span><span class="ch">\n</span><span class="ss">'</span>)</span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">## summary stats</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>sample_size <span class="op">=</span> <span class="bu">len</span>(df_all[<span class="st">'Identifiers'</span>].unique())</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'total sample size of healthy brain network dataset is </span><span class="sc">{</span>sample_size<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>num_ADHD <span class="op">=</span> <span class="bu">len</span>(df[df[<span class="st">'DX_01_Cat_new'</span>]<span class="op">==</span><span class="st">'ADHD'</span>])</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>num_no_diagnosis <span class="op">=</span> <span class="bu">len</span>(df[df[<span class="st">'DX_01_Cat_new'</span>]<span class="op">==</span><span class="st">'No Diagnosis Given'</span>])</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'there are </span><span class="sc">{</span>num_ADHD<span class="sc">}</span><span class="ss"> participants with ADHD and </span><span class="sc">{</span>num_no_diagnosis<span class="sc">}</span><span class="ss"> with No Diagnosis</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># print out summaries</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> diagnosis <span class="kw">in</span> [<span class="st">'ADHD'</span>, <span class="st">'No Diagnosis Given'</span>]:</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'PARTICIPANTS WITH </span><span class="sc">{</span>diagnosis<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    tmp <span class="op">=</span> df[df[<span class="st">'DX_01_Cat_new'</span>]<span class="op">==</span>diagnosis]</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    sex <span class="op">=</span> tmp[<span class="st">'Sex'</span>].value_counts()</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'1. there are </span><span class="sc">{</span>sex<span class="sc">.</span>male<span class="sc">}</span><span class="ss"> males and </span><span class="sc">{</span>sex<span class="sc">.</span>female<span class="sc">}</span><span class="ss"> females</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    ages_6_10 <span class="op">=</span> <span class="bu">len</span>(tmp[tmp[<span class="st">'Age'</span>].<span class="bu">round</span>()<span class="op">&lt;=</span><span class="dv">10</span>])</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    ages_10_21 <span class="op">=</span> <span class="bu">len</span>(tmp[tmp[<span class="st">'Age'</span>].<span class="bu">round</span>()<span class="op">&gt;</span><span class="dv">10</span>])</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'2. there are </span><span class="sc">{</span>ages_6_10<span class="sc">}</span><span class="ss"> children ages 6-10 and </span><span class="sc">{</span>ages_10_21<span class="sc">}</span><span class="ss"> children ages 11-21</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    num_sites <span class="op">=</span> <span class="bu">len</span>(tmp[<span class="st">'Site'</span>].unique())</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    sites <span class="op">=</span> tmp[<span class="st">'Site'</span>].value_counts()</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    site_numbers <span class="op">=</span> sites.index.tolist()</span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>    site_count <span class="op">=</span> sites.tolist()</span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'3. there are </span><span class="sc">{</span>num_sites<span class="sc">}</span><span class="ss"> study sites and following # of participants collected across the following sites are </span><span class="sc">{</span>site_count<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>site_numbers<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>    years <span class="op">=</span> tmp[<span class="st">'Enroll_Year'</span>].value_counts().index.astype(<span class="bu">str</span>).<span class="bu">str</span>.strip(<span class="st">'.0'</span>).astype(<span class="bu">int</span>).tolist()</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>    num_years <span class="op">=</span> <span class="bu">len</span>(tmp[<span class="st">'Enroll_Year'</span>].unique())</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'4. data were collected across </span><span class="sc">{</span>num_years<span class="sc">}</span><span class="ss"> years: </span><span class="sc">{</span>years<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    num_subtypes <span class="op">=</span> <span class="bu">len</span>(tmp[<span class="st">'DX_01'</span>].unique())</span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>    subtypes <span class="op">=</span> tmp[<span class="st">'DX_01'</span>].unique()</span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'5. there are </span><span class="sc">{</span>num_subtypes<span class="sc">}</span><span class="ss"> unique subtypes: </span><span class="sc">{</span>subtypes<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>    comorbid <span class="op">=</span> <span class="bu">round</span>((tmp[<span class="st">'comorbidities'</span>].value_counts() <span class="op">/</span> <span class="bu">len</span>(tmp)) <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>    num_comorbid <span class="op">=</span> comorbid[<span class="dv">1</span>:].<span class="bu">sum</span>()</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'6. approximately </span><span class="sc">{</span>num_comorbid<span class="sc">}</span><span class="ss">% have disorder combordities</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>    disorder_cat <span class="op">=</span> <span class="bu">round</span>((tmp[<span class="st">'DX_01'</span>].value_counts() <span class="op">/</span> <span class="bu">len</span>(tmp)) <span class="op">*</span> <span class="dv">100</span>).head(<span class="dv">1</span>)</span>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'7. most prevalent subtype is </span><span class="sc">{</span>disorder_cat<span class="sc">.</span>index[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>disorder_cat<span class="sc">.</span>values[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">% of sample</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-43"><a href="#cb3-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-44"><a href="#cb3-44" aria-hidden="true" tabindex="-1"></a>    disorder <span class="op">=</span> <span class="bu">round</span>((tmp[<span class="st">'DX_01_Cat_new'</span>].value_counts() <span class="op">/</span> <span class="bu">len</span>(tmp)) <span class="op">*</span> <span class="dv">100</span>).head(<span class="dv">1</span>)</span>
+<span id="cb3-45"><a href="#cb3-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'8. most prevalent category of diagnosis is </span><span class="sc">{</span>disorder<span class="sc">.</span>index[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>disorder<span class="sc">.</span>values[<span class="dv">0</span>]<span class="sc">}</span><span class="ss">% of sample</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-46"><a href="#cb3-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-47"><a href="#cb3-47" aria-hidden="true" tabindex="-1"></a>    tmp_CGAS <span class="op">=</span> df_CGAS[df_CGAS[<span class="st">'DX_01_Cat_new'</span>]<span class="op">==</span>diagnosis]</span>
+<span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>    sex <span class="op">=</span> tmp_CGAS.groupby([<span class="st">'Sex'</span>]).agg({<span class="st">'CGAS_Score'</span>: <span class="st">'mean'</span>})</span>
+<span id="cb3-50"><a href="#cb3-50" aria-hidden="true" tabindex="-1"></a>    f_cgas <span class="op">=</span> sex.loc[<span class="st">'male'</span>].values[<span class="dv">0</span>]</span>
+<span id="cb3-51"><a href="#cb3-51" aria-hidden="true" tabindex="-1"></a>    m_cgas <span class="op">=</span> sex.loc[<span class="st">'female'</span>].values[<span class="dv">0</span>]</span>
+<span id="cb3-52"><a href="#cb3-52" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'9. females have an average general functioning score (CGAS) of </span><span class="sc">{</span><span class="bu">round</span>(f_cgas)<span class="sc">}</span><span class="ss">% and males </span><span class="sc">{</span><span class="bu">round</span>(m_cgas)<span class="sc">}</span><span class="ss">%</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-53"><a href="#cb3-53" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>total sample size of healthy brain network dataset is 4767
 
@@ -785,71 +833,71 @@ PARTICIPANTS WITH No Diagnosis Given
 <section id="descriptive-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="descriptive-statistics">Descriptive Statistics</h2>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#vis.plotting_style()</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>x_pos <span class="op">=</span> <span class="op">-</span><span class="fl">0.1</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>y_pos <span class="op">=</span> <span class="fl">1.1</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>labelsize <span class="op">=</span> <span class="dv">40</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig)</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">0</span>])</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.countplot(data<span class="op">=</span>df, y<span class="op">=</span><span class="st">'DX_01'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, ax<span class="op">=</span>ax)</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant count across diagnoses'</span>)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'A'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">1</span>])</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'DX_01'</span>, y<span class="op">=</span><span class="st">'Age'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df, ax<span class="op">=</span>ax)</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)<span class="op">;</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>ax.set_xticklabels(<span class="st">''</span>)</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant ages across diagnoses'</span>)</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'B'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>,<span class="dv">0</span>])</span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df[df[<span class="st">'PreInt_Demos_Fam,Child_Race_cat'</span>].isin([<span class="st">'Unknown'</span>, <span class="st">'Hispanic'</span>, <span class="st">'Two or more races'</span>, <span class="st">'Asian'</span>,</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Black/African American'</span>, <span class="st">'White/Caucasian'</span>])]</span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.countplot(data<span class="op">=</span>tmp, y<span class="op">=</span><span class="st">'PreInt_Demos_Fam,Child_Race_cat'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, ax<span class="op">=</span>ax)</span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant count across diagnoses'</span>)</span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'C'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>,<span class="dv">1</span>])</span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'DX_01'</span>, y<span class="op">=</span><span class="st">'comorbidities'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df, ax<span class="op">=</span>ax)</span>
-<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)<span class="op">;</span></span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Number of comorbidities'</span>)</span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant comorbidities across diagnoses'</span>)</span>
-<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'D'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
-<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
-<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.125</span>, bottom<span class="op">=</span><span class="fl">0.001</span>, right<span class="op">=</span><span class="fl">2.0</span>, top<span class="op">=</span><span class="fl">2.0</span>, wspace<span class="op">=</span><span class="fl">.2</span>, hspace<span class="op">=</span><span class="fl">.3</span>)</span>
-<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a><span class="co">#save_path = os.path.join(dirs.figure, f'fig1.svg')</span></span>
-<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a><span class="co">#plt.savefig(save_path, bbox_inches="tight", dpi=300)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>vis.plotting_style()</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>x_pos <span class="op">=</span> <span class="op">-</span><span class="fl">0.1</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>y_pos <span class="op">=</span> <span class="fl">1.1</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>labelsize <span class="op">=</span> <span class="dv">40</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">0</span>])</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.countplot(data<span class="op">=</span>df, y<span class="op">=</span><span class="st">'DX_01'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, ax<span class="op">=</span>ax)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant count across diagnoses'</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'A'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">1</span>])</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'DX_01'</span>, y<span class="op">=</span><span class="st">'Age'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df, ax<span class="op">=</span>ax)</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)<span class="op">;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>ax.set_xticklabels(<span class="st">''</span>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant ages across diagnoses'</span>)</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'B'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>,<span class="dv">0</span>])</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df[df[<span class="st">'PreInt_Demos_Fam,Child_Race_cat'</span>].isin([<span class="st">'Unknown'</span>, <span class="st">'Hispanic'</span>, <span class="st">'Two or more races'</span>, <span class="st">'Asian'</span>,</span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Black/African American'</span>, <span class="st">'White/Caucasian'</span>])]</span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.countplot(data<span class="op">=</span>tmp, y<span class="op">=</span><span class="st">'PreInt_Demos_Fam,Child_Race_cat'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, ax<span class="op">=</span>ax)</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant count across diagnoses'</span>)</span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'C'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>,<span class="dv">1</span>])</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'DX_01'</span>, y<span class="op">=</span><span class="st">'comorbidities'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df, ax<span class="op">=</span>ax)</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)<span class="op">;</span></span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">'Number of comorbidities'</span>)</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant comorbidities across diagnoses'</span>)</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'D'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.125</span>, bottom<span class="op">=</span><span class="fl">0.001</span>, right<span class="op">=</span><span class="fl">2.0</span>, top<span class="op">=</span><span class="fl">2.0</span>, wspace<span class="op">=</span><span class="fl">.2</span>, hspace<span class="op">=</span><span class="fl">.3</span>)</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="co">#save_path = os.path.join(dirs.figure, f'fig1.svg')</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a><span class="co">#plt.savefig(save_path, bbox_inches="tight", dpi=300)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>&lt;Figure size 672x480 with 0 Axes&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="figures-ADHD+gender_files/figure-html/cell-5-output-2.png" width="2296" height="1719"></p>
+<p><img src="figures-ADHD+gender_files/figure-html/cell-5-output-2.png" width="3270" height="2480"></p>
 </div>
 </div>
 </section>
 <section id="participant-count" class="level2">
 <h2 class="anchored" data-anchor-id="participant-count">Participant Count</h2>
 <div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'DX_01'</span>, <span class="st">'Sex'</span>]).count()[[<span class="st">'Identifiers'</span>]].reset_index().rename(</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'Identifiers'</span>: <span class="st">'Participant Count'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> [<span class="st">'Diagnosis'</span>, <span class="st">'Sex'</span>, <span class="st">'# of Participants'</span>]</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'DX_01'</span>, <span class="st">'Sex'</span>]).count()[[<span class="st">'Identifiers'</span>]].reset_index().rename(</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'Identifiers'</span>: <span class="st">'Participant Count'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> [<span class="st">'Diagnosis'</span>, <span class="st">'Sex'</span>, <span class="st">'# of Participants'</span>]</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>+----------------------------------------------------------+--------+---------------------+
 | Diagnosis                                                | Sex    |   # of Participants |
@@ -880,53 +928,53 @@ PARTICIPANTS WITH No Diagnosis Given
 <section id="age" class="level2">
 <h2 class="anchored" data-anchor-id="age">Age</h2>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'DX_01'</span>, <span class="st">'Sex'</span>])[<span class="st">'Age'</span>].agg(</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>, <span class="st">'std'</span>}).reset_index().rename(</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>: <span class="st">'mean (age)'</span>, <span class="st">'std'</span>: <span class="st">'std (age)'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> tmp.columns.tolist()</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'DX_01'</span>, <span class="st">'Sex'</span>])[<span class="st">'Age'</span>].agg(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>, <span class="st">'std'</span>}).reset_index().rename(</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>: <span class="st">'mean (age)'</span>, <span class="st">'std'</span>: <span class="st">'std (age)'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> tmp.columns.tolist()</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>+----------------------------------------------------------+--------+-------------+--------------+
-| DX_01                                                    | Sex    |   std (age) |   mean (age) |
-+==========================================================+========+=============+==============+
-| ADHD-Combined Type                                       | female |     2.857   |      9.22051 |
-+----------------------------------------------------------+--------+-------------+--------------+
-| ADHD-Combined Type                                       | male   |     2.88814 |      9.24627 |
-+----------------------------------------------------------+--------+-------------+--------------+
-| ADHD-Hyperactive/Impulsive Type                          | female |     2.14534 |      7.94118 |
-+----------------------------------------------------------+--------+-------------+--------------+
-| ADHD-Hyperactive/Impulsive Type                          | male   |     2.01264 |      7.33333 |
-+----------------------------------------------------------+--------+-------------+--------------+
-| ADHD-Inattentive Type                                    | female |     3.10462 |     10.4601  |
-+----------------------------------------------------------+--------+-------------+--------------+
-| ADHD-Inattentive Type                                    | male   |     3.14544 |     10.8879  |
-+----------------------------------------------------------+--------+-------------+--------------+
-| No Diagnosis Given                                       | female |     3.57301 |     10.0971  |
-+----------------------------------------------------------+--------+-------------+--------------+
-| No Diagnosis Given                                       | male   |     3.40447 |      9.76768 |
-+----------------------------------------------------------+--------+-------------+--------------+
-| Other Specified Attention-Deficit/Hyperactivity Disorder | female |     3.38471 |      9.13953 |
-+----------------------------------------------------------+--------+-------------+--------------+
-| Other Specified Attention-Deficit/Hyperactivity Disorder | male   |     3.09674 |      9.70833 |
-+----------------------------------------------------------+--------+-------------+--------------+</code></pre>
+<pre><code>+----------------------------------------------------------+--------+--------------+-------------+
+| DX_01                                                    | Sex    |   mean (age) |   std (age) |
++==========================================================+========+==============+=============+
+| ADHD-Combined Type                                       | female |      9.22051 |     2.857   |
++----------------------------------------------------------+--------+--------------+-------------+
+| ADHD-Combined Type                                       | male   |      9.24627 |     2.88814 |
++----------------------------------------------------------+--------+--------------+-------------+
+| ADHD-Hyperactive/Impulsive Type                          | female |      7.94118 |     2.14534 |
++----------------------------------------------------------+--------+--------------+-------------+
+| ADHD-Hyperactive/Impulsive Type                          | male   |      7.33333 |     2.01264 |
++----------------------------------------------------------+--------+--------------+-------------+
+| ADHD-Inattentive Type                                    | female |     10.4601  |     3.10462 |
++----------------------------------------------------------+--------+--------------+-------------+
+| ADHD-Inattentive Type                                    | male   |     10.8879  |     3.14544 |
++----------------------------------------------------------+--------+--------------+-------------+
+| No Diagnosis Given                                       | female |     10.0971  |     3.57301 |
++----------------------------------------------------------+--------+--------------+-------------+
+| No Diagnosis Given                                       | male   |      9.76768 |     3.40447 |
++----------------------------------------------------------+--------+--------------+-------------+
+| Other Specified Attention-Deficit/Hyperactivity Disorder | female |      9.13953 |     3.38471 |
++----------------------------------------------------------+--------+--------------+-------------+
+| Other Specified Attention-Deficit/Hyperactivity Disorder | male   |      9.70833 |     3.09674 |
++----------------------------------------------------------+--------+--------------+-------------+</code></pre>
 </div>
 </div>
 </section>
 <section id="raceethnicity" class="level2">
 <h2 class="anchored" data-anchor-id="raceethnicity">Race/Ethnicity</h2>
 <div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df[df[<span class="st">'PreInt_Demos_Fam,Child_Race_cat'</span>].isin([<span class="st">'Unknown'</span>, <span class="st">'Hispanic'</span>, <span class="st">'Two or more races'</span>, <span class="st">'Asian'</span>,</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Black/African American'</span>, <span class="st">'White/Caucasian'</span>])]</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'PreInt_Demos_Fam,Child_Race_cat'</span>, <span class="st">'Sex'</span>]).count()[[<span class="st">'Identifiers'</span>]].reset_index().rename(</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'Identifiers'</span>: <span class="st">'Participant Count'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> [<span class="st">'Race/Ethnicity'</span>, <span class="st">'Sex'</span>, <span class="st">'# of Participants'</span>]</span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df[df[<span class="st">'PreInt_Demos_Fam,Child_Race_cat'</span>].isin([<span class="st">'Unknown'</span>, <span class="st">'Hispanic'</span>, <span class="st">'Two or more races'</span>, <span class="st">'Asian'</span>,</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Black/African American'</span>, <span class="st">'White/Caucasian'</span>])]</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'PreInt_Demos_Fam,Child_Race_cat'</span>, <span class="st">'Sex'</span>]).count()[[<span class="st">'Identifiers'</span>]].reset_index().rename(</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'Identifiers'</span>: <span class="st">'Participant Count'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> [<span class="st">'Race/Ethnicity'</span>, <span class="st">'Sex'</span>, <span class="st">'# of Participants'</span>]</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>+----------------------------------------+--------+---------------------+
 | Race/Ethnicity                         | Sex    |   # of Participants |
@@ -969,143 +1017,143 @@ PARTICIPANTS WITH No Diagnosis Given
 <section id="comorbidities" class="level2">
 <h2 class="anchored" data-anchor-id="comorbidities">Comorbidities</h2>
 <div class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'DX_01'</span>, <span class="st">'Sex'</span>])[<span class="st">'comorbidities'</span>].agg(</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>, <span class="st">'std'</span>}).reset_index().rename(</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>: <span class="st">'mean (comorbidities)'</span>, <span class="st">'std'</span>: <span class="st">'std (comorbidities)'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> tmp.columns.tolist()</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'DX_01'</span>, <span class="st">'Sex'</span>])[<span class="st">'comorbidities'</span>].agg(</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>, <span class="st">'std'</span>}).reset_index().rename(</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>: <span class="st">'mean (comorbidities)'</span>, <span class="st">'std'</span>: <span class="st">'std (comorbidities)'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> tmp.columns.tolist()</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>+----------------------------------------------------------+--------+-----------------------+------------------------+
-| DX_01                                                    | Sex    |   std (comorbidities) |   mean (comorbidities) |
-+==========================================================+========+=======================+========================+
-| ADHD-Combined Type                                       | female |               1.49808 |                1.84615 |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| ADHD-Combined Type                                       | male   |               1.54492 |                1.79104 |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| ADHD-Hyperactive/Impulsive Type                          | female |               1.47135 |                1.32353 |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| ADHD-Hyperactive/Impulsive Type                          | male   |               1.30978 |                1.62366 |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| ADHD-Inattentive Type                                    | female |               1.40127 |                1.57034 |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| ADHD-Inattentive Type                                    | male   |               1.41396 |                1.48411 |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| No Diagnosis Given                                       | female |               0       |                0       |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| No Diagnosis Given                                       | male   |               0       |                0       |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| Other Specified Attention-Deficit/Hyperactivity Disorder | female |               1.48414 |                1.18605 |
-+----------------------------------------------------------+--------+-----------------------+------------------------+
-| Other Specified Attention-Deficit/Hyperactivity Disorder | male   |               1.45344 |                1.26389 |
-+----------------------------------------------------------+--------+-----------------------+------------------------+</code></pre>
+<pre><code>+----------------------------------------------------------+--------+------------------------+-----------------------+
+| DX_01                                                    | Sex    |   mean (comorbidities) |   std (comorbidities) |
++==========================================================+========+========================+=======================+
+| ADHD-Combined Type                                       | female |                1.84615 |               1.49808 |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| ADHD-Combined Type                                       | male   |                1.79104 |               1.54492 |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| ADHD-Hyperactive/Impulsive Type                          | female |                1.32353 |               1.47135 |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| ADHD-Hyperactive/Impulsive Type                          | male   |                1.62366 |               1.30978 |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| ADHD-Inattentive Type                                    | female |                1.57034 |               1.40127 |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| ADHD-Inattentive Type                                    | male   |                1.48411 |               1.41396 |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| No Diagnosis Given                                       | female |                0       |               0       |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| No Diagnosis Given                                       | male   |                0       |               0       |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| Other Specified Attention-Deficit/Hyperactivity Disorder | female |                1.18605 |               1.48414 |
++----------------------------------------------------------+--------+------------------------+-----------------------+
+| Other Specified Attention-Deficit/Hyperactivity Disorder | male   |                1.26389 |               1.45344 |
++----------------------------------------------------------+--------+------------------------+-----------------------+</code></pre>
 </div>
 </div>
 </section>
 <section id="cgas-score-general-cognitive-functioning" class="level2">
 <h2 class="anchored" data-anchor-id="cgas-score-general-cognitive-functioning">CGAS Score (General Cognitive Functioning)</h2>
 <div class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>vis.plotting_style()</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>x_pos <span class="op">=</span> <span class="op">-</span><span class="fl">0.1</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>y_pos <span class="op">=</span> <span class="fl">1.1</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>labelsize <span class="op">=</span> <span class="dv">40</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">1</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig)</span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">0</span>])</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(data<span class="op">=</span>df_CGAS, x<span class="op">=</span><span class="st">'Sex'</span>, y<span class="op">=</span><span class="st">'CGAS_Score'</span>, ax<span class="op">=</span>ax)</span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'General Cognitive Functioning (Sex)'</span>)</span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'A'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
-<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">1</span>])</span>
-<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(data<span class="op">=</span>df_CGAS, x<span class="op">=</span><span class="st">'DX_01'</span>, y<span class="op">=</span><span class="st">'CGAS_Score'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, split<span class="op">=</span><span class="va">True</span>, ax<span class="op">=</span>ax)</span>
-<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)<span class="op">;</span></span>
-<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
-<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'General Cognitive Functioning (Diagnosis)'</span>)</span>
-<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'B'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
-<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
-<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.125</span>, bottom<span class="op">=</span><span class="fl">0.001</span>, right<span class="op">=</span><span class="fl">2.0</span>, top<span class="op">=</span><span class="fl">2.0</span>, wspace<span class="op">=</span><span class="fl">.2</span>, hspace<span class="op">=</span><span class="fl">.3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>vis.plotting_style()</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>x_pos <span class="op">=</span> <span class="op">-</span><span class="fl">0.1</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>y_pos <span class="op">=</span> <span class="fl">1.1</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>labelsize <span class="op">=</span> <span class="dv">40</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig)</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">0</span>])</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(data<span class="op">=</span>df_CGAS, x<span class="op">=</span><span class="st">'Sex'</span>, y<span class="op">=</span><span class="st">'CGAS_Score'</span>, ax<span class="op">=</span>ax)</span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'General Cognitive Functioning (Sex)'</span>)</span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'A'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">1</span>])</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(data<span class="op">=</span>df_CGAS, x<span class="op">=</span><span class="st">'DX_01'</span>, y<span class="op">=</span><span class="st">'CGAS_Score'</span>, hue<span class="op">=</span><span class="st">'Sex'</span>, split<span class="op">=</span><span class="va">True</span>, ax<span class="op">=</span>ax)</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)<span class="op">;</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'General Cognitive Functioning (Diagnosis)'</span>)</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'B'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.125</span>, bottom<span class="op">=</span><span class="fl">0.001</span>, right<span class="op">=</span><span class="fl">2.0</span>, top<span class="op">=</span><span class="fl">2.0</span>, wspace<span class="op">=</span><span class="fl">.2</span>, hspace<span class="op">=</span><span class="fl">.3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<pre><code>&lt;Figure size 672x480 with 0 Axes&gt;</code></pre>
+<pre><code>&lt;Figure size 1228.8x844.8 with 0 Axes&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="figures-ADHD+gender_files/figure-html/cell-10-output-2.png" width="2451" height="2575"></p>
+<p><img src="figures-ADHD+gender_files/figure-html/cell-10-output-2.png" width="2451" height="1525"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df_CGAS.groupby(</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'DX_01'</span>, <span class="st">'Sex'</span>])[<span class="st">'CGAS_Score'</span>].agg(</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>, <span class="st">'std'</span>}).reset_index().rename(</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>: <span class="st">'mean (CGAS)'</span>, <span class="st">'std'</span>: <span class="st">'std (CGAS)'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> tmp.columns.tolist()</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df_CGAS.groupby(</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'DX_01'</span>, <span class="st">'Sex'</span>])[<span class="st">'CGAS_Score'</span>].agg(</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>, <span class="st">'std'</span>}).reset_index().rename(</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'mean'</span>: <span class="st">'mean (CGAS)'</span>, <span class="st">'std'</span>: <span class="st">'std (CGAS)'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> tmp.columns.tolist()</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>+----------------------------------------------------------+--------+--------------+---------------+
-| DX_01                                                    | Sex    |   std (CGAS) |   mean (CGAS) |
-+==========================================================+========+==============+===============+
-| ADHD-Combined Type                                       | female |     10.7984  |       62.3455 |
-+----------------------------------------------------------+--------+--------------+---------------+
-| ADHD-Combined Type                                       | male   |     10.7143  |       62.2609 |
-+----------------------------------------------------------+--------+--------------+---------------+
-| ADHD-Hyperactive/Impulsive Type                          | female |     13.3745  |       63.8667 |
-+----------------------------------------------------------+--------+--------------+---------------+
-| ADHD-Hyperactive/Impulsive Type                          | male   |     10.8406  |       61.8875 |
-+----------------------------------------------------------+--------+--------------+---------------+
-| ADHD-Inattentive Type                                    | female |     10.6611  |       67.4135 |
-+----------------------------------------------------------+--------+--------------+---------------+
-| ADHD-Inattentive Type                                    | male   |     10.8259  |       65.7895 |
-+----------------------------------------------------------+--------+--------------+---------------+
-| No Diagnosis Given                                       | female |     10.8279  |       77.844  |
-+----------------------------------------------------------+--------+--------------+---------------+
-| No Diagnosis Given                                       | male   |     10.162   |       74.8832 |
-+----------------------------------------------------------+--------+--------------+---------------+
-| Other Specified Attention-Deficit/Hyperactivity Disorder | female |      8.20146 |       65.0286 |
-+----------------------------------------------------------+--------+--------------+---------------+
-| Other Specified Attention-Deficit/Hyperactivity Disorder | male   |     12.2603  |       64.5833 |
-+----------------------------------------------------------+--------+--------------+---------------+</code></pre>
+<pre><code>+----------------------------------------------------------+--------+---------------+--------------+
+| DX_01                                                    | Sex    |   mean (CGAS) |   std (CGAS) |
++==========================================================+========+===============+==============+
+| ADHD-Combined Type                                       | female |       62.3455 |     10.7984  |
++----------------------------------------------------------+--------+---------------+--------------+
+| ADHD-Combined Type                                       | male   |       62.2609 |     10.7143  |
++----------------------------------------------------------+--------+---------------+--------------+
+| ADHD-Hyperactive/Impulsive Type                          | female |       63.8667 |     13.3745  |
++----------------------------------------------------------+--------+---------------+--------------+
+| ADHD-Hyperactive/Impulsive Type                          | male   |       61.8875 |     10.8406  |
++----------------------------------------------------------+--------+---------------+--------------+
+| ADHD-Inattentive Type                                    | female |       67.4135 |     10.6611  |
++----------------------------------------------------------+--------+---------------+--------------+
+| ADHD-Inattentive Type                                    | male   |       65.7895 |     10.8259  |
++----------------------------------------------------------+--------+---------------+--------------+
+| No Diagnosis Given                                       | female |       77.844  |     10.8279  |
++----------------------------------------------------------+--------+---------------+--------------+
+| No Diagnosis Given                                       | male   |       74.8832 |     10.162   |
++----------------------------------------------------------+--------+---------------+--------------+
+| Other Specified Attention-Deficit/Hyperactivity Disorder | female |       65.0286 |      8.20146 |
++----------------------------------------------------------+--------+---------------+--------------+
+| Other Specified Attention-Deficit/Hyperactivity Disorder | male   |       64.5833 |     12.2603  |
++----------------------------------------------------------+--------+---------------+--------------+</code></pre>
 </div>
 </div>
 </section>
 <section id="year-of-enrollment" class="level2">
 <h2 class="anchored" data-anchor-id="year-of-enrollment">Year of Enrollment</h2>
 <div class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>vis.plotting_style()</span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>x_pos <span class="op">=</span> <span class="op">-</span><span class="fl">0.1</span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>y_pos <span class="op">=</span> <span class="fl">1.1</span></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>labelsize <span class="op">=</span> <span class="dv">40</span></span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">1</span>, <span class="dv">1</span>, figure<span class="op">=</span>fig)</span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'Enroll_Year'</span>, <span class="st">'DX_01'</span>, <span class="st">'Sex'</span>]).count()[[<span class="st">'Identifiers'</span>]].reset_index().rename(</span>
-<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'Identifiers'</span>: <span class="st">'Participant Count'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">0</span>])</span>
-<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.lineplot(data<span class="op">=</span>tmp, x<span class="op">=</span><span class="st">'Enroll_Year'</span>, y<span class="op">=</span><span class="st">'Participant Count'</span>, ax<span class="op">=</span>ax)</span>
-<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
-<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant Enrollment'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>vis.plotting_style()</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>x_pos <span class="op">=</span> <span class="op">-</span><span class="fl">0.1</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>y_pos <span class="op">=</span> <span class="fl">1.1</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>labelsize <span class="op">=</span> <span class="dv">40</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig)</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'Enroll_Year'</span>, <span class="st">'DX_01'</span>, <span class="st">'Sex'</span>]).count()[[<span class="st">'Identifiers'</span>]].reset_index().rename(</span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'Identifiers'</span>: <span class="st">'Participant Count'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">0</span>])</span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.lineplot(data<span class="op">=</span>tmp, x<span class="op">=</span><span class="st">'Enroll_Year'</span>, y<span class="op">=</span><span class="st">'Participant Count'</span>, ax<span class="op">=</span>ax)</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Participant Enrollment'</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <pre><code>&lt;Figure size 1228.8x844.8 with 0 Axes&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="figures-ADHD+gender_files/figure-html/cell-12-output-2.png" width="1078" height="754"></p>
+<p><img src="figures-ADHD+gender_files/figure-html/cell-12-output-2.png" width="581" height="399"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'Enroll_Year'</span>, <span class="st">'DX_01'</span>, <span class="st">'Sex'</span>]).count()[[<span class="st">'Identifiers'</span>]].reset_index().rename(</span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'Identifiers'</span>: <span class="st">'Participant Count'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> [<span class="st">'Enrollment Year'</span>, <span class="st">'Diagnosis'</span>, <span class="st">'Sex'</span>, <span class="st">'# of Participants'</span>]</span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>tmp <span class="op">=</span> df.groupby(</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    [<span class="st">'Enroll_Year'</span>, <span class="st">'DX_01'</span>, <span class="st">'Sex'</span>]).count()[[<span class="st">'Identifiers'</span>]].reset_index().rename(</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'Identifiers'</span>: <span class="st">'Participant Count'</span>}, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>head <span class="op">=</span> [<span class="st">'Enrollment Year'</span>, <span class="st">'Diagnosis'</span>, <span class="st">'Sex'</span>, <span class="st">'# of Participants'</span>]</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tabulate(np.array(tmp), headers<span class="op">=</span>head, tablefmt<span class="op">=</span><span class="st">"grid"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>+-------------------+----------------------------------------------------------+--------+---------------------+
 |   Enrollment Year | Diagnosis                                                | Sex    |   # of Participants |
@@ -1264,6 +1312,199 @@ PARTICIPANTS WITH No Diagnosis Given
 +-------------------+----------------------------------------------------------+--------+---------------------+</code></pre>
 </div>
 </div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+</section>
+<section id="results-from-predictive-models" class="level2">
+<h2 class="anchored" data-anchor-id="results-from-predictive-models">Results from Predictive Models</h2>
+<p>In this section, we’re building models on different sets of features (Child, Parent, Teacher Measures and basic demographics (e.g., race, ethnicity, age, sex) and determining how well these models classify whether or not someone has a diagnosis (versus no diagnosis).</p>
+<p>We are building models separately for males and females to identify whether certain features (or all features) classify males better than females (or vice versa)</p>
+<p>We have built models on the following diagnoses: ADHD, ASD, Depression, Anxiety, Reading Impairment (our primary interest is ADHD but we can interpret results for ADHD model relative to the other diagnoses)</p>
+<div class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>models_dict <span class="op">=</span> {</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>                <span class="st">'ADHD'</span>: <span class="st">'all_feature_models/2023-03-17_16-20-51-94'</span>,</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>                <span class="st">'ASD-females'</span>: <span class="st">'all_feature_models/2023-03-19_15-31-26-26S-7'</span>,</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>                <span class="st">'ASD-males'</span>: <span class="st">'all_feature_models/2023-03-22_16-13-13-13S-76'</span>,</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>                <span class="st">'ADHD-females'</span>: <span class="st">'all_feature_models/2023-03-19_15-30-41-41S-99'</span>,</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>                <span class="st">'ADHD-males'</span>: <span class="st">'all_feature_models/2023-03-19_15-30-25-25S-53'</span>,</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Depression-females'</span>: <span class="st">'all_feature_models/2023-03-22_17-43-23-23S-41'</span>,</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Depression-males'</span>: <span class="st">'all_feature_models/2023-03-22_17-43-23-23S-13'</span>,</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Anxiety-females'</span>: <span class="st">'all_feature_models/2023-03-22_17-43-19-19S-66'</span>,</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Anxiety-males'</span>: <span class="st">'all_feature_models/2023-03-22_17-43-14-14S-30'</span>,</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Reading Impairment-females'</span>: <span class="st">'all_feature_models/2023-03-22_17-43-10-10S-35'</span>,</span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>               <span class="st">'Reading Impairment-males'</span>: <span class="st">'all_feature_models/2023-03-19_15-31-26-26S-7'</span> </span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>              }</span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="co"># loop over models</span></span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>df_all <span class="op">=</span> pd.DataFrame()</span>
+<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, value <span class="kw">in</span> models_dict.items():</span>
+<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>    MODEL_DIR <span class="op">=</span> os.path.join(Defaults.MODEL_DIR, value)</span>
+<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a>    df_classify <span class="op">=</span> pd.read_csv(os.path.join(MODEL_DIR, <span class="st">'classifier-all-phenotypic-models-performance.csv'</span>))</span>
+<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a>    df_classify[<span class="st">'data'</span>] <span class="op">=</span> df_classify[<span class="st">'data'</span>].<span class="bu">map</span>({<span class="st">'model-data'</span>: <span class="st">'null'</span>, <span class="st">'model-null'</span>: <span class="st">'data'</span>})</span>
+<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a>    df_classify[<span class="st">'participant_group'</span>] <span class="op">=</span> key</span>
+<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb23-25"><a href="#cb23-25" aria-hidden="true" tabindex="-1"></a>    df_all <span class="op">=</span> pd.concat([df_all, df_classify])</span>
+<span id="cb23-26"><a href="#cb23-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb23-27"><a href="#cb23-27" aria-hidden="true" tabindex="-1"></a><span class="co"># do some remapping</span></span>
+<span id="cb23-28"><a href="#cb23-28" aria-hidden="true" tabindex="-1"></a>df_all[<span class="st">'features'</span>] <span class="op">=</span> df_all[<span class="st">'features'</span>].<span class="bu">map</span>({<span class="st">'Child Measures-all'</span>: <span class="st">'Child Measures'</span>,</span>
+<span id="cb23-29"><a href="#cb23-29" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'Parent Measures-all'</span>: <span class="st">'Parent Measures'</span>,</span>
+<span id="cb23-30"><a href="#cb23-30" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'Teacher Measures-all'</span>: <span class="st">'Teacher Measures'</span>,</span>
+<span id="cb23-31"><a href="#cb23-31" aria-hidden="true" tabindex="-1"></a>                    <span class="st">'Parent Measures-Basic_Demos'</span>: <span class="st">'Demographics'</span>}</span>
+<span id="cb23-32"><a href="#cb23-32" aria-hidden="true" tabindex="-1"></a>                   )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="predictive-modeling---adhd-for-child-parent-teacher-demographics" class="level2">
+<h2 class="anchored" data-anchor-id="predictive-modeling---adhd-for-child-parent-teacher-demographics">Predictive Modeling - ADHD for Child, Parent, Teacher, Demographics</h2>
+<p>A result of 50% is chance level (model is not distinguishing between either group) – chance is indicated in the figures with a dashed black line. 100% is a perfect classification.</p>
+<p>Interpreting the figure: * A) Parent and Child measures are well above chance (80, 85% respectively) while demographics and Teacher measures are close to chance. In distinguishing whether participants have ADHD or no diagnosis, the parent model does best, followed closely by the child model. * B) When we split by sex, we can see that for each model, the males are better classified than females</p>
+<div class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>vis.plotting_style()</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>x_pos <span class="op">=</span> <span class="op">-</span><span class="fl">0.1</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>y_pos <span class="op">=</span> <span class="fl">1.1</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>labelsize <span class="op">=</span> <span class="dv">40</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig)</span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">0</span>])</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> df_all[</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'participant_group'</span>]<span class="op">==</span><span class="st">'ADHD'</span>) <span class="op">&amp;</span> </span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'target'</span>]<span class="op">==</span><span class="st">'DX_01_Cat_new_binarize'</span>) <span class="op">&amp;</span></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'data'</span>]<span class="op">==</span><span class="st">'data'</span>)</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'features'</span>, y<span class="op">=</span><span class="st">'roc_auc_score'</span>, data<span class="op">=</span>df1, ax<span class="op">=</span>ax)</span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a><span class="co">#ax.set_title('')</span></span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'k'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'A'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a>ax.set_ylim([<span class="fl">0.4</span>, <span class="dv">1</span>])</span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">1</span>])</span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> df_all[</span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'participant_group'</span>].<span class="bu">str</span>.contains(<span class="st">'ADHD-'</span>)) <span class="op">&amp;</span> </span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'target'</span>]<span class="op">==</span><span class="st">'DX_01_Cat_new_binarize'</span>) <span class="op">&amp;</span></span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'data'</span>]<span class="op">==</span><span class="st">'data'</span>) </span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'features'</span>, y<span class="op">=</span><span class="st">'roc_auc_score'</span>, hue<span class="op">=</span><span class="st">'participant_group'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df1, ax<span class="op">=</span>ax)</span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
+<span id="cb24-35"><a href="#cb24-35" aria-hidden="true" tabindex="-1"></a><span class="co">#ax.set_title('')</span></span>
+<span id="cb24-36"><a href="#cb24-36" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'k'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb24-37"><a href="#cb24-37" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'B'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb24-38"><a href="#cb24-38" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb24-39"><a href="#cb24-39" aria-hidden="true" tabindex="-1"></a>ax.set_ylim([<span class="fl">0.4</span>, <span class="dv">1</span>])</span>
+<span id="cb24-40"><a href="#cb24-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-41"><a href="#cb24-41" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.125</span>, bottom<span class="op">=</span><span class="fl">0.001</span>, right<span class="op">=</span><span class="fl">2.0</span>, top<span class="op">=</span><span class="fl">2.0</span>, wspace<span class="op">=</span><span class="fl">.2</span>, hspace<span class="op">=</span><span class="fl">.3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;Figure size 1228.8x844.8 with 0 Axes&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="figures-ADHD+gender_files/figure-html/cell-15-output-2.png" width="2428" height="1080"></p>
+</div>
+</div>
+</section>
+<section id="predictive-modeling---depression-asd-anxiety-reading-impairment-for-child-parent-teacher-demographics" class="level2">
+<h2 class="anchored" data-anchor-id="predictive-modeling---depression-asd-anxiety-reading-impairment-for-child-parent-teacher-demographics">Predictive Modeling - Depression, ASD, Anxiety, Reading Impairment for Child, Parent, Teacher, Demographics</h2>
+<p>Interpreting the figure: * A) Models classify depression quite well (around 80%) - demographics and teacher slightly lower. Females are better classified than males for both demographics and teacher measures * B) similar pattern of results for anxiety as depression except that scores are sig. lower * C) demographic and teacher models are close to chance for reading impairment (and no sig. male/female differences). For parent and child measures, the classifier predicts pretty well (about 80%) and there is a dissociation between males and females across these measures. Males are far better classified than females by the parent model and vice versa for the child model. * D) For the ASD group, there are no classification differences between males and females, parent model sig. outperforms child, teacher, demographics at 90% accuracy</p>
+<ul>
+<li><em>ADHD is the only diagnosis where males are consistently better classified than females across all assessments</em></li>
+</ul>
+<div class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>plt.clf()</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>vis.plotting_style()</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>x_pos <span class="op">=</span> <span class="op">-</span><span class="fl">0.1</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>y_pos <span class="op">=</span> <span class="fl">1.1</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>labelsize <span class="op">=</span> <span class="dv">40</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure()</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> GridSpec(<span class="dv">2</span>, <span class="dv">2</span>, figure<span class="op">=</span>fig)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a><span class="co"># A</span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">0</span>])</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> df_all[</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'participant_group'</span>].<span class="bu">str</span>.contains(<span class="st">'Depression-'</span>)) <span class="op">&amp;</span> </span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'target'</span>]<span class="op">==</span><span class="st">'DX_01_Cat_new_binarize'</span>) <span class="op">&amp;</span></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'data'</span>]<span class="op">==</span><span class="st">'data'</span>) </span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'features'</span>, y<span class="op">=</span><span class="st">'roc_auc_score'</span>, hue<span class="op">=</span><span class="st">'participant_group'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df1, ax<span class="op">=</span>ax)</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a><span class="co">#ax.set_title('')</span></span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'k'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'A'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>ax.set_ylim([<span class="fl">0.3</span>, <span class="dv">1</span>])</span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb26-26"><a href="#cb26-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-27"><a href="#cb26-27" aria-hidden="true" tabindex="-1"></a><span class="co"># B</span></span>
+<span id="cb26-28"><a href="#cb26-28" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>,<span class="dv">1</span>])</span>
+<span id="cb26-29"><a href="#cb26-29" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> df_all[</span>
+<span id="cb26-30"><a href="#cb26-30" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'participant_group'</span>].<span class="bu">str</span>.contains(<span class="st">'Anxiety-'</span>)) <span class="op">&amp;</span> </span>
+<span id="cb26-31"><a href="#cb26-31" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'target'</span>]<span class="op">==</span><span class="st">'DX_01_Cat_new_binarize'</span>) <span class="op">&amp;</span></span>
+<span id="cb26-32"><a href="#cb26-32" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'data'</span>]<span class="op">==</span><span class="st">'data'</span>) </span>
+<span id="cb26-33"><a href="#cb26-33" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb26-34"><a href="#cb26-34" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'features'</span>, y<span class="op">=</span><span class="st">'roc_auc_score'</span>, hue<span class="op">=</span><span class="st">'participant_group'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df1, ax<span class="op">=</span>ax)</span>
+<span id="cb26-35"><a href="#cb26-35" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb26-36"><a href="#cb26-36" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb26-37"><a href="#cb26-37" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
+<span id="cb26-38"><a href="#cb26-38" aria-hidden="true" tabindex="-1"></a><span class="co">#ax.set_title('')</span></span>
+<span id="cb26-39"><a href="#cb26-39" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'k'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb26-40"><a href="#cb26-40" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'B'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb26-41"><a href="#cb26-41" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb26-42"><a href="#cb26-42" aria-hidden="true" tabindex="-1"></a>ax.set_ylim([<span class="fl">0.3</span>, <span class="dv">1</span>])</span>
+<span id="cb26-43"><a href="#cb26-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-44"><a href="#cb26-44" aria-hidden="true" tabindex="-1"></a><span class="co"># C</span></span>
+<span id="cb26-45"><a href="#cb26-45" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>,<span class="dv">0</span>])</span>
+<span id="cb26-46"><a href="#cb26-46" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> df_all[</span>
+<span id="cb26-47"><a href="#cb26-47" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'participant_group'</span>].<span class="bu">str</span>.contains(<span class="st">'Reading Impairment-'</span>)) <span class="op">&amp;</span> </span>
+<span id="cb26-48"><a href="#cb26-48" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'target'</span>]<span class="op">==</span><span class="st">'DX_01_Cat_new_binarize'</span>) <span class="op">&amp;</span></span>
+<span id="cb26-49"><a href="#cb26-49" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'data'</span>]<span class="op">==</span><span class="st">'data'</span>) </span>
+<span id="cb26-50"><a href="#cb26-50" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb26-51"><a href="#cb26-51" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'features'</span>, y<span class="op">=</span><span class="st">'roc_auc_score'</span>, hue<span class="op">=</span><span class="st">'participant_group'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df1, ax<span class="op">=</span>ax)</span>
+<span id="cb26-52"><a href="#cb26-52" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb26-53"><a href="#cb26-53" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb26-54"><a href="#cb26-54" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
+<span id="cb26-55"><a href="#cb26-55" aria-hidden="true" tabindex="-1"></a><span class="co">#ax.set_title('')</span></span>
+<span id="cb26-56"><a href="#cb26-56" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'k'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb26-57"><a href="#cb26-57" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'B'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb26-58"><a href="#cb26-58" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb26-59"><a href="#cb26-59" aria-hidden="true" tabindex="-1"></a>ax.set_ylim([<span class="fl">0.3</span>, <span class="dv">1</span>])</span>
+<span id="cb26-60"><a href="#cb26-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-61"><a href="#cb26-61" aria-hidden="true" tabindex="-1"></a><span class="co"># D</span></span>
+<span id="cb26-62"><a href="#cb26-62" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>,<span class="dv">1</span>])</span>
+<span id="cb26-63"><a href="#cb26-63" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> df_all[</span>
+<span id="cb26-64"><a href="#cb26-64" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'participant_group'</span>].<span class="bu">str</span>.contains(<span class="st">'ASD-'</span>)) <span class="op">&amp;</span> </span>
+<span id="cb26-65"><a href="#cb26-65" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'target'</span>]<span class="op">==</span><span class="st">'DX_01_Cat_new_binarize'</span>) <span class="op">&amp;</span></span>
+<span id="cb26-66"><a href="#cb26-66" aria-hidden="true" tabindex="-1"></a>    (df_all[<span class="st">'data'</span>]<span class="op">==</span><span class="st">'data'</span>) </span>
+<span id="cb26-67"><a href="#cb26-67" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb26-68"><a href="#cb26-68" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.violinplot(x<span class="op">=</span><span class="st">'features'</span>, y<span class="op">=</span><span class="st">'roc_auc_score'</span>, hue<span class="op">=</span><span class="st">'participant_group'</span>, split<span class="op">=</span><span class="va">True</span>, data<span class="op">=</span>df1, ax<span class="op">=</span>ax)</span>
+<span id="cb26-69"><a href="#cb26-69" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>)</span>
+<span id="cb26-70"><a href="#cb26-70" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">''</span>)</span>
+<span id="cb26-71"><a href="#cb26-71" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">''</span>)</span>
+<span id="cb26-72"><a href="#cb26-72" aria-hidden="true" tabindex="-1"></a><span class="co">#ax.set_title('')</span></span>
+<span id="cb26-73"><a href="#cb26-73" aria-hidden="true" tabindex="-1"></a>plt.axhline(y<span class="op">=</span><span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'k'</span>, linestyle<span class="op">=</span><span class="st">'--'</span>)</span>
+<span id="cb26-74"><a href="#cb26-74" aria-hidden="true" tabindex="-1"></a>ax.text(x_pos, y_pos, <span class="st">'B'</span>, transform<span class="op">=</span>ax.transAxes, fontsize<span class="op">=</span>labelsize, verticalalignment<span class="op">=</span><span class="st">'top'</span>)</span>
+<span id="cb26-75"><a href="#cb26-75" aria-hidden="true" tabindex="-1"></a>ax.legend_.set_title(<span class="va">None</span>)</span>
+<span id="cb26-76"><a href="#cb26-76" aria-hidden="true" tabindex="-1"></a>ax.set_ylim([<span class="fl">0.3</span>, <span class="dv">1</span>])</span>
+<span id="cb26-77"><a href="#cb26-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-78"><a href="#cb26-78" aria-hidden="true" tabindex="-1"></a>plt.subplots_adjust(left<span class="op">=</span><span class="fl">0.125</span>, bottom<span class="op">=</span><span class="fl">0.002</span>, right<span class="op">=</span><span class="fl">2.0</span>, top<span class="op">=</span><span class="fl">2.5</span>, wspace<span class="op">=</span><span class="fl">.2</span>, hspace<span class="op">=</span><span class="fl">.3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<pre><code>&lt;Figure size 1228.8x844.8 with 0 Axes&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="figures-ADHD+gender_files/figure-html/cell-16-output-2.png" width="2428" height="2475"></p>
+</div>
+</div>
+</section>
+<section id="interpreting-model-features---under-construction" class="level2">
+<h2 class="anchored" data-anchor-id="interpreting-model-features---under-construction">Interpreting Model Features - UNDER CONSTRUCTION</h2>
 
 
 </section>
