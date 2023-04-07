@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>MIT Projects – mk.visualize</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">(Untitled)</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../" class="sidebar-logo-link">
+      <img src="../assets/images/logo_mk.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://www.maedbhking.com/home" title="Personal Website" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/maedbhk/MIT-Projects" title="MIT Projects repo" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Welcome</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">MIT Projects</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about-me.html" class="sidebar-item-text sidebar-link">About Me</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Progress</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Datasets</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/abcd.html" class="sidebar-item-text sidebar-link">ABCD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/uk-biobank.html" class="sidebar-item-text sidebar-link">UK Biobank</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/healthy-brains.html" class="sidebar-item-text sidebar-link">Healthy Brains Network</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/abide.html" class="sidebar-item-text sidebar-link">abide</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/adhd-200.html" class="sidebar-item-text sidebar-link">ADHD-200</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/chop.html" class="sidebar-item-text sidebar-link">CHOP</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Literature Review</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/cerebellum-development.html" class="sidebar-item-text sidebar-link">Cerebellum and Development</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/cerebellum-neuropsych.html" class="sidebar-item-text sidebar-link">Cerebellum and Neuropsychiatric Disorders</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/EMR-selfharm.html" class="sidebar-item-text sidebar-link">Identifying risk factors for self-harm using electronic medical records</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/pHealth-overview.html" class="sidebar-item-text sidebar-link">Intro to Precision Medicine</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/pHealth-terminology.html" class="sidebar-item-text sidebar-link">pHealth terminology</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/pHealth-other-fields.html" class="sidebar-item-text sidebar-link">pHealth in other fields</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/RDoC.html" class="sidebar-item-text sidebar-link">RDoC</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/subcortical-translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Subcortical Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/development-translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Neurodevelopment and Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/methodology-pHealth.html" class="sidebar-item-text sidebar-link">Methodological considerations for precision medicine</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/suicide-prediction.html" class="sidebar-item-text sidebar-link">Suicide prediction using structured-unstructured interactions in EHR models</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/precision-psychiatry-conference.html" class="sidebar-item-text sidebar-link">Conference on Precision Psychiatry</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/SCSB_Colloquium_Series.html" class="sidebar-item-text sidebar-link">Neuroimmune interaction underlies both neurodevelopmental and immune-primed phenotypes - Jun Huh</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/cerebellum-fingerprints.html" class="sidebar-item-text sidebar-link">Cerebellar fingerprints of neurodevelopmental disorders</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/EMR-selfharm.html" class="sidebar-item-text sidebar-link">Identifying Risk Predictors for Self-Harm through Electronic Medical Records</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/adaptive-adhd.html" class="sidebar-item-text sidebar-link">Adaptive ADHD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/exploring-adhd.html" class="sidebar-item-text sidebar-link">Exploring ADHD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/gender-adhd.html" class="sidebar-item-text sidebar-link">Gender differences in ADHD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/phenotyping-project.html" class="sidebar-item-text sidebar-link">Phenotyping Project</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Mentorship</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/fall22_urop_recruitment.html" class="sidebar-item-text sidebar-link">Fall22 Recruitment</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/fall22_urop_onboarding.html" class="sidebar-item-text sidebar-link">Fall22 Onboarding</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/spr23_urop_onboarding.html" class="sidebar-item-text sidebar-link">Spring23 Onboarding</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/weekly-notes.html" class="sidebar-item-text sidebar-link">Weekly Notes</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/openmind.html" class="sidebar-item-text sidebar-link">Getting Started on Openmind</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Methods</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/feature-engineering.html" class="sidebar-item-text sidebar-link">Feature Engineering</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/model-evaluation.html" class="sidebar-item-text sidebar-link">Model Evaluation</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/model-interpretability.html" class="sidebar-item-text sidebar-link">Model Interpretability</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/unsupervised-learning.html" class="sidebar-item-text sidebar-link">Unsupervised Learning</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/modeling-EHR.html" class="sidebar-item-text sidebar-link">ClinicalBERT</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/smote.html" class="sidebar-item-text sidebar-link">Working with imbalanced data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">Notebooks</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">Ethics</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ethics/AI-hype.html" class="sidebar-item-text sidebar-link">The Hype of AI in Medicine</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ethics/pHealth-ethics.html" class="sidebar-item-text sidebar-link">Ethical Considerations for pHealth</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ethics/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#accessing-data" id="toc-accessing-data" class="nav-link active" data-scroll-target="#accessing-data">Accessing data</a>
+  <ul class="collapse">
+  <li><a href="#openmind" id="toc-openmind" class="nav-link" data-scroll-target="#openmind">Openmind</a></li>
+  <li><a href="#google-drive" id="toc-google-drive" class="nav-link" data-scroll-target="#google-drive">Google Drive</a></li>
+  <li><a href="#data-organization" id="toc-data-organization" class="nav-link" data-scroll-target="#data-organization">Data Organization</a></li>
+  </ul></li>
+  <li><a href="#assessment-list" id="toc-assessment-list" class="nav-link" data-scroll-target="#assessment-list">Assessment List</a></li>
+  <li><a href="#inspecting-data-dictionary" id="toc-inspecting-data-dictionary" class="nav-link" data-scroll-target="#inspecting-data-dictionary">Inspecting data dictionary</a>
+  <ul class="collapse">
+  <li><a href="#inspecting-data" id="toc-inspecting-data" class="nav-link" data-scroll-target="#inspecting-data">Inspecting data</a></li>
+  <li><a href="#get-information-on-clinical-diagnosis" id="toc-get-information-on-clinical-diagnosis" class="nav-link" data-scroll-target="#get-information-on-clinical-diagnosis">Get information on clinical diagnosis</a></li>
+  <li><a href="#doing-item-analysis-on-sentences-within-and-across-measures" id="toc-doing-item-analysis-on-sentences-within-and-across-measures" class="nav-link" data-scroll-target="#doing-item-analysis-on-sentences-within-and-across-measures">Doing item analysis on sentences within and across measures</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#calculate-sentence-similarity" id="toc-calculate-sentence-similarity" class="nav-link" data-scroll-target="#calculate-sentence-similarity">Calculate sentence similarity</a></li>
+  <li><a href="#plot-heatmap-and-dendrogram-of-cosine-scores" id="toc-plot-heatmap-and-dendrogram-of-cosine-scores" class="nav-link" data-scroll-target="#plot-heatmap-and-dendrogram-of-cosine-scores">Plot heatmap and dendrogram of cosine scores</a></li>
+  <li><a href="#plot-distribution-of-scores-and-sentence-similarities" id="toc-plot-distribution-of-scores-and-sentence-similarities" class="nav-link" data-scroll-target="#plot-distribution-of-scores-and-sentence-similarities">Plot distribution of scores and sentence similarities</a></li>
+  <li><a href="#compare-answer-similarity" id="toc-compare-answer-similarity" class="nav-link" data-scroll-target="#compare-answer-similarity">Compare answer similarity</a></li>
+  <li><a href="#calculate-distance-correlation-between-two-questionnaires" id="toc-calculate-distance-correlation-between-two-questionnaires" class="nav-link" data-scroll-target="#calculate-distance-correlation-between-two-questionnaires">Calculate distance correlation between two questionnaires</a></li>
+  <li><a href="#the-distance-correlation-t-test-of-independence" id="toc-the-distance-correlation-t-test-of-independence" class="nav-link" data-scroll-target="#the-distance-correlation-t-test-of-independence">The distance correlation t-test of independence</a></li>
+  <li><a href="#permutation-test-of-distance-correlation" id="toc-permutation-test-of-distance-correlation" class="nav-link" data-scroll-target="#permutation-test-of-distance-correlation">Permutation test of distance correlation</a></li>
+  <li><a href="#the-distance-covariance-test-of-independence" id="toc-the-distance-covariance-test-of-independence" class="nav-link" data-scroll-target="#the-distance-covariance-test-of-independence">The distance covariance test of independence</a></li>
+  <li><a href="#permutation-test-of-distance-covariance" id="toc-permutation-test-of-distance-covariance" class="nav-link" data-scroll-target="#permutation-test-of-distance-covariance">Permutation test of distance covariance</a></li>
+  <li><a href="#monte-carlo-test---get-estimates-of-type-i-error" id="toc-monte-carlo-test---get-estimates-of-type-i-error" class="nav-link" data-scroll-target="#monte-carlo-test---get-estimates-of-type-i-error">Monte Carlo Test - get estimates of Type I error</a></li>
+  <li><a href="#to-do" id="toc-to-do" class="nav-link" data-scroll-target="#to-do">TO DO</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.dev/maedbhk/MIT-Projects/blob/main/notebooks/1.0.mk.visualize.ipynb" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib <span class="im">import</span> pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src <span class="im">import</span> item_analysis</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.io <span class="im">as</span> pio</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>pio.renderers.default<span class="op">=</span><span class="st">'notebook'</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>load_ext autoreload</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>autoreload <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="accessing-data" class="level2">
+<h2 class="anchored" data-anchor-id="accessing-data">Accessing data</h2>
+<section id="openmind" class="level3">
+<h3 class="anchored" data-anchor-id="openmind">Openmind</h3>
+<p><em>om2/user/maedbh/item_analysis/data</em></p>
+</section>
+<section id="google-drive" class="level3">
+<h3 class="anchored" data-anchor-id="google-drive">Google Drive</h3>
+<p>https://drive.google.com/drive/folders/1ylVmbKlmIZg5KWwnMSwMVHY1tcJglqjT?usp=sharing</p>
+</section>
+<section id="data-organization" class="level3">
+<h3 class="anchored" data-anchor-id="data-organization">Data Organization</h3>
+<pre><code>├── data                                  &lt;- Data folder (hosted on Google Drive and OpenMind)
+│&nbsp;&nbsp; ├── Child-features-preprocessed.csv   &lt;- All features (preprocessed) for Child questionnaires
+│&nbsp;&nbsp; ├── Child-features-raw.csv            &lt;- All features (raw) for Child questionnaires
+│&nbsp;&nbsp; ├── Parent-features-preprocessed.csv  &lt;- All features (preprocessed) for Parent questionnaires
+│&nbsp;&nbsp; ├── Parent-features-raw.csv           &lt;- All features (raw) for Parent questionnaires
+│&nbsp;&nbsp; ├── Teacher-features-preprocessed.csv &lt;- All features (preprocessed) for Teacher questionnaires
+│&nbsp;&nbsp; ├── Teacher-features-raw.csv          &lt;- All features (raw) for Teacher questionnaires
+│&nbsp;&nbsp; ├── item-names-cleaned.csv            &lt;- Dictionary linking questionnaire columns to question keys
+│&nbsp;&nbsp; ├── participants.csv                  &lt;- Participant identifiers (for entire dataset)</code></pre>
+<div class="cell" data-execution_count="83">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># load data</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># set data dir (wherever data csv files are saved)</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>data_dir <span class="op">=</span> <span class="st">'/Users/maedbhking/Documents/item_analysis/data'</span> <span class="co"># set data dir</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>df_data, df_dict, df_diagnosis <span class="op">=</span> item_analysis.load_data(</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>                                        data_dir<span class="op">=</span>data_dir, </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>                                        assessment<span class="op">=</span><span class="st">'Parent'</span>, <span class="co"># Teacher, Child</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                                        data_type<span class="op">=</span><span class="st">'preprocessed'</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>                                        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/Users/maedbhking/Documents/item_analysis/src/item_analysis.py:24: DtypeWarning:
+
+Columns (137,152) have mixed types. Specify dtype option on import or set low_memory=False.
+</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="123">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>item_analysis.load_data?</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="assessment-list" class="level2">
+<h2 class="anchored" data-anchor-id="assessment-list">Assessment List</h2>
+<p>All behavioral questionnaires are detailed in this assessment list: https://docs.google.com/spreadsheets/d/1sGb3ECGR47BzIWNZwzh4ARrjFaf5ByVA/edit?usp=sharing&amp;ouid=110847987931723045299&amp;rtpof=true&amp;sd=true</p>
+<p>For each assessment (Child, Parent, Teacher) there are multiple domains and within each domain there are multiple measures. Each measure is given an abbreviation (e.g., Temporal Discounting Task is abbreviated as <em>TempDisc</em>)</p>
+</section>
+<section id="inspecting-data-dictionary" class="level1">
+<h1>Inspecting data dictionary</h1>
+<p>The data dictionary contains all of the questions (6119) that are administered to every participant in the healthy brain network dataset (incl.&nbsp;Child, Parent, and Teacher Measures)</p>
+<p>Structure of dictionary: * <strong>questions</strong>: the exact question that is asked * <strong>keys</strong>: unique identifier for each question * <strong>datadic</strong>: abbreviated name of each measure, should correspond to <strong>Abbreviation(s) LORIS</strong> in Assessment Link (although there are some differences): https://docs.google.com/spreadsheets/d/1sGb3ECGR47BzIWNZwzh4ARrjFaf5ByVA/edit?usp=sharing&amp;ouid=110847987931723045299&amp;rtpof=true&amp;sd=true * <strong>col_name</strong>: the column name linking each question to the data (data are in <strong>df_data</strong> dataframe) * <strong>assessment</strong>: assessment(e.g., Parent Measures, Child Measures, Teacher Measures) * <strong>domains</strong>: domain (e.g., Demographic_Questionnaire_Measures) * <strong>measures</strong>: measures (e.g., Child Mind Institute Symptom Checker)</p>
+<div class="cell" data-execution_count="84">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># data dictionary</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>df_dict.tail(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="84">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>questions</th>
+      <th>keys</th>
+      <th>datadic</th>
+      <th>col_name</th>
+      <th>assessment</th>
+      <th>domains</th>
+      <th>measures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6114</th>
+      <td>g. Hallucinogens (psychedelics, LSD, mescaline...</td>
+      <td>CSC_55gP</td>
+      <td>SympChck</td>
+      <td>SympChck,CSC_55gP</td>
+      <td>Parent Measures</td>
+      <td>Demographic_Questionnaire_Measures</td>
+      <td>Child Mind Institute Symptom Checker</td>
+    </tr>
+    <tr>
+      <th>6115</th>
+      <td>h. Solvents/Inhalants (glue, gasoline, chlorof...</td>
+      <td>CSC_55hC</td>
+      <td>SympChck</td>
+      <td>SympChck,CSC_55hC</td>
+      <td>Parent Measures</td>
+      <td>Demographic_Questionnaire_Measures</td>
+      <td>Child Mind Institute Symptom Checker</td>
+    </tr>
+    <tr>
+      <th>6116</th>
+      <td>h. Solvents/Inhalants (glue, gasoline, chlorof...</td>
+      <td>CSC_55hP</td>
+      <td>SympChck</td>
+      <td>SympChck,CSC_55hP</td>
+      <td>Parent Measures</td>
+      <td>Demographic_Questionnaire_Measures</td>
+      <td>Child Mind Institute Symptom Checker</td>
+    </tr>
+    <tr>
+      <th>6117</th>
+      <td>i. Other (prescription drugs, nitrous oxide, e...</td>
+      <td>CSC_55iC</td>
+      <td>SympChck</td>
+      <td>SympChck,CSC_55iC</td>
+      <td>Parent Measures</td>
+      <td>Demographic_Questionnaire_Measures</td>
+      <td>Child Mind Institute Symptom Checker</td>
+    </tr>
+    <tr>
+      <th>6118</th>
+      <td>i. Other (prescription drugs, nitrous oxide, e...</td>
+      <td>CSC_55iP</td>
+      <td>SympChck</td>
+      <td>SympChck,CSC_55iP</td>
+      <td>Parent Measures</td>
+      <td>Demographic_Questionnaire_Measures</td>
+      <td>Child Mind Institute Symptom Checker</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="85">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_dict.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="85">
+<pre><code>(1725, 7)</code></pre>
+</div>
+</div>
+<section id="inspecting-data" class="level2">
+<h2 class="anchored" data-anchor-id="inspecting-data">Inspecting data</h2>
+<ul>
+<li>Columns: all data columns for a particular assessment (example given here is Parent Measures) + demographics (sex, age, race, ethnicity) + clinical diagnoses (diagnosis, comorbidities)</li>
+<li>Rows: all possible participants, each participant has a unique identifier</li>
+</ul>
+<div class="cell" data-execution_count="86">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_data.head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="86">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Identifiers</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Diagnosis</th>
+      <th>comorbidities</th>
+      <th>Race</th>
+      <th>Ethnicity</th>
+      <th>PreInt_EduHx,CPSE</th>
+      <th>PreInt_EduHx,EI</th>
+      <th>PreInt_EduHx,IEP</th>
+      <th>...</th>
+      <th>WHODAS_P,WHODAS_P_Days01</th>
+      <th>WHODAS_P,WHODAS_P_Days02</th>
+      <th>WHODAS_P,WHODAS_P_Days03</th>
+      <th>WHODAS_P,WHODAS_P_Total</th>
+      <th>DailyMeds,alcohol</th>
+      <th>DailyMeds,caffiene</th>
+      <th>DailyMeds,drugs</th>
+      <th>DailyMeds,hours_sleep</th>
+      <th>DailyMeds,medications</th>
+      <th>DailyMeds,nicotine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NDARAA075AMK</td>
+      <td>-1.323148</td>
+      <td>-1.035197</td>
+      <td>-0.724913</td>
+      <td>-0.888546</td>
+      <td>-1.734135</td>
+      <td>-1.866216</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>-1.077767</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>-5.110389e-17</td>
+      <td>0.000000</td>
+      <td>-1.341494e-16</td>
+      <td>2.125544e+00</td>
+      <td>-1.319479e+00</td>
+      <td>2.111489e+00</td>
+      <td>-2.271922</td>
+      <td>7.876414e+00</td>
+      <td>2.125544e+00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>NDARAA112DMH</td>
+      <td>0.755773</td>
+      <td>-1.372556</td>
+      <td>-0.635508</td>
+      <td>-0.269201</td>
+      <td>-1.213304</td>
+      <td>-0.570331</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>-1.077767</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>-5.110389e-17</td>
+      <td>0.000000</td>
+      <td>-1.341494e-16</td>
+      <td>2.125544e+00</td>
+      <td>-1.319479e+00</td>
+      <td>2.111489e+00</td>
+      <td>4.546433</td>
+      <td>-1.580221e+00</td>
+      <td>2.125544e+00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NDARAA117NEJ</td>
+      <td>0.755773</td>
+      <td>-0.821792</td>
+      <td>-0.635508</td>
+      <td>-0.269201</td>
+      <td>-1.213304</td>
+      <td>-0.570331</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>-1.077767</td>
+      <td>...</td>
+      <td>-0.532893</td>
+      <td>-3.365649e-01</td>
+      <td>-0.373375</td>
+      <td>6.593918e-01</td>
+      <td>2.125544e+00</td>
+      <td>-1.319479e+00</td>
+      <td>2.111489e+00</td>
+      <td>-0.412371</td>
+      <td>7.876414e+00</td>
+      <td>2.125544e+00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NDARAA306NT2</td>
+      <td>-1.323148</td>
+      <td>3.099052</td>
+      <td>-0.546104</td>
+      <td>3.446868</td>
+      <td>-1.734135</td>
+      <td>0.725554</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>0.966150</td>
+      <td>...</td>
+      <td>1.031089</td>
+      <td>4.266465e+00</td>
+      <td>4.305747</td>
+      <td>2.389542e+00</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NDARAA358BPN</td>
+      <td>0.755773</td>
+      <td>0.427258</td>
+      <td>-0.456699</td>
+      <td>-0.888546</td>
+      <td>-1.734135</td>
+      <td>-1.866216</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>0.966150</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>-5.110389e-17</td>
+      <td>0.000000</td>
+      <td>-1.341494e-16</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>NDARAA504CRN</td>
+      <td>-1.323148</td>
+      <td>-0.339743</td>
+      <td>-0.367295</td>
+      <td>1.588833</td>
+      <td>-0.692474</td>
+      <td>-0.570331</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>-1.077767</td>
+      <td>...</td>
+      <td>-0.532893</td>
+      <td>-3.365649e-01</td>
+      <td>-0.373375</td>
+      <td>-2.846010e-01</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>NDARAA536PTU</td>
+      <td>0.755773</td>
+      <td>0.468663</td>
+      <td>-0.367295</td>
+      <td>-0.888546</td>
+      <td>-1.213304</td>
+      <td>-0.570331</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>-1.077767</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>-5.110389e-17</td>
+      <td>0.000000</td>
+      <td>-1.341494e-16</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>NDARAA773LUW</td>
+      <td>-1.323148</td>
+      <td>0.936781</td>
+      <td>-0.724913</td>
+      <td>-0.888546</td>
+      <td>-0.171644</td>
+      <td>0.725554</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>0.966150</td>
+      <td>...</td>
+      <td>-1.054221</td>
+      <td>-3.365649e-01</td>
+      <td>0.796405</td>
+      <td>-1.071513e+00</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>NDARAA940JHB</td>
+      <td>0.755773</td>
+      <td>0.633502</td>
+      <td>-0.635508</td>
+      <td>-0.888546</td>
+      <td>-0.692474</td>
+      <td>-0.570331</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>-1.077767</td>
+      <td>...</td>
+      <td>-0.949955</td>
+      <td>-3.365649e-01</td>
+      <td>-0.139419</td>
+      <td>-4.424366e-01</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>NDARAA947ZG5</td>
+      <td>0.755773</td>
+      <td>0.933623</td>
+      <td>-0.635508</td>
+      <td>0.969488</td>
+      <td>0.349187</td>
+      <td>0.725554</td>
+      <td>-0.613334</td>
+      <td>-0.545866</td>
+      <td>0.966150</td>
+      <td>...</td>
+      <td>-0.011566</td>
+      <td>-5.110389e-17</td>
+      <td>0.000000</td>
+      <td>1.131388e+00</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 1759 columns</p>
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="87">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_data.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="87">
+<pre><code>(4767, 1759)</code></pre>
+</div>
+</div>
+</section>
+<section id="get-information-on-clinical-diagnosis" class="level2">
+<h2 class="anchored" data-anchor-id="get-information-on-clinical-diagnosis">Get information on clinical diagnosis</h2>
+<ul>
+<li>When data are preprocessed (as they are here), all columns are numeric - imputed and scaled (mean 0 and std 1).</li>
+<li>To get categorical values for some of the numeric columns (e.g,. Sex, Diagnosis, Race, Ethnicity), merge identfiers with <strong>df_diagnosis</strong> - see below</li>
+</ul>
+<div class="cell" data-execution_count="88">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># merge diagnosis categorical information with data</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>df_data_dx <span class="op">=</span> df_diagnosis[[<span class="st">'Identifiers'</span>, <span class="st">'Age'</span>, <span class="st">'Sex'</span>, <span class="st">'Diagnosis'</span>, <span class="st">'Race'</span>, <span class="st">'Ethnicity'</span>]].merge(df_data, on<span class="op">=</span>[<span class="st">'Identifiers'</span>])</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>df_data_dx.columns <span class="op">=</span> df_data_dx.columns.<span class="bu">str</span>.replace(<span class="st">'_x'</span>, <span class="st">'_raw'</span>).<span class="bu">str</span>.replace(<span class="st">'_y'</span>, <span class="st">''</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>df_data_dx.head(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="88">
+
+<div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Identifiers</th>
+      <th>Age_raw</th>
+      <th>Sex_raw</th>
+      <th>Diagnosis_raw</th>
+      <th>Race_raw</th>
+      <th>Ethnicity_raw</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Diagnosis</th>
+      <th>comorbidities</th>
+      <th>...</th>
+      <th>WHODAS_P,WHODAS_P_Days01</th>
+      <th>WHODAS_P,WHODAS_P_Days02</th>
+      <th>WHODAS_P,WHODAS_P_Days03</th>
+      <th>WHODAS_P,WHODAS_P_Total</th>
+      <th>DailyMeds,alcohol</th>
+      <th>DailyMeds,caffiene</th>
+      <th>DailyMeds,drugs</th>
+      <th>DailyMeds,hours_sleep</th>
+      <th>DailyMeds,medications</th>
+      <th>DailyMeds,nicotine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NDARAA075AMK</td>
+      <td>6.728040</td>
+      <td>female</td>
+      <td>No Diagnosis Given</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>-1.323148</td>
+      <td>-1.035197</td>
+      <td>-0.724913</td>
+      <td>-0.888546</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>-5.110389e-17</td>
+      <td>0.000000</td>
+      <td>-1.341494e-16</td>
+      <td>2.125544e+00</td>
+      <td>-1.319479e+00</td>
+      <td>2.111489e+00</td>
+      <td>-2.271922</td>
+      <td>7.876414e+00</td>
+      <td>2.125544e+00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>NDARAA112DMH</td>
+      <td>5.545744</td>
+      <td>male</td>
+      <td>ADHD-Combined Type</td>
+      <td>Hispanic</td>
+      <td>Hispanic or Latino</td>
+      <td>0.755773</td>
+      <td>-1.372556</td>
+      <td>-0.635508</td>
+      <td>-0.269201</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>-5.110389e-17</td>
+      <td>0.000000</td>
+      <td>-1.341494e-16</td>
+      <td>2.125544e+00</td>
+      <td>-1.319479e+00</td>
+      <td>2.111489e+00</td>
+      <td>4.546433</td>
+      <td>-1.580221e+00</td>
+      <td>2.125544e+00</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NDARAA117NEJ</td>
+      <td>7.475929</td>
+      <td>male</td>
+      <td>ADHD-Combined Type</td>
+      <td>Hispanic</td>
+      <td>Hispanic or Latino</td>
+      <td>0.755773</td>
+      <td>-0.821792</td>
+      <td>-0.635508</td>
+      <td>-0.269201</td>
+      <td>...</td>
+      <td>-0.532893</td>
+      <td>-3.365649e-01</td>
+      <td>-0.373375</td>
+      <td>6.593918e-01</td>
+      <td>2.125544e+00</td>
+      <td>-1.319479e+00</td>
+      <td>2.111489e+00</td>
+      <td>-0.412371</td>
+      <td>7.876414e+00</td>
+      <td>2.125544e+00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>NDARAA306NT2</td>
+      <td>21.216746</td>
+      <td>female</td>
+      <td>Generalized Anxiety Disorder</td>
+      <td>Unknown</td>
+      <td>White/Caucasian</td>
+      <td>-1.323148</td>
+      <td>3.099052</td>
+      <td>-0.546104</td>
+      <td>3.446868</td>
+      <td>...</td>
+      <td>1.031089</td>
+      <td>4.266465e+00</td>
+      <td>4.305747</td>
+      <td>2.389542e+00</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>NDARAA358BPN</td>
+      <td>11.853296</td>
+      <td>male</td>
+      <td>No Diagnosis Given: Incomplete Eval</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>0.755773</td>
+      <td>0.427258</td>
+      <td>-0.456699</td>
+      <td>-0.888546</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>-5.110389e-17</td>
+      <td>0.000000</td>
+      <td>-1.341494e-16</td>
+      <td>8.860923e-16</td>
+      <td>-2.984377e-16</td>
+      <td>-8.978377e-16</td>
+      <td>0.000000</td>
+      <td>2.624744e-16</td>
+      <td>8.860923e-16</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 1764 columns</p>
+</div>
+</div>
+</div>
+</section>
+<section id="doing-item-analysis-on-sentences-within-and-across-measures" class="level2">
+<h2 class="anchored" data-anchor-id="doing-item-analysis-on-sentences-within-and-across-measures">Doing item analysis on sentences within and across measures</h2>
+<p>One question that we have with this dataset is how similar sentences (within and between) measures are semantically similar to each other (i.e.&nbsp;are they arriving at similar constructs). Each measure was designed to measure specific constructs, however, it is not clear the extent to which there is overlap across the many measures that are administered to children in order to arrive at a diagnosis.</p>
+<p>By applying machine learning tools (e.g., transformer models: https://www.sbert.net/), we can statistically assess the semantic similarity between sentences.</p>
+<p>Then, knowing the similarity between questions, we can compare the similarity between responses to these questions.</p>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<p>To start, take one measure “CBCL” (https://docs.google.com/spreadsheets/d/1sWNibCIiNhaQSMG3YEszyQvSl8qe7CT3/edit?usp=sharing&amp;ouid=110847987931723045299&amp;rtpof=true&amp;sd=true) and determine the similarity across sentences within this questionnaire</p>
+<div class="cell" data-execution_count="89">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># all possible measures to index</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>df_dict[<span class="st">'datadic'</span>].unique()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="89">
+<pre><code>array(['APQ_P', 'ARI_P', 'ASSQ', 'Barratt', 'CBCL', 'CBCL_Pre', 'CIS_P',
+       'DTS', 'ESWAN', 'FSQ', 'ICU_P', 'MFQ_P', 'NLES_P', 'PBQ', 'PCIAT',
+       'PhenX_Neighborhood', 'PreInt_Demos_Home', 'PreInt_FamHx_RDC',
+       'PreInt_Lang', 'PSI', 'RBS', 'SAS', 'SCARED_P', 'SCQ', 'SDQ',
+       'SRS', 'SRS_Pre', 'SWAN', 'Vineland', 'WHODAS_P', 'SympChck'],
+      dtype=object)</code></pre>
+</div>
+</div>
+<div class="cell" data-scrolled="true" data-execution_count="126">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">## Get Answers + Questions for example measure (CBCL)</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># get CBCL questions</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>sentences <span class="op">=</span> df_dict[df_dict[<span class="st">'datadic'</span>]<span class="op">==</span><span class="st">'CBCL'</span>][<span class="st">'questions'</span>].tolist()</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co"># get answers to CBCL questions</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>cols_to_include <span class="op">=</span> df_data.columns[df_data.columns.<span class="bu">str</span>.contains(<span class="st">'CBCL,'</span>)]</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>df_A <span class="op">=</span> df_data[cols_to_include]</span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_A)</span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(sentences)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      CBCL,CBCL_01  CBCL,CBCL_02  CBCL,CBCL_03  CBCL,CBCL_04  CBCL,CBCL_05  \
+0        -0.998677 -1.287918e-01     -1.318523 -1.513130e+00     -0.553205   
+1         0.000000 -2.412916e-17      0.000000 -3.342349e-16      0.000000   
+2        -0.998677 -1.287918e-01      1.456829 -7.869706e-03      1.377283   
+3         2.015954 -1.287918e-01      0.069153 -7.869706e-03      1.377283   
+4         0.000000 -2.412916e-17      0.000000 -3.342349e-16      0.000000   
+...            ...           ...           ...           ...           ...   
+4762     -0.998677 -1.287918e-01      1.456829  1.497390e+00      3.307771   
+4763      0.508639 -1.287918e-01      0.069153 -7.869706e-03     -0.553205   
+4764     -0.998677 -1.287918e-01     -1.318523 -1.513130e+00     -0.553205   
+4765     -0.998677  1.378072e+01      1.456829  1.497390e+00      3.307771   
+4766      2.015954 -1.287918e-01      1.456829 -1.513130e+00      1.377283   
+
+      CBCL,CBCL_06  CBCL,CBCL_07  CBCL,CBCL_08  CBCL,CBCL_09  CBCL,CBCL_10  \
+0        -0.220852      1.042083 -1.701193e+00 -9.056769e-01     -1.317224   
+1         0.000000      0.000000  3.240416e-16  1.540112e-16      0.000000   
+2        -0.220852      1.042083  1.217514e+00  1.868742e+00      0.048798   
+3         3.609065     -0.695135 -2.418397e-01  4.815325e-01     -1.317224   
+4         0.000000      0.000000  3.240416e-16  1.540112e-16      0.000000   
+...            ...           ...           ...           ...           ...   
+4762      7.438981      2.779302  1.217514e+00  1.868742e+00     -1.317224   
+4763     -0.220852     -0.695135 -1.701193e+00 -9.056769e-01     -1.317224   
+4764     -0.220852     -0.695135 -1.701193e+00 -9.056769e-01     -1.317224   
+4765     -0.220852      1.042083  1.217514e+00  4.815325e-01     -1.317224   
+4766     -0.220852      2.779302 -2.418397e-01  4.815325e-01      0.048798   
+
+      ...  CBCL,CBCL_SC  CBCL,CBCL_SC_T  CBCL,CBCL_SP  CBCL,CBCL_SP_T  \
+0     ... -1.608774e-01       -0.198167 -9.092968e-01   -9.693627e-01   
+1     ... -1.725878e-16        0.000000 -1.353845e-16    9.528337e-16   
+2     ...  2.170922e+00        1.988684  1.224715e+00    1.176228e+00   
+3     ...  2.170922e+00        1.988684  6.149977e-01    1.042129e+00   
+4     ... -1.725878e-16        0.000000 -1.353845e-16    9.528337e-16   
+...   ...           ...             ...           ...             ...   
+4762  ...  2.277558e-01        0.485224  9.198566e-01    1.176228e+00   
+4763  ... -5.495106e-01       -0.608202  5.279881e-03    3.716315e-01   
+4764  ... -5.495106e-01       -0.608202 -1.214156e+00   -1.103462e+00   
+4765  ...  1.005022e+00        1.305293 -2.995790e-01   -3.066676e-02   
+4766  ... -9.381438e-01       -1.018237  1.529574e+00    1.578526e+00   
+
+      CBCL,CBCL_TP  CBCL,CBCL_TP_T  CBCL,CBCL_Total  CBCL,CBCL_Total_T  \
+0        -1.103230   -1.129369e+00        -1.415370      -1.877452e+00   
+1         0.000000    8.995816e-16         0.000000       6.976624e-16   
+2         0.483082    6.430986e-01         0.788843       1.068165e+00   
+3         1.752132    1.782542e+00         1.401125       1.166353e+00   
+4         0.000000    8.995816e-16         0.000000       6.976624e-16   
+...            ...             ...              ...                ...   
+4762      1.434869    1.402728e+00         1.523581       1.264540e+00   
+4763      0.165819    6.430986e-01        -0.476539      -2.082689e-01   
+4764     -0.785968   -8.761598e-01        -1.456189      -1.975640e+00   
+4765     -0.151443    1.007426e-02         1.074575       9.699782e-01   
+4766      1.752132    1.529333e+00         1.278668       1.166353e+00   
+
+      CBCL,CBCL_WD  CBCL,CBCL_WD_T  
+0        -0.991627   -1.012695e+00  
+1         0.000000    8.724171e-16  
+2        -0.619690   -5.215675e-01  
+3         1.611935    1.320159e+00  
+4         0.000000    8.724171e-16  
+...            ...             ...  
+4762      3.099684    2.793541e+00  
+4763      0.496122    2.151233e-01  
+4764     -0.991627   -1.012695e+00  
+4765      0.868060    5.834686e-01  
+4766      0.868060    5.834686e-01  
+
+[4767 rows x 146 columns]
+['1. Acts too young for his/her age', "2. Drinks alcohol without parents' approval", '3. Argues a lot', '4. Fails to finish things he/she starts', '5. There is very little he/she enjoys', '6. Bowel movements outside toilet', '7. Bragging, boasting', "8. Can't concentrate, can't pay attention for long", '"9. Can\'t get his/her mind off certain thoughts obsessions"', "10. Can't sit still, restless or hyperactive", '11. Clings to adults or too dependent', '12. Complains of loneliness', '13. Confused or seems to be in a fog', '14. Cries a lot', '15. Cruel to animals', '16. Cruelty, bullying, or meanness to others', '17. Daydreams or gets lost in his/her thoughts', '18. Deliberately harms self or attempts suicide', '19. Demands a lot of attention', '20. Destroys his/her own things', '21. Destroys things belonging to his/her family or others', '22. Disobedient at home', '23. Disobedient at school', "24. Doesn't eat well", "25. Doesn't get along well with other kids", "26. Doesn't seem to feel guilty after misbehaving", '27. Easily jealous', '28. Breaks rules at home, school, or elsewhere', '29. Fears certain animals, situations, or places, other than school', '30. Fears going to school', '31. Fears he/she might think or do something bad', '32. Feels he/she has to be perfect', '33. Feels or complains that no one loves him/her', '34. Feels others are out to get him/her', '35. Feels worthless or inferior', '36. Gets hurt a lot, accident-prone', '37. Gets in many fights', '38. Gets teased a lot', '39. Hangs around with others who get in trouble', "40. Hears sounds or voices that aren't there", '41. Impulsive or acts without thinking', '42. Would rather be alone than with others', '43. Lying or cheating', '44. Bites fingernails', '45. Nervous, highstrung, or tense', '46. Nervous movements or twitching', '47. Nightmares', '48. Not liked by other kids', "49. Constipated, doesn't move bowels", '50. Too fearful or anxious', '51. Feels dizzy or lightheaded', '52. Feels too guilty', '53. Overeating', '54. Overtired without good reason', '55. Overweight', '56A. Aches or pains (not stomach or headaches)', '56B. Headaches', '56C. Nausea, feels sick', '56D.A. Problems with eyes (not if corrected by glasses', '56E. Rashes or other skin problems', '56F. Stomachaches', '56G. Vomiting, throwing up', '56H.A. Other', '57. Physically attacks people', '58. Picks nose, skin, or other parts of body', '59. Plays with own sex parts in public', '60. Plays with own sex parts too much', '61. Poor school work', '62. Poorly coordinated or clumsy', '63. Prefers being with older kids', '64. Prefers being with younger kids', '65. Refuses to talk', '"66. Repeats certain acts over and over compulsions "', '67. Runs away from home', '68. Screams a lot', '69. Secretive, keeps things to self', "70. Sees things that aren't there", '71. Self-conscious or easily embarrassed', '72. Sets fires', '73. Sexual problems', '74. Showing off or clowning', '75. Too shy or timid', '76. Sleeps less than most kids', '77. Sleeps more than most kids during day and/or night', '78. Inattentive or easily distracted', '79. Speech problem', '80. Stares blankly', '81. Steals at home', '82. Steals outside the home', "83. Stores up too many things he/she doesn't need", '84. Strange behavior', '85. Strange ideas', '86. Stubborn, sullen, or irritable', '87. Sudden changes in mood or feelings', '88. Sulks a lot', '89. Suspicious', '90. Swearing or obscene language', '91. Talks about killing self', '92. Talks or walks in sleep', '93. Talks too much', '94. Teases a lot', '95. Temper tantrums or hot temper', '96. Thinks about sex too much', '97. Threatens people', '98. Thumb-sucking', '99. Smokes, chews, or sniffs tobacco', '100. Trouble sleeping', '101. Truancy, skips school', '102. Underactive, slow moving, or lacks energy', '103. Unhappy, sad, or depressed', '104. Unusually loud', "105. Uses drugs for nonmedical purposes (don't include alcohol or tobacco)", '106. Vandalism', '107. Wets self during the day', '108. Wets the bed', '109. Whining', '110. Wishes to be of opposite sex', "111. Withdrawn, doesn't get inolved with others", '112. Worries', '113A. Has other problem', '113B. Has other problem', '113C. Has other problem', 'Anxious/Depressed Raw Score', 'Anxious/Depressed T Score', 'Withdrawn/Depressed Raw Score', 'Withdrawn/Depressed T Score', 'Somatic Complaints Raw Score', 'Somatic Complaints T Score', 'Social Problems Raw Score', 'Social Problems T Score', 'Thought Problems Raw Score', 'Thought Problems T Score', 'Attention Problems Raw Score', 'Attention Problems T Score', 'Rule Breaking Behavior Raw Score', 'Rule Breaking Behavior T Score', 'Aggressive Behavior Raw Score', 'Aggressive Behavior T Score', 'Other Problems Raw Score', 'Internalizing Raw Score', 'Internalizing T Score', 'Externalizing Raw Score', 'Externalizing T Score', 'C Score Raw Score', 'Total Raw Score', 'Total T Score']</code></pre>
+</div>
+</div>
+</section>
+<section id="calculate-sentence-similarity" class="level2">
+<h2 class="anchored" data-anchor-id="calculate-sentence-similarity">Calculate sentence similarity</h2>
+<p>Uses basic bert model to calculate sentence similarity across all sentence combinations</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculate sentence similarity</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>cosine_scores, pairs <span class="op">=</span> item_analysis.sentence_similarity(sentences)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="plot-heatmap-and-dendrogram-of-cosine-scores" class="level2">
+<h2 class="anchored" data-anchor-id="plot-heatmap-and-dendrogram-of-cosine-scores">Plot heatmap and dendrogram of cosine scores</h2>
+<p>(these are just two examples of ways to visualize the results output)</p>
+<div class="cell" data-execution_count="128">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot heatmap</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>item_analysis.plot_heatmap(array<span class="op">=</span>cosine_scores, labels<span class="op">=</span><span class="va">None</span>)<span class="op">;</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># plot dendrogram</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>item_analysis.dendrogram_plot(dataframe<span class="op">=</span>cosine_scores)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="1.0.mk.visualize_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="1.0.mk.visualize_files/figure-html/cell-13-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="plot-distribution-of-scores-and-sentence-similarities" class="level2">
+<h2 class="anchored" data-anchor-id="plot-distribution-of-scores-and-sentence-similarities">Plot distribution of scores and sentence similarities</h2>
+<p>plot the distribution of scores for the sentence pairs (0-1 range) with 1 being most semantically similar and 0 being least semantically similar</p>
+<p>then, plot the top 25% of most semantically similar sentences</p>
+<div class="cell" data-execution_count="113">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># plot distribution of scores</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>scores <span class="op">=</span> [r[<span class="st">'score'</span>].tolist() <span class="cf">for</span> r <span class="kw">in</span> pairs]</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>sns.histplot(scores)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co"># plot table</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>item_analysis.plot_top_sentences(pairs, sentences, A_similarity<span class="op">=</span><span class="va">None</span>, percent<span class="op">=</span><span class="dv">25</span>, title<span class="op">=</span><span class="st">'CBCL'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="1.0.mk.visualize_files/figure-html/cell-14-output-1.png" class="img-fluid"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>+--------------------------------------------+-------------------------------------+----------+
+| CBCL                                       |                                     |          |
++============================================+=====================================+==========+
+| Sentence 1                                 | Sentence 2                          | Question |
++--------------------------------------------+-------------------------------------+----------+
+| 113A. Has other problem                    | 113B. Has other problem             | 0.99     |
++--------------------------------------------+-------------------------------------+----------+
+| 113A. Has other problem                    | 113C. Has other problem             | 0.99     |
++--------------------------------------------+-------------------------------------+----------+
+| 113B. Has other problem                    | 113C. Has other problem             | 0.99     |
++--------------------------------------------+-------------------------------------+----------+
+| Internalizing T Score                      | Externalizing T Score               | 0.96     |
++--------------------------------------------+-------------------------------------+----------+
+| Thought Problems T Score                   | Attention Problems T Score          | 0.95     |
++--------------------------------------------+-------------------------------------+----------+
+| Thought Problems Raw Score                 | Attention Problems Raw Score        | 0.94     |
++--------------------------------------------+-------------------------------------+----------+
+| Internalizing Raw Score                    | Externalizing Raw Score             | 0.94     |
++--------------------------------------------+-------------------------------------+----------+
+| Withdrawn/Depressed Raw Score              | Withdrawn/Depressed T Score         | 0.93     |
++--------------------------------------------+-------------------------------------+----------+
+| Anxious/Depressed Raw Score                | Anxious/Depressed T Score           | 0.93     |
++--------------------------------------------+-------------------------------------+----------+
+| 63. Prefers being with older kids          | 64. Prefers being with younger kids | 0.91     |
++--------------------------------------------+-------------------------------------+----------+
+| Anxious/Depressed T Score                  | Withdrawn/Depressed T Score         | 0.9      |
++--------------------------------------------+-------------------------------------+----------+
+| 56B. Headaches                             | 56C. Nausea, feels sick             | 0.9      |
++--------------------------------------------+-------------------------------------+----------+
+| 84. Strange behavior                       | 85. Strange ideas                   | 0.9      |
++--------------------------------------------+-------------------------------------+----------+
+| Anxious/Depressed Raw Score                | Withdrawn/Depressed Raw Score       | 0.89     |
++--------------------------------------------+-------------------------------------+----------+
+| 25. Doesn't get along well with other kids | 48. Not liked by other kids         | 0.88     |
++--------------------------------------------+-------------------------------------+----------+
+| Social Problems T Score                    | Attention Problems T Score          | 0.88     |
++--------------------------------------------+-------------------------------------+----------+
+| 56B. Headaches                             | 56F. Stomachaches                   | 0.87     |
++--------------------------------------------+-------------------------------------+----------+
+| Externalizing Raw Score                    | Externalizing T Score               | 0.87     |
++--------------------------------------------+-------------------------------------+----------+
+| Social Problems T Score                    | Thought Problems T Score            | 0.87     |
++--------------------------------------------+-------------------------------------+----------+
+| Somatic Complaints Raw Score               | Thought Problems Raw Score          | 0.86     |
++--------------------------------------------+-------------------------------------+----------+
+| Rule Breaking Behavior Raw Score           | Rule Breaking Behavior T Score      | 0.86     |
++--------------------------------------------+-------------------------------------+----------+
+| Internalizing T Score                      | Total T Score                       | 0.86     |
++--------------------------------------------+-------------------------------------+----------+
+| Somatic Complaints T Score                 | Internalizing T Score               | 0.86     |
++--------------------------------------------+-------------------------------------+----------+
+| Anxious/Depressed T Score                  | Withdrawn/Depressed Raw Score       | 0.85     |
++--------------------------------------------+-------------------------------------+----------+
+| Anxious/Depressed Raw Score                | Attention Problems Raw Score        | 0.85     |
++--------------------------------------------+-------------------------------------+----------+
+| Thought Problems Raw Score                 | Internalizing Raw Score             | 0.85     |
++--------------------------------------------+-------------------------------------+----------+
+| Thought Problems Raw Score                 | Rule Breaking Behavior Raw Score    | 0.85     |
++--------------------------------------------+-------------------------------------+----------+
+| Attention Problems T Score                 | Externalizing T Score               | 0.85     |
++--------------------------------------------+-------------------------------------+----------+
+| Somatic Complaints T Score                 | Externalizing T Score               | 0.85     |
++--------------------------------------------+-------------------------------------+----------+
+| 45. Nervous, highstrung, or tense          | 46. Nervous movements or twitching  | 0.85     |
++--------------------------------------------+-------------------------------------+----------+
+| Anxious/Depressed Raw Score                | Thought Problems Raw Score          | 0.85     |
++--------------------------------------------+-------------------------------------+----------+
+| 81. Steals at home                         | 82. Steals outside the home         | 0.84     |
++--------------------------------------------+-------------------------------------+----------+
+| Attention Problems Raw Score               | Internalizing Raw Score             | 0.84     |
++--------------------------------------------+-------------------------------------+----------+
+| Thought Problems Raw Score                 | Other Problems Raw Score            | 0.84     |
++--------------------------------------------+-------------------------------------+----------+
+| Withdrawn/Depressed Raw Score              | Thought Problems Raw Score          | 0.84     |
++--------------------------------------------+-------------------------------------+----------+
+| Somatic Complaints Raw Score               | Attention Problems Raw Score        | 0.84     |
++--------------------------------------------+-------------------------------------+----------+</code></pre>
+</div>
+</div>
+</section>
+<section id="compare-answer-similarity" class="level2">
+<h2 class="anchored" data-anchor-id="compare-answer-similarity">Compare answer similarity</h2>
+<p>Take two separate sets of answers (from two different questionnaires) and calculate correlation between them</p>
+<div class="cell" data-execution_count="131">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># get answers to CBCL questions</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>cols_to_include <span class="op">=</span> df_data.columns[df_data.columns.<span class="bu">str</span>.contains(<span class="st">'CBCL,'</span>)]</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> df_data[cols_to_include]</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># get answers to ESWAN questions</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>cols_to_include <span class="op">=</span> df_data.columns[df_data.columns.<span class="bu">str</span>.contains(<span class="st">'ESWAN,'</span>)]</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> df_data[cols_to_include]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="calculate-distance-correlation-between-two-questionnaires" class="level2">
+<h2 class="anchored" data-anchor-id="calculate-distance-correlation-between-two-questionnaires">Calculate distance correlation between two questionnaires</h2>
+<div class="cell" data-execution_count="122">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> dcor </span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>dcor.distance_correlation(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="122">
+<pre><code>0.5174836049971643</code></pre>
+</div>
+</div>
+</section>
+<section id="the-distance-correlation-t-test-of-independence" class="level2">
+<h2 class="anchored" data-anchor-id="the-distance-correlation-t-test-of-independence">The distance correlation t-test of independence</h2>
+<div class="cell" data-execution_count="163">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>dcor.independence.distance_correlation_t_test(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="163">
+<pre><code>HypothesisTest(pvalue=0.0, statistic=57.282815452320364)</code></pre>
+</div>
+</div>
+<p>As we can observe, this test correctly rejects the null hypothesis in the second case and not in the first case.</p>
+<p>The test illustrated here is an asymptotic test, that relies in the approximation of the statistic distribution to the Student’s t-distribution under the null hypothesis, when the dimension of the data goes to infinity. This test is thus faster than permutation tests, as it does not require the use of permutations of the data, and it is also deterministic for a given dataset. However, the test should be applied only for high-dimensional data, at least in theory.</p>
+<p>We will now plot for the case of normal distributions the histogram of the statistic, and compute the Type I error, as seen in Székely and Rizzo1. Users are encouraged to download this example and increase that number to obtain better estimates of the Type I error. In order to replicate the original results, one should set the value of n_tests to 1000.</p>
+</section>
+<section id="permutation-test-of-distance-correlation" class="level2">
+<h2 class="anchored" data-anchor-id="permutation-test-of-distance-correlation">Permutation test of distance correlation</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>item_analysis.distance_correlation_permutation(x,y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="the-distance-covariance-test-of-independence" class="level2">
+<h2 class="anchored" data-anchor-id="the-distance-covariance-test-of-independence">The distance covariance test of independence</h2>
+<div class="cell" data-execution_count="102">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>random_state <span class="op">=</span> np.random.default_rng(<span class="dv">83110</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>dcor.independence.distance_covariance_test(</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>    x,</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>    y,</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    num_resamples<span class="op">=</span><span class="dv">200</span>,</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    random_state<span class="op">=</span>random_state,</span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="102">
+<pre><code>HypothesisTest(pvalue=0.004975124378109453, statistic=213.46578868208118)</code></pre>
+</div>
+</div>
+<p>We can see that the p-value obtained is indeed very small, and thus we can safely reject the null hypothesis, and consider that there is indeed dependence between the random vectors.</p>
+<p>The next test illustrated here is a permutation test, which compares the distance covariance of the original dataset with the one obtained after random permutations of one of the input arrays. Thus, increasing the number of permutations makes the p-value more accurate, but increases the computational cost.</p>
+</section>
+<section id="permutation-test-of-distance-covariance" class="level2">
+<h2 class="anchored" data-anchor-id="permutation-test-of-distance-covariance">Permutation test of distance covariance</h2>
+<div class="cell" data-execution_count="156">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>item_analysis.distance_covariance_permutation(x,y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="1.0.mk.visualize_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="monte-carlo-test---get-estimates-of-type-i-error" class="level2">
+<h2 class="anchored" data-anchor-id="monte-carlo-test---get-estimates-of-type-i-error">Monte Carlo Test - get estimates of Type I error</h2>
+<p>We generate independent data following a multivariate Gaussian distribution as well as different t(v) distributions. In all cases we consider random vectors with dimension 5. We perform the tests for different number of observations, computing the number of permutations used as [200 + 5000/n]. We fix the significance level to 0.1.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># monte carlo test</span></span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="co">#item_analysis.monte_carlo_test(x,y)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="to-do" class="level2">
+<h2 class="anchored" data-anchor-id="to-do">TO DO</h2>
+<ul>
+<li>add preamble for more context</li>
+<li>tdif similarity - check this comparison with sentenceBert (do the results always form a bellcurve?)</li>
+<li>what kinds of constructs are being evaluated?</li>
+<li>Compare responses across two questionnaires (get correlation distance between two matrices <code>dcorr</code>) - number of rows must be the same, but the number of columns can be different</li>
+<li>hierarchical clustering on the cosine similarity matrix (of sentences) to determine whether there are clusters that fall out (look both at sentences and responses, are these clusters in alignment?)</li>
+<li>compare certain “clusters” across questionnaires - anxiety items on CBCL and GAD7 (or anxiety questionnaire). To what extent are they measuring the same construct?</li>
+<li>can we get a correlation across items per participant? rather than focus on the group level zoom in on the individual</li>
+<li>figure: compare parent vs.&nbsp;teacher vs.&nbsp;child predictions</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">MIT Projects</div>
+  </div>
+</footer>
+
+
+
+</body></html>

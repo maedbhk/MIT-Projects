@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>MIT Projects – teacher_lofo_importance</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">(Untitled)</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../" class="sidebar-logo-link">
+      <img src="../assets/images/logo_mk.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://www.maedbhking.com/home" title="Personal Website" class="sidebar-tool px-1"><i class="bi bi-globe"></i></a>
+    <a href="https://github.com/maedbhk/MIT-Projects" title="MIT Projects repo" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle sidebar-tool" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Welcome</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">MIT Projects</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about-me.html" class="sidebar-item-text sidebar-link">About Me</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Progress</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../progress/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Datasets</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/abcd.html" class="sidebar-item-text sidebar-link">ABCD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/uk-biobank.html" class="sidebar-item-text sidebar-link">UK Biobank</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/healthy-brains.html" class="sidebar-item-text sidebar-link">Healthy Brains Network</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/abide.html" class="sidebar-item-text sidebar-link">abide</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/adhd-200.html" class="sidebar-item-text sidebar-link">ADHD-200</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../datasets/chop.html" class="sidebar-item-text sidebar-link">CHOP</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Literature Review</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/cerebellum-development.html" class="sidebar-item-text sidebar-link">Cerebellum and Development</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/cerebellum-neuropsych.html" class="sidebar-item-text sidebar-link">Cerebellum and Neuropsychiatric Disorders</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/EMR-selfharm.html" class="sidebar-item-text sidebar-link">Identifying risk factors for self-harm using electronic medical records</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/pHealth-overview.html" class="sidebar-item-text sidebar-link">Intro to Precision Medicine</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/pHealth-terminology.html" class="sidebar-item-text sidebar-link">pHealth terminology</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/pHealth-other-fields.html" class="sidebar-item-text sidebar-link">pHealth in other fields</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/RDoC.html" class="sidebar-item-text sidebar-link">RDoC</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/subcortical-translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Subcortical Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/development-translational-neuroimaging.html" class="sidebar-item-text sidebar-link">Neurodevelopment and Translational Neuroimaging</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/methodology-pHealth.html" class="sidebar-item-text sidebar-link">Methodological considerations for precision medicine</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/suicide-prediction.html" class="sidebar-item-text sidebar-link">Suicide prediction using structured-unstructured interactions in EHR models</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/precision-psychiatry-conference.html" class="sidebar-item-text sidebar-link">Conference on Precision Psychiatry</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../literature-review/SCSB_Colloquium_Series.html" class="sidebar-item-text sidebar-link">Neuroimmune interaction underlies both neurodevelopmental and immune-primed phenotypes - Jun Huh</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Projects</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/cerebellum-fingerprints.html" class="sidebar-item-text sidebar-link">Cerebellar fingerprints of neurodevelopmental disorders</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/EMR-selfharm.html" class="sidebar-item-text sidebar-link">Identifying Risk Predictors for Self-Harm through Electronic Medical Records</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/adaptive-adhd.html" class="sidebar-item-text sidebar-link">Adaptive ADHD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/exploring-adhd.html" class="sidebar-item-text sidebar-link">Exploring ADHD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/gender-adhd.html" class="sidebar-item-text sidebar-link">Gender differences in ADHD</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/phenotyping-project.html" class="sidebar-item-text sidebar-link">Phenotyping Project</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">Mentorship</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/fall22_urop_recruitment.html" class="sidebar-item-text sidebar-link">Fall22 Recruitment</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/fall22_urop_onboarding.html" class="sidebar-item-text sidebar-link">Fall22 Onboarding</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/spr23_urop_onboarding.html" class="sidebar-item-text sidebar-link">Spring23 Onboarding</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/weekly-notes.html" class="sidebar-item-text sidebar-link">Weekly Notes</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mentorship/openmind.html" class="sidebar-item-text sidebar-link">Getting Started on Openmind</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">Methods</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/feature-engineering.html" class="sidebar-item-text sidebar-link">Feature Engineering</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/model-evaluation.html" class="sidebar-item-text sidebar-link">Model Evaluation</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/model-interpretability.html" class="sidebar-item-text sidebar-link">Model Interpretability</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/unsupervised-learning.html" class="sidebar-item-text sidebar-link">Unsupervised Learning</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/modeling-EHR.html" class="sidebar-item-text sidebar-link">ClinicalBERT</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/smote.html" class="sidebar-item-text sidebar-link">Working with imbalanced data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">Notebooks</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">Ethics</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ethics/AI-hype.html" class="sidebar-item-text sidebar-link">The Hype of AI in Medicine</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ethics/pHealth-ethics.html" class="sidebar-item-text sidebar-link">Ethical Considerations for pHealth</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ethics/index.html" class="sidebar-item-text sidebar-link">Overview</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+<div class="cell" data-outputid="a90fe8e5-dc64-4fb6-ee56-b91895e801ed">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install lofo<span class="op">-</span>importance</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> KFold</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.tree <span class="im">import</span> DecisionTreeClassifier</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lofo <span class="im">import</span> LOFOImportance, Dataset, plot_importance</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> hbn.constants <span class="im">import</span> Defaults</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib inline</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Collecting lofo-importance
+  Downloading lofo_importance-0.3.2-py3-none-any.whl (11 kB)
+Requirement already satisfied: networkx in /usr/local/lib/python3.9/dist-packages (from lofo-importance) (3.0)
+Requirement already satisfied: lightgbm in /usr/local/lib/python3.9/dist-packages (from lofo-importance) (2.2.3)
+Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.9/dist-packages (from lofo-importance) (1.22.4)
+Requirement already satisfied: scipy in /usr/local/lib/python3.9/dist-packages (from lofo-importance) (1.10.1)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.9/dist-packages (from lofo-importance) (4.65.0)
+Requirement already satisfied: scikit-learn&gt;=0.20.3 in /usr/local/lib/python3.9/dist-packages (from lofo-importance) (1.2.1)
+Requirement already satisfied: pandas in /usr/local/lib/python3.9/dist-packages (from lofo-importance) (1.3.5)
+Requirement already satisfied: joblib&gt;=1.1.1 in /usr/local/lib/python3.9/dist-packages (from scikit-learn&gt;=0.20.3-&gt;lofo-importance) (1.2.0)
+Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /usr/local/lib/python3.9/dist-packages (from scikit-learn&gt;=0.20.3-&gt;lofo-importance) (3.1.0)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.9/dist-packages (from pandas-&gt;lofo-importance) (2.8.2)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.9/dist-packages (from pandas-&gt;lofo-importance) (2022.7.1)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas-&gt;lofo-importance) (1.15.0)
+Installing collected packages: lofo-importance
+Successfully installed lofo-importance-0.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/usr/local/lib/python3.9/dist-packages/lofo/lofo_importance.py:3: TqdmExperimentalWarning: Using `tqdm.autonotebook.tqdm` in notebook mode. Use `tqdm.tqdm` instead to force console mode (e.g. in jupyter console)
+  from tqdm.autonotebook import tqdm</code></pre>
+</div>
+</div>
+<div class="cell" data-outputid="78ac738c-a7bc-410e-c9ea-5c7fb5e19868">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>HBN_FEATURES_DIR <span class="op">=</span> os.path.join(Defaults.BASE_DIR, <span class="st">'hbn/features'</span>) </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_teacher_all <span class="op">=</span> pd.read_csv(os.path.join(HBN_FEATURES_DIR, <span class="st">'model_features_teacher_all.csv'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Mounted at /content/drive</code></pre>
+</div>
+</div>
+<div class="cell" data-outputid="f9d4c38b-c2c2-44cc-adb0-f07b92bc1162">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_teacher_all</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+
+
+  <div id="df-29cce015-ae18-4b21-9e0c-d1e6669faf3c">
+    <div class="colab-df-container">
+      <div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>numeric__TRF,TRF_02_x</th>
+      <th>numeric__TRF,TRF_03_x</th>
+      <th>numeric__TRF,TRF_04_x</th>
+      <th>numeric__TRF,TRF_05_x</th>
+      <th>numeric__TRF,TRF_06_x</th>
+      <th>numeric__TRF,TRF_07_x</th>
+      <th>numeric__TRF,TRF_08_x</th>
+      <th>numeric__TRF,TRF_09_x</th>
+      <th>numeric__TRF,TRF_10_x</th>
+      <th>numeric__TRF,TRF_100_x</th>
+      <th>...</th>
+      <th>numeric__TRF_Pre,TRF_P_Int_y</th>
+      <th>numeric__TRF_Pre,TRF_P_Int_T_y</th>
+      <th>numeric__TRF_Pre,TRF_P_OP_y</th>
+      <th>numeric__TRF_Pre,TRF_P_SC_y</th>
+      <th>numeric__TRF_Pre,TRF_P_SC_T_y</th>
+      <th>numeric__TRF_Pre,TRF_P_Total_y</th>
+      <th>numeric__TRF_Pre,TRF_P_Total_T_y</th>
+      <th>numeric__TRF_Pre,TRF_P_WD_y</th>
+      <th>numeric__TRF_Pre,TRF_P_WD_T_y</th>
+      <th>DX_01_Cat_new_binarize</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.681111e-16</td>
+      <td>0.000000</td>
+      <td>3.446049e-16</td>
+      <td>0.000000</td>
+      <td>9.278200e-17</td>
+      <td>0.000000</td>
+      <td>3.568247e-16</td>
+      <td>0.000000</td>
+      <td>-1.658050e-16</td>
+      <td>-1.657525e-16</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.681111e-16</td>
+      <td>0.000000</td>
+      <td>3.446049e-16</td>
+      <td>0.000000</td>
+      <td>9.278200e-17</td>
+      <td>0.000000</td>
+      <td>3.568247e-16</td>
+      <td>0.000000</td>
+      <td>-1.658050e-16</td>
+      <td>-1.657525e-16</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.681111e-16</td>
+      <td>0.000000</td>
+      <td>3.446049e-16</td>
+      <td>0.000000</td>
+      <td>9.278200e-17</td>
+      <td>0.000000</td>
+      <td>3.568247e-16</td>
+      <td>0.000000</td>
+      <td>-1.658050e-16</td>
+      <td>-1.657525e-16</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.681111e-16</td>
+      <td>0.000000</td>
+      <td>3.446049e-16</td>
+      <td>0.000000</td>
+      <td>9.278200e-17</td>
+      <td>0.000000</td>
+      <td>3.568247e-16</td>
+      <td>0.000000</td>
+      <td>-1.658050e-16</td>
+      <td>-1.657525e-16</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.681111e-16</td>
+      <td>0.000000</td>
+      <td>3.446049e-16</td>
+      <td>0.000000</td>
+      <td>9.278200e-17</td>
+      <td>0.000000</td>
+      <td>3.568247e-16</td>
+      <td>0.000000</td>
+      <td>-1.658050e-16</td>
+      <td>-1.657525e-16</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>44062</th>
+      <td>-1.002673e+00</td>
+      <td>-1.078418</td>
+      <td>-1.475212e-01</td>
+      <td>-0.774207</td>
+      <td>-8.350652e-01</td>
+      <td>-0.615924</td>
+      <td>-4.404359e-01</td>
+      <td>-1.071511</td>
+      <td>-1.256306e+00</td>
+      <td>1.836965e-01</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>44063</th>
+      <td>-1.002673e+00</td>
+      <td>0.458402</td>
+      <td>-1.699484e+00</td>
+      <td>1.216759</td>
+      <td>-8.350652e-01</td>
+      <td>1.517745</td>
+      <td>-2.047432e+00</td>
+      <td>-1.071511</td>
+      <td>-1.256306e+00</td>
+      <td>-1.309269e+00</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>44064</th>
+      <td>-1.002673e+00</td>
+      <td>-1.078418</td>
+      <td>-1.699484e+00</td>
+      <td>-0.774207</td>
+      <td>-8.350652e-01</td>
+      <td>-0.615924</td>
+      <td>-2.047432e+00</td>
+      <td>-1.071511</td>
+      <td>-1.256306e+00</td>
+      <td>-1.309269e+00</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>44065</th>
+      <td>-1.002673e+00</td>
+      <td>0.458402</td>
+      <td>-1.699484e+00</td>
+      <td>-0.774207</td>
+      <td>-8.350652e-01</td>
+      <td>-0.615924</td>
+      <td>-2.047432e+00</td>
+      <td>0.468422</td>
+      <td>2.371326e-01</td>
+      <td>-1.309269e+00</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>44066</th>
+      <td>-1.002673e+00</td>
+      <td>-1.078418</td>
+      <td>-1.699484e+00</td>
+      <td>-0.774207</td>
+      <td>-8.350652e-01</td>
+      <td>-0.615924</td>
+      <td>-2.047432e+00</td>
+      <td>-1.071511</td>
+      <td>-1.256306e+00</td>
+      <td>-1.309269e+00</td>
+      <td>...</td>
+      <td>-2.535534e-15</td>
+      <td>1.265640e-14</td>
+      <td>1.397478e-15</td>
+      <td>-2.085474e-15</td>
+      <td>-1.287778e-14</td>
+      <td>0.0</td>
+      <td>-4.969414e-15</td>
+      <td>2.904549e-15</td>
+      <td>-1.711948e-14</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>44067 rows × 853 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-29cce015-ae18-4b21-9e0c-d1e6669faf3c')" title="Convert this dataframe to an interactive table." style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"></path>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"></path><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"></path>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-29cce015-ae18-4b21-9e0c-d1e6669faf3c button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-29cce015-ae18-4b21-9e0c-d1e6669faf3c');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># define the validation scheme</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df_teacher_sample <span class="op">=</span> df_teacher_all.sample(frac<span class="op">=</span><span class="fl">0.1</span>, random_state<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>cv <span class="op">=</span> KFold(n_splits<span class="op">=</span><span class="dv">10</span>, shuffle<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># define the binary target and the features</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>dataset <span class="op">=</span> Dataset(df<span class="op">=</span>df_teacher_sample, target<span class="op">=</span><span class="st">"DX_01_Cat_new_binarize"</span>, features<span class="op">=</span>[col <span class="cf">for</span> col <span class="kw">in</span> df_teacher_sample.columns <span class="cf">if</span> col <span class="op">!=</span> <span class="st">"DX_01_Cat_new_binarize"</span>])</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co"># define the validation scheme and scorer. The default model is LightGBM</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> DecisionTreeClassifier(max_depth <span class="op">=</span> <span class="dv">5</span>)</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>lofo_imp <span class="op">=</span> LOFOImportance(dataset, model <span class="op">=</span> model, cv<span class="op">=</span>cv, scoring<span class="op">=</span><span class="st">"roc_auc"</span>)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># get the mean and standard deviation of the importances in pandas format</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>importance_df <span class="op">=</span> lofo_imp.get_importance()</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>importance_df.to_csv(<span class="st">'/content/drive/MyDrive/HBN_UROP/lofo_all_teacher.csv'</span>)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the means and standard deviations of the importances</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>plot_importance(importance_df, figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">20</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-outputid="b53707c7-9572-493b-ece6-b019079cf560">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>importance_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="12">
+
+
+  <div id="df-8d2e9da6-5fcf-4f86-8f52-3929ee31367c">
+    <div class="colab-df-container">
+      <div>
+
+<table class="dataframe table table-sm table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th>feature</th>
+      <th>importance_mean</th>
+      <th>importance_std</th>
+      <th>val_imp_0</th>
+      <th>val_imp_1</th>
+      <th>val_imp_2</th>
+      <th>val_imp_3</th>
+      <th>val_imp_4</th>
+      <th>val_imp_5</th>
+      <th>val_imp_6</th>
+      <th>val_imp_7</th>
+      <th>val_imp_8</th>
+      <th>val_imp_9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>606</th>
+      <td>numeric__TRF,TRF_15_x</td>
+      <td>0.003571</td>
+      <td>0.005300</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000218</td>
+      <td>0.011102</td>
+      <td>0.001691</td>
+      <td>0.014854</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.007849</td>
+    </tr>
+    <tr>
+      <th>381</th>
+      <td>numeric__TRF,TRF_15_y</td>
+      <td>0.003547</td>
+      <td>0.008370</td>
+      <td>-0.003502</td>
+      <td>0.027254</td>
+      <td>0.001328</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.002413</td>
+      <td>0.007978</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>773</th>
+      <td>numeric__TRF,TRF_87_x</td>
+      <td>0.002983</td>
+      <td>0.004955</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000515</td>
+      <td>0.013730</td>
+      <td>-0.001248</td>
+      <td>0.009527</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.007305</td>
+    </tr>
+    <tr>
+      <th>213</th>
+      <td>numeric__TRF,TRF_60_x</td>
+      <td>0.002430</td>
+      <td>0.004134</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.006798</td>
+      <td>-0.001543</td>
+      <td>0.009504</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.009542</td>
+    </tr>
+    <tr>
+      <th>550</th>
+      <td>numeric__Dishion_Teacher,dishion_part2_01</td>
+      <td>0.002045</td>
+      <td>0.003826</td>
+      <td>0.002708</td>
+      <td>0.002736</td>
+      <td>0.005044</td>
+      <td>0.003608</td>
+      <td>0.000651</td>
+      <td>0.004278</td>
+      <td>-0.000986</td>
+      <td>0.008618</td>
+      <td>-0.006400</td>
+      <td>0.000193</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>845</th>
+      <td>numeric__Dishion_Teacher,dishion_part2_16</td>
+      <td>-0.000523</td>
+      <td>0.006517</td>
+      <td>-0.005199</td>
+      <td>0.002867</td>
+      <td>0.004881</td>
+      <td>0.000000</td>
+      <td>0.011487</td>
+      <td>-0.011063</td>
+      <td>-0.005022</td>
+      <td>-0.002013</td>
+      <td>-0.007067</td>
+      <td>0.005902</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>numeric__TRF,TRF_74_y</td>
+      <td>-0.000539</td>
+      <td>0.001617</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.005390</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>463</th>
+      <td>numeric__TRF,TRF_33_y</td>
+      <td>-0.000551</td>
+      <td>0.001104</td>
+      <td>-0.002621</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.002890</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>763</th>
+      <td>numeric__TRF,TRF_74_x</td>
+      <td>-0.000708</td>
+      <td>0.001868</td>
+      <td>-0.006265</td>
+      <td>0.000000</td>
+      <td>-0.000815</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>numeric__Dishion_Teacher,dishion_part2_12</td>
+      <td>-0.001748</td>
+      <td>0.004645</td>
+      <td>0.000065</td>
+      <td>-0.011076</td>
+      <td>-0.009296</td>
+      <td>0.000000</td>
+      <td>-0.000482</td>
+      <td>0.001509</td>
+      <td>-0.001936</td>
+      <td>-0.001236</td>
+      <td>0.005404</td>
+      <td>-0.000435</td>
+    </tr>
+  </tbody>
+</table>
+<p>852 rows × 13 columns</p>
+</div>
+      <button class="colab-df-convert" onclick="convertToInteractive('df-8d2e9da6-5fcf-4f86-8f52-3929ee31367c')" title="Convert this dataframe to an interactive table." style="display:none;">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewbox="0 0 24 24" width="24px">
+    <path d="M0 0h24v24H0V0z" fill="none"></path>
+    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"></path><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"></path>
+  </svg>
+      </button>
+      
+  <style>
+    .colab-df-container {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+      <script>
+        const buttonEl =
+          document.querySelector('#df-8d2e9da6-5fcf-4f86-8f52-3929ee31367c button.colab-df-convert');
+        buttonEl.style.display =
+          google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+        async function convertToInteractive(key) {
+          const element = document.querySelector('#df-8d2e9da6-5fcf-4f86-8f52-3929ee31367c');
+          const dataTable =
+            await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                     [key], {});
+          if (!dataTable) return;
+
+          const docLinkHtml = 'Like what you see? Visit the ' +
+            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+            + ' to learn more about interactive tables.';
+          element.innerHTML = '';
+          dataTable['output_type'] = 'display_data';
+          await google.colab.output.renderOutput(dataTable, element);
+          const docLink = document.createElement('div');
+          docLink.innerHTML = docLinkHtml;
+          element.appendChild(docLink);
+        }
+      </script>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } 
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">MIT Projects</div>
+  </div>
+</footer>
+
+
+
+</body></html>
