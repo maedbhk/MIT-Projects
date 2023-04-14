@@ -404,10 +404,8 @@ ul.task-list{list-style: none;}
       </div>
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../notebooks/index.html" class="sidebar-item-text sidebar-link">Overview</a>
-  </div>
-</li>
+  notebooks/index.md
+  </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -449,6 +447,7 @@ ul.task-list{list-style: none;}
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage">Data Storage</a></li>
   <li><a href="#mri-and-fmri-data-preprocessing" id="toc-mri-and-fmri-data-preprocessing" class="nav-link" data-scroll-target="#mri-and-fmri-data-preprocessing">MRI and fMRI Data Preprocessing</a></li>
+  <li><a href="#data-on-openmind" id="toc-data-on-openmind" class="nav-link" data-scroll-target="#data-on-openmind">Data on Openmind</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/datasets/healthy-brains.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -537,11 +536,6 @@ ul.task-list{list-style: none;}
 <ul>
 <li>anyone with gablab group permissions should be able to access the data</li>
 </ul></li>
-<li>directories on openmind - HBN
-<ul>
-<li><code>/om4/group/gablab/data/hbn_bids</code></li>
-<li><code>/nese/mit/group/sig/projects</code></li>
-</ul></li>
 </ul>
 </section>
 <section id="mri-and-fmri-data-preprocessing" class="level3">
@@ -549,6 +543,17 @@ ul.task-list{list-style: none;}
 <ul>
 <li>Use <a href="https://xcp-d.readthedocs.io/en/latest/">xcp-D package</a> to do post-processing of resting state data (basically picks up where fMRIPrep left off)</li>
 <li>This package also works on outputs from <a href="https://www.humanconnectome.org/study/hcp-lifespan-development/data-releases">minimially preprocessed HCP data</a></li>
+</ul>
+</section>
+<section id="data-on-openmind" class="level3">
+<h3 class="anchored" data-anchor-id="data-on-openmind">Data on Openmind</h3>
+<ul>
+<li>Phenotypic and behavioral data are stored here: <code>/nese/mit/group/sig/projects/hbn/</code></li>
+<li>HBN BIDS data are here: <code>/nese/mit/group/sig/projects/hbn/hbn_bids</code></li>
+<li>HBN derivatives are here: <code>/nese/mit/group/sig/projects/hbn/hbn_bids/derivatives</code>
+<ul>
+<li>derivatives include: <strong>fmriprep_23.0.0</strong>, <strong>xcp_d_0.4.0rc2</strong></li>
+</ul></li>
 </ul>
 
 
