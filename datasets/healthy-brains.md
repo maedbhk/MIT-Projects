@@ -45,10 +45,12 @@ The Child Mind Institute has launched the Healthy Brain Network, an ongoing init
 * How does a new user get access to the dataset?
     * anyone with gablab group permissions should be able to access the data
 
-* directories on openmind - HBN
-    * `/om4/group/gablab/data/hbn_bids`
-    * `/nese/mit/group/sig/projects`
-
 ### MRI and fMRI Data Preprocessing
 * Use [xcp-D package](https://xcp-d.readthedocs.io/en/latest/) to do post-processing of resting state data (basically picks up where fMRIPrep left off)
 * This package also works on outputs from [minimially preprocessed HCP data](https://www.humanconnectome.org/study/hcp-lifespan-development/data-releases)
+
+### Data on Openmind
+* Phenotypic and behavioral data are stored here: `/nese/mit/group/sig/projects/hbn/`
+* HBN BIDS data are here: `/nese/mit/group/sig/projects/hbn/hbn_bids`
+* HBN derivatives are here: `/nese/mit/group/sig/projects/hbn/hbn_bids/derivatives`
+    * derivatives include: **fmriprep_23.0.0**, **xcp_d_0.4.0rc2**

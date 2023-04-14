@@ -41,25 +41,31 @@ title: Getting Started on Openmind
 
 > If you want to use **conda**
 ```
-    # navigate to top-level directory of project
-    cd om2/user/"username"/healthy_brain_network
+    # navigate to top-level directory of project (example here is **healthy_brain_network** but can be any folder that contains an **environment.yml** file)
+    $ cd om2/user/"username"/healthy_brain_network
 
     # load your own version of miniconda
     # see section below: `Download miniconda on OpenMind`
 
     # in this repo, install a conda environment from environment.yml
-    conda env create -f environment.yml
+    $ conda env create -f environment.yml
 
     # activate the conda virtual environment
-    conda activate healthy-brain-network
+    $ conda activate healthy-brain-network # each **environment.yml** has its own unique name (look inside the file `$ vim environment.yml`)
 ```
 
 ## Download miniconda on OpenMind and add to PATH
 ```
-    wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
-    bash Miniconda3-latest-Linux-x86_64.sh
 
-    # save the distrubtion (when prompted) to **/om2/user/"username"/miniconda**
+    # create bin folder in your om2 directory - this is where you will store your distribution of miniconda
+    $ cd /om2/user/"username"
+    $ mkdir bin
+    $ cd bin
+
+    wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
+    $ bash Miniconda3-latest-Linux-x86_64.sh
+
+    # save the distrubtion (when prompted) to **/om2/user/"username"/bin/miniconda**
 
     # to permanently enable the conda command from your distribution of miniconda:
     $ echo ". /om2/user/"username"/miniconda3/etc/profile.d/conda.sh" >> ~/.bash_profile
@@ -87,12 +93,12 @@ fi
 
 # User specific environment and startup programs
 LANG=en_US.UTF-8
-PATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/"username"/.local/bin/
+PATH=$PATH:$HOME/bin:$HOME/.local/bin:/home/maedbh/.local/bin/
 
-alias cdcode="cd /om2/user/"username"/healthy_brain_network"
-alias cddata="cd /om2/user/"username"/hbn_data/"
-alias cdhome="cd /home/"username""
-alias cdenv="cd /home/"username"/.local/share/virtualenvs"
+alias cdcode="cd /om2/user/maedbh/healthy_brain_network"
+alias cddata="cd /om2/user/maedbh"/hbn_data/"
+alias cdhome="cd /home/maedbh""
+alias cdenv="cd /home/maedbh/.local/share/virtualenvs"
 alias diskspace="du -hs $PWD/.[!.]* $PWD/* | sort -h"
 alias l="ls -alh"
 

@@ -41,7 +41,7 @@ UK Biobank is a large-scale biomedical database and research resource, containin
     * Metabolomic biomarkers
     * Telomere length
 
-### Data Storage
+### Data Storage - Questions
 * Which data are on openmind?
     * Imaging (rest, task, naturalistic)
     * Demographic info
@@ -56,3 +56,8 @@ UK Biobank is a large-scale biomedical database and research resource, containin
 * Where are the data stored on openmind?
     * are these data being transitioned to datalad?
 * How does a new user get access to the dataset?
+
+### Data on OpenMind
+* Phenotypic data are stored here: `/om2/user/maedbh/ukbiobank_data`
+    * All data are saved in **ukb670488.csv**
+    * Data dictionary are saved in **ukb670488.html**
