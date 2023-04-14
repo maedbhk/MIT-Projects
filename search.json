@@ -928,7 +928,21 @@
     "href": "projects/item_analysis.html",
     "title": "Item Analysis of Questionnaires in Healthy Brain Network",
     "section": "",
-    "text": "How semantically similar are clinical questionnaires?  based on the method outlined by Song et al. 2022"
+    "text": "How semantically similar are clinical questionnaires used to diagnose developmental disorders?"
+  },
+  {
+    "objectID": "projects/item_analysis.html#dataset",
+    "href": "projects/item_analysis.html#dataset",
+    "title": "Item Analysis of Questionnaires in Healthy Brain Network",
+    "section": "Dataset",
+    "text": "Dataset\n\nHealthy brains\nThe Child Mind Institute has launched the Healthy Brain Network, an ongoing initiative focused on creating and sharing a biobank comprised of data from 10,000 New York City area children and adolescents (ages 5-21).\nPopulation: ages 5-21, children who likely have one or more psychiatric symptoms\nData collected:\n\nMRI + fMRI: movies (~10 min), predictive eye estimation regression - 3444 participants\nPhenotypic assessment - 4080 participants\nPhysical activity\nBehavioral measures (questionnaires)\nFamily structures (stress, trauma)\nSubstance use/addiction\nCognition and language tasks\nDisorder-specific questionnaires\nElectroencephalography\nDigital Voice and Video Recordings\nGenetics\nActigraphy\nCognitive Tasks (e.g., sequence learning), naturalistic stimuli\nEyetracking: pupil dilation and eye position\n\n\n\n\n\nPhenotypic Assessment Protocol"
+  },
+  {
+    "objectID": "projects/item_analysis.html#technical-steps",
+    "href": "projects/item_analysis.html#technical-steps",
+    "title": "Item Analysis of Questionnaires in Healthy Brain Network",
+    "section": "Technical Steps",
+    "text": "Technical Steps\n\nFollow instructions in README of this github repo to get access to code + data for the project"
   },
   {
     "objectID": "datasets/abide.html#overview",
