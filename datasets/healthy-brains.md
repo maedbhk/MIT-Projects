@@ -40,6 +40,7 @@ The Child Mind Institute has launched the Healthy Brain Network, an ongoing init
     * freesurfer (no)
     * first-level glms (no)
 * MRI data have been preprocessed using Mindboggle and are available in S3 under the [directory](/fcp-indi/data/Projects/HBN/derivatives/Freesurfer_version6.0.0)
+* There is also a subset of HBN data that contain task information available [here](http://fcon_1000.projects.nitrc.org/indi/hbn_ssi/download.html)
 * Where are the data stored on openmind?
     * are these data being transitioned to datalad?
 * How does a new user get access to the dataset?
