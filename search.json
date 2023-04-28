@@ -322,6 +322,20 @@
     "text": "Questions\n\nTraining and test data for predictive modeling: all participants or filter for particular disorders?\nCan we ask CHOP collaborators for more unstructured data for clinicalBERT model?"
   },
   {
+    "objectID": "progress/week-35.html",
+    "href": "progress/week-35.html",
+    "title": "Week 35",
+    "section": "",
+    "text": "04/17/23 - 04/22/23"
+  },
+  {
+    "objectID": "progress/week-35.html#done-and-to-do",
+    "href": "progress/week-35.html#done-and-to-do",
+    "title": "Week 35",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do"
+  },
+  {
     "objectID": "progress/week-7.html",
     "href": "progress/week-7.html",
     "title": "Week 7",
@@ -397,6 +411,20 @@
     "title": "Week 12",
     "section": "Questions",
     "text": "Questions\n\ncan you add me to the google drive so that I can upload lab meeting slides?"
+  },
+  {
+    "objectID": "progress/week-36.html",
+    "href": "progress/week-36.html",
+    "title": "Week 36",
+    "section": "",
+    "text": "04/24/23 - 04/29/23"
+  },
+  {
+    "objectID": "progress/week-36.html#done-and-to-do",
+    "href": "progress/week-36.html#done-and-to-do",
+    "title": "Week 36",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nMeeting with CHOP folks, high-level summary on some of the data available to us in this presentation and summary of 04/24 meeting here - fyi, only satra has access to these links because of potential privacy issues.\nFinalized methods section for ADHD + sex paper\nSubmitted batches of subjects to fMRIPrep + XCP scripts for HBN subjects on OpenMind (a few more days to process all)\nSubmitted SUIT scripts on all HBN subjects who had fMRIPrep derivatives (a few more days to process all)\nAdded recursive feature elimination from scikitlearn to HBN models\nCHOP project: did more data exploration and worked on some technical stuff in conjunction with Scott\n\nBHS data will be added in the next few days - he’ll notify me when it’s there\nspent time exploring sql commands, I’m starting out with pretty basic knowledge\n\nDid some topic modeling for HBN clinical questionnaires\nWrote and submitted recommendation letter for RA\nHired an RA to work on item analysis project over the summer. They received UROP funding: 40 hrs a week for June and July\nStill to do: run ABCD models exploring ADHD + Sex question (generalizing from HBN data)\nStill to do: review student proposal for thesis committee"
   },
   {
     "objectID": "progress/index.html",
@@ -991,7 +1019,7 @@
     "href": "datasets/healthy-brains.html",
     "title": "Healthy Brains Network",
     "section": "",
-    "text": "The Child Mind Institute has launched the Healthy Brain Network, an ongoing initiative focused on creating and sharing a biobank comprised of data from 10,000 New York City area children and adolescents (ages 5-21).\n\nPopulation: ages 5-21, children who likely have one or more psychiatric symptoms\nData collected:\n\nMRI + fMRI: movies (~10 min), predictive eye estimation regression - 3444 participants\nPhenotypic assessment - 4080 participants\nPhysical activity\nBehavioral measures (questionnaires)\nFamily structures (stress, trauma)\nSubstance use/addiction\nCognition and language tasks\nDisorder-specific questionnaires\nElectroencephalography\nDigital Voice and Video Recordings\nGenetics\nActigraphy\nCognitive Tasks (e.g., sequence learning), naturalistic stimuli\nEyetracking: pupil dilation and eye position\n\n\n\n\n\nPhenotypic Assessment Protocol\n\n\n\n\n\n\nWhich data are on openmind?\n\nImaging (rest, naturalistic)\nDemographic info\nCognitive/Behavioral results\nClinical disorders\n\nWhat is the format?\n\nraw, derivatives\n\nWhich releases are available?\n\ncurrently there are 10 releases of HBN imaging and phenotypic data\n\nHave imaging data been preprocessed?\n\nfmriprep (no)\nfreesurfer (no)\nfirst-level glms (no)\n\nMRI data have been preprocessed using Mindboggle and are available in S3 under the directory\nWhere are the data stored on openmind?\n\nare these data being transitioned to datalad?\n\nHow does a new user get access to the dataset?\n\nanyone with gablab group permissions should be able to access the data\n\n\n\n\n\n\nUse xcp-D package to do post-processing of resting state data (basically picks up where fMRIPrep left off)\nThis package also works on outputs from minimially preprocessed HCP data\n\n\n\n\n\nPhenotypic and behavioral data are stored here: /nese/mit/group/sig/projects/hbn/\nHBN BIDS data are here: /nese/mit/group/sig/projects/hbn/hbn_bids\nHBN derivatives are here: /nese/mit/group/sig/projects/hbn/hbn_bids/derivatives\n\nderivatives include: fmriprep_23.0.0, xcp_d_0.4.0rc2"
+    "text": "The Child Mind Institute has launched the Healthy Brain Network, an ongoing initiative focused on creating and sharing a biobank comprised of data from 10,000 New York City area children and adolescents (ages 5-21).\n\nPopulation: ages 5-21, children who likely have one or more psychiatric symptoms\nData collected:\n\nMRI + fMRI: movies (~10 min), predictive eye estimation regression - 3444 participants\nPhenotypic assessment - 4080 participants\nPhysical activity\nBehavioral measures (questionnaires)\nFamily structures (stress, trauma)\nSubstance use/addiction\nCognition and language tasks\nDisorder-specific questionnaires\nElectroencephalography\nDigital Voice and Video Recordings\nGenetics\nActigraphy\nCognitive Tasks (e.g., sequence learning), naturalistic stimuli\nEyetracking: pupil dilation and eye position\n\n\n\n\n\nPhenotypic Assessment Protocol\n\n\n\n\n\n\nWhich data are on openmind?\n\nImaging (rest, naturalistic)\nDemographic info\nCognitive/Behavioral results\nClinical disorders\n\nWhat is the format?\n\nraw, derivatives\n\nWhich releases are available?\n\ncurrently there are 10 releases of HBN imaging and phenotypic data\n\nHave imaging data been preprocessed?\n\nfmriprep (no)\nfreesurfer (no)\nfirst-level glms (no)\n\nMRI data have been preprocessed using Mindboggle and are available in S3 under the directory\nThere is also a subset of HBN data that contain task information available here\nWhere are the data stored on openmind?\n\nare these data being transitioned to datalad?\n\nHow does a new user get access to the dataset?\n\nanyone with gablab group permissions should be able to access the data\n\n\n\n\n\n\nUse xcp-D package to do post-processing of resting state data (basically picks up where fMRIPrep left off)\nThis package also works on outputs from minimially preprocessed HCP data\n\n\n\n\n\nPhenotypic and behavioral data are stored here: /nese/mit/group/sig/projects/hbn/\nHBN BIDS data are here: /nese/mit/group/sig/projects/hbn/hbn_bids\nHBN derivatives are here: /nese/mit/group/sig/projects/hbn/hbn_bids/derivatives\n\nderivatives include: fmriprep_23.0.0, xcp_d_0.4.0rc2"
   },
   {
     "objectID": "datasets/abcd.html",
