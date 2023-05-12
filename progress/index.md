@@ -41,3 +41,7 @@ Keeping track of projects: what I've done, what's planned, what's in progress..
 - [`Week 32`](week-32.md)
 - [`Week 33`](week-33.md)
 - [`Week 34`](week-34.md)
+- [`Week 35`](week-35.md)
+- [`Week 36`](week-36.md)
+- [`Week 37`](week-37.md)
+- [`Week 38`](week-38.md)
