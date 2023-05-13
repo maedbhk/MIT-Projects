@@ -3,7 +3,7 @@ title: Week 12
 ---
 
 ## Done and To-Do
-* Attended the precision psychiatry conference on Weds/Thurs - some notes [here](../literature-review/precision-psychiatry-conference.md)
+* Attended the precision psychiatry conference on Weds/Thurs - some notes [here](../talks/precision-psychiatry-conference.md)
 * Met with Lexi about a potential collaboration w/r/t adaptivity and ADHD. Alyson (Wellesley RA) has put together a literature review on this topic, you can check out her work [here](https://drive.google.com/drive/folders/1trw6-ZadnwV8cDS9RsteWeWROG77_8Qc?usp=sharing)
     * In short, the idea is to investigate adaptive traits and attributes that are often overlooked in people diagnosed with ADHD. There is a literature (albeit sparse) that proposes an evolutionary theory of ADHD, namely that it is maintained in the population due to selection forces that convey advantages. Some thoughts/notes on the topic will soon be available [here](../projects/adaptive-ADHD.md)
 * Presented at lab meeting, slides are [here](https://docs.google.com/presentation/d/1aVcPZ3PS7W07UKi56f0eyAiuBs9oKdIUvq4w7Zn78is/edit?usp=sharing)

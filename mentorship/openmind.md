@@ -14,6 +14,7 @@ title: Getting Started on Openmind
     git clone git@github.com:maedbhk/healthy_brain_network.git
 ```
 * Follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
+* Also useful is this step-by-step [guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) on setting up ssh keys
 * phenotypic data for **healthy_brain_network** is stored at **/om2/user/maedbh/hbn_data/**
     * fyi: I/O operations to **om** and **om2** are fast, which is why I store code here. **om4** and **nese** are slower but have large storage space, which is why raw data are stored on **nese**.
 
