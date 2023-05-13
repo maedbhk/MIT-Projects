@@ -66,8 +66,6 @@ website:
           - literature-review/development-translational-neuroimaging.md
           - literature-review/methodology-pHealth.md
           - literature-review/suicide-prediction.md
-          - literature-review/precision-psychiatry-conference.md
-          - literature-review/SCSB_Colloquium_Series.md
       - section: "Projects"
         contents: 
           - projects/index.md
@@ -94,6 +92,12 @@ website:
           - methods/modeling-EHR.md
           - methods/smote.md
           - methods/index.md
+      - section: "Talks"
+        contents: 
+          - talks/index.md
+          - talks/determinants_of_mental_health_conference.md
+          - talks/precision-psychiatry-conference.md
+          - talks/SCSB_Colloquium_Series.md
       - section: "Notebooks"
         contents:
           - notebooks/index.md
