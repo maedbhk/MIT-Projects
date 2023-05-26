@@ -389,7 +389,7 @@
     "href": "progress/week-40.html#done-and-to-do",
     "title": "Week 40",
     "section": "Done and To-Do",
-    "text": "Done and To-Do\n\nMeeting with Ran and Elina on BHS data\nMostly working ADHD Paper this week: methods + results\n\nModel ABCD data (CBCL questionnaire)\nWorking with Elina to figure out how to identify ABCD participants with ADHD:\n\nFor ADHD we usually use the symptoms from: abcd_ksad01 - ABCD Parent Diagnostic Interview for DSM-5 Full (KSADS-5)\nTo assess the severity of ADHD, we created an “or” variable for each symptom, considering both present and past occurrences, and then aggregated them [range 0-20].\nA higher number of symptoms indicates a more severe ADHD condition. In some cases, we excluded the “Hyper” symptoms [range 0-10].\nFor the diagnosis, we also established an “or” variable. It is sufficient for an individual to have one of the four diagnoses listed below to meet the criteria for diagnosis."
+    "text": "Done and To-Do\n\nMeeting with Ran and Elina on BHS data\nMostly working ADHD Paper this week: methods + results\n\nModel ABCD data (CBCL questionnaire)\nWorking with Elina to figure out how to identify ABCD participants with ADHD:\n\nFor ADHD we usually use the symptoms from: abcd_ksad01 - ABCD Parent Diagnostic Interview for DSM-5 Full (KSADS-5)\nTo assess the severity of ADHD, we created an “or” variable for each symptom, considering both present and past occurrences, and then aggregated them [range 0-20].\nA higher number of symptoms indicates a more severe ADHD condition. In some cases, we excluded the “Hyper” symptoms [range 0-10].\nFor the diagnosis, we also established an “or” variable. It is sufficient for an individual to have one of the four diagnoses listed below to meet the criteria for diagnosis.\n\n\n\nADHD Symptoms"
   },
   {
     "objectID": "progress/week-35.html",
@@ -2510,21 +2510,21 @@
     "href": "notebooks/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Compare all models"
+    "text": "Phenotype Models (old)\nCompare all models"
   },
   {
     "objectID": "notebooks/index.html#phenotype-models",
     "href": "notebooks/index.html#phenotype-models",
     "title": "Overview",
     "section": "",
-    "text": "Compare all models"
+    "text": "Phenotype Models (old)\nCompare all models"
   },
   {
     "objectID": "notebooks/index.html#summary",
     "href": "notebooks/index.html#summary",
     "title": "Overview",
     "section": "Summary",
-    "text": "Summary\n\nClinical Diagnoses\nIntake Interview"
+    "text": "Summary\n\nExploratory Features (old)\nClinical Diagnoses\nIntake Interview"
   },
   {
     "objectID": "notebooks/index.html#nlp",
