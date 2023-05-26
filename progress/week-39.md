@@ -16,7 +16,7 @@ title: Week 39
     * What are the target variables we want to predict?
 * Finish UMAP and PCA on HBN responses
     * Look specifically at PC loadings across ADHD subtypes - can we identify cognitive profiles?
-    * Do ADHD subtypes cluster into neat groups?
+    * Do ADHD subtypes cluster into neat groups? not really...
 * ADHD Paper: methods + results
     * Model ABCD data (same questionnaires)
 
