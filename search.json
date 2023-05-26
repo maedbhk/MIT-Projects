@@ -378,6 +378,20 @@
     "text": "Questions\n\nTraining and test data for predictive modeling: all participants or filter for particular disorders?\nCan we ask CHOP collaborators for more unstructured data for clinicalBERT model?"
   },
   {
+    "objectID": "progress/week-40.html",
+    "href": "progress/week-40.html",
+    "title": "Week 40",
+    "section": "",
+    "text": "05/22/23 - 05/26/23"
+  },
+  {
+    "objectID": "progress/week-40.html#done-and-to-do",
+    "href": "progress/week-40.html#done-and-to-do",
+    "title": "Week 40",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nMeeting with Ran and Elina on BHS data\nMostly working ADHD Paper this week: methods + results\n\nModel ABCD data (CBCL questionnaire)\nWorking with Elina to figure out how to identify ABCD participants with ADHD:\n\nFor ADHD we usually use the symptoms from: abcd_ksad01 - ABCD Parent Diagnostic Interview for DSM-5 Full (KSADS-5)\nTo assess the severity of ADHD, we created an “or” variable for each symptom, considering both present and past occurrences, and then aggregated them [range 0-20].\nA higher number of symptoms indicates a more severe ADHD condition. In some cases, we excluded the “Hyper” symptoms [range 0-10].\nFor the diagnosis, we also established an “or” variable. It is sufficient for an individual to have one of the four diagnoses listed below to meet the criteria for diagnosis."
+  },
+  {
     "objectID": "progress/week-35.html",
     "href": "progress/week-35.html",
     "title": "Week 35",
@@ -508,7 +522,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40"
   },
   {
     "objectID": "progress/week-27.html",
@@ -712,6 +726,20 @@
     "title": "Week 29",
     "section": "Done and to-do",
     "text": "Done and to-do\n\nMet with Lexi to discuss adhd + professions project - wrote an add to hire an RA to work on this project\nResults block for alyson on adhd + gender differences - determine whether there’s a diagnostic bias, worked on schematic figure\nWorked on “the script” for HBN preprocessing + SUIT analysis\nItem analysis + HBN phenotypes, worked on notebook and wrote an add to hire and RA to work on this project (specifically reproschema + HBN questionnaires)\nFinished preprocessing Kseniia’s csv linking HBN keys to questions and committed to her github\nRan models w/without SMOTE and w/without demographics"
+  },
+  {
+    "objectID": "progress/week-39.html",
+    "href": "progress/week-39.html",
+    "title": "Week 39",
+    "section": "",
+    "text": "05/15/23 - 05/19/23"
+  },
+  {
+    "objectID": "progress/week-39.html#done-and-to-do",
+    "href": "progress/week-39.html#done-and-to-do",
+    "title": "Week 39",
+    "section": "Done and To-Do",
+    "text": "Done and To-Do\n\nAdmin work: rec letters for UROP + letter to Lisa Yang\nSummary of MIT-CHOP medical meeting here - accessible only to Satra\nHigh-level summary of BHS data in anticipation of Monday’s CHOP meeting\n\nDemographics of population we’re working with (those with longitudinal data)\nDealing with imbalanced data: race/ethnicity, sex, age\nWhat are our exclusion criteria?\nHow are we splitting up train and test data\nWalk through technical steps (how are we building models, which features etc.)\nWhat are the target variables we want to predict?\n\nFinish UMAP and PCA on HBN responses\n\nLook specifically at PC loadings across ADHD subtypes - can we identify cognitive profiles?\nDo ADHD subtypes cluster into neat groups? not really…\n\nADHD Paper: methods + results\n\nModel ABCD data (same questionnaires)"
   },
   {
     "objectID": "projects/adhd_professions.html",
@@ -1447,6 +1475,13 @@
     "title": "Fall22 Onboarding",
     "section": "Notebooks",
     "text": "Notebooks\n\nCheck out current results"
+  },
+  {
+    "objectID": "mentorship/bash_commands.html",
+    "href": "mentorship/bash_commands.html",
+    "title": "Useful bash commands",
+    "section": "",
+    "text": "Useful linux commands\n\nlist all txt files * $ ls ~//*.txt | wc -l\n\n\nlist all files that are not txt files * $ ls ~/ | grep “.*[^txt)]$”\n\n\nget size of folder * $ du -sh ~/\n\n\ninspect the first two lines of a text file * $ head -n 2 .txt\n\nfor f in $(ls *.txt); do awk -F’ ‘NR&lt;=2 {data[NR]=$0} END {split(data[1], cols, “); split(data[2], desc,”); for(i=1; i&lt;=NF; i++) {print cols[i] “ desc[i]}}’ $f &gt;&gt; output; done && cat output | awk -F’ ‘{print $1 $2}’ | sort | uniq &gt;&gt; elements_list.txt && rm output"
   },
   {
     "objectID": "team.html",
@@ -2469,6 +2504,34 @@
     "title": "Topic Modeling with BERT",
     "section": "Cluster heatmap based on Parent, Child, Teacher assessment",
     "text": "Cluster heatmap based on Parent, Child, Teacher assessment\n\n# get tensors\n\ndef get_tensor_subset(\n    df,\n    df_dict,\n    measures,\n    domains,\n    assessment='Child Measures',\n    labels='domains'\n    ):\n\n    bool_all = []\n    for measure in measures:\n        # check assessment\n        check = df_dict[df_dict['datadic']==measure]['assessment'].unique()\n\n        if check==assessment:\n            idx = True\n        else:\n            idx = False\n        bool_all.append(idx)\n\n    # get measures\n    measures_subset = measures[bool_all]\n    domains_subset = domains[bool_all]\n    \n    tensor = np.ones((len(measures_subset), len(measures_subset)))\n    for i, idx1 in enumerate(measures_subset):\n        for ii, idx2 in enumerate(measures_subset):\n\n            # get score\n            score = df[(df['idx1']==idx1) & (df['idx2']==idx2)]['mean_score']\n\n            if score.shape[0]==0:\n                score = df[(df['idx1']==idx2) & (df['idx2']==idx1)]['mean_score']\n\n            tensor[i,ii] = score;\n    \n    if labels=='domains':\n        tensor_subset = pd.DataFrame(tensor, columns=domains_subset)\n        tensor_subset['new_col'] = domains_subset\n    elif labels=='measures':\n        tensor_subset = pd.DataFrame(tensor, columns=measures_subset)\n        tensor_subset['new_col'] = measures_subset\n    \n    tensor_subset = tensor_subset.set_index('new_col')\n    \n    return tensor_subset\n\n\n# get tensor\n\ntensor_subset = get_tensor_subset(df, df_dict, measures, domains, assessment='Child Measures', labels='measures')\n\n\ng = sns.clustermap(tensor_subset, \n               #standard_scale=1, \n               metric=\"euclidean\", \n               robust=True, \n               row_cluster=True,\n               #method=\"ward\",\n               #center=1,\n               yticklabels=True, \n               xticklabels=True,\n               #linewidths=0.004\n              );\n\n\ng.ax_heatmap.yaxis.set_ticks_position(\"right\")\n\nplt.setp(g.ax_heatmap.xaxis.get_majorticklabels(), fontsize=10)\nplt.setp(g.ax_heatmap.yaxis.get_majorticklabels(), fontsize=10)\nplt.savefig(os.path.join(save_dir, 'Child_Measures_heatmap-measures.png'))\nplt.show()\n\n\n\n\n\nplotting_style()\nsns.distplot(np.diagonal(np.array(tensor_subset)))\n\n&lt;Axes: ylabel='Density'&gt;\n\n\n\n\n\n\nfrom hbn.models.item_analysis import sentence_similarity_single_pair\n\ntensor_dict = sentence_similarity_single_pair(\n    data_dictionary=df_dict, \n    transformer='all-MiniLM-L6-v2', \n    pairwise_measures=('YSR', 'CBCL')\n    )\n\n\ng = sns.clustermap(tensor_dict['cosine_scores'], \n               #standard_scale=1, \n               metric=\"euclidean\", \n               robust=True, \n               row_cluster=True,\n               #method=\"ward\",\n               #center=1,\n               yticklabels=True, \n               xticklabels=True,\n               #linewidths=0.004\n              );\n\n\ng.ax_heatmap.yaxis.set_ticks_position(\"right\")\n\nplt.setp(g.ax_heatmap.xaxis.get_majorticklabels(), fontsize=10)\nplt.setp(g.ax_heatmap.yaxis.get_majorticklabels(), fontsize=10)\nplt.show()"
+  },
+  {
+    "objectID": "notebooks/index.html",
+    "href": "notebooks/index.html",
+    "title": "Notebooks",
+    "section": "",
+    "text": "Compare all models"
+  },
+  {
+    "objectID": "notebooks/index.html#phenotype-models",
+    "href": "notebooks/index.html#phenotype-models",
+    "title": "Notebooks",
+    "section": "",
+    "text": "Compare all models"
+  },
+  {
+    "objectID": "notebooks/index.html#summary",
+    "href": "notebooks/index.html#summary",
+    "title": "Notebooks",
+    "section": "Summary",
+    "text": "Summary\n\nClinical Diagnoses\nIntake Interview"
+  },
+  {
+    "objectID": "notebooks/index.html#nlp",
+    "href": "notebooks/index.html#nlp",
+    "title": "Notebooks",
+    "section": "NLP",
+    "text": "NLP\n\nTopic Modeling"
   },
   {
     "objectID": "notebooks/exploratory-features-adhd.html",
