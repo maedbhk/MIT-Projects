@@ -5,7 +5,7 @@ title: Week 39
 05/15/23 - 05/19/23
 
 ## Done and To-Do
-* Admin work: rec letters for UROP + [letter](assets/images/Lisa_Yang_Letter.png) to Lisa Yang 
+* Admin work: rec letters for UROP + [letter](../assets/images/Lisa_Yang_Letter.png) to Lisa Yang 
 * Summary of MIT-CHOP medical meeting [here](https://docs.google.com/document/d/1JyuSeVSgopY_As-MbdnWWXOdjzbIMoSNcd2iSRwknpU/edit?usp=sharing) - accessible only to Satra
 * High-level summary of BHS data in anticipation of Monday's CHOP meeting
     * Demographics of population we're working with (those with longitudinal data)

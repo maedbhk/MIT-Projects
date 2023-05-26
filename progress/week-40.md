@@ -13,4 +13,4 @@ title: Week 40
         * To assess the severity of ADHD, we created an "or" variable for each symptom, considering both present and past occurrences, and then aggregated them [range 0-20]. 
         * A higher number of symptoms indicates a more severe ADHD condition. In some cases, we excluded the "Hyper" symptoms [range 0-10].
         * For the diagnosis, we also established an "or" variable. It is sufficient for an individual to have one of the four diagnoses listed below to meet the criteria for diagnosis.
-![ADHD Symptoms](assets/images/adhd_symptoms_abcd.png){fig-align="center"}
+![ADHD Symptoms](../assets/images/adhd_symptoms_abcd.png){fig-align="center"}
