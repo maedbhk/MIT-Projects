@@ -101,6 +101,9 @@ website:
       - section: "Notebooks"
         contents:
           - notebooks/index.md
+      - section: "Writing"
+        contents:
+          - writing/index.md
       - section: "Ethics"
         contents:
           - ethics/AI-hype.md
