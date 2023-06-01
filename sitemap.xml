@@ -2,482 +2,502 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/model-interpretability.html</loc>
-    <lastmod>2023-05-26T22:13:01.928Z</lastmod>
+    <lastmod>2023-06-01T22:14:21.398Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/feature-engineering.html</loc>
-    <lastmod>2023-05-26T22:13:02.312Z</lastmod>
+    <lastmod>2023-06-01T22:14:21.773Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/model-evaluation.html</loc>
-    <lastmod>2023-05-26T22:13:02.665Z</lastmod>
+    <lastmod>2023-06-01T22:14:22.071Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/index.html</loc>
-    <lastmod>2023-05-26T22:13:03.028Z</lastmod>
+    <lastmod>2023-06-01T22:14:22.339Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/smote.html</loc>
-    <lastmod>2023-05-26T22:13:03.415Z</lastmod>
+    <lastmod>2023-06-01T22:14:22.626Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/fmri_parcellations.html</loc>
-    <lastmod>2023-05-26T22:13:03.728Z</lastmod>
+    <lastmod>2023-06-01T22:14:22.901Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/unsupervised-learning.html</loc>
-    <lastmod>2023-05-26T22:13:04.046Z</lastmod>
+    <lastmod>2023-06-01T22:14:23.195Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/methods/modeling-EHR.html</loc>
-    <lastmod>2023-05-26T22:13:04.399Z</lastmod>
+    <lastmod>2023-06-01T22:14:23.526Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-24.html</loc>
-    <lastmod>2023-05-26T22:13:04.694Z</lastmod>
+    <lastmod>2023-06-01T22:14:23.815Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-1.html</loc>
-    <lastmod>2023-05-26T22:13:04.999Z</lastmod>
+    <lastmod>2023-06-01T22:14:24.132Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-10.html</loc>
-    <lastmod>2023-05-26T22:13:05.324Z</lastmod>
+    <lastmod>2023-06-01T22:14:24.459Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/progress/week-41.html</loc>
+    <lastmod>2023-06-01T22:14:24.773Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-34.html</loc>
-    <lastmod>2023-05-26T22:13:05.628Z</lastmod>
+    <lastmod>2023-06-01T22:14:25.098Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-5.html</loc>
-    <lastmod>2023-05-26T22:13:05.980Z</lastmod>
+    <lastmod>2023-06-01T22:14:25.465Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-14.html</loc>
-    <lastmod>2023-05-26T22:13:06.313Z</lastmod>
+    <lastmod>2023-06-01T22:14:25.757Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-20.html</loc>
-    <lastmod>2023-05-26T22:13:06.685Z</lastmod>
+    <lastmod>2023-06-01T22:14:26.043Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-30.html</loc>
-    <lastmod>2023-05-26T22:13:07.004Z</lastmod>
+    <lastmod>2023-06-01T22:14:26.408Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-4.html</loc>
-    <lastmod>2023-05-26T22:13:07.347Z</lastmod>
+    <lastmod>2023-06-01T22:14:26.788Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-15.html</loc>
-    <lastmod>2023-05-26T22:13:07.651Z</lastmod>
+    <lastmod>2023-06-01T22:14:27.093Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-21.html</loc>
-    <lastmod>2023-05-26T22:13:07.941Z</lastmod>
+    <lastmod>2023-06-01T22:14:27.384Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-31.html</loc>
-    <lastmod>2023-05-26T22:13:08.231Z</lastmod>
+    <lastmod>2023-06-01T22:14:27.658Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-25.html</loc>
-    <lastmod>2023-05-26T22:13:08.579Z</lastmod>
+    <lastmod>2023-06-01T22:14:27.949Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-0.html</loc>
-    <lastmod>2023-05-26T22:13:09.045Z</lastmod>
+    <lastmod>2023-06-01T22:14:28.376Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-11.html</loc>
-    <lastmod>2023-05-26T22:13:09.348Z</lastmod>
+    <lastmod>2023-06-01T22:14:28.677Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-40.html</loc>
-    <lastmod>2023-05-26T22:13:09.643Z</lastmod>
+    <lastmod>2023-06-01T22:14:28.966Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-35.html</loc>
-    <lastmod>2023-05-26T22:13:09.907Z</lastmod>
+    <lastmod>2023-06-01T22:14:29.234Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-7.html</loc>
-    <lastmod>2023-05-26T22:13:10.223Z</lastmod>
+    <lastmod>2023-06-01T22:14:29.560Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-16.html</loc>
-    <lastmod>2023-05-26T22:13:10.516Z</lastmod>
+    <lastmod>2023-06-01T22:14:29.854Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-22.html</loc>
-    <lastmod>2023-05-26T22:13:10.811Z</lastmod>
+    <lastmod>2023-06-01T22:14:30.132Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-32.html</loc>
-    <lastmod>2023-05-26T22:13:11.103Z</lastmod>
+    <lastmod>2023-06-01T22:14:30.409Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-26.html</loc>
-    <lastmod>2023-05-26T22:13:11.389Z</lastmod>
+    <lastmod>2023-06-01T22:14:30.704Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-3.html</loc>
-    <lastmod>2023-05-26T22:13:11.692Z</lastmod>
+    <lastmod>2023-06-01T22:14:31.041Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-12.html</loc>
-    <lastmod>2023-05-26T22:13:11.989Z</lastmod>
+    <lastmod>2023-06-01T22:14:31.367Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-36.html</loc>
-    <lastmod>2023-05-26T22:13:12.305Z</lastmod>
+    <lastmod>2023-06-01T22:14:31.683Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/index.html</loc>
-    <lastmod>2023-05-26T22:13:12.647Z</lastmod>
+    <lastmod>2023-06-01T22:14:32.009Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-27.html</loc>
-    <lastmod>2023-05-26T22:13:12.925Z</lastmod>
+    <lastmod>2023-06-01T22:14:32.310Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-2.html</loc>
-    <lastmod>2023-05-26T22:13:13.260Z</lastmod>
+    <lastmod>2023-06-01T22:14:32.649Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-13.html</loc>
-    <lastmod>2023-05-26T22:13:13.547Z</lastmod>
+    <lastmod>2023-06-01T22:14:32.941Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-37.html</loc>
-    <lastmod>2023-05-26T22:13:13.810Z</lastmod>
+    <lastmod>2023-06-01T22:14:33.208Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-6.html</loc>
-    <lastmod>2023-05-26T22:13:14.137Z</lastmod>
+    <lastmod>2023-06-01T22:14:33.546Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-17.html</loc>
-    <lastmod>2023-05-26T22:13:14.440Z</lastmod>
+    <lastmod>2023-06-01T22:14:33.859Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-23.html</loc>
-    <lastmod>2023-05-26T22:13:14.775Z</lastmod>
+    <lastmod>2023-06-01T22:14:34.150Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-33.html</loc>
-    <lastmod>2023-05-26T22:13:15.083Z</lastmod>
+    <lastmod>2023-06-01T22:14:34.429Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-28.html</loc>
-    <lastmod>2023-05-26T22:13:15.440Z</lastmod>
+    <lastmod>2023-06-01T22:14:34.780Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-38.html</loc>
-    <lastmod>2023-05-26T22:13:15.831Z</lastmod>
+    <lastmod>2023-06-01T22:14:35.072Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-9.html</loc>
-    <lastmod>2023-05-26T22:13:16.194Z</lastmod>
+    <lastmod>2023-06-01T22:14:35.399Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-18.html</loc>
-    <lastmod>2023-05-26T22:13:16.518Z</lastmod>
+    <lastmod>2023-06-01T22:14:35.679Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-8.html</loc>
-    <lastmod>2023-05-26T22:13:16.882Z</lastmod>
+    <lastmod>2023-06-01T22:14:36.011Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-19.html</loc>
-    <lastmod>2023-05-26T22:13:17.167Z</lastmod>
+    <lastmod>2023-06-01T22:14:36.288Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-29.html</loc>
-    <lastmod>2023-05-26T22:13:17.445Z</lastmod>
+    <lastmod>2023-06-01T22:14:36.577Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/progress/week-39.html</loc>
-    <lastmod>2023-05-26T22:13:17.737Z</lastmod>
+    <lastmod>2023-06-01T22:14:36.874Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/adhd_professions.html</loc>
-    <lastmod>2023-05-26T22:13:18.072Z</lastmod>
+    <lastmod>2023-06-01T22:14:37.202Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/EMR-selfharm.html</loc>
-    <lastmod>2023-05-26T22:13:18.420Z</lastmod>
+    <lastmod>2023-06-01T22:14:37.546Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/index.html</loc>
-    <lastmod>2023-05-26T22:13:18.713Z</lastmod>
+    <lastmod>2023-06-01T22:14:37.827Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/exploring-adhd.html</loc>
-    <lastmod>2023-05-26T22:13:19.086Z</lastmod>
+    <lastmod>2023-06-01T22:14:38.182Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/adaptive-adhd.html</loc>
-    <lastmod>2023-05-26T22:13:19.353Z</lastmod>
+    <lastmod>2023-06-01T22:14:38.433Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/gender-adhd.html</loc>
-    <lastmod>2023-05-26T22:13:19.630Z</lastmod>
+    <lastmod>2023-06-01T22:14:38.720Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/cerebellum-fingerprints.html</loc>
-    <lastmod>2023-05-26T22:13:20.017Z</lastmod>
+    <lastmod>2023-06-01T22:14:39.075Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/phenotyping-project.html</loc>
-    <lastmod>2023-05-26T22:13:20.309Z</lastmod>
+    <lastmod>2023-06-01T22:14:39.355Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/projects/item_analysis.html</loc>
-    <lastmod>2023-05-26T22:13:20.620Z</lastmod>
+    <lastmod>2023-06-01T22:14:39.647Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/abide.html</loc>
-    <lastmod>2023-05-26T22:13:20.907Z</lastmod>
+    <lastmod>2023-06-01T22:14:39.915Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/uk-biobank.html</loc>
-    <lastmod>2023-05-26T22:13:21.261Z</lastmod>
+    <lastmod>2023-06-01T22:14:40.257Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/index.html</loc>
-    <lastmod>2023-05-26T22:13:21.574Z</lastmod>
+    <lastmod>2023-06-01T22:14:40.535Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/chop.html</loc>
-    <lastmod>2023-05-26T22:13:21.944Z</lastmod>
+    <lastmod>2023-06-01T22:14:40.852Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/healthy-brains.html</loc>
-    <lastmod>2023-05-26T22:13:22.314Z</lastmod>
+    <lastmod>2023-06-01T22:14:41.194Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/abcd.html</loc>
-    <lastmod>2023-05-26T22:13:22.653Z</lastmod>
+    <lastmod>2023-06-01T22:14:41.497Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/datasets/adhd-200.html</loc>
-    <lastmod>2023-05-26T22:13:22.970Z</lastmod>
+    <lastmod>2023-06-01T22:14:41.763Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/talks/SCSB_Colloquium_Series.html</loc>
-    <lastmod>2023-05-26T22:13:23.303Z</lastmod>
+    <lastmod>2023-06-01T22:14:42.093Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/talks/precision-psychiatry-conference.html</loc>
-    <lastmod>2023-05-26T22:13:23.881Z</lastmod>
+    <lastmod>2023-06-01T22:14:42.624Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/talks/index.html</loc>
-    <lastmod>2023-05-26T22:13:24.172Z</lastmod>
+    <lastmod>2023-06-01T22:14:42.889Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/talks/determinants_of_mental_health_conference.html</loc>
-    <lastmod>2023-05-26T22:13:24.900Z</lastmod>
+    <lastmod>2023-06-01T22:14:43.568Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/about-me.html</loc>
-    <lastmod>2023-05-26T22:13:25.198Z</lastmod>
+    <lastmod>2023-06-01T22:14:43.860Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/development-translational-neuroimaging.html</loc>
-    <lastmod>2023-05-26T22:13:25.555Z</lastmod>
+    <lastmod>2023-06-01T22:14:44.271Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/pHealth-terminology.html</loc>
-    <lastmod>2023-05-26T22:13:25.882Z</lastmod>
+    <lastmod>2023-06-01T22:14:44.616Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/RDoC.html</loc>
-    <lastmod>2023-05-26T22:13:26.211Z</lastmod>
+    <lastmod>2023-06-01T22:14:44.963Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/methodology-pHealth.html</loc>
-    <lastmod>2023-05-26T22:13:26.574Z</lastmod>
+    <lastmod>2023-06-01T22:14:45.342Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/suicide-prediction.html</loc>
-    <lastmod>2023-05-26T22:13:26.902Z</lastmod>
+    <lastmod>2023-06-01T22:14:45.744Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/EMR-selfharm.html</loc>
-    <lastmod>2023-05-26T22:13:27.251Z</lastmod>
+    <lastmod>2023-06-01T22:14:46.129Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/index.html</loc>
-    <lastmod>2023-05-26T22:13:27.503Z</lastmod>
+    <lastmod>2023-06-01T22:14:46.392Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/pHealth-other-fields.html</loc>
-    <lastmod>2023-05-26T22:13:27.889Z</lastmod>
+    <lastmod>2023-06-01T22:14:46.791Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/pHealth-overview.html</loc>
-    <lastmod>2023-05-26T22:13:28.258Z</lastmod>
+    <lastmod>2023-06-01T22:14:47.163Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/subcortical-translational-neuroimaging.html</loc>
-    <lastmod>2023-05-26T22:13:28.595Z</lastmod>
+    <lastmod>2023-06-01T22:14:47.492Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/translational-neuroimaging.html</loc>
-    <lastmod>2023-05-26T22:13:29.048Z</lastmod>
+    <lastmod>2023-06-01T22:14:47.895Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/cerebellum-neuropsych.html</loc>
-    <lastmod>2023-05-26T22:13:29.365Z</lastmod>
+    <lastmod>2023-06-01T22:14:48.184Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/literature-review/cerebellum-development.html</loc>
-    <lastmod>2023-05-26T22:13:29.840Z</lastmod>
+    <lastmod>2023-06-01T22:14:48.647Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/ethics/AI-hype.html</loc>
-    <lastmod>2023-05-26T22:13:30.132Z</lastmod>
+    <lastmod>2023-06-01T22:14:48.910Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/ethics/pHealth-ethics.html</loc>
-    <lastmod>2023-05-26T22:13:30.845Z</lastmod>
+    <lastmod>2023-06-01T22:14:49.547Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/index.html</loc>
-    <lastmod>2023-05-26T22:13:31.173Z</lastmod>
+    <lastmod>2023-06-01T22:14:49.848Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/spr23_urop_onboarding.html</loc>
-    <lastmod>2023-05-26T22:13:31.525Z</lastmod>
+    <lastmod>2023-06-01T22:14:50.187Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/fall22_urop_recruitment.html</loc>
-    <lastmod>2023-05-26T22:13:31.829Z</lastmod>
+    <lastmod>2023-06-01T22:14:50.503Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/openmind.html</loc>
-    <lastmod>2023-05-26T22:13:32.170Z</lastmod>
+    <lastmod>2023-06-01T22:14:50.841Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/index.html</loc>
-    <lastmod>2023-05-26T22:13:32.449Z</lastmod>
+    <lastmod>2023-06-01T22:14:51.120Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/weekly-notes.html</loc>
-    <lastmod>2023-05-26T22:13:32.771Z</lastmod>
+    <lastmod>2023-06-01T22:14:51.428Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/fall22_urop_onboarding.html</loc>
-    <lastmod>2023-05-26T22:13:33.160Z</lastmod>
+    <lastmod>2023-06-01T22:14:51.793Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/mentorship/bash_commands.html</loc>
-    <lastmod>2023-05-26T22:13:33.474Z</lastmod>
+    <lastmod>2023-06-01T22:14:52.081Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/further-resources.html</loc>
-    <lastmod>2023-05-26T22:13:33.750Z</lastmod>
+    <lastmod>2023-06-01T22:14:52.347Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/team.html</loc>
-    <lastmod>2023-05-26T22:13:34.049Z</lastmod>
+    <lastmod>2023-06-01T22:14:52.652Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/Parent_Measures_ADHD.html</loc>
-    <lastmod>2023-05-26T22:13:34.409Z</lastmod>
+    <lastmod>2023-06-01T22:14:52.986Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_compare.html</loc>
-    <lastmod>2023-05-26T22:13:35.306Z</lastmod>
+    <lastmod>2023-06-01T22:14:53.870Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/1.0.mk.visualize.html</loc>
-    <lastmod>2023-05-26T22:13:36.239Z</lastmod>
+    <lastmod>2023-06-01T22:14:54.803Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_ADHD.html</loc>
-    <lastmod>2023-05-26T22:13:36.630Z</lastmod>
+    <lastmod>2023-06-01T22:14:55.202Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_compare_all_features.html</loc>
-    <lastmod>2023-05-26T22:13:37.831Z</lastmod>
+    <lastmod>2023-06-01T22:14:56.472Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_Learning_Disorder_with_Impairment_in_Reading.html</loc>
-    <lastmod>2023-05-26T22:13:38.289Z</lastmod>
+    <lastmod>2023-06-01T22:14:56.952Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_ADHD-subtypes.html</loc>
-    <lastmod>2023-05-26T22:13:38.693Z</lastmod>
+    <lastmod>2023-06-01T22:14:57.383Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/intake-interview-adhd.html</loc>
-    <lastmod>2023-05-26T22:13:39.161Z</lastmod>
+    <lastmod>2023-06-01T22:14:57.846Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models.html</loc>
-    <lastmod>2023-05-26T22:13:39.591Z</lastmod>
+    <lastmod>2023-06-01T22:14:58.277Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_Depression.html</loc>
-    <lastmod>2023-05-26T22:13:40.009Z</lastmod>
+    <lastmod>2023-06-01T22:14:58.689Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_No-Diagnosis-Sex.html</loc>
-    <lastmod>2023-05-26T22:13:40.448Z</lastmod>
+    <lastmod>2023-06-01T22:14:59.105Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/Child_Measures_ADHD.html</loc>
-    <lastmod>2023-05-26T22:13:41.062Z</lastmod>
+    <lastmod>2023-06-01T22:14:59.705Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_ASD.html</loc>
-    <lastmod>2023-05-26T22:13:41.594Z</lastmod>
+    <lastmod>2023-06-01T22:15:00.232Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/topic_modeling_HBN.html</loc>
-    <lastmod>2023-05-26T22:13:42.647Z</lastmod>
+    <lastmod>2023-06-01T22:15:01.270Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/index.html</loc>
-    <lastmod>2023-05-26T22:13:42.934Z</lastmod>
+    <lastmod>2023-06-01T22:15:01.549Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/exploratory-features-adhd.html</loc>
-    <lastmod>2023-05-26T22:13:43.426Z</lastmod>
+    <lastmod>2023-06-01T22:15:02.063Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/Teacher_LOFO_Importance.html</loc>
-    <lastmod>2023-05-26T22:13:44.076Z</lastmod>
+    <lastmod>2023-06-01T22:15:02.712Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_ADHD-Sex.html</loc>
-    <lastmod>2023-05-26T22:13:44.477Z</lastmod>
+    <lastmod>2023-06-01T22:15:03.113Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_compare_CBCL.html</loc>
-    <lastmod>2023-05-26T22:13:45.042Z</lastmod>
+    <lastmod>2023-06-01T22:15:03.696Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/Parent_Feature_Importance-Smote.html</loc>
-    <lastmod>2023-05-26T22:13:45.637Z</lastmod>
+    <lastmod>2023-06-01T22:15:04.305Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/figures-ADHD+gender.html</loc>
-    <lastmod>2023-05-26T22:13:46.290Z</lastmod>
+    <lastmod>2023-06-01T22:15:04.972Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/clinical_dx.html</loc>
-    <lastmod>2023-05-26T22:13:46.896Z</lastmod>
+    <lastmod>2023-06-01T22:15:05.552Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/phenotype_models_Anxiety.html</loc>
-    <lastmod>2023-05-26T22:13:47.309Z</lastmod>
+    <lastmod>2023-06-01T22:15:05.951Z</lastmod>
   </url>
   <url>
     <loc>https://maedbhk.github.io/MIT-Projects/notebooks/Child-Behavior-Checklist.html</loc>
-    <lastmod>2023-05-26T22:13:47.936Z</lastmod>
+    <lastmod>2023-06-01T22:15:06.523Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/writing/invitation.html</loc>
+    <lastmod>2023-06-01T22:15:06.837Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/writing/references.html</loc>
+    <lastmod>2023-06-01T22:15:07.239Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/writing/index.html</loc>
+    <lastmod>2023-06-01T22:15:07.518Z</lastmod>
+  </url>
+  <url>
+    <loc>https://maedbhk.github.io/MIT-Projects/writing/notes.html</loc>
+    <lastmod>2023-06-01T22:15:08.462Z</lastmod>
   </url>
 </urlset>
