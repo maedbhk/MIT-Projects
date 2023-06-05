@@ -1505,18 +1505,18 @@
     "text": "Add your name to the team’s website through a pull request here\nRequest access to gablab slack, look for workspace Gablab, request access, once you have joined, search for channel #satralab"
   },
   {
-    "objectID": "mentorship/sum23_urop_onboarding.html#doing-research",
-    "href": "mentorship/sum23_urop_onboarding.html#doing-research",
+    "objectID": "mentorship/sum23_urop_onboarding.html#readingwriting-research-papers",
+    "href": "mentorship/sum23_urop_onboarding.html#readingwriting-research-papers",
     "title": "Summer23 Onboarding",
-    "section": "Doing Research",
-    "text": "Doing Research\n\nShell, git and other useful skills: https://missing.csail.mit.edu/\npython, stats, machine learning, deep learning, nlp: Daniel’s resources here\nFor tips on writing a good research paper (should also be helpful in reading papers too), see Mensch & Kording’s paper.\nFor guidelines on how to quickly and efficiently read a research paper\nquestions you can ask yourself as you’re reading a paper"
+    "section": "Reading/Writing Research Papers",
+    "text": "Reading/Writing Research Papers\n\nFor tips on writing a good research paper (should also be helpful in reading papers too), see Mensch & Kording’s paper.\nFor guidelines on how to quickly and efficiently read a research paper\nquestions you can ask yourself as you’re reading a paper"
   },
   {
-    "objectID": "mentorship/sum23_urop_onboarding.html#openmind-cluster-where-we-store-data-and-run-scripts",
-    "href": "mentorship/sum23_urop_onboarding.html#openmind-cluster-where-we-store-data-and-run-scripts",
+    "objectID": "mentorship/sum23_urop_onboarding.html#technical-onboarding",
+    "href": "mentorship/sum23_urop_onboarding.html#technical-onboarding",
     "title": "Summer23 Onboarding",
-    "section": "OpenMind: cluster where we store data and run scripts",
-    "text": "OpenMind: cluster where we store data and run scripts\n\nRequest openmind account + do course to get access and post certificate on OpenMind github\n\nAccount Request Example: Attn @s-b,@djarecka: “maedbh maedbh@mit.edu” PI: Satrajit Ghosh\nVerify which groups you’re part of on openmind by typing groups: you should see om_sig and gablab. om_sig is Satra Ghosh’s group and gablab is John Gabrieli’s group.\n\nFollow instructions on openmind setup for getting starting on openmind (bash scripts etc.)\n\nopenmind website: this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful."
+    "section": "Technical Onboarding",
+    "text": "Technical Onboarding\n\nOpenMind: cluster where we store data and run scripts\n\nRequest openmind account + do course to get access and post certificate on OpenMind github\n\nAccount Request Example: Attn @s-b,@djarecka: “maedbh maedbh@mit.edu” PI: Satrajit Ghosh\nVerify which groups you’re part of on openmind by typing groups: you should see om_sig and gablab. om_sig is Satra Ghosh’s group and gablab is John Gabrieli’s group.\n\nFollow instructions on openmind setup for getting starting on openmind (bash scripts etc.)\n\nopenmind website: this provides generic pointers to various elements of openmind, the link to FAQs is particularly useful."
   },
   {
     "objectID": "mentorship/sum23_urop_onboarding.html#projects",
