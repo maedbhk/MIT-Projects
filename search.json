@@ -884,35 +884,35 @@
   {
     "objectID": "projects/exploring-adhd.html",
     "href": "projects/exploring-adhd.html",
-    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
+    "title": "Exploring ADHD across development",
     "section": "",
     "text": "Some of these questions have been addressed here\nWhat % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd\nWhat is the SES/race/gender breakdown of children with adhd?\nWhat are the kinds of professions / college education held by parents of kids with adhd?\nSchool environment for children with adhd PhenX_School\nNeighborhood environment for children with adhd PhenX_Neighborhood\nHow do general scores of achievement and intelligence differ across adhd subtypes?\nWhat is the gender breakdown of adhd subtypes?\nGirls with adhd:\n\nage of first menstruation\nage of puberty onset\n\nwhat kind of school organizations are kids with adhd part of? PreInt_EduHx\nFamily history of mental illness PreInt_FamHx or other illness\n\nprimary diagnosis of mother, father, sibling\n\nWhat % of children are taking medication for adhd?\nWhat type of allergies do children with adhd have?\nPrevious head injuries?\nMother’s nicotine use during pregnancy?\nSeverity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.)\nAny information on whether people with adhd are night owls versus early risers?\nAny difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis?\nIs there any evidence that children with ADHD spend longer on the internet than children without adhd, and what is the nature of internet usage?"
   },
   {
     "objectID": "projects/exploring-adhd.html#research-qusetions",
     "href": "projects/exploring-adhd.html#research-qusetions",
-    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
+    "title": "Exploring ADHD across development",
     "section": "",
     "text": "Some of these questions have been addressed here\nWhat % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd\nWhat is the SES/race/gender breakdown of children with adhd?\nWhat are the kinds of professions / college education held by parents of kids with adhd?\nSchool environment for children with adhd PhenX_School\nNeighborhood environment for children with adhd PhenX_Neighborhood\nHow do general scores of achievement and intelligence differ across adhd subtypes?\nWhat is the gender breakdown of adhd subtypes?\nGirls with adhd:\n\nage of first menstruation\nage of puberty onset\n\nwhat kind of school organizations are kids with adhd part of? PreInt_EduHx\nFamily history of mental illness PreInt_FamHx or other illness\n\nprimary diagnosis of mother, father, sibling\n\nWhat % of children are taking medication for adhd?\nWhat type of allergies do children with adhd have?\nPrevious head injuries?\nMother’s nicotine use during pregnancy?\nSeverity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.)\nAny information on whether people with adhd are night owls versus early risers?\nAny difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis?\nIs there any evidence that children with ADHD spend longer on the internet than children without adhd, and what is the nature of internet usage?"
   },
   {
     "objectID": "projects/exploring-adhd.html#questions---child-behavior-checklist---teacher-report-form",
     "href": "projects/exploring-adhd.html#questions---child-behavior-checklist---teacher-report-form",
-    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
+    "title": "Exploring ADHD across development",
     "section": "Questions - Child Behavior Checklist - Teacher Report Form",
     "text": "Questions - Child Behavior Checklist - Teacher Report Form\n\nWhat information is captured in this questionnaire?\n\nteacher / parent differences in CBCL in girls with ADHD - difference in reporting?\nwhat scales you use to diagnose ADHD result in different subtypes"
   },
   {
     "objectID": "projects/exploring-adhd.html#questions---predictive-modeling",
     "href": "projects/exploring-adhd.html#questions---predictive-modeling",
-    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
+    "title": "Exploring ADHD across development",
     "section": "Questions - Predictive modeling",
     "text": "Questions - Predictive modeling\n\nADHD: can subtypes be classified from one another?\n\nhypothesis: most questionnaires/measures will not be able to differentiate between adhd subtypes\n\nADHD: can gender be classified from one another?\n\nhypothesis: certain questionnaires will be able to identify between gender\n\nare there boys/girls who have cognitive profiles similar to those with adhd but haven’t been diagnosed with adhd?\n\nhow do we address this question? determine a cognitive profile for each participant and do a similarity comparison between those diagnosed with adhd and those without, are there any participants who have a cognitive profile that is very similar to ADHD but were not given a diagnosis?"
   },
   {
     "objectID": "projects/exploring-adhd.html#summary-of-cognitive-performance",
     "href": "projects/exploring-adhd.html#summary-of-cognitive-performance",
-    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
+    "title": "Exploring ADHD across development",
     "section": "Summary of cognitive performance",
     "text": "Summary of cognitive performance\n\nMany questionnaires (e.g., measures) have a total or raw score providing an overall summary of how well a participant did on a questionnaire\nFor all of the measures that have a total or raw score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?"
   },
@@ -921,7 +921,7 @@
     "href": "projects/gender-adhd.html",
     "title": "Sex differences in ADHD",
     "section": "",
-    "text": "See recent presentation on this project\n\n\n\n\nPreliminary Results"
+    "text": "Preliminary Results"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html",
@@ -949,7 +949,7 @@
     "href": "projects/phenotyping-project.html",
     "title": "Phenotyping Project",
     "section": "",
-    "text": "See recent [presentation] on this topic (https://docs.google.com/presentation/d/1DL2Ec4o4LHnki4P4RB3HiFvmYJM7vSGNrW40OrdsCGQ/edit?usp=sharing) on this project\n\n\n\n\nPredictive Modeling Overview"
+    "text": "See recent presentation on this project\n\n\n\n\nPredictive Modeling Overview"
   },
   {
     "objectID": "projects/item_analysis.html",
