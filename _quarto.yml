@@ -84,6 +84,7 @@ website:
           - mentorship/fall22_urop_onboarding.md
           - mentorship/spr23_urop_onboarding.md
           - mentorship/sum23_urop_onboarding.md
+          - mentorship/urops.md
           - mentorship/openmind.md
       - section: "Methods"
         contents: 
@@ -104,6 +105,9 @@ website:
       - section: "Notebooks"
         contents:
           - notebooks/index.md
+      - section: "Presentations"
+        contents:
+          - presentations/index.md
       - section: "Writing"
         contents:
           - writing/index.md
