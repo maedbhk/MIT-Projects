@@ -20,3 +20,4 @@ title: Week 43
     * Updated planned analyses for project investigating [cortico-cerebellar connectivity across development](../projects/cerebellum-fingerprints.md)
 * Updated [webpage](../mentorship/urops.md) that keeps track of current and former urops
 * Updated [webpage](../presentations/index.md) that keeps track of recent presentations I've given
+* Completed [annual review](https://docs.google.com/document/d/12pSQH6M9FXG8kclRCYILDOhA2Nc7JtNt/edit?usp=sharing&ouid=110847987931723045299&rtpof=true&sd=true) (only accessible to Satra)
