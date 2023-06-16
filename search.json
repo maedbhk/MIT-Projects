@@ -102,7 +102,7 @@
     "href": "methods/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Instead of writing notes about methods in my lab notebook, I’m writing them here.."
+    "text": "Instead of writing notes about methods in my lab notebook, I’m writing them here (when I remember)\n\nFeature Engineering\nfMRI Parcellations\nModel Evaluation\nModel Interpretability\nModeling Electronic Health Records\nImbalanced Data\nUnsupervised Learning"
   },
   {
     "objectID": "methods/smote.html",
@@ -483,6 +483,20 @@
     "text": "Done and To-Do\n\nworked with Shreya on running new phenotypic models to incorporate categorical features (using dirtycat) and testing on different classifiers, models were taking a long time to run, spent some time troubleshooting ways to reduce run time, reducing number of splits helped + parallelizing code\nPlayed around with chatGPT for gender differences and ADHD paper\n\nmet with Alyson to discuss paper draft. I’m working on putting results blocks together and she’s working on the write-up\ntalked about expected gender differences across HBN measures - compiling information about each measure from the literature\ndiscussed diagnostic bias vs. gender differences? need to come up with a good method to address whether the former is true"
   },
   {
+    "objectID": "progress/week-43.html",
+    "href": "progress/week-43.html",
+    "title": "Week 43",
+    "section": "",
+    "text": "06/12/23 - 06/16/23"
+  },
+  {
+    "objectID": "progress/week-43.html#done-and-to-do",
+    "href": "progress/week-43.html#done-and-to-do",
+    "title": "Week 43",
+    "section": "Done and To Do",
+    "text": "Done and To Do\n\nWriting this week:\n\nFinished review paper (submitted to journal)\nMade a bit of progress on sex differences + ADHD paper (will focus on this paper more next week)\n\nWorked with Kai on training new BERT models for clinical questionnaires\n\nI initially shared an example notebook on topic modeling, drawing heavily from this great tutorial, and he updated it with improved results (identified more meaningful topics for embeddings). Next week, he’ll start analyzing the response data.\n\nMeetings:\n\nHarsha - Quorto overview\nScott - overview of BHS questionnaires administered pre-covid and during covid\nAmanda + Shruti - discussed planned project on ADHD + Professions (they are doing something similar)\nSet up meeting with Ola from gablab on predicting reading impairment from HBN (she is working on something similar and wants to discuss some of the results that I presented at this week’s gablab meeting)\n\nPresented at Gablab meeting, presentation here\n\nIncluded new results on modeling ADHD comorbidities\nUpdated planned analyses for project investigating cortico-cerebellar connectivity across development\n\nUpdated webpage that keeps track of current and former urops\nUpdated webpage that keeps track of recent presentations I’ve given"
+  },
+  {
     "objectID": "progress/week-3.html",
     "href": "progress/week-3.html",
     "title": "Week 3",
@@ -536,7 +550,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43"
   },
   {
     "objectID": "progress/week-27.html",
@@ -551,6 +565,20 @@
     "title": "Week 27",
     "section": "Done and To-Do",
     "text": "Done and To-Do\n\nEdited an abstract for Alyson for Wellesley senior thesis conference\nRead CHOP-related papers:\n\nYouth Suicide During the First Year of the COVID-19 Pandemic\nSelf-Harm in Children and Adolescents who Presented at Emergency Units During\n\nPreprocessing ABCD + CBCL data - next step is to incorporate these data into modeling workflow that I wrote for HBN\nRevisiting ADHD + Professions project w/Lexi - bit of a task to preprocess these data, ideal project for an RA\nFellows lunch with Lisa Yang - she asked specifically about CHOP project, gave her high level view of progress + plans\nHosted MBA Sloan Fellows as part of MBA Idea week, group of 4 visited the lab and I gave them a high-level presentation about work we’re doing, connected some of them with relevant folks (Omar, Daniel etc.)"
+  },
+  {
+    "objectID": "progress/week-42.html",
+    "href": "progress/week-42.html",
+    "title": "Week 42",
+    "section": "",
+    "text": "06/05/23 - 06/09/23"
+  },
+  {
+    "objectID": "progress/week-42.html#done-and-to-do",
+    "href": "progress/week-42.html#done-and-to-do",
+    "title": "Week 42",
+    "section": "Done and To Do",
+    "text": "Done and To Do\n\nWriting this week:\n\nreview paper: cerebellum as part of a network\nsex differences in ADHD\n\nReading this week:\n\npapers on cerebellum + development\n\nBuilding simple predictive models on CHOP data\n\nincl. spent lots of time preprocessing/data wrangling BHS data\n\nMeetings:\n\nHarsha - High level overview of CHOP EHR data\nScott - overview of BHS questionnaires administered pre-covid and during covid\nKai - onboarded for summer UROP. He’ll work on NLP project on clinical questionnaires\nKailana - onboarded for summer internship (part of Gablab internship program) - co-supervising wtih Lexi"
   },
   {
     "objectID": "progress/week-2.html",
@@ -795,7 +823,7 @@
     "href": "projects/EMR-selfharm.html",
     "title": "Identifying Risk Predictors for Self-Harm through Electronic Medical Records",
     "section": "",
-    "text": "Ideas from Czyz et al. 2021 and Huang et al. 2020\n\n\nDataset Overview\n\nOverview of the data can be found here\n\n\n\nProject Goals\n\nCan we identify reliable proximal markers of suicide risk to inform personalized interventions provided at crucial moments in the individual’s natural environment?\n\nValidated indicators of proximal risk could lead to the development of adaptive interventions\nShort-term risk prediction is a key concern for clinical providers and more research that incorporates proximal assessment is needed to provide insights about short-term precursors to suicidal ideation in order to facilitate early detection of risk as well as inform targeted interventions.\n\nAre existing tools/models validated on diverse communities of adolescents?\n\nThere is a great need to ensure that screening tools serve youth from diverse backgrounds, identities, and cultures.\n\nOne major goal of this work would be to integrate screening into clinical practice.\n\nAny models that we build should be interpretable and any uncertainty (statistical or otherwise) should be clearly communicated.\n\nAre there environmental predictors of suicide risk? Can this be identified using geocoded data?\n\nWhat is the scope/granularity of the geocoded data collected by CHOP?\nCan the model that we build on CHOP data be generalized to adolescents in other geographical locations? For example, are there similar risk predictors for suicide in Philadelphia compared to Boston?\n\nWas COVID-19 a risk factor of suicide attempt?\n\nCan we quantify the risk that COVID presented to a population at-risk for suicide? Were suicide risk predictors different as a result of the pandemic?\n\n\n\n\nMethods\n\nOne idea for modeling the data is to use clinicalBERT, which models clinical notes to predict hospital readmission. This approach is largely focused on unstructured data, therefore it should be applied to electronic health records that contain text data, which are high-dimensional and sparse.\nTo model structured data, we could use any number of machine learning pipelines. We are using pydra-ml for another project, which is a lightweight and flexible machine learning pipeline that does predictive (and interpretable) modeling.\n\n\n\nEthical considerations\n\nNot only are there methodological considerations for anyone doing predictive modeling work in psychiatry, but there are significant ethical considerations. As we progress in this project, I hope to be mindful of these points and to include them in our discussions wherever possible."
+    "text": "Ideas from Czyz et al. 2021 and Huang et al. 2020\n\n\nDataset Overview\n\nOverview of the data can be found here\n\n\n\nProject Goals\n\nCan we identify reliable proximal markers of suicide risk to inform personalized interventions provided at crucial moments in the individual’s natural environment?\n\nValidated indicators of proximal risk could lead to the development of adaptive interventions\nShort-term risk prediction is a key concern for clinical providers and more research that incorporates proximal assessment is needed to provide insights about short-term precursors to suicidal ideation in order to facilitate early detection of risk as well as inform targeted interventions.\n\nAre existing tools/models validated on diverse communities of adolescents?\n\nThere is a great need to ensure that screening tools serve youth from diverse backgrounds, identities, and cultures.\n\nOne major goal of this work would be to integrate screening into clinical practice.\n\nAny models that we build should be interpretable and any uncertainty (statistical or otherwise) should be clearly communicated.\n\nAre there environmental predictors of suicide risk? Can this be identified using geocoded data?\n\nWhat is the scope/granularity of the geocoded data collected by CHOP?\nCan the model that we build on CHOP data be generalized to adolescents in other geographical locations? For example, are there similar risk predictors for suicide in Philadelphia compared to Boston?\n\nWas COVID-19 a risk factor of suicide attempt?\n\nCan we quantify the risk that COVID presented to a population at-risk for suicide? Were suicide risk predictors different as a result of the pandemic?\n\n\n\n\n\nProject Outline\n\n\n\n\nMethods\n\nOne idea for modeling the data is to use clinicalBERT, which models clinical notes to predict hospital readmission. This approach is largely focused on unstructured data, therefore it should be applied to electronic health records that contain text data, which are high-dimensional and sparse.\nTo model structured data, we could use any number of machine learning pipelines. We are using pydra-ml for another project, which is a lightweight and flexible machine learning pipeline that does predictive (and interpretable) modeling.\n\n\n\nEthical considerations\n\nNot only are there methodological considerations for anyone doing predictive modeling work in psychiatry, but there are significant ethical considerations. As we progress in this project, I hope to be mindful of these points and to include them in our discussions wherever possible."
   },
   {
     "objectID": "projects/inter-clinician-reliability.html",
@@ -851,56 +879,63 @@
     "href": "projects/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Project Timelines:\n\nPhenotyping project (HBN and ABCD) - May 2023 finish analysis, first draft - summer\nCHOP project - May 2023 finish analysis, early Fall - first draft\nGender differences in ADHD (HBN and ABCD)\nAdaptive ADHD (UK Biobank Professions)\nCerebellar Fingerprinting (HBN and ABCD)"
+    "text": "Project Timelines:\n\nPhenotyping project (HBN and ABCD)\nCHOP project\nSex differences in ADHD (HBN and ABCD)\nADHD + Professions\nCerebellar Fingerprinting (HBN and ABCD)"
   },
   {
     "objectID": "projects/exploring-adhd.html",
     "href": "projects/exploring-adhd.html",
-    "title": "Exploring ADHD",
+    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
     "section": "",
     "text": "Some of these questions have been addressed here\nWhat % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd\nWhat is the SES/race/gender breakdown of children with adhd?\nWhat are the kinds of professions / college education held by parents of kids with adhd?\nSchool environment for children with adhd PhenX_School\nNeighborhood environment for children with adhd PhenX_Neighborhood\nHow do general scores of achievement and intelligence differ across adhd subtypes?\nWhat is the gender breakdown of adhd subtypes?\nGirls with adhd:\n\nage of first menstruation\nage of puberty onset\n\nwhat kind of school organizations are kids with adhd part of? PreInt_EduHx\nFamily history of mental illness PreInt_FamHx or other illness\n\nprimary diagnosis of mother, father, sibling\n\nWhat % of children are taking medication for adhd?\nWhat type of allergies do children with adhd have?\nPrevious head injuries?\nMother’s nicotine use during pregnancy?\nSeverity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.)\nAny information on whether people with adhd are night owls versus early risers?\nAny difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis?\nIs there any evidence that children with ADHD spend longer on the internet than children without adhd, and what is the nature of internet usage?"
   },
   {
-    "objectID": "projects/exploring-adhd.html#questions",
-    "href": "projects/exploring-adhd.html#questions",
-    "title": "Exploring ADHD",
+    "objectID": "projects/exploring-adhd.html#research-qusetions",
+    "href": "projects/exploring-adhd.html#research-qusetions",
+    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
     "section": "",
     "text": "Some of these questions have been addressed here\nWhat % of children with adhd have parents with adhd? PreInt_FamHx,m_adhd PreInt_FamHx,f_adhd\nWhat is the SES/race/gender breakdown of children with adhd?\nWhat are the kinds of professions / college education held by parents of kids with adhd?\nSchool environment for children with adhd PhenX_School\nNeighborhood environment for children with adhd PhenX_Neighborhood\nHow do general scores of achievement and intelligence differ across adhd subtypes?\nWhat is the gender breakdown of adhd subtypes?\nGirls with adhd:\n\nage of first menstruation\nage of puberty onset\n\nwhat kind of school organizations are kids with adhd part of? PreInt_EduHx\nFamily history of mental illness PreInt_FamHx or other illness\n\nprimary diagnosis of mother, father, sibling\n\nWhat % of children are taking medication for adhd?\nWhat type of allergies do children with adhd have?\nPrevious head injuries?\nMother’s nicotine use during pregnancy?\nSeverity of ADHD diagnosis - differences across subtypes (inattentive, hyperactive etc.)\nAny information on whether people with adhd are night owls versus early risers?\nAny difference in rates of suspension, detention in children with ADHD compared to children without a diagnosis?\nIs there any evidence that children with ADHD spend longer on the internet than children without adhd, and what is the nature of internet usage?"
   },
   {
     "objectID": "projects/exploring-adhd.html#questions---child-behavior-checklist---teacher-report-form",
     "href": "projects/exploring-adhd.html#questions---child-behavior-checklist---teacher-report-form",
-    "title": "Exploring ADHD",
+    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
     "section": "Questions - Child Behavior Checklist - Teacher Report Form",
     "text": "Questions - Child Behavior Checklist - Teacher Report Form\n\nWhat information is captured in this questionnaire?\n\nteacher / parent differences in CBCL in girls with ADHD - difference in reporting?\nwhat scales you use to diagnose ADHD result in different subtypes"
   },
   {
     "objectID": "projects/exploring-adhd.html#questions---predictive-modeling",
     "href": "projects/exploring-adhd.html#questions---predictive-modeling",
-    "title": "Exploring ADHD",
+    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
     "section": "Questions - Predictive modeling",
     "text": "Questions - Predictive modeling\n\nADHD: can subtypes be classified from one another?\n\nhypothesis: most questionnaires/measures will not be able to differentiate between adhd subtypes\n\nADHD: can gender be classified from one another?\n\nhypothesis: certain questionnaires will be able to identify between gender\n\nare there boys/girls who have cognitive profiles similar to those with adhd but haven’t been diagnosed with adhd?\n\nhow do we address this question? determine a cognitive profile for each participant and do a similarity comparison between those diagnosed with adhd and those without, are there any participants who have a cognitive profile that is very similar to ADHD but were not given a diagnosis?"
   },
   {
     "objectID": "projects/exploring-adhd.html#summary-of-cognitive-performance",
     "href": "projects/exploring-adhd.html#summary-of-cognitive-performance",
-    "title": "Exploring ADHD",
+    "title": "Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)",
     "section": "Summary of cognitive performance",
-    "text": "Summary of cognitive performance\n\nMany questionnaires (e.g., measures) have a total or raw score providing an overall summary of how well a participant did on a questionnaire\nFor all of the measures that have a total or raw score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?\n\ndistance correlation (dcorr) * matrix of distances: 400 participants x all features (per questionnaire) * dcorr - how independent are two matrices (pairwise covariance matrices) * compare two matrices * how orthogonal are features wtihin a questionnaire? * are questions are similar (constructs)? * deap portal - built on ABCD - curated tabular data * xcp pipeline"
+    "text": "Summary of cognitive performance\n\nMany questionnaires (e.g., measures) have a total or raw score providing an overall summary of how well a participant did on a questionnaire\nFor all of the measures that have a total or raw score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?"
+  },
+  {
+    "objectID": "projects/gender-adhd.html",
+    "href": "projects/gender-adhd.html",
+    "title": "Sex differences in ADHD",
+    "section": "",
+    "text": "See recent presentation on this project\n\n\n\n\nPreliminary Results"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html",
     "href": "projects/cerebellum-fingerprints.html",
     "title": "Cerebellar fingerprints of neurodevelopmental disorders",
     "section": "",
-    "text": "There has been great interest recently in the idea of the cerebellum as a locus in neurodevelopmental disorders. Structural and functional abnormalities in the cerebellum are consistently reported across neurodevelopmental disorders, and in particular, autism spectrum disorder (ASD) has been linked to cerebellar abnormality. For example, children and adults with ASD show atypical fMRI activation of cortico-cerebellar networks during biological motion perception Jack et al. 2017 and perception of social interaction Kana et al. 2015. Furthermore, behavioral studies have found that children with ASD display abnormal conditioned reponses in delayed eyeblink conditioning, a conditioning paradigm that strongly implicates the cerebellum. For example, Tran et al. 2017 tested delayed eyeblink conditioning, a task which is depenedent on the cerebellum, on a group of very preterm children and adults. They found that in this group, there were significant deficits in the acquisition of conditioned responses, therefore suggesting that both motor and non-motor behavioral deficits arise from cerebellar abnormalities.\nOne of the primary reasons why we think of the cerebellum as being an important developmental structure is that it is among the first brain structures to begin cellular differentiation and one of the last to fully mature Sathyanesan et al. 2019. Specifically, while the majority of neocortical neurogenesis occurs prenatally Silbereis et al. 2016, cerebellar neurogenesis continues until the 11th postnatal month Abraham et al. 2001. During this period, the cerebellum undergoes enormous growth, quadrupling in volume between the 24th and 38th gestational weeks Volpe et al. 2009, and then it doubles in size during the first 90 postnatal days. In fact, 85% of granule cells, the most populous cell type in the cerebellum, are generated after birth Kiessling et al. 2013. Given its protracted development, the cerebellum is especially vulnerable to a host of insults from environmental and molecular, to genetic and epigenetic factors Sathyanesan et al. 2019. Studies of preterm infants have shown that cerebellar injury during the perinatal period results in volume reduction in both cerebellar grey and white matter as well as remote neocortical regions Limperopoulos et al. (2014). These results suggest that changes in early cerebellar activity affect both cerebellar development and activity of neocortex, which means that the cerebellum could play an important role in refining cortical circuits during critical develpmental periods Wang et al. 2014."
+    "text": "There has been great interest recently in the idea of the cerebellum as a locus in neurodevelopmental disorders. Structural and functional abnormalities in the cerebellum are consistently reported across neurodevelopmental disorders, and in particular, autism spectrum disorder (ASD) has been linked to cerebellar abnormality. For example, children and adults with ASD show atypical fMRI activation of cortico-cerebellar networks during biological motion perception Jack et al. 2017 and perception of social interaction Kana et al. 2015. Furthermore, behavioral studies have found that children with ASD display abnormal conditioned reponses in delayed eyeblink conditioning, a conditioning paradigm that strongly implicates the cerebellum. For example, Tran et al. 2017 tested delayed eyeblink conditioning, a task which is depenedent on the cerebellum, on a group of very preterm children and adults. They found that in this group, there were significant deficits in the acquisition of conditioned responses, therefore suggesting that both motor and non-motor behavioral deficits arise from cerebellar abnormalities.\nOne of the primary reasons why we think of the cerebellum as being an important developmental structure is that it is among the first brain structures to begin cellular differentiation and one of the last to fully mature Sathyanesan et al. 2019. Specifically, while the majority of neocortical neurogenesis occurs prenatally Silbereis et al. 2016, cerebellar neurogenesis continues until the 11th postnatal month Abraham et al. 2001. During this period, the cerebellum undergoes enormous growth, quadrupling in volume between the 24th and 38th gestational weeks Volpe et al. 2009, and then it doubles in size during the first 90 postnatal days. In fact, 85% of granule cells, the most populous cell type in the cerebellum, are generated after birth Kiessling et al. 2013. Given its protracted development, the cerebellum is especially vulnerable to a host of insults from environmental and molecular, to genetic and epigenetic factors Sathyanesan et al. 2019. Studies of preterm infants have shown that cerebellar injury during the perinatal period results in volume reduction in both cerebellar grey and white matter as well as remote neocortical regions Limperopoulos et al. (2014). These results suggest that changes in early cerebellar activity affect both cerebellar development and activity of neocortex, which means that the cerebellum could play an important role in refining cortical circuits during critical develpmental periods Wang et al. 2014.\n\n\n\nPlanned Analyses"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html#introduction",
     "href": "projects/cerebellum-fingerprints.html#introduction",
     "title": "Cerebellar fingerprints of neurodevelopmental disorders",
     "section": "",
-    "text": "There has been great interest recently in the idea of the cerebellum as a locus in neurodevelopmental disorders. Structural and functional abnormalities in the cerebellum are consistently reported across neurodevelopmental disorders, and in particular, autism spectrum disorder (ASD) has been linked to cerebellar abnormality. For example, children and adults with ASD show atypical fMRI activation of cortico-cerebellar networks during biological motion perception Jack et al. 2017 and perception of social interaction Kana et al. 2015. Furthermore, behavioral studies have found that children with ASD display abnormal conditioned reponses in delayed eyeblink conditioning, a conditioning paradigm that strongly implicates the cerebellum. For example, Tran et al. 2017 tested delayed eyeblink conditioning, a task which is depenedent on the cerebellum, on a group of very preterm children and adults. They found that in this group, there were significant deficits in the acquisition of conditioned responses, therefore suggesting that both motor and non-motor behavioral deficits arise from cerebellar abnormalities.\nOne of the primary reasons why we think of the cerebellum as being an important developmental structure is that it is among the first brain structures to begin cellular differentiation and one of the last to fully mature Sathyanesan et al. 2019. Specifically, while the majority of neocortical neurogenesis occurs prenatally Silbereis et al. 2016, cerebellar neurogenesis continues until the 11th postnatal month Abraham et al. 2001. During this period, the cerebellum undergoes enormous growth, quadrupling in volume between the 24th and 38th gestational weeks Volpe et al. 2009, and then it doubles in size during the first 90 postnatal days. In fact, 85% of granule cells, the most populous cell type in the cerebellum, are generated after birth Kiessling et al. 2013. Given its protracted development, the cerebellum is especially vulnerable to a host of insults from environmental and molecular, to genetic and epigenetic factors Sathyanesan et al. 2019. Studies of preterm infants have shown that cerebellar injury during the perinatal period results in volume reduction in both cerebellar grey and white matter as well as remote neocortical regions Limperopoulos et al. (2014). These results suggest that changes in early cerebellar activity affect both cerebellar development and activity of neocortex, which means that the cerebellum could play an important role in refining cortical circuits during critical develpmental periods Wang et al. 2014."
+    "text": "There has been great interest recently in the idea of the cerebellum as a locus in neurodevelopmental disorders. Structural and functional abnormalities in the cerebellum are consistently reported across neurodevelopmental disorders, and in particular, autism spectrum disorder (ASD) has been linked to cerebellar abnormality. For example, children and adults with ASD show atypical fMRI activation of cortico-cerebellar networks during biological motion perception Jack et al. 2017 and perception of social interaction Kana et al. 2015. Furthermore, behavioral studies have found that children with ASD display abnormal conditioned reponses in delayed eyeblink conditioning, a conditioning paradigm that strongly implicates the cerebellum. For example, Tran et al. 2017 tested delayed eyeblink conditioning, a task which is depenedent on the cerebellum, on a group of very preterm children and adults. They found that in this group, there were significant deficits in the acquisition of conditioned responses, therefore suggesting that both motor and non-motor behavioral deficits arise from cerebellar abnormalities.\nOne of the primary reasons why we think of the cerebellum as being an important developmental structure is that it is among the first brain structures to begin cellular differentiation and one of the last to fully mature Sathyanesan et al. 2019. Specifically, while the majority of neocortical neurogenesis occurs prenatally Silbereis et al. 2016, cerebellar neurogenesis continues until the 11th postnatal month Abraham et al. 2001. During this period, the cerebellum undergoes enormous growth, quadrupling in volume between the 24th and 38th gestational weeks Volpe et al. 2009, and then it doubles in size during the first 90 postnatal days. In fact, 85% of granule cells, the most populous cell type in the cerebellum, are generated after birth Kiessling et al. 2013. Given its protracted development, the cerebellum is especially vulnerable to a host of insults from environmental and molecular, to genetic and epigenetic factors Sathyanesan et al. 2019. Studies of preterm infants have shown that cerebellar injury during the perinatal period results in volume reduction in both cerebellar grey and white matter as well as remote neocortical regions Limperopoulos et al. (2014). These results suggest that changes in early cerebellar activity affect both cerebellar development and activity of neocortex, which means that the cerebellum could play an important role in refining cortical circuits during critical develpmental periods Wang et al. 2014.\n\n\n\nPlanned Analyses"
   },
   {
     "objectID": "projects/cerebellum-fingerprints.html#notes",
@@ -914,28 +949,21 @@
     "href": "projects/phenotyping-project.html",
     "title": "Phenotyping Project",
     "section": "",
-    "text": "which phenotypic assessments are best able to classify whether someone has a diagnosis (versus no diagnosis)?\nwhich imaging metrics are most predictive of a diagnosis?\n\nEEG\nMRI\nfMRI"
-  },
-  {
-    "objectID": "projects/phenotyping-project.html#what-information-is-most-necessary-in-diagnosing-a-child-with-a-neurodevelopmental-or-neuropsychiatric-disorder",
-    "href": "projects/phenotyping-project.html#what-information-is-most-necessary-in-diagnosing-a-child-with-a-neurodevelopmental-or-neuropsychiatric-disorder",
-    "title": "Phenotyping Project",
-    "section": "",
-    "text": "which phenotypic assessments are best able to classify whether someone has a diagnosis (versus no diagnosis)?\nwhich imaging metrics are most predictive of a diagnosis?\n\nEEG\nMRI\nfMRI"
+    "text": "See recent [presentation] on this topic (https://docs.google.com/presentation/d/1DL2Ec4o4LHnki4P4RB3HiFvmYJM7vSGNrW40OrdsCGQ/edit?usp=sharing) on this project\n\n\n\n\nPredictive Modeling Overview"
   },
   {
     "objectID": "projects/item_analysis.html",
     "href": "projects/item_analysis.html",
     "title": "Item Analysis of Questionnaires in Healthy Brain Network",
     "section": "",
-    "text": "How semantically similar are clinical questionnaires used to diagnose developmental disorders?\n\nTo understand the broader goals of this project, check out this recent presentation"
+    "text": "How semantically similar are clinical questionnaires used to diagnose developmental disorders?\n\nTo understand the broader goals of this project, check out this recent presentation\n\n\n\n\n\nPreliminary Results"
   },
   {
     "objectID": "projects/item_analysis.html#question",
     "href": "projects/item_analysis.html#question",
     "title": "Item Analysis of Questionnaires in Healthy Brain Network",
     "section": "",
-    "text": "How semantically similar are clinical questionnaires used to diagnose developmental disorders?\n\nTo understand the broader goals of this project, check out this recent presentation"
+    "text": "How semantically similar are clinical questionnaires used to diagnose developmental disorders?\n\nTo understand the broader goals of this project, check out this recent presentation\n\n\n\n\n\nPreliminary Results"
   },
   {
     "objectID": "projects/item_analysis.html#dataset",
@@ -1068,14 +1096,14 @@
     "href": "about-me.html",
     "title": "About Me",
     "section": "",
-    "text": "I’m an Integrative Computational Neuroscience (ICoN) Fellow at MIT using computational approaches to identify biologically‐driven risk predictors of neurodevelopmental (e.g., ADHD) and neuropsychiatric (e.g., depression and anxiety) disorders.\nI received my PhD from the University of California, Berkeley in 2022 where I used machine learning and statistics to build models of brain function.\nI’m passionate about using my experience as an educator and academic mentor to communicate complex ideas to both non‐expert and expert audiences. I have a strong record of publishing in scientific journals (&gt;600 citations) and presenting at research conferences (&gt;10 proceedings). I have also taught neuroscience to diverse audiences, from undergraduate students at UC Berkeley to incarcarated students at San Quentin State Prison.\nFinally, I strongly believe in using data‐driven solutions to formulate and recommend policy, especially as it pertains to mental health solutions."
+    "text": "I’m an Integrative Computational Neuroscience (ICoN) Fellow at MIT using computational approaches to identify biologically‐driven risk predictors of neurodevelopmental (e.g., ADHD) and neuropsychiatric (e.g., depression and anxiety) disorders.\nI received my PhD from the University of California, Berkeley in 2022 where I used machine learning and statistics to build models of brain function.\nI’m passionate about using my experience as an educator and academic mentor to communicate complex ideas to both non‐expert and expert audiences. I have a strong record of publishing in scientific journals (&gt;750 citations) and presenting at research conferences. I have also taught neuroscience to diverse audiences, from undergraduate students at UC Berkeley to incarcarated students at San Quentin State Prison.\nFinally, I strongly believe in using data‐driven solutions to formulate and recommend policy, especially as it pertains to mental health solutions."
   },
   {
     "objectID": "about-me.html#more-information",
     "href": "about-me.html#more-information",
     "title": "About Me",
     "section": "More information:",
-    "text": "More information:\n\nFor an up-to-date list of my publications, browse my google scholar profile\nFor video recordings of some recent talks, see my youtube channel\nFor an overview of my plans while at MIT, please check out this profile released by McGovern Institute"
+    "text": "More information:\n\nFor an up-to-date list of my publications, browse my google scholar profile\nCheck out my current list of collaborators and mentees\nFor an overview of my plans while at MIT, please check out this profile released by McGovern Institute\nFor video recordings of some recent talks, see my youtube channel"
   },
   {
     "objectID": "literature-review/development-translational-neuroimaging.html",
@@ -1365,6 +1393,20 @@
     "text": "Methods\n\nGAMLSS modeling as used in brain charting paper\nLDA (topic moddelling) as used in endophenotyping of adhd paper\nBrain age prediction as used in brain age paper - gradient tree boosting\n\n\nQuestions:\nTo what extent are disorders characterized by Healthy Brains accompanied by RDoC-like constructs and domains? How is cognitive function measured? [behavioral tasks or questionnaires]. * Do cerebellar anatomical differences reflect a generic developmental vulnerability or disorder-specific characteristics? * Are different cerebellar regions affected in neurodevelopmental disorders? And do these regions align with functional networks that are consistent with the characteristic symptoms of each disorder. * Are there differences in brain age across regions (functional, anatomical, network) of the cerebellum, and how does this differ across disorders? * The brain age paper provided some key insights across whole-brain regions but treated subcortical-cerebellum as one region, therefore, obscuring any within-cerebellum heterogeneity"
   },
   {
+    "objectID": "presentations/index.html",
+    "href": "presentations/index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Keeping track of presentations I’ve given recently.."
+  },
+  {
+    "objectID": "presentations/index.html#presentations",
+    "href": "presentations/index.html#presentations",
+    "title": "Overview",
+    "section": "Presentations:",
+    "text": "Presentations:\n\nJune 2023: Gablab Meeting\nMay 2023: ICoN Retreat\nApril 2023: SenseIn Meeting\nFebruary 2023: Sloan MBA Visit\nSeptember 2022: Flux Conference\nNovember 2022: SenseIn Meeting"
+  },
+  {
     "objectID": "ethics/AI-hype.html",
     "href": "ethics/AI-hype.html",
     "title": "The Hype of AI in Medicine",
@@ -1477,11 +1519,32 @@
     "text": "Using VS Code on OpenMind\n\nOpen VS Code and add the extensions on the sidebar: Remote - SSH and Remote - SSH: Editing Configuration Files\nGo to View and open Command Palette\n\nClick Remote-SSH: Add New SSH Host\nYou’ll be prompted to log in to OpenMind ssh \"username\"@openmind.mit.edu\nYou’ll get a notification saying host added and an option to connect\n\nOnce you connect for the first time you’ll be able to connect easily via Remote Explorer on the sidebar. You’ll be prompted for your password every time you ssh in."
   },
   {
+    "objectID": "mentorship/urops.html",
+    "href": "mentorship/urops.html",
+    "title": "Current (and former) UROPs",
+    "section": "",
+    "text": "Spring - Summer 2023: Zihao Wang (MIT) working on item analysis project (preprocessing questions)\nSummer 2023: Kai McClellan (MIT) working on item analysis project (NLP models)\nSummer 2023: Co-mentoring Kailana Baker-Matsuoka with Alexandra Decker on inter-clincian reliability project"
+  },
+  {
+    "objectID": "mentorship/urops.html#current-urops",
+    "href": "mentorship/urops.html#current-urops",
+    "title": "Current (and former) UROPs",
+    "section": "",
+    "text": "Spring - Summer 2023: Zihao Wang (MIT) working on item analysis project (preprocessing questions)\nSummer 2023: Kai McClellan (MIT) working on item analysis project (NLP models)\nSummer 2023: Co-mentoring Kailana Baker-Matsuoka with Alexandra Decker on inter-clincian reliability project"
+  },
+  {
+    "objectID": "mentorship/urops.html#former-urops",
+    "href": "mentorship/urops.html#former-urops",
+    "title": "Current (and former) UROPs",
+    "section": "Former UROPS",
+    "text": "Former UROPS\n\nFall 2022: Opalina Vetrichelvan (MIT) worked on exploring adhd project\nFall 2022 - Spring 2023:\n\nShreya Ravikumar (MIT) worked on phenotyping project\nAlyson Brown (Wellesley) worked on sex differences in ADHD project"
+  },
+  {
     "objectID": "mentorship/index.html",
     "href": "mentorship/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Documenting mentorship process from recruitment to project supervision\n\nFall22 Recruitment\nFall22 Onboarding\nSpr23 Onboarding\nSummer23 Onboarding\nOpenMind Setup"
+    "text": "Documenting mentorship process from recruitment to project supervision\n\nFall22 Recruitment\nFall22 Onboarding\nSpr23 Onboarding\nSummer23 Onboarding\nOpenMind Setup\nCurrent (and former) UROPs"
   },
   {
     "objectID": "mentorship/weekly-notes.html",

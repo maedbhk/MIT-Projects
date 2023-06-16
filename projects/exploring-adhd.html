@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MIT Projects - Exploring ADHD</title>
+<title>MIT Projects - Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../projects/gender-adhd.html" rel="next">
-<link href="../projects/adaptive-adhd.html" rel="prev">
+<link href="../projects/EMR-selfharm.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../projects/exploring-adhd.html">Exploring ADHD</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../projects/exploring-adhd.html">Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -321,21 +321,18 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../projects/adaptive-adhd.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Adaptive ADHD</span></a>
-  </div>
-</li>
+ <span class="menu-text">projects/adaptive-adhd.md</span>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projects/exploring-adhd.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Exploring ADHD</span></a>
+ <span class="menu-text">Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../projects/gender-adhd.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Gender differences in ADHD</span></a>
+ <span class="menu-text">Sex differences in ADHD</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -442,6 +439,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../methods/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods/fmri_parcellations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Parcellations</span></a>
   </div>
 </li>
       </ul>
@@ -554,7 +557,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#questions" id="toc-questions" class="nav-link active" data-scroll-target="#questions">Questions</a></li>
+  <li><a href="#research-qusetions" id="toc-research-qusetions" class="nav-link active" data-scroll-target="#research-qusetions">Research Qusetions</a></li>
   <li><a href="#questions---child-behavior-checklist---teacher-report-form" id="toc-questions---child-behavior-checklist---teacher-report-form" class="nav-link" data-scroll-target="#questions---child-behavior-checklist---teacher-report-form">Questions - Child Behavior Checklist - Teacher Report Form</a></li>
   <li><a href="#questions---predictive-modeling" id="toc-questions---predictive-modeling" class="nav-link" data-scroll-target="#questions---predictive-modeling">Questions - Predictive modeling</a></li>
   <li><a href="#summary-of-cognitive-performance" id="toc-summary-of-cognitive-performance" class="nav-link" data-scroll-target="#summary-of-cognitive-performance">Summary of cognitive performance</a></li>
@@ -566,7 +569,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exploring ADHD</h1>
+<h1 class="title">Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)</h1>
 </div>
 
 
@@ -581,8 +584,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="questions" class="level2">
-<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<section id="research-qusetions" class="level2">
+<h2 class="anchored" data-anchor-id="research-qusetions">Research Qusetions</h2>
 <ul>
 <li><strong>Some of these questions have been addressed <a href="../notebooks/exploratory-features-adhd.html">here</a></strong></li>
 <li>What % of children with adhd have parents with adhd? <code>PreInt_FamHx,m_adhd</code> <code>PreInt_FamHx,f_adhd</code></li>
@@ -645,7 +648,6 @@ ul.task-list li input[type="checkbox"] {
 <li>Many questionnaires (e.g., measures) have a <code>total</code> or <code>raw</code> score providing an overall summary of how well a participant did on a questionnaire</li>
 <li>For all of the measures that have a <code>total</code> or <code>raw</code> score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?</li>
 </ul>
-<p>distance correlation (dcorr) * matrix of distances: 400 participants x all features (per questionnaire) * dcorr - how independent are two matrices (pairwise covariance matrices) * compare two matrices * how orthogonal are features wtihin a questionnaire? * are questions are similar (constructs)? * deap portal - built on ABCD - curated tabular data * xcp pipeline</p>
 
 
 </section>
@@ -1001,13 +1003,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../projects/adaptive-adhd.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Adaptive ADHD</span>
+      <a href="../projects/EMR-selfharm.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Identifying Risk Predictors for Self-Harm through Electronic Medical Records</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../projects/gender-adhd.html" class="pagination-link">
-        <span class="nav-page-text">Gender differences in ADHD</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Sex differences in ADHD</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
