@@ -4,8 +4,8 @@ title: Overview
 
 Project Timelines:
 
-1. [Phenotyping project (HBN and ABCD)](phenotyping-project.md) - May 2023 finish analysis, first draft - summer
-2. [CHOP project](EMR-selfharm.md) - May 2023 finish analysis, early Fall - first draft
-3. [Gender differences in ADHD (HBN and ABCD)](gender-adhd.md)
-4. [Adaptive ADHD (UK Biobank Professions)](adaptive-adhd.md)
+1. [Phenotyping project (HBN and ABCD)](phenotyping-project.md)
+2. [CHOP project](EMR-selfharm.md)
+3. [Sex differences in ADHD (HBN and ABCD)](gender-adhd.md)
+4. [ADHD + Professions](adhd_professions.md)
 5. [Cerebellar Fingerprinting (HBN and ABCD)](cerebellum-fingerprints.md)

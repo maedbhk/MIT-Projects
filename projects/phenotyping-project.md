@@ -2,10 +2,6 @@
 title: Phenotyping Project
 ---
 
-## What information is most necessary in diagnosing a child with a neurodevelopmental or neuropsychiatric disorder?
-* which phenotypic assessments are best able to classify whether someone has a diagnosis (versus no diagnosis)?
-* which imaging metrics are most predictive of a diagnosis?
-    * EEG
-    * MRI
-    * fMRI
+* See recent [presentation] on this topic (https://docs.google.com/presentation/d/1DL2Ec4o4LHnki4P4RB3HiFvmYJM7vSGNrW40OrdsCGQ/edit?usp=sharing) on this project
 
+![Predictive Modeling Overview](../assets/images/phenotyping-project.png){fig-align="center"}

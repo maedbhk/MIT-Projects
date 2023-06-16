@@ -6,6 +6,8 @@ title: Item Analysis of Questionnaires in Healthy Brain Network
 * How semantically similar are clinical questionnaires used to diagnose developmental disorders?
     * To understand the broader goals of this project, check out this [recent presentation](https://docs.google.com/presentation/d/1_fwccz75M1VcPa3i2uQnUKQlYezX01_xMISLyjTHp7Q/edit?usp=sharing)
 
+![Preliminary Results](../assets/images/NLP-Project.png){fig-align="center"}
+
 ## Dataset
 * [Healthy brains](http://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/)
 * The Child Mind Institute has launched the Healthy Brain Network, an ongoing initiative focused on creating and sharing a biobank comprised of data from 10,000 New York City area children and adolescents (ages 5-21).

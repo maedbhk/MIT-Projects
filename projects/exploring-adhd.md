@@ -1,8 +1,8 @@
 ---
-title: Exploring ADHD
+title: Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)
 ---
 
-## Questions
+## Research Qusetions
 * **Some of these questions have been addressed [here](../notebooks/exploratory-features-adhd.ipynb)**
 * What % of children with adhd have parents with adhd? `PreInt_FamHx,m_adhd` `PreInt_FamHx,f_adhd`
 *  What is the SES/race/gender breakdown of children with adhd? 
@@ -42,13 +42,3 @@ title: Exploring ADHD
 ## Summary of cognitive performance
 * Many questionnaires (e.g., measures) have a `total` or `raw` score providing an overall summary of how well a participant did on a questionnaire
 * For all of the measures that have a `total` or `raw` score, how well on average are children with ADHD (across subtypes and gender) performing on these assessments compared to children without a diagnosis?
-
-distance correlation (dcorr)
-* matrix of distances: 
-400 participants x all features (per questionnaire)
-* dcorr - how independent are two matrices (pairwise covariance matrices)
-* compare two matrices
-* how orthogonal are features wtihin a questionnaire? 
-* are questions are similar (constructs)?
-* deap portal - built on ABCD - curated tabular data
-* xcp pipeline 

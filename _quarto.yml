@@ -92,6 +92,7 @@ website:
           - methods/modeling-EHR.md
           - methods/smote.md
           - methods/index.md
+          - methods/fmri_parcellations.md
       - section: "Talks"
         contents: 
           - talks/index.md

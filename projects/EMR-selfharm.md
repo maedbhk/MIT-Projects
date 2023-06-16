@@ -3,7 +3,6 @@ title: Identifying Risk Predictors for Self-Harm through Electronic Medical Reco
 ---
 > Ideas from [Czyz et al. 2021](https://journals.sagepub.com/doi/full/10.1177/1073191120939168?casa_token=nZwwu0a6mM4AAAAA%3AUE4tkOVOBDe0BEXfvZDRMFSH-BjpA4Cq07RRlY9s_cZsfePwk9W9nE3Odc4qW9qh5UW5lCs4qj3dcA) and [Huang et al. 2020](https://arxiv.org/pdf/1904.05342.pdf)
 
-
 ### Dataset Overview
 * Overview of the data can be found [here](../datasets/chop.md)
 
@@ -20,6 +19,8 @@ title: Identifying Risk Predictors for Self-Harm through Electronic Medical Reco
     * Can the model that we build on CHOP data be generalized to adolescents in other geographical locations? For example, are there similar risk predictors for suicide in Philadelphia compared to Boston? 
 * Was COVID-19 a risk factor of suicide attempt? 
     * Can we quantify the risk that COVID presented to a population at-risk for suicide? Were suicide risk predictors different as a result of the pandemic? 
+
+![Project Outline](../assets/images/chop-project.png){fig-align="center"}
 
 ### Methods
 * One idea for modeling the data is to use [clinicalBERT](https://arxiv.org/pdf/1904.05342.pdf), which models clinical notes to predict hospital readmission. This approach is largely focused on unstructured data, therefore it should be applied to electronic health records that contain text data, which are high-dimensional and sparse. 
