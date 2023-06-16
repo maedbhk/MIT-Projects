@@ -71,10 +71,12 @@ website:
           - projects/index.md
           - projects/cerebellum-fingerprints.md
           - projects/EMR-selfharm.md
-          - projects/adaptive-adhd.md
+          - projects/adhd_professions.md
           - projects/exploring-adhd.md
           - projects/gender-adhd.md
           - projects/phenotyping-project.md
+          - projects/inter-clinician-reliability.md
+          - projects/item-analysis.md
       - section: "Mentorship"
         contents:
           - mentorship/index.md

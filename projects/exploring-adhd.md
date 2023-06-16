@@ -1,5 +1,5 @@
 ---
-title: Exploring ADHD in children and adolescents (leveraging the healthy brain network dataset)
+title: Exploring ADHD across development
 ---
 
 ## Research Qusetions
