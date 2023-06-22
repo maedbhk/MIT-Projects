@@ -8,4 +8,5 @@ Documenting the process of writing a short review paper for "Current Opinion in 
 - [`Invitation from Journal`](invitation.md)
 - [`Compiling Reference List`](references.md)
 - [`Notes`](notes.md)
+- [`Outline`](outline.md)
 - `Final Product (TBD)`
