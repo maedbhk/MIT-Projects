@@ -598,9 +598,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#first-steps" id="toc-first-steps" class="nav-link active" data-scroll-target="#first-steps">First Steps</a></li>
   <li><a href="#installing-and-activating-virtual-environments" id="toc-installing-and-activating-virtual-environments" class="nav-link" data-scroll-target="#installing-and-activating-virtual-environments">Installing and activating virtual environments</a></li>
   <li><a href="#download-miniconda-on-openmind-and-add-to-path" id="toc-download-miniconda-on-openmind-and-add-to-path" class="nav-link" data-scroll-target="#download-miniconda-on-openmind-and-add-to-path">Download miniconda on OpenMind and add to PATH</a></li>
-  <li><a href="#setting-paths" id="toc-setting-paths" class="nav-link" data-scroll-target="#setting-paths">Setting Paths</a>
+  <li><a href="#setting-paths" id="toc-setting-paths" class="nav-link" data-scroll-target="#setting-paths">Setting Paths</a></li>
+  <li><a href="#bash-profile" id="toc-bash-profile" class="nav-link" data-scroll-target="#bash-profile">Bash Profile</a>
   <ul class="collapse">
-  <li><a href="#bash-profile" id="toc-bash-profile" class="nav-link" data-scroll-target="#bash-profile">Bash Profile</a></li>
   <li><a href="#example-bash-profile" id="toc-example-bash-profile" class="nav-link" data-scroll-target="#example-bash-profile">Example bash profile</a></li>
   <li><a href="#bashrc-profile" id="toc-bashrc-profile" class="nav-link" data-scroll-target="#bashrc-profile">Bashrc profile</a></li>
   </ul></li>
@@ -633,13 +633,18 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <section id="first-steps" class="level2">
 <h2 class="anchored" data-anchor-id="first-steps">First Steps</h2>
+<blockquote class="blockquote">
+<p>Accessing OpenMind</p>
+</blockquote>
+<pre><code>    $ ssh &lt;username&gt;@openmind.mit.edu ## to log in to OpenMind        
+    $ ssh &lt;username&gt;@openmind-dtn.mit.edu ## to access data transfer node</code></pre>
 <ul>
-<li>Accessing OpenMind <code>$ ssh &lt;username&gt;@openmind.mit.edu ## to log in to OpenMind           $ ssh &lt;username&gt;@openmind-dtn.mit.edu ## to access data transfer node</code></li>
 <li>Transferring data
 <ul>
-<li>Use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa)</li>
-</ul></li>
-<li>Cloning repos from github <code>cd /om2/user/$(whoami)   git clone git@github.com:maedbhk/healthy_brain_network.git # example github repo</code></li>
+<li>Use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa) &gt; Cloning repos from github</li>
+</ul>
+<pre><code>  cd /om2/user/$(whoami)
+  git clone git@github.com:maedbhk/healthy_brain_network.git # example github repo</code></pre></li>
 <li>Setting up SSH keys for github
 <ul>
 <li>Follow instructions set out on this <a href="https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue">webpage</a> to set up SSH for github repo</li>
@@ -657,8 +662,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="installing-and-activating-virtual-environments" class="level2">
 <h2 class="anchored" data-anchor-id="installing-and-activating-virtual-environments">Installing and activating virtual environments</h2>
+<blockquote class="blockquote">
+<p>To install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python)</p>
+</blockquote>
+<pre><code>    $ module load openmind/anaconda/3-2022.051</code></pre>
 <ul>
-<li>To install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python) <code>$ module load openmind/anaconda/3-2022.051</code></li>
 <li>Most projects either use <strong>pipenv</strong> or <strong>conda</strong> to create virtual environments. If there is a <strong>Pipfile</strong>, then the project uses <strong>pipenv</strong>, if there is an <strong>environment.yml</strong> then the project uses <strong>conda</strong></li>
 </ul>
 <blockquote class="blockquote">
@@ -709,28 +717,27 @@ ul.task-list li input[type="checkbox"] {
     $ echo ". /om2/user/$(whoami)/miniconda3/etc/profile.d/conda.sh" &gt;&gt; ~/.bash_profile
 
     # to put conda's bse (root) environment on PATH:
-    $ echo "conda activate" &gt;&gt; ~/.bash_profile
-</code></pre>
+    $ echo "conda activate" &gt;&gt; ~/.bash_profile</code></pre>
 </section>
 <section id="setting-paths" class="level2">
 <h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>
-<blockquote class="blockquote">
-<p>Paths are typically set in your <strong>.bash_profile</strong></p>
-</blockquote>
-<section id="bash-profile" class="level3">
-<h3 class="anchored" data-anchor-id="bash-profile">Bash Profile</h3>
+<ul>
+<li>Paths are typically set in your <strong>.bash_profile</strong></li>
+</ul>
+</section>
+<section id="bash-profile" class="level2">
+<h2 class="anchored" data-anchor-id="bash-profile">Bash Profile</h2>
+<ul>
+<li>An example <strong>.bash_profile</strong> is saved at <strong>/home/maedbh</strong> (see example below)</li>
+<li>You can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.</li>
+<li>Make sure you set your PATH so that your scripts can find software saved to your <strong>.local/bin</strong> directory.</li>
+</ul>
 <blockquote class="blockquote">
 <p>Create <strong>.bash_profile</strong> in your home directory</p>
-<pre><code>$ cd /home/$(whoami)
-$ touch .bash_profile  # if file doesn't exist</code></pre>
-<ul>
-<li>For example, my <strong>.bash_profile</strong> is saved at <strong>/home/maedbh</strong> (see example below)</li>
-<li>You can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.</li>
-<li>Make sure you set your PATH so that your scripts can find software saved to your <strong>.local/bin</strong> directory. To activate:</li>
-</ul>
-<pre><code>$ source .bash_profile</code></pre>
 </blockquote>
-</section>
+<pre><code>    $ cd /home/$(whoami)   # navigate to your home directory
+    $ touch .bash_profile  # creates file if doesn't exist
+    $ source .bash_profile # activate </code></pre>
 <section id="example-bash-profile" class="level3">
 <h3 class="anchored" data-anchor-id="example-bash-profile">Example bash profile</h3>
 <pre><code># .bash_profile
@@ -760,17 +767,16 @@ fi</code></pre>
 <h3 class="anchored" data-anchor-id="bashrc-profile">Bashrc profile</h3>
 <blockquote class="blockquote">
 <p>Create <strong>.bashrc</strong> in your home directory</p>
-<pre><code>$ cd /home/$(whoami)
-$ touch .bashrc  #if file doesn't exist</code></pre>
-<ul>
-<li>In your <strong>.bashrc</strong> profile, save the following:</li>
-</ul>
-<pre><code>if [ -f /etc/bashrc ]; then
-. /etc/bashrc
-fi</code></pre>
-<p>To activate:</p>
-<pre><code>$ source .bashrc</code></pre>
 </blockquote>
+<pre><code>    $ cd /home/$(whoami) # navigate to home directory
+    $ touch .bashrc  # create file if it doesn't exist
+    $ source .bashrc # activate</code></pre>
+<blockquote class="blockquote">
+<p>In your <strong>.bashrc</strong> profile, save the following:</p>
+</blockquote>
+<pre><code>    if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+    fi</code></pre>
 </section>
 </section>
 <section id="using-vs-code-on-openmind" class="level2">
@@ -779,10 +785,9 @@ fi</code></pre>
 <li>Open VS Code and add the extensions on the sidebar: <strong>Remote - SSH</strong> and <strong>Remote - SSH: Editing Configuration Files</strong></li>
 <li>Go to <strong>View</strong> and open <strong>Command Palette</strong>
 <ul>
-<li>Click <strong>Remote-SSH: Add New SSH Host</strong></li>
-<li>You’ll be prompted to log in to OpenMind</li>
+<li>Click <strong>Remote-SSH: Add New SSH Host</strong> &gt; You’ll be prompted to log in to OpenMind</li>
 </ul>
-<pre><code>    $ ssh $(whoami)@openmind.mit.edu</code></pre>
+<pre><code>    $ ssh &lt;username&gt;@openmind.mit.edu</code></pre>
 <ul>
 <li>You’ll get a notification saying host added and an option to <strong>connect</strong></li>
 </ul></li>
