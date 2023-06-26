@@ -5,20 +5,25 @@ title: Getting Started on Openmind
 > Example repo here is **healthy_brain_network** but can be applied to any github repo that uses a **Pipfile** or **Conda** environment
 
 ## First Steps
- ``` 
+* Accessing OpenMind
+*   ``` 
     $ ssh <username>@openmind.mit.edu ## to log in to OpenMind        
     $ ssh <username>@openmind-dtn.mit.edu ## to access data transfer node
-```
-* fyi: use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
-* code for **healthy_brain_network** is stored at **/om2/user/maedbh/healthy_brain_network** but you should clone the github repo in your own path 
-```
-    cd om2/user/$(whoami)
-    git clone git@github.com:maedbhk/healthy_brain_network.git
-```
-* Follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
-* Also useful is this step-by-step [guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) on setting up ssh keys
-* phenotypic data for **healthy_brain_network** is stored at **/om2/user/maedbh/hbn_data/**
-    * fyi: I/O operations to **om** and **om2** are fast, which is why I store code here. **om4** and **nese** are slower but have large storage space, which is why raw data are stored on **nese**.
+    ```
+* Transferring data
+    * Use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
+* Cloning repos from github
+*   ```
+    cd /om2/user/$(whoami)
+    git clone git@github.com:maedbhk/healthy_brain_network.git # example github repo
+    ```
+* Setting up SSH keys for github
+    * Follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
+    * Also useful is this step-by-step [guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) on setting up ssh keys
+* Storing data on OpenMind
+    * I/O operations to **om** and **om2** are fast, which is why I store code largely on **om2**
+        * Scratch directory on **om2** is useful for temporary storage of data: **/om2/scratch/tmp/$(whoami)/** (cleared after 2 weeks)
+    * **om4** and **nese** are slower but have large storage space, which is why raw data are stored on **nese**
 
 ## Installing and activating virtual environments
 * To install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python)
@@ -27,7 +32,7 @@ title: Getting Started on Openmind
 ```
 * Most projects either use **pipenv** or **conda** to create virtual environments. If there is a `Pipfile`, then the project uses **pipenv**, if there is an `environment.yml` then the project uses **conda**
 
-> Example of activating a **pipenv** environment:
+> Example of activating a **pipenv** environment  (example here is **healthy_brain_network** but can be any folder that contains a **Pipfile**):
 ```
     # navigate to top-level directory of project
     cd om2/user/$(whoami)/healthy_brain_network
@@ -58,8 +63,8 @@ title: Getting Started on Openmind
 ```
 
 ## Download miniconda on OpenMind and add to PATH
+* You should download your own distribution of miniconda rather than relying on the OpenMind package
 ```
-
     # create bin folder in your om2 directory - this is where you will store your distribution of miniconda
     $ cd /om2/user/$(whoami)
     $ mkdir bin
@@ -79,13 +84,15 @@ title: Getting Started on Openmind
 ```
 
 ## Setting Paths
+* Paths are typically set in your **.bash_profile**
+
 ### Bash Profile
 * Create **.bash_profile** in your home directory 
     ```
     $ cd /home/$(whoami)
-    $ touch .bash_profile  #if file doesn't exist
+    $ touch .bash_profile  # if file doesn't exist
     ```
-* For example, my **.bash_profile** is saved at **/home/maedbh** (see below)
+* For example, my **.bash_profile** is saved at **/home/maedbh** (see example below)
 * You can see that I have set aliases (for easier navigation around openmind), you don't have to do this but it can make things easier when you're working on openmind.
 * Make sure you set your PATH so that your scripts can find software saved to your **.local/bin** directory.
 * To activate 
@@ -93,6 +100,7 @@ title: Getting Started on Openmind
 $ source .bash_profile
 ```
 
+### Example bash profile
 ```
 # .bash_profile
 
