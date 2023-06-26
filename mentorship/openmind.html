@@ -629,19 +629,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <blockquote class="blockquote">
-<p>Example repo here is <strong>healthy_brain_network</strong> but can be applied to any github repo that uses a <strong>Pipfile</strong> or <strong>Conda</strong> environment</p>
+<p>Note that example repo here is <strong>healthy_brain_network</strong> but can be applied to any github repo that uses a <strong>Pipfile</strong> or <strong>Conda</strong> environment</p>
 </blockquote>
 <section id="first-steps" class="level2">
 <h2 class="anchored" data-anchor-id="first-steps">First Steps</h2>
 <ul>
-<li>Accessing OpenMind</li>
-<li><code>$ ssh &lt;username&gt;@openmind.mit.edu ## to log in to OpenMind             $ ssh &lt;username&gt;@openmind-dtn.mit.edu ## to access data transfer node</code></li>
+<li>Accessing OpenMind <code>$ ssh &lt;username&gt;@openmind.mit.edu ## to log in to OpenMind           $ ssh &lt;username&gt;@openmind-dtn.mit.edu ## to access data transfer node</code></li>
 <li>Transferring data
 <ul>
 <li>Use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa)</li>
 </ul></li>
-<li>Cloning repos from github</li>
-<li><code>cd /om2/user/$(whoami)     git clone git@github.com:maedbhk/healthy_brain_network.git # example github repo</code></li>
+<li>Cloning repos from github <code>cd /om2/user/$(whoami)   git clone git@github.com:maedbhk/healthy_brain_network.git # example github repo</code></li>
 <li>Setting up SSH keys for github
 <ul>
 <li>Follow instructions set out on this <a href="https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue">webpage</a> to set up SSH for github repo</li>
@@ -653,33 +651,30 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Scratch directory on <strong>om2</strong> is useful for temporary storage of data: <strong>/om2/scratch/tmp/$(whoami)/</strong> (cleared after 2 weeks)</li>
 </ul></li>
-<li><strong>om4</strong> and <strong>nese</strong> are slower but have large storage space, which is why raw data are stored on <strong>nese</strong></li>
+<li><strong>om4</strong> and <strong>nese</strong> are slower but have large storage space, which is why I store raw data on <strong>nese</strong></li>
 </ul></li>
 </ul>
 </section>
 <section id="installing-and-activating-virtual-environments" class="level2">
 <h2 class="anchored" data-anchor-id="installing-and-activating-virtual-environments">Installing and activating virtual environments</h2>
 <ul>
-<li>To install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python)</li>
-</ul>
-<pre><code>    module load openmind/anaconda/3-2022.05`</code></pre>
-<ul>
-<li>Most projects either use <strong>pipenv</strong> or <strong>conda</strong> to create virtual environments. If there is a <code>Pipfile</code>, then the project uses <strong>pipenv</strong>, if there is an <code>environment.yml</code> then the project uses <strong>conda</strong></li>
+<li>To install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python) <code>$ module load openmind/anaconda/3-2022.051</code></li>
+<li>Most projects either use <strong>pipenv</strong> or <strong>conda</strong> to create virtual environments. If there is a <strong>Pipfile</strong>, then the project uses <strong>pipenv</strong>, if there is an <strong>environment.yml</strong> then the project uses <strong>conda</strong></li>
 </ul>
 <blockquote class="blockquote">
 <p>Example of activating a <strong>pipenv</strong> environment (example here is <strong>healthy_brain_network</strong> but can be any folder that contains a <strong>Pipfile</strong>):</p>
 </blockquote>
 <pre><code>    # navigate to top-level directory of project
-    cd om2/user/$(whoami)/healthy_brain_network
+    $ cd om2/user/$(whoami)/healthy_brain_network
 
-    # make sure **pipenv** library is installed
-    pip install pipenv
+    # make sure pipenv library is installed
+    $ pip install pipenv
 
     # install virtual environment
-    pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/$(whoami)/.local/bin** in your **.bash_profile**. (See **Setting Paths** below for more details)
+    $ pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/$(whoami)/.local/bin** in your **.bash_profile**. (See **Setting Paths** below for more details)
 
     # activate the virtual environment
-    pipenv shell</code></pre>
+    $ pipenv shell</code></pre>
 <blockquote class="blockquote">
 <p>If you want to use <strong>conda</strong></p>
 </blockquote>
@@ -687,19 +682,19 @@ ul.task-list li input[type="checkbox"] {
     $ cd om2/user/$(whoami)/healthy_brain_network
 
     # load your own version of miniconda
-    # see section below: `Download miniconda on OpenMind`
+    # see section below: Download miniconda on OpenMind
 
     # in this repo, install a conda environment from environment.yml
     $ conda env create -f environment.yml
 
     # activate the conda virtual environment
-    $ conda activate healthy-brain-network # each **environment.yml** has its own unique name (look inside the file `$ vim environment.yml`)</code></pre>
+    $ conda activate healthy-brain-network # each virtual env has its own unique name (look inside the environment.yml file)</code></pre>
 </section>
 <section id="download-miniconda-on-openmind-and-add-to-path" class="level2">
 <h2 class="anchored" data-anchor-id="download-miniconda-on-openmind-and-add-to-path">Download miniconda on OpenMind and add to PATH</h2>
-<ul>
-<li>You should download your own distribution of miniconda rather than relying on the OpenMind package</li>
-</ul>
+<blockquote class="blockquote">
+<p>You should download your own distribution of miniconda rather than relying on the OpenMind package</p>
+</blockquote>
 <pre><code>    # create bin folder in your om2 directory - this is where you will store your distribution of miniconda
     $ cd /om2/user/$(whoami)
     $ mkdir bin
@@ -719,19 +714,22 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="setting-paths" class="level2">
 <h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>
-<ul>
-<li>Paths are typically set in your <strong>.bash_profile</strong></li>
-</ul>
+<blockquote class="blockquote">
+<p>Paths are typically set in your <strong>.bash_profile</strong></p>
+</blockquote>
 <section id="bash-profile" class="level3">
 <h3 class="anchored" data-anchor-id="bash-profile">Bash Profile</h3>
+<blockquote class="blockquote">
+<p>Create <strong>.bash_profile</strong> in your home directory</p>
+<pre><code>$ cd /home/$(whoami)
+$ touch .bash_profile  # if file doesn't exist</code></pre>
 <ul>
-<li>Create <strong>.bash_profile</strong> in your home directory <code>$ cd /home/$(whoami)     $ touch .bash_profile  # if file doesn't exist</code></li>
 <li>For example, my <strong>.bash_profile</strong> is saved at <strong>/home/maedbh</strong> (see example below)</li>
 <li>You can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.</li>
-<li>Make sure you set your PATH so that your scripts can find software saved to your <strong>.local/bin</strong> directory.</li>
-<li>To activate</li>
+<li>Make sure you set your PATH so that your scripts can find software saved to your <strong>.local/bin</strong> directory. To activate:</li>
 </ul>
 <pre><code>$ source .bash_profile</code></pre>
+</blockquote>
 </section>
 <section id="example-bash-profile" class="level3">
 <h3 class="anchored" data-anchor-id="example-bash-profile">Example bash profile</h3>
@@ -760,19 +758,19 @@ fi</code></pre>
 </section>
 <section id="bashrc-profile" class="level3">
 <h3 class="anchored" data-anchor-id="bashrc-profile">Bashrc profile</h3>
+<blockquote class="blockquote">
+<p>Create <strong>.bashrc</strong> in your home directory</p>
+<pre><code>$ cd /home/$(whoami)
+$ touch .bashrc  #if file doesn't exist</code></pre>
 <ul>
-<li>Create <strong>.bashrc</strong> in your home directory <code>$ cd /home/$(whoami)     $ touch .bashrc  #if file doesn't exist</code></li>
 <li>In your <strong>.bashrc</strong> profile, save the following:</li>
 </ul>
 <pre><code>if [ -f /etc/bashrc ]; then
-
-    . /etc/bashrc
-
+. /etc/bashrc
 fi</code></pre>
-<ul>
-<li>To activate</li>
-</ul>
+<p>To activate:</p>
 <pre><code>$ source .bashrc</code></pre>
+</blockquote>
 </section>
 </section>
 <section id="using-vs-code-on-openmind" class="level2">
@@ -782,7 +780,10 @@ fi</code></pre>
 <li>Go to <strong>View</strong> and open <strong>Command Palette</strong>
 <ul>
 <li>Click <strong>Remote-SSH: Add New SSH Host</strong></li>
-<li>You’ll be prompted to log in to OpenMind <code>$ ssh $(whoami)@openmind.mit.edu</code></li>
+<li>You’ll be prompted to log in to OpenMind</li>
+</ul>
+<pre><code>    $ ssh $(whoami)@openmind.mit.edu</code></pre>
+<ul>
 <li>You’ll get a notification saying host added and an option to <strong>connect</strong></li>
 </ul></li>
 <li>Once you connect for the first time you’ll be able to connect easily via <strong>Remote Explorer</strong> on the sidebar. You’ll be prompted for your password every time you ssh in.</li>
