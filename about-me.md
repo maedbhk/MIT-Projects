@@ -16,5 +16,5 @@ Finally, I strongly believe in using data‐driven solutions to formulate and re
 ## More information: 
 * For an up-to-date list of my publications, browse my [google scholar profile](https://scholar.google.com/citations?user=YS9zF8gAAAAJ&hl=en)
 * Check out my current list of [collaborators](assets/images/collaborators.png) and [mentees](../MIT-Projects/mentorship/urops.md)
-* For an overview of my plans while at MIT, please check out this [profile](assets/images/ICoN_profile.png) released by McGovern Institute
+* For an overview of my plans while at MIT, please check out this [profile](https://mcgovern.mit.edu/2023/06/08/refining-mental-health-diagnoses/) released by McGovern Institute
 * For video recordings of some recent talks, see my [youtube channel](https://www.youtube.com/@maedbhking6900/featured)

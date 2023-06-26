@@ -2,15 +2,17 @@
 title: Getting Started on Openmind
 ---
 
-> Example repo here is **healthy_brain_network** but can be applied to any github repo that uses a Pipfile or Conda environment
+> Example repo here is **healthy_brain_network** but can be applied to any github repo that uses a **Pipfile** or **Conda** environment
 
 ## First Steps
-* `ssh <username>@openmind.mit.edu` ## to log in to OpenMind        
-    * `ssh <username>@openmind-dtn.mit.edu` ## to access data transfer node
-    * fyi: use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
+ ``` 
+    $ ssh <username>@openmind.mit.edu ## to log in to OpenMind        
+    $ ssh <username>@openmind-dtn.mit.edu ## to access data transfer node
+```
+* fyi: use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
 * code for **healthy_brain_network** is stored at **/om2/user/maedbh/healthy_brain_network** but you should clone the github repo in your own path 
 ```
-    cd om2/user/"username"
+    cd om2/user/$(whoami)
     git clone git@github.com:maedbhk/healthy_brain_network.git
 ```
 * Follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
@@ -23,18 +25,18 @@ title: Getting Started on Openmind
 ```
     module load openmind/anaconda/3-2022.05`
 ```
-* You can use either **pipenv** or **conda** to activate the virtual environment for the project
+* Most projects either use **pipenv** or **conda** to create virtual environments. If there is a `Pipfile`, then the project uses **pipenv**, if there is an `environment.yml` then the project uses **conda**
 
-> If you want to use **pipenv**
+> Example of activating a **pipenv** environment:
 ```
     # navigate to top-level directory of project
-    cd om2/user/"username"/healthy_brain_network
+    cd om2/user/$(whoami)/healthy_brain_network
 
     # make sure **pipenv** library is installed
     pip install pipenv
 
     # install virtual environment
-    pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/"username"/.local/bin** in your **.bash_profile**. See **Setting Paths** below for more details)
+    pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/$(whoami)/.local/bin** in your **.bash_profile**. (See **Setting Paths** below for more details)
 
     # activate the virtual environment
     pipenv shell
@@ -43,7 +45,7 @@ title: Getting Started on Openmind
 > If you want to use **conda**
 ```
     # navigate to top-level directory of project (example here is **healthy_brain_network** but can be any folder that contains an **environment.yml** file)
-    $ cd om2/user/"username"/healthy_brain_network
+    $ cd om2/user/$(whoami)/healthy_brain_network
 
     # load your own version of miniconda
     # see section below: `Download miniconda on OpenMind`
@@ -59,17 +61,17 @@ title: Getting Started on Openmind
 ```
 
     # create bin folder in your om2 directory - this is where you will store your distribution of miniconda
-    $ cd /om2/user/"username"
+    $ cd /om2/user/$(whoami)
     $ mkdir bin
     $ cd bin
 
     wget https://repo.anaconda.com/miniconda/Miniconda3-py310_22.11.1-1-Linux-x86_64.sh
     $ bash Miniconda3-latest-Linux-x86_64.sh
 
-    # save the distrubtion (when prompted) to **/om2/user/"username"/bin/miniconda**
+    # save the distrubtion (when prompted) to **/om2/user/$(whoami)/bin/miniconda**
 
     # to permanently enable the conda command from your distribution of miniconda:
-    $ echo ". /om2/user/"username"/miniconda3/etc/profile.d/conda.sh" >> ~/.bash_profile
+    $ echo ". /om2/user/$(whoami)/miniconda3/etc/profile.d/conda.sh" >> ~/.bash_profile
 
     # to put conda's bse (root) environment on PATH:
     $ echo "conda activate" >> ~/.bash_profile
@@ -77,12 +79,19 @@ title: Getting Started on Openmind
 ```
 
 ## Setting Paths
-* Create **.bash_profile** in your home directory (`cd /home/<username>` and `touch .bash_profile` if file doesn't exist)
+### Bash Profile
+* Create **.bash_profile** in your home directory 
+    ```
+    $ cd /home/$(whoami)
+    $ touch .bash_profile  #if file doesn't exist
+    ```
 * For example, my **.bash_profile** is saved at **/home/maedbh** (see below)
 * You can see that I have set aliases (for easier navigation around openmind), you don't have to do this but it can make things easier when you're working on openmind.
-* Make sure you set your PATH so that your scripts can find software saved to your .local/bin directory.
-
-To activate ``source .bash_profile``
+* Make sure you set your PATH so that your scripts can find software saved to your **.local/bin** directory.
+* To activate 
+```
+$ source .bash_profile
+```
 
 ```
 # .bash_profile
@@ -109,10 +118,31 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 ```
 
+### Bashrc profile
+* Create **.bashrc** in your home directory
+    ```
+    $ cd /home/$(whoami)
+    $ touch .bashrc  #if file doesn't exist
+    ```
+* In your **.bashrc** profile, save the following:
+```
+if [ -f /etc/bashrc ]; then
+
+    . /etc/bashrc
+
+fi
+```
+* To activate 
+```
+$ source .bashrc
+```
+
 ## Using VS Code on OpenMind
 * Open VS Code and add the extensions on the sidebar: **Remote - SSH** and **Remote - SSH: Editing Configuration Files**
 * Go to **View** and open **Command Palette** 
     * Click **Remote-SSH: Add New SSH Host**
-    * You'll be prompted to log in to OpenMind `ssh "username"@openmind.mit.edu`
+    * You'll be prompted to log in to OpenMind 
+    ```$ ssh $(whoami)@openmind.mit.edu
+    ```
     * You'll get a notification saying host added and an option to **connect** 
 * Once you connect for the first time you'll be able to connect easily via **Remote Explorer** on the sidebar. You'll be prompted for your password every time you ssh in. 
