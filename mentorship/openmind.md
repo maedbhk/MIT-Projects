@@ -10,13 +10,13 @@ title: Getting Started on Openmind
     $ ssh <username>@openmind.mit.edu ## to log in to OpenMind        
     $ ssh <username>@openmind-dtn.mit.edu ## to access data transfer node
 ```
-* Transferring data
-    * Use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
 > Cloning repos from github
 ```
     cd /om2/user/$(whoami)
     git clone git@github.com:maedbhk/healthy_brain_network.git # example github repo
 ```
+* Transferring data
+    * Use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
 * Setting up SSH keys for github
     * Follow instructions set out on this [webpage](https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue) to set up SSH for github repo
     * Also useful is this step-by-step [guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key) on setting up ssh keys
@@ -32,22 +32,22 @@ title: Getting Started on Openmind
 ```
 * Most projects either use **pipenv** or **conda** to create virtual environments. If there is a **Pipfile**, then the project uses **pipenv**, if there is an **environment.yml** then the project uses **conda**
 
-> Example of activating a **pipenv** environment  (example here is **healthy_brain_network** but can be any folder that contains a **Pipfile**):
+> If you want to use **pipenv**:
 ```
-    # navigate to top-level directory of project
+    # navigate to top-level directory of project (example here is healthy_brain_network but can be any folder that contains a Pipfile)
     $ cd om2/user/$(whoami)/healthy_brain_network
 
     # make sure pipenv library is installed
     $ pip install pipenv
 
     # install virtual environment
-    $ pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/$(whoami)/.local/bin** in your **.bash_profile**. (See **Setting Paths** below for more details)
+    $ pipenv install ## if you're getting an error, it's probably because you have not set PATH to be /home/$(whoami)/.local/bin in your .bash_profile. (See **Setting Paths** below for more details)
 
     # activate the virtual environment
     $ pipenv shell
 ```
 
-> If you want to use **conda**
+> If you want to use **conda**:
 ```
     # navigate to top-level directory of project (example here is **healthy_brain_network** but can be any folder that contains an **environment.yml** file)
     $ cd om2/user/$(whoami)/healthy_brain_network
