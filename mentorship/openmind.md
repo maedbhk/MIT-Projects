@@ -2,18 +2,18 @@
 title: Getting Started on Openmind
 ---
 
-> Example repo here is **healthy_brain_network** but can be applied to any github repo that uses a **Pipfile** or **Conda** environment
+> Note that example repo here is **healthy_brain_network** but can be applied to any github repo that uses a **Pipfile** or **Conda** environment
 
 ## First Steps
 * Accessing OpenMind
-*   ``` 
+   ``` 
     $ ssh <username>@openmind.mit.edu ## to log in to OpenMind        
     $ ssh <username>@openmind-dtn.mit.edu ## to access data transfer node
     ```
 * Transferring data
     * Use `rsync` if you need to transfer data from your local network to openmind (and vice versa)
 * Cloning repos from github
-*   ```
+   ```
     cd /om2/user/$(whoami)
     git clone git@github.com:maedbhk/healthy_brain_network.git # example github repo
     ```
@@ -23,28 +23,28 @@ title: Getting Started on Openmind
 * Storing data on OpenMind
     * I/O operations to **om** and **om2** are fast, which is why I store code largely on **om2**
         * Scratch directory on **om2** is useful for temporary storage of data: **/om2/scratch/tmp/$(whoami)/** (cleared after 2 weeks)
-    * **om4** and **nese** are slower but have large storage space, which is why raw data are stored on **nese**
+    * **om4** and **nese** are slower but have large storage space, which is why I store raw data on **nese**
 
 ## Installing and activating virtual environments
 * To install the virtual environment, you need to make sure the Python module is loaded (OpenMind uses anaconda for running Python)
-```
-    module load openmind/anaconda/3-2022.05`
-```
-* Most projects either use **pipenv** or **conda** to create virtual environments. If there is a `Pipfile`, then the project uses **pipenv**, if there is an `environment.yml` then the project uses **conda**
+    ```
+        $ module load openmind/anaconda/3-2022.051
+    ```
+* Most projects either use **pipenv** or **conda** to create virtual environments. If there is a **Pipfile**, then the project uses **pipenv**, if there is an **environment.yml** then the project uses **conda**
 
 > Example of activating a **pipenv** environment  (example here is **healthy_brain_network** but can be any folder that contains a **Pipfile**):
 ```
     # navigate to top-level directory of project
-    cd om2/user/$(whoami)/healthy_brain_network
+    $ cd om2/user/$(whoami)/healthy_brain_network
 
-    # make sure **pipenv** library is installed
-    pip install pipenv
+    # make sure pipenv library is installed
+    $ pip install pipenv
 
     # install virtual environment
-    pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/$(whoami)/.local/bin** in your **.bash_profile**. (See **Setting Paths** below for more details)
+    $ pipenv install ## if you're getting an error, it's probably because you have not set PATH to be **/home/$(whoami)/.local/bin** in your **.bash_profile**. (See **Setting Paths** below for more details)
 
     # activate the virtual environment
-    pipenv shell
+    $ pipenv shell
 ```
 
 > If you want to use **conda**
@@ -53,17 +53,17 @@ title: Getting Started on Openmind
     $ cd om2/user/$(whoami)/healthy_brain_network
 
     # load your own version of miniconda
-    # see section below: `Download miniconda on OpenMind`
+    # see section below: Download miniconda on OpenMind
 
     # in this repo, install a conda environment from environment.yml
     $ conda env create -f environment.yml
 
     # activate the conda virtual environment
-    $ conda activate healthy-brain-network # each **environment.yml** has its own unique name (look inside the file `$ vim environment.yml`)
+    $ conda activate healthy-brain-network # each virtual env has its own unique name (look inside the environment.yml file)
 ```
 
 ## Download miniconda on OpenMind and add to PATH
-* You should download your own distribution of miniconda rather than relying on the OpenMind package
+> You should download your own distribution of miniconda rather than relying on the OpenMind package
 ```
     # create bin folder in your om2 directory - this is where you will store your distribution of miniconda
     $ cd /om2/user/$(whoami)
@@ -84,10 +84,10 @@ title: Getting Started on Openmind
 ```
 
 ## Setting Paths
-* Paths are typically set in your **.bash_profile**
+> Paths are typically set in your **.bash_profile**
 
 ### Bash Profile
-* Create **.bash_profile** in your home directory 
+> Create **.bash_profile** in your home directory 
     ```
     $ cd /home/$(whoami)
     $ touch .bash_profile  # if file doesn't exist
@@ -95,10 +95,10 @@ title: Getting Started on Openmind
 * For example, my **.bash_profile** is saved at **/home/maedbh** (see example below)
 * You can see that I have set aliases (for easier navigation around openmind), you don't have to do this but it can make things easier when you're working on openmind.
 * Make sure you set your PATH so that your scripts can find software saved to your **.local/bin** directory.
-* To activate 
-```
-$ source .bash_profile
-```
+> To activate:
+    ```
+    $ source .bash_profile
+    ```
 
 ### Example bash profile
 ```
@@ -127,30 +127,29 @@ fi
 ```
 
 ### Bashrc profile
-* Create **.bashrc** in your home directory
+> Create **.bashrc** in your home directory
     ```
     $ cd /home/$(whoami)
     $ touch .bashrc  #if file doesn't exist
     ```
 * In your **.bashrc** profile, save the following:
-```
-if [ -f /etc/bashrc ]; then
-
-    . /etc/bashrc
-
-fi
-```
-* To activate 
-```
-$ source .bashrc
-```
+    ```
+    if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+    fi
+    ```
+> To activate: 
+    ```
+    $ source .bashrc
+    ```
 
 ## Using VS Code on OpenMind
 * Open VS Code and add the extensions on the sidebar: **Remote - SSH** and **Remote - SSH: Editing Configuration Files**
 * Go to **View** and open **Command Palette** 
     * Click **Remote-SSH: Add New SSH Host**
     * You'll be prompted to log in to OpenMind 
-    ```$ ssh $(whoami)@openmind.mit.edu
+    ```
+        $ ssh $(whoami)@openmind.mit.edu
     ```
     * You'll get a notification saying host added and an option to **connect** 
 * Once you connect for the first time you'll be able to connect easily via **Remote Explorer** on the sidebar. You'll be prompted for your password every time you ssh in. 
