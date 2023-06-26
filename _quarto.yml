@@ -66,6 +66,15 @@ website:
           - literature-review/development-translational-neuroimaging.md
           - literature-review/methodology-pHealth.md
           - literature-review/suicide-prediction.md
+          - literature-review/cerebellar_development_prematurity.md
+          - literature-review/placenta_cerebellum.md
+          - literature-review/stress_pregnancy.md
+          - literature-review/asd_critical_periods_cerebellum.md
+          - literature-review/cerebellum_asd_abnormal_dev.md
+          - literature-review/cerebellum_brain_disorders.md
+          - literature-review/cerebellum_fc_asd.md
+          - literature-review/cerebellum_social_development.md
+          - literature-review/brain_injury_prematurity.md
       - section: "Projects"
         contents: 
           - projects/index.md
