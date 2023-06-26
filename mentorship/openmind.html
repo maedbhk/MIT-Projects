@@ -601,6 +601,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#setting-paths" id="toc-setting-paths" class="nav-link" data-scroll-target="#setting-paths">Setting Paths</a>
   <ul class="collapse">
   <li><a href="#bash-profile" id="toc-bash-profile" class="nav-link" data-scroll-target="#bash-profile">Bash Profile</a></li>
+  <li><a href="#example-bash-profile" id="toc-example-bash-profile" class="nav-link" data-scroll-target="#example-bash-profile">Example bash profile</a></li>
   <li><a href="#bashrc-profile" id="toc-bashrc-profile" class="nav-link" data-scroll-target="#bashrc-profile">Bashrc profile</a></li>
   </ul></li>
   <li><a href="#using-vs-code-on-openmind" id="toc-using-vs-code-on-openmind" class="nav-link" data-scroll-target="#using-vs-code-on-openmind">Using VS Code on OpenMind</a></li>
@@ -632,20 +633,27 @@ ul.task-list li input[type="checkbox"] {
 </blockquote>
 <section id="first-steps" class="level2">
 <h2 class="anchored" data-anchor-id="first-steps">First Steps</h2>
-<pre><code>   $ ssh &lt;username&gt;@openmind.mit.edu ## to log in to OpenMind        
-   $ ssh &lt;username&gt;@openmind-dtn.mit.edu ## to access data transfer node</code></pre>
 <ul>
-<li>fyi: use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa)</li>
-<li>code for <strong>healthy_brain_network</strong> is stored at <strong>/om2/user/maedbh/healthy_brain_network</strong> but you should clone the github repo in your own path</li>
-</ul>
-<pre><code>    cd om2/user/$(whoami)
-    git clone git@github.com:maedbhk/healthy_brain_network.git</code></pre>
+<li>Accessing OpenMind</li>
+<li><code>$ ssh &lt;username&gt;@openmind.mit.edu ## to log in to OpenMind             $ ssh &lt;username&gt;@openmind-dtn.mit.edu ## to access data transfer node</code></li>
+<li>Transferring data
+<ul>
+<li>Use <code>rsync</code> if you need to transfer data from your local network to openmind (and vice versa)</li>
+</ul></li>
+<li>Cloning repos from github</li>
+<li><code>cd /om2/user/$(whoami)     git clone git@github.com:maedbhk/healthy_brain_network.git # example github repo</code></li>
+<li>Setting up SSH keys for github
 <ul>
 <li>Follow instructions set out on this <a href="https://jhooq.com/github-permission-denied-publickey/#1-github---how-to-fix-this-issue">webpage</a> to set up SSH for github repo</li>
 <li>Also useful is this step-by-step <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key">guide</a> on setting up ssh keys</li>
-<li>phenotypic data for <strong>healthy_brain_network</strong> is stored at <strong>/om2/user/maedbh/hbn_data/</strong>
+</ul></li>
+<li>Storing data on OpenMind
 <ul>
-<li>fyi: I/O operations to <strong>om</strong> and <strong>om2</strong> are fast, which is why I store code here. <strong>om4</strong> and <strong>nese</strong> are slower but have large storage space, which is why raw data are stored on <strong>nese</strong>.</li>
+<li>I/O operations to <strong>om</strong> and <strong>om2</strong> are fast, which is why I store code largely on <strong>om2</strong>
+<ul>
+<li>Scratch directory on <strong>om2</strong> is useful for temporary storage of data: <strong>/om2/scratch/tmp/$(whoami)/</strong> (cleared after 2 weeks)</li>
+</ul></li>
+<li><strong>om4</strong> and <strong>nese</strong> are slower but have large storage space, which is why raw data are stored on <strong>nese</strong></li>
 </ul></li>
 </ul>
 </section>
@@ -659,7 +667,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Most projects either use <strong>pipenv</strong> or <strong>conda</strong> to create virtual environments. If there is a <code>Pipfile</code>, then the project uses <strong>pipenv</strong>, if there is an <code>environment.yml</code> then the project uses <strong>conda</strong></li>
 </ul>
 <blockquote class="blockquote">
-<p>Example of activating a <strong>pipenv</strong> environment:</p>
+<p>Example of activating a <strong>pipenv</strong> environment (example here is <strong>healthy_brain_network</strong> but can be any folder that contains a <strong>Pipfile</strong>):</p>
 </blockquote>
 <pre><code>    # navigate to top-level directory of project
     cd om2/user/$(whoami)/healthy_brain_network
@@ -689,8 +697,10 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="download-miniconda-on-openmind-and-add-to-path" class="level2">
 <h2 class="anchored" data-anchor-id="download-miniconda-on-openmind-and-add-to-path">Download miniconda on OpenMind and add to PATH</h2>
-<pre><code>
-    # create bin folder in your om2 directory - this is where you will store your distribution of miniconda
+<ul>
+<li>You should download your own distribution of miniconda rather than relying on the OpenMind package</li>
+</ul>
+<pre><code>    # create bin folder in your om2 directory - this is where you will store your distribution of miniconda
     $ cd /om2/user/$(whoami)
     $ mkdir bin
     $ cd bin
@@ -709,16 +719,22 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="setting-paths" class="level2">
 <h2 class="anchored" data-anchor-id="setting-paths">Setting Paths</h2>
+<ul>
+<li>Paths are typically set in your <strong>.bash_profile</strong></li>
+</ul>
 <section id="bash-profile" class="level3">
 <h3 class="anchored" data-anchor-id="bash-profile">Bash Profile</h3>
 <ul>
-<li>Create <strong>.bash_profile</strong> in your home directory <code>$ cd /home/$(whoami)     $ touch .bash_profile  #if file doesn't exist</code></li>
-<li>For example, my <strong>.bash_profile</strong> is saved at <strong>/home/maedbh</strong> (see below)</li>
+<li>Create <strong>.bash_profile</strong> in your home directory <code>$ cd /home/$(whoami)     $ touch .bash_profile  # if file doesn't exist</code></li>
+<li>For example, my <strong>.bash_profile</strong> is saved at <strong>/home/maedbh</strong> (see example below)</li>
 <li>You can see that I have set aliases (for easier navigation around openmind), you don’t have to do this but it can make things easier when you’re working on openmind.</li>
 <li>Make sure you set your PATH so that your scripts can find software saved to your <strong>.local/bin</strong> directory.</li>
 <li>To activate</li>
 </ul>
 <pre><code>$ source .bash_profile</code></pre>
+</section>
+<section id="example-bash-profile" class="level3">
+<h3 class="anchored" data-anchor-id="example-bash-profile">Example bash profile</h3>
 <pre><code># .bash_profile
 
 # Get the aliases and functions
