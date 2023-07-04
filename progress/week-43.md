@@ -7,6 +7,7 @@ title: Week 43
 ## Done and To Do
 * Writing this week:
     * Finished review paper (submitted to journal)
+        * notes and outline [here](../writing/index.md)
     * Made a bit of progress on sex differences + ADHD paper (will focus on this paper more next week)
 * Worked with Kai on training new BERT models for clinical questionnaires
     * I initially shared an example notebook on topic modeling, drawing heavily from this great [tutorial](https://towardsdatascience.com/topic-modeling-with-bert-779f7db187e6), and he updated it with improved results (identified more meaningful topics for embeddings). Next week, he'll start analyzing the response data.

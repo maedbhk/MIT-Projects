@@ -35,5 +35,9 @@ title: Outline
 * Cortico-cerebellar connectivity and social cognition
 * Abnormal cerebellar development in ASD
 
+### Cortico-cerebellar connectivity from infancy to adulthood
+* Why is cerebellar injury result in mild cognitive symptoms in adults but severe in children?
+* What theories of cerebellar function explain the cerebellum's role in infancy and adulthood?
+
 ### Future Directions / Outstanding Questions
 * Summary and Outlook

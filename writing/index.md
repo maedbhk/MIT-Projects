@@ -7,6 +7,6 @@ Documenting the process of writing a short review paper for "Current Opinion in 
 
 - [`Invitation from Journal`](invitation.md)
 - [`Compiling Reference List`](references.md)
-- [`Notes`](notes.md)
+- [`Notes`](https://docs.google.com/document/d/1JcVti7eD9jNtoY3LI2ZCqeuFAXO6RHtBQOtVA_vC8DQ/edit?usp=sharing)
 - [`Outline`](outline.md)
-- `Final Product (TBD)`
+- [`Final Version`](https://drive.google.com/file/d/1POf-AnrN9fjfmp2Wl_OoDTvSJH01mw-V/view?usp=sharing)
