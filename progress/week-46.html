@@ -675,19 +675,27 @@ ul.task-list li input[type="checkbox"] {
 <section id="done-and-to-do" class="level2">
 <h2 class="anchored" data-anchor-id="done-and-to-do">Done and To Do</h2>
 <ul>
-<li>Reached out to Ran Rotem about possible collaboration exploring prenatal determinants of mental health disorders
+<li>Reached out to Ran Rotem (from marc weissopf’s lab) about possible collaboration exploring prenatal determinants of mental health disorders
 <ul>
 <li>he gave a talk at the Picower conference on determinants of mental health</li>
 <li>he used EHR and found that maternal hypothyroidism is associated with increased risk for asd in their children</li>
 <li>my question is: can we identify an association between cerebellar injury prenatally (or shortly after birth) and later diagnosis of ASD? Structural neuroimaging work, and animal models have suggested that this association exists but no study has yet to leverage large-scale EHR data to corroborate this finding.</li>
 </ul></li>
-<li>Met with Kseniia and Kai about item analysis project, trying out the following:
+<li>Met with Kseniia and Kai about item analysis project, trying out a few different approaches to map questions to responses</li>
+<li>Ran new HBN models on reading impairment data to try and answer some of the <a href="https://docs.google.com/document/d/1c06VE-7ONfemBjcVewU9VbH-NFTEcI4N6RpD2xaoFlU/edit?usp=sharing">questions</a> that Ola outlined</li>
+<li>Made progress on ADHD paper - ran a bunch of new models:
 <ul>
-<li></li>
+<li>Differentiate kids with ADHD from all other kids WITHOUT adhd (target)</li>
+<li>Differentiate kids with ADHD from all other kids with no diagnosis (target)</li>
+<li>Does ML outperform simple sum scores (features)</li>
+<li>Removed subscores from models (features)</li>
+<li>Check proprietary versus free questionnaires (features) - idea from kseniia</li>
+<li>Predict general cognitive impairment score - revisited this analysis</li>
+<li>Tried different algorithms: L1 and L2, logistic regression, decision tree, random forest etc. stochastic gradient descent linear classifier with L1 penalty, SGD with elastic net penalty, and linear support vector machine</li>
+<li>Run secondlevel models on all models</li>
+<li>To do: generalization to ABCD data</li>
 </ul></li>
-<li>Ran new HBN models on reading impairment data – answered some of the questions that Ola outlined</li>
-<li>Made progress on ADHD paper</li>
-<li>To Do: access to Arcus has not yet been resolved so haven’t been able to work on it this week</li>
+<li>Got access to Arcus yesterday so worked on that codebase yesterday and will work on it more today</li>
 </ul>
 
 
