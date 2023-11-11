@@ -599,7 +599,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48"
   },
   {
     "objectID": "progress/week-27.html",
@@ -789,6 +789,20 @@
     "title": "Week 18",
     "section": "",
     "text": "Worked on calculating distance correlations between HBN questionnaires to determine how orthogonal featuers are within a questionnaire\n\nwhat is the redundancy across measures used to diagnose neurodevelopmental disorders?\n\nWorked with Opalina on her project to identify differences in cognitive performance across ADHD subtypes\n\nExperimented with radar plots and parallel coordinates plots to visualize multivariate data\n\nFocused on Child Behavior Checklist across ADHD subtypes and differences in reporting between parents and teachers\nAttended an interesting lecture on interactions between the immune system during pregnancy and later diagnosis of neurodevelopmental disorders\n\npregnancy-related features (e.g. nicotine use during pregnancy) are captured in the HBN dataset, could be interesting to examine importance of these features in diagnosis classification"
+  },
+  {
+    "objectID": "progress/week-48.html",
+    "href": "progress/week-48.html",
+    "title": "Week 48",
+    "section": "",
+    "text": "11/06 - 11/10"
+  },
+  {
+    "objectID": "progress/week-48.html#done-and-to-do",
+    "href": "progress/week-48.html#done-and-to-do",
+    "title": "Week 48",
+    "section": "Done and To Do",
+    "text": "Done and To Do\n\nSpent most of the week working on CHOP project, tasks included:\n\nmoving code over from lab 1 to lab 2\nwriting SQL functions to extract relevant variables from lab 2 datasets and saving data to csv files\nreorganized lab 2 repo to make it more flexible for running ML pipeline (takes in feature, target, and participant spec files that can be easily configuarable)\nrewrote train/test splits so that we’re balancing across sex, race, and suicide attempt\ndid a basic summary including the new BHS data (we now have data up until Apr. 2023)\nunfortunately, everything takes a bit longer in the virtual machine (it’s glitchy and requires rebooting often)\n\nMet with Elina, Harsha and Meryem about CHOP project. Meeting notes here\nDid some work on OHBM poster with Yibei\n\nMostly identifying subject groups + other relevant phenotypic information for inclusion in analysis\n\nI’ve been appointed as lead author on an MIT Science Policy Review paper, which will focus on Precision Medicine. Met with the team this week - meeting notes here\nMet with Ran Rotem from Marc Weisskopf’s group at Harvard to discuss a potential collaborator on the developing cerebellum. Meeting notes here\nDid some reading on the SCPAB Transition to Independence Award and I think I’m interested in applying. Deadline is rather soon (mid-January) so will need to get working on the application soon."
   },
   {
     "objectID": "progress/week-8.html",
