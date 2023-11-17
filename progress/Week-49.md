@@ -8,6 +8,7 @@ title: Week 49
 * CHOP Project - get models running on arcus with updated dataset
 	* merged pre and post covid dataframes (took way longer than it should have)
 	* working within VM is frustrating, glitchy and slow. Contacted arcus and talked to them, working on a fix. 
+* Created [template_ML](https://github.com/maedbhk/template_ML) github repo - have been using same ML pipelines for a bunch of different projects, having a template would make it easier to get started on new projects going forward. 
 * HBN + Reading - got updated models running. Ended up doing a lot of reorganizing of code base to make it more flexible, which took longer than anticipated. Basically needed to update the code so that we're taking particpants who have given diagnosis (across any of the DX diagnoses, not just DX_01). Choosing which participants to include in models isn't trivial given large number of comorbidities. 
 * Started working on Simons Foundation Fellowship
 	* [Research Statement](https://docs.google.com/document/d/11tN_wyjNd7JZqr8LWFozB9awJmIdCwCBA8uOJOr-_BA/edit) - currently in bullet points
