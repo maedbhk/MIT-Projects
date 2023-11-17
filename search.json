@@ -599,7 +599,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49"
   },
   {
     "objectID": "progress/week-27.html",
@@ -761,6 +761,27 @@
     "title": "Week 38",
     "section": "Done and To Do",
     "text": "Done and To Do\n\nMonday: Conference Prep (adding in slides for supp. materials)\nTuesday: spent all day at the ICoN retreat (didn’t take any notes unfortunately but had lots of interesting conversations)\nWednesday: UMAP on data, filtering by diagnoses with the goal of identifying how well responses (rather than questions) group into meaningful clusters (answer not as much as the questions themselves!). Preprocessing of ABCD phenotypic data\nThursday: spent the day at the Picower conference “social and environmental determinants of child mental health”\n\nreally fascinating conference bringing together a diverse group of speakers: environmental epidemiologists, clinical psychologists, native american scholars. Notes here\nconnected with Ran Rotem - he gave great talk on environmental epidemiology and big data: using EHR to infer environmental contributors to autism (focus on hypothryoidism). I’m interested in the approach (and the datasets) with a specific focus on cerebellar injury during prenatal stage or first 3 months post-partum and later diagnosis of ASD.\n\nFriday: Mostly meetings today + continuing to preprocess ABCD data"
+  },
+  {
+    "objectID": "progress/Week-49.html",
+    "href": "progress/Week-49.html",
+    "title": "Week 49",
+    "section": "",
+    "text": "11/13 - 11/17"
+  },
+  {
+    "objectID": "progress/Week-49.html#done",
+    "href": "progress/Week-49.html#done",
+    "title": "Week 49",
+    "section": "Done",
+    "text": "Done\n\nCHOP Project - get models running on arcus with updated dataset\n\nmerged pre and post covid dataframes (took way longer than it should have)\nworking within VM is frustrating, glitchy and slow. Contacted arcus and talked to them, working on a fix.\n\nCreated template_ML github repo - have been using same ML pipelines for a bunch of different projects, having a template would make it easier to get started on new projects going forward.\nHBN + Reading - got updated models running. Ended up doing a lot of reorganizing of code base to make it more flexible, which took longer than anticipated. Basically needed to update the code so that we’re taking particpants who have given diagnosis (across any of the DX diagnoses, not just DX_01). Choosing which participants to include in models isn’t trivial given large number of comorbidities.\nStarted working on Simons Foundation Fellowship\n\nResearch Statement - currently in bullet points\nDiversity and Equity Statement - currently in bullet points\n\nSent emails to profs in Europe enquiring about upcoming TT advertisements\n\nDagmar Timmann; Narendar Ramnani; Chris De Zeeuw.\n\nChatted with Kseniia about writing a short paper on the semantic similarity work that Kai did during summer UROP. Likely won’t get started on this until new year.\nHopefully meeting Jeremy early next week (tbd) to discuss ideas about pediatric cerebellar project. Let me know if you’re interested in joining, otherwise I will update you."
+  },
+  {
+    "objectID": "progress/Week-49.html#to-do-and-questions",
+    "href": "progress/Week-49.html#to-do-and-questions",
+    "title": "Week 49",
+    "section": "To Do and Questions",
+    "text": "To Do and Questions\n\nFull draft of research statement and DEI Statement. If you have some time, I would appreciate any feedback (once I have a first draft - hopefully end of next week)\nSend emails to mentors/collaborators requesting refs for Simons Foundation fellowship\nUpdate CHOP presentation with model results of lab 2 (before thanksgiving)\nI’ve been invited to present two talks at OHBM 2024: “Gradients of Brain Organisation” workshop and a symposium on “Mapping cortical-subcortical interactions” (the latter is currently a proposal). I was wondering whether there would be funding for me to go? Of course, I recognize that I would have to present on current work, which means I would focus the next few months on a cerebellar imaging project. One of the symposia organizers asked me to discuss ideas presented in this recent paper so I was thinking that it would be a good opportunity to present ideas in this paper + preliminary results on cerebellar imaging and neurodevelopment. Let me know what you think!"
   },
   {
     "objectID": "progress/week-9.html",
