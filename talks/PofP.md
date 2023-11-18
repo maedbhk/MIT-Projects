@@ -2,6 +2,7 @@
 title: Path of Professorship at MIT 2023
 ---
 
+DAY 1: 11/18/23
 ### opening remarks
 * women are underrepresented as professors
 * 36% of all professors in US are women
