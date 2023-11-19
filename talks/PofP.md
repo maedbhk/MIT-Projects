@@ -1,6 +1,8 @@
 ---
-title: Path of Professorship at MIT 2023
+title: MIT Conference on a Path to Professorship
 ---
+
+> All presentations are available [here](https://drive.google.com/file/d/1gkvL6bhbT_ANclYOZwvguBvXvWM6Q6-p/view?usp=sharing)
 
 DAY 1: 11/18/23
 ### opening remarks
@@ -139,8 +141,89 @@ DAY 1: 11/18/23
 * one-on-one advise for negotiating on handshake (capd)
 
 ### building a professional network and reputation
+> [networking cheatsheet](https://drive.google.com/file/d/1vnHt_j7ssDAnfJreL_0SWiWUpdYTJIMj/view?usp=sharing)
 * walk through open doors and take advantage of new opportunities
 * it's really important to have a single tag line that people can remember and take back with them
 * ellen roche: make networking a part of your day-to-day rather than a chore
 * flip a coin and whatever your gut reaction tells you is what you really feel
 
+DAY 2: 11/19/2023
+
+### research statements
+* simona rosu, phd - srosu@mit.edu - senior assistant director - postdoctoral career and professional development
+    * good contact for reviewing research statement
+* goals:
+    * convince the search committee that you have intersting, exciting, impactful research ideas
+    * you have the track record and experience to carry it out
+    * you have well thought-out plan/specific project ideas to get started (what would you do in the first few years)
+* know your audience:
+    * tenured and TT faculty - in and outside of hiring dept. 
+    * members are often over-committeed and busy
+    * may/may not be familiar or interested in your field
+    * trying to get a quick picture of you and your research
+* make it easy for them!
+    * everything should be easy to read, clear and polished (content and format)
+* content:
+    * background and significance (introducting the big ideas/questions/challenges) - why is this an important topic
+    * brief overview of past and current research
+        * key accomplishments: approaches, results, and signifiance
+        * highlight related publications, fellowships/awards
+        * consider relevance to future research proposal
+    * future research (3-5 years and vision) - longest chunk of statement?
+        * long-term vision, major strategies and approaches, expected impact
+        * specific projects/plan for the next 3-5 years
+        * mention potential funding sources
+        * mention interest in potential collaborations (in and outside institution)
+* two common ways to organize statement:
+    * chronological: 
+        * intro and vision
+        * past research (accomplishment 1 and 2)
+        * future research (project 1 and 2)
+        * conclusions/outlook
+    * thematic:
+        * intro and vision
+        * theme 1 (past and future research)
+        * theme 2 (past and future research)
+        * themes shouldn't depend on each other (ideally) - you could still do theme 2 if 1 fails
+* what you are trying to convey:
+    * importance of your research
+    * focus (well thought out plan)
+    * independence (how does it differ from current and past mentors)
+    * creativity
+    * realism (acknowledgement of possible limitations and alternatives)
+    * clarity
+    * fundability
+    * appropriate scope for type of institution (fit)
+        * explicitly comment on why research is well-suited for undergraduates
+* formatting and tips:
+    * length varies by field and position (3-5 pages)
+    * make it easy to "skim" - use descriptive title, use section headings, use visuals (key figures/diagrams), avoid long, convoluted sentences, be clear and direct
+* writing tips:
+    * use active voice (e.g., I developed..; My research group will..)
+    * avoid ambiguous "we": clarify your contributions and acknowledge collaborations (e.g., I developed method X. My collaborators applied method X to show..)
+    * make it clear when you are talking about your proposal vs. general background
+        * problem X is important..I could use approach A to address this problem
+    * writing to communicate to a broader audience
+        * explain any key terms and concepts
+        * avoid jargon when possible; avoid overuse of abbreviations
+    * walk your audience through it - be explicit (don't assume it's obvious)
+        * comment on the significance, rationale, impact of your approaches
+        * why are you choosing these questions/problems?
+        * why are you choosing these approaches? 
+        * what is unique/novel about your proposal? how does it differ from others in the field? 
+        * what is the expected impact? 
+    * general advice:
+        * start early
+        * reflect on your vision
+        * get feedback from faculty, peers, and other professionals (inside and outside your field)
+        * practice communicating your science (inside your field; outside your field; research slam)
+    * question / answer / approach
+    * touch on grad and postdoc work
+        * you can choose to spend more time on certain parts of your work (grad vs. postdoc work)
+        * what pieces of your work has been published - if your postdoc work is early on, you still want to talk about accomplishments (papers etc.)
+    * ask peers for feedback / ask people within/outside your network for feedback
+    * writing and communications center can give you feedback
+    * majority of future research section in research statement - what you plan to do, but you can also talk about potential collaborations that you'll have with faculty in the dept. 
+
+### funding
+* k99 grant - path to independence
