@@ -1,10 +1,11 @@
 ---
-title: MIT Conference on a Path to Professorship
+title: MIT Conference on a Path to Professorship (2023)
 ---
 
-> All presentations are available [here](https://drive.google.com/file/d/1gkvL6bhbT_ANclYOZwvguBvXvWM6Q6-p/view?usp=sharing)
+* All presentations are available [here](https://drive.google.com/file/d/1gkvL6bhbT_ANclYOZwvguBvXvWM6Q6-p/view?usp=sharing)
 
 DAY 1: 11/18/23
+
 ### opening remarks
 * women are underrepresented as professors
 * 36% of all professors in US are women
@@ -141,7 +142,7 @@ DAY 1: 11/18/23
 * one-on-one advise for negotiating on handshake (capd)
 
 ### building a professional network and reputation
-> [networking cheatsheet](https://drive.google.com/file/d/1vnHt_j7ssDAnfJreL_0SWiWUpdYTJIMj/view?usp=sharing)
+* [networking cheatsheet](https://drive.google.com/file/d/1vnHt_j7ssDAnfJreL_0SWiWUpdYTJIMj/view?usp=sharing)
 * walk through open doors and take advantage of new opportunities
 * it's really important to have a single tag line that people can remember and take back with them
 * ellen roche: make networking a part of your day-to-day rather than a chore
