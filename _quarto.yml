@@ -41,6 +41,57 @@ website:
       - section: "Progress"
         contents:
           - progress/index.md
+          - progress/week-01.md
+          - progress/week-02.md
+          - progress/week-03.md
+          - progress/week-04.md
+          - progress/week-05.md
+          - progress/week-06.md
+          - progress/week-07.md
+          - progress/week-08.md
+          - progress/week-09.md
+          - progress/week-10.md
+          - progress/week-11.md
+          - progress/week-12.md
+          - progress/week-13.md
+          - progress/week-14.md
+          - progress/week-15.md
+          - progress/week-16.md
+          - progress/week-17.md
+          - progress/week-18.md
+          - progress/week-19.md
+          - progress/week-20.md
+          - progress/week-21.md
+          - progress/week-22.md
+          - progress/week-23.md
+          - progress/week-24.md
+          - progress/week-25.md
+          - progress/week-26.md
+          - progress/week-27.md
+          - progress/week-28.md
+          - progress/week-29.md
+          - progress/week-30.md
+          - progress/week-31.md
+          - progress/week-32.md
+          - progress/week-33.md
+          - progress/week-34.md
+          - progress/week-35.md
+          - progress/week-36.md
+          - progress/week-37.md
+          - progress/week-38.md
+          - progress/week-39.md
+          - progress/week-40.md
+          - progress/week-41.md
+          - progress/week-42.md
+          - progress/week-43.md
+          - progress/week-44.md
+          - progress/week-45.md
+          - progress/week-46.md
+          - progress/week-47.md
+          - progress/week-48.md
+          - progress/week-49.md
+          - progress/week-50.md
+          - progress/week-51.md
       - section: "Datasets"
         contents:
           - datasets/index.md
