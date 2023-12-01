@@ -26,3 +26,5 @@ Here is a [list of some papers](https://drive.google.com/file/d/1F6b3r_GX8qFzZ4J
 - [Cerebellum, functional connectivity, and ASD](cerebellum_fc_asd.md)
 - [Cerebellum and social development](cerebellum_social_development.md)
 - [Brain injury and prematurity](brain_injury_prematurity.md)
+- [Growth curves and the subcortex](growth-curves-subcortex.md)
+- [Sex differences and the cerebellum](cerebellum-sex-differences.md)

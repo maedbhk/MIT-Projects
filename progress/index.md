@@ -56,3 +56,5 @@ Keeping track of projects: what I've done, what's planned, what's in progress..
 - [`Week 47`](week-47.md)
 - [`Week 48`](week-48.md)
 - [`Week 49`](week-49.md)
+- [`Week 50`](week-50.md)
+- [`Week 51`](week-51.md)
