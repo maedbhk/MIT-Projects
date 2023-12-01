@@ -245,6 +245,27 @@
     "text": "Done and To Do\n\nWorking on ADHD + sex differences paper\n\nGenerated new topic modeling figures for ADHD sub-types\nBuilt a model on CBCL questionnaire from ABCD dataset to test whether HBN results replicate\nBuilt models separately across age for HBN data, too few samples for many ages across males and females so trying to figure out a way to bucket age groups\nFinished methods section\n\nTested preliminary model on pre-covid CHOP data (borrowing heavily from HBN pipeline), still some data wrangling to do - will have some models ready for next CHOP-MIT meeting + will write up documentation on modeling process if someone else wants to take over part of this project while I’m away on maternity leave.\nWriting an invited review for “Current Opinion in Behavioral Sciences” and the topic is “Role of the Cerebellum in Cognition and Behavior”\n\nDocumenting my process here"
   },
   {
+    "objectID": "progress/week-51.html",
+    "href": "progress/week-51.html",
+    "title": "Week 51",
+    "section": "",
+    "text": "11/27 - 12/01"
+  },
+  {
+    "objectID": "progress/week-51.html#done",
+    "href": "progress/week-51.html#done",
+    "title": "Week 51",
+    "section": "Done",
+    "text": "Done\n\nCHOP Meeting - notes here\n\nRan some of the additional models we discussed in Monday meeting.\n\nMeeting on precision medicine for Vol. V of MIT SPR - notes here\nWorked on research statement and DEI statement - not ready yet for feedback.\nSubmitted abstract to OHBM for symposium on cortico-cerebellar connectivity (part of panel with Sheeba Anteraper)\nUpdated HBN models wrt reading impairment and sent to Ola so that she can start writing before the holidays.\nSome reading I’ve been doing: sex differences and the cerebellum and a new paper that looks at growth curves in subcortex (no cerebellum though) - they compiled a great pediatric dataset from 0-6 years, I emailed the corresponding author to enquire about cerebellar coverage."
+  },
+  {
+    "objectID": "progress/week-51.html#to-do",
+    "href": "progress/week-51.html#to-do",
+    "title": "Week 51",
+    "section": "To Do",
+    "text": "To Do\n\nFinish research + DEI statement to have enough time for feedback before holidays\nFinish running CHOP models before holidays"
+  },
+  {
     "objectID": "progress/week-34.html",
     "href": "progress/week-34.html",
     "title": "Week 34",
@@ -434,6 +455,27 @@
     "text": "Done and To-Do\n\nMeeting with Ran and Elina on BHS data\nMostly working ADHD Paper this week: methods + results\n\nModel ABCD data (CBCL questionnaire)\nWorking with Elina to figure out how to identify ABCD participants with ADHD:\n\nFor ADHD we usually use the symptoms from: abcd_ksad01 - ABCD Parent Diagnostic Interview for DSM-5 Full (KSADS-5)\nTo assess the severity of ADHD, we created an “or” variable for each symptom, considering both present and past occurrences, and then aggregated them [range 0-20].\nA higher number of symptoms indicates a more severe ADHD condition. In some cases, we excluded the “Hyper” symptoms [range 0-10].\nFor the diagnosis, we also established an “or” variable. It is sufficient for an individual to have one of the four diagnoses listed below to meet the criteria for diagnosis.\n\n\n\nADHD Symptoms"
   },
   {
+    "objectID": "progress/week-50.html",
+    "href": "progress/week-50.html",
+    "title": "Week 50",
+    "section": "",
+    "text": "11/13 - 11/17"
+  },
+  {
+    "objectID": "progress/week-50.html#done",
+    "href": "progress/week-50.html#done",
+    "title": "Week 50",
+    "section": "Done",
+    "text": "Done\n\nSent emails to mentors/collaborators requesting refs for Simons Foundation fellowship\nMet with Jeremy Schmahmann and had a very interesting conversation about possible collaborations, it seems that the focus on his team is on the developing cerebellum so interests are well-aligned. Meeting notes here\nUpdate CHOP presentation with model results of lab 2 (before thanksgiving) - presentation here"
+  },
+  {
+    "objectID": "progress/week-50.html#to-do",
+    "href": "progress/week-50.html#to-do",
+    "title": "Week 50",
+    "section": "To Do",
+    "text": "To Do\n\nFull draft of research statement and DEI Statement.\nGet abstract to sheeba for OBHM on developing cerebellum and cortico-cerebellar models of connectivity"
+  },
+  {
     "objectID": "progress/week-35.html",
     "href": "progress/week-35.html",
     "title": "Week 35",
@@ -599,7 +641,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51"
   },
   {
     "objectID": "progress/week-27.html",
@@ -1267,6 +1309,13 @@
     "text": "Many of these observations come from the following paper: van den Heuvel et al. 2021\n\n\nMaternal psych stress/negative affect during pregnancy was associated with variation in fetal cortico-cerebellar connectivity.\nDisturbed sleep in early childhood poses serious consequences for child outcomes and play an important role in health disparities (especially among minorities; Laposky et al. 2016); sleep is important for emotion processing (Anderson et al. 2016)\nEarliest predictors of child sleep disturbance can potentially be found in utero. Small number of studies have reported sleep problems in children prenatally exposed to maternal mood disturbance (O’Conner et al. 2007; Toffol et al. 2019)\nNovel gap explored by current study:\nDespite growing evidence of a relationship between the prenatal environment, no study to date has explored neural mechanisms by which maternal stress may affect child sleep patterns before birth\nAim of this study was to investigate the relationship between maternal stress and negative affect during pregnancy, fetal cortico-cerebellar connectivity and toddler’s sleep problems in a predominately African-American, high-risk sample from Detroit.\nWhy cerebellum?\n\nIncreased in this brain region by developmental neuroscientists (Fair et al. 2018)\nCerebellum grows exceptionally fast in the third trimester of pregnancy and its extremely sensitive to prenatal influences at the end of gestation (Matthews et al. 2018; Herzmann et al. 2018; Tiemeier et al. 2010; Volpe, 2009) and early adversity (Bauer et al. 2009)\nCerebellum is also implicated in sleep disorders (Canto et al. 2017)\n\nWhat this study found:\n\nIvestigation of the fetal brain network identified three highly connected areas, “hubs” in the cerebellum emphasizing the importance of this region for fetal functional connectivity.\nHigh maternal negative affect and stress during pregnancy was associated with increased sleep problems in toddlerhood.\nSignificant sex interaction indicating that the association was largely driven by males. Additionally prenatal exposure to maternal negative affect and stress was associated with decreased cerebellar-insula FC in the fetus."
   },
   {
+    "objectID": "literature-review/growth-curves-subcortex.html",
+    "href": "literature-review/growth-curves-subcortex.html",
+    "title": "Growth curves - subcortex",
+    "section": "",
+    "text": "Much of the points below came from a paper by Alex et al. (2023)\n\n\nEarly childhood (birth to 6 years) represents a dynamic and critical period in human brain development.\n\nCellular level: glial proliferation and migration; Dendritic arborization; Synapotegenesis; Myelination; Programmed cell death and synaptic and axonal elimination\nCognitive and behavioral level, several abilities, including language; social skills; emotional regulation; executive function emerge and elaborate.\nSensory and motor skills also develop rapidly. Between the cellular and cognitive/behavioral levels life macroscale brain properties that are best characterized by imaging-based phenotypes (e.g., global, regional, and subcortical volumes, cortical thickness, white matter diffusivity, functional connectivity etc).\n\nOur understanding of early development of these brain-related phenotypes has increased substantially in the past 20 years, driven by an expanding number of cross-sectional and longitudinal neuroimaging studies (MRI in particular). However, many knowledge gaps remain:\nVery few large-scale studies have mapped the development of brain-related phenotypes from birth to 6 years of age in diverse global populations with dense data\nThere is limited information on how sociodemographic factors and adverse birth outcomes shape neurodevelopmental trajectories\nThe neural correlates of variations in cognitive development are not fully understood\n\n\nMarek et al. (2023) study highlights how brain-wide association studies require thousands of participants to accurately identify brain-phenotype associations.\n\nCollaborative research overcomes these challenges by offering adequately powered study designs and recognizing differences across cultures and measurement methods.\n\nstudies associating adverse birth outcome and sociodemographic factors with brain structure mainly focused on brain outcomes characterized in late childhood, adolescence and adulthood. However, early childhood, when the brain is most malleable to environmental effects has not been studied as thoroughly due to practical and technical challenges of conducting imaging studies in this age range."
+  },
+  {
     "objectID": "literature-review/cerebellum_social_development.html",
     "href": "literature-review/cerebellum_social_development.html",
     "title": "Cerebellum and social development",
@@ -1314,6 +1363,48 @@
     "title": "Methodological considerations for precision medicine",
     "section": "Phenotype selection",
     "text": "Phenotype selection\n\nclinically distinct phenotypic profiles can be assigned the same diagnosis - for both major depressive disorder and generalized anxiety disorder, inter-rater reliabilities are 0.28 and 0.21 respectively.\nit is not realistic to think that the same neurobiological properties will underlie the unique clinical presentations of a given diagnosis.\na further complication that impacts the clinical utility of brain-behaviorl models is that clinical scales can vary a lot in terms of the symptoms they capture, and single symptomatic or dimensional measures are insufficient to capture the complex nature of psychiatric illness in an individual."
+  },
+  {
+    "objectID": "literature-review/cerebellum-sex-differences.html",
+    "href": "literature-review/cerebellum-sex-differences.html",
+    "title": "Sex differences and the cerebellum",
+    "section": "",
+    "text": "Much of the points below came from a this paper on sex differences and the cerebellum by McCarthy et al. (2008)"
+  },
+  {
+    "objectID": "literature-review/cerebellum-sex-differences.html#overview",
+    "href": "literature-review/cerebellum-sex-differences.html#overview",
+    "title": "Sex differences and the cerebellum",
+    "section": "Overview",
+    "text": "Overview\n\nDifferences in developmental strategy may lead to differences in susceptibility to early developmental injury. This may provide insight into the sex bias in neurodevelopmental diseases associated with cerebellar pathology, such as ASD and schizophrenia.\nBrief overview of cerebellar development: develops relatively late, primarily from the metencephalon with a rostromedial region originating from the mesencephalon. Estradiol, progesterone, and testosterone are all steroid hormones synthesized from cholesterol and while they are best known for their role in sexual behavior and fertility, they are also key players in the normal development of the CNS."
+  },
+  {
+    "objectID": "literature-review/cerebellum-sex-differences.html#healthy-humans-and-animals---no-sex-differences",
+    "href": "literature-review/cerebellum-sex-differences.html#healthy-humans-and-animals---no-sex-differences",
+    "title": "Sex differences and the cerebellum",
+    "section": "Healthy humans and animals - no sex differences",
+    "text": "Healthy humans and animals - no sex differences\n\nMale rodents: surge in testosterone produced by the developing testes during late gestation and again shortly after birth. This results in 2-3 times greater androgen exposure for males compared to female pups. This hormone surge results in significant sexual dimorphism in several structures important to reproductive behavior. No sex differences have yet been reported in estrogen receptor expression levels of distribution in the cerebellum .\nThere is good evidence that de novo estradiol synthesis occurs in the cerebellum during early development in both sexes.\nProgesterone is produced in purkinje cells and the EGL. progesterone concentration is higher in early neonatal life than in adulthood and greatest at 10 days of age, when it is measurably higher in the cerebellum.\nAndrogens may also have a role in cerebellar development.\nMost studies show that traditional sex steroids are key players in cerebellar development but have generally not found differences in steroid or receptor levels between the sexes."
+  },
+  {
+    "objectID": "literature-review/cerebellum-sex-differences.html#atypical-development---sex-differences-emerge",
+    "href": "literature-review/cerebellum-sex-differences.html#atypical-development---sex-differences-emerge",
+    "title": "Sex differences and the cerebellum",
+    "section": "Atypical development - sex differences emerge",
+    "text": "Atypical development - sex differences emerge\n\nHowever, evidence from both animal studies and human disease demonstrates that when things start to go wrong, the sexes diverge in their ability to recover. GABA and the cerebellum?? (check out Stagg work)\nSex differences in ASD; ADHD; Schizophrenia (volumetric differences)\nQuestion: how much of the cerebellum’s involvement in neuropsych and developmental disorders is actually a cortical contribution to the disorder, and not a unique cerebellar contribution?\nMcCarthy et al. (2008) reviews fMRI evidence of cerebellar involvement in neuropsychiatric disorders (ASD; ADHD; Schizophrenia etc.) - refer back to this paper if you need references. Clear gender bias in several developmental human diseases associated with cerebellar pathology. Does this bias reflect some inherent difference in cerebellar development between the sexes that leads to greater vulnerability in one sex?"
+  },
+  {
+    "objectID": "literature-review/cerebellum-sex-differences.html#mutant-mouse-model-and-sex-differences",
+    "href": "literature-review/cerebellum-sex-differences.html#mutant-mouse-model-and-sex-differences",
+    "title": "Sex differences and the cerebellum",
+    "section": "Mutant mouse model and sex differences",
+    "text": "Mutant mouse model and sex differences\n\nMutant mouse model (staggerer) - PC numbers begin to decline in male mice starting at 1 month of age. While females do not show PC decline until 9 months. By the end of 13 months, the decline is similar between the two sexes. This difference in timing of cell loss is particulary intriguing considering that in humans, males are more prone to neuropsychiatric diseases that appear developmentally, whereas females are more vulnerable to those that appear later in life.\nThe cerebellum is a relatively late developing structure with only subtle sex differences in normal adult humans and animals. However, this relative monomorphism does not preclude a role for the sex steroids in the developing cerebellum.\nEstradiol is high in the cerebellum in the first week of life and increases the density of dendritic spines in the cerebellum. Progesterone may play a similar role during the second week of development.\nBoth of these steroids are produced de novo in the developing cerebellum by the PC themselves. Animal studies suggest that there is no difference between the sexes in terms of hormones or receptor levels."
+  },
+  {
+    "objectID": "literature-review/cerebellum-sex-differences.html#discussion",
+    "href": "literature-review/cerebellum-sex-differences.html#discussion",
+    "title": "Sex differences and the cerebellum",
+    "section": "Discussion",
+    "text": "Discussion\n\nIn contrast with findings in animal studies and healthy humans, there is a sig. Gender bias in the prevalence of human disease tied to cerebellar malformation. Generally, males have increased prevalence of developmental disorders.\nEvident that males and females differ in their response to insult and injury. What remains elusive is why?\nIf males and females mostly appear the same during normal development and reach the same develpoemntal end point, how can it be that they differ so significantly in their vulnerability to disruption of normal development?\nA satisfying explanation for the gender bias in neurodevelopmental diseases tied to the cerebellum has yet to be reached.\nIt can be hypothesized that early insults to the cerebellum disrupt endocrine signaling which in turn prevents normal cerebellar development, and that this may be one of the causes of disease states such as ASD and ADHD."
   },
   {
     "objectID": "literature-review/suicide-prediction.html",
@@ -1369,7 +1460,7 @@
     "href": "literature-review/index.html#notes-on-some-topics",
     "title": "Overview",
     "section": "Notes on some topics",
-    "text": "Notes on some topics\n\nCerebellum and development\nCerebellum and neuropsych\nTranslational neuroimaging\nEMR and self-harm\nOverview of pHealth\npHealth terminology\npHealth in other fields\nResearch Domain Criteria\nSubcortical translational neuroimaging\nDevelopmental neuroimaging\npHealth - methodology\nSuicide prediction\nCerebellum and prematurity\nPlacenta and cerebellum\nStress and pregnancy\nCritical periods, ASD and the cerebellum\nCerebellum, ASD, and abnormal development\nCerebellum and brain disorders\nCerebellum, functional connectivity, and ASD\nCerebellum and social development\nBrain injury and prematurity"
+    "text": "Notes on some topics\n\nCerebellum and development\nCerebellum and neuropsych\nTranslational neuroimaging\nEMR and self-harm\nOverview of pHealth\npHealth terminology\npHealth in other fields\nResearch Domain Criteria\nSubcortical translational neuroimaging\nDevelopmental neuroimaging\npHealth - methodology\nSuicide prediction\nCerebellum and prematurity\nPlacenta and cerebellum\nStress and pregnancy\nCritical periods, ASD and the cerebellum\nCerebellum, ASD, and abnormal development\nCerebellum and brain disorders\nCerebellum, functional connectivity, and ASD\nCerebellum and social development\nBrain injury and prematurity\nGrowth curves and the subcortex\nSex differences and the cerebellum"
   },
   {
     "objectID": "literature-review/pHealth-other-fields.html",
