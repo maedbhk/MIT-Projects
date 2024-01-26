@@ -92,6 +92,12 @@ website:
           - progress/week-49.md
           - progress/week-50.md
           - progress/week-51.md
+          - progress/week-52.md
+          - progress/week-53.md
+          - progress/week-54.md
+          - progress/week-55.md
+          - progress/week-56.md
+          - progress/week-57.md
       - section: "Datasets"
         contents:
           - datasets/index.md

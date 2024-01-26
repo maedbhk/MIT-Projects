@@ -2,7 +2,8 @@
 title: Week 57
 ---
 
-01/08 - 01/12: 
+1/08 - 01/12: 
+## done and to do
 * SFI Application
 * CHOP Models
     * train on precovid, test on covid
