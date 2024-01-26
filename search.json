@@ -333,7 +333,7 @@
     "href": "progress/week-55.html",
     "title": "Week 55",
     "section": "",
-    "text": "12/22 - 12/23: * SFI Application"
+    "text": "12/22 - 12/23: ## done and to do * SFI Application"
   },
   {
     "objectID": "progress/week-44.html",
@@ -389,7 +389,7 @@
     "href": "progress/week-54.html",
     "title": "Week 54",
     "section": "",
-    "text": "12/18 - 12/21: * SFI Application"
+    "text": "12/18 - 12/21: ## done and to do * SFI Application"
   },
   {
     "objectID": "progress/week-25.html",
@@ -571,7 +571,7 @@
     "href": "progress/week-57.html",
     "title": "Week 57",
     "section": "",
-    "text": "01/08 - 01/12: * SFI Application * CHOP Models * train on precovid, test on covid * new stratification based on number of visits, race, gender * spent full day writing code to merge precovid and covid dataframes (now elina should be able to use this file too) * summary results to answer questions: how many people convert to suicide attempt after having baseline of no suicide attempt, and which zipcodes have highest suicide attempt, demographic groups most likely to attempt suicide, anxiety and depression levels pre- and postcovid * figure out how to optimize secondlevel modeling – currently routine for identifying top features produces variable results"
+    "text": "1/08 - 01/12: ## done and to do * SFI Application * CHOP Models * train on precovid, test on covid * new stratification based on number of visits, race, gender * spent full day writing code to merge precovid and covid dataframes (now elina should be able to use this file too) * summary results to answer questions: how many people convert to suicide attempt after having baseline of no suicide attempt, and which zipcodes have highest suicide attempt, demographic groups most likely to attempt suicide, anxiety and depression levels pre- and postcovid * figure out how to optimize secondlevel modeling – currently routine for identifying top features produces variable results"
   },
   {
     "objectID": "progress/week-06.html",
@@ -655,7 +655,7 @@
     "href": "progress/week-53.html",
     "title": "Week 53",
     "section": "",
-    "text": "12/11 - 12/15: * Finished this latest round of results for reading project * results [here] * next iteration of results, need to: * Two possible stories: 1: student measures outperform parent/teacher measures (esp. early in development) and 2: there are sex biases in how well measures predict diagnosis (we know this from ADHD and ASD diagnosis) * To do: understand what features are most predictive (if we are using individual items or some sort of clustering) across the ages, and what explains sex differences. Finally, we could explore who are the people for whom models do best and for whom they fail. Similar idea to this paper * tentative research statement here"
+    "text": "12/11 - 12/15: ## done and todo * Finished this latest round of results for reading project * results [here] * next iteration of results, need to: * Two possible stories: 1: student measures outperform parent/teacher measures (esp. early in development) and 2: there are sex biases in how well measures predict diagnosis (we know this from ADHD and ASD diagnosis) * To do: understand what features are most predictive (if we are using individual items or some sort of clustering) across the ages, and what explains sex differences. Finally, we could explore who are the people for whom models do best and for whom they fail. Similar idea to this paper * tentative research statement here"
   },
   {
     "objectID": "progress/week-36.html",
@@ -739,7 +739,7 @@
     "href": "progress/week-52.html",
     "title": "Week 52",
     "section": "",
-    "text": "12/04 - 12/08:\n\nFocus this week:\n\ngetting results to Ola for reading project\nresearch statement for SFI application"
+    "text": "12/04 - 12/08: ## done and todo * Focus this week: * getting results to Ola for reading project * research statement for SFI application"
   },
   {
     "objectID": "progress/week-37.html",
@@ -809,7 +809,7 @@
     "href": "progress/week-56.html",
     "title": "Week 56",
     "section": "",
-    "text": "01/01 - 01/05: * SFI Application"
+    "text": "01/01 - 01/05: ## done and to do * SFI Application"
   },
   {
     "objectID": "progress/week-07.html",
