@@ -329,6 +329,13 @@
     "text": "Done\n\nBuild boilerplate ML pipeline for building predictive models (tested so far on behavioral features from HBN)\nCross-referenced pipeline with pydra-ml to determine that similar steps are being implemented\nSummary analysis on clinical diagnosis and demographics from HBN to determine adaquete sample sizes for cerebellar fingerprinting paper\nFirst pass using UMAP unsupervised learning on child measures (cognitive testing, physical fitness features etc.)\nResearch on methods, focusing mostly on these three papers:\n\nGAMLSS modeling as used in brain charting paper\nLDA (topic modelling) as used in endophenotyping of adhd paper\nBrain age prediction as used in brain age paper - gradient tree boosting\n\n\n\n\nTo Do\n\nTry UMap in supervised mode to identify unique patterns in phenotypic data\nQuestions to address:\n\nWithin HBN assessment battery, which tests are most useful? (how does this vary across disorders?)\ncan further subtyping of individuals be done based on patterns in behavioral/cognitive assessments? (especially for 200 people who were not diagnosed due to an incomplete evaluation)\nwhat is the reliability in the KSADS assessment across child and parent measures?\n\nTest python implementation of SUIT on subset (n=10) of hbn participants (T1w + T2)\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions:\n\nDon’t yet have access to LORIS, will follow-up with Lindsay after labor day weekend\nCHOP Meeting - ask Satra to send email to folks there to set-up meeting sometime in Sep.?\nRemind Satra to provide info about other project that we forgot to discuss in our 09/01 meeting\nI’m happy to be included in other projects (meetings etc.) if any seem like a good fit for my interests/skills\nSet up weekly meetings w/Satra on Wednesdays\nI would like to recruit 1-2 undergrad students through UROP - can I hire for pay or academic credit alone?\nI requested edit access to sign up for a lab meeting slot: I’m thinking either end of this month or beginning of oct. I guess the neuroimaging subgroup would be most appropriate but perhaps also knowledge engineering as the meeting will be soliciting feedback about project ideas. Let me know what you think."
   },
   {
+    "objectID": "progress/week-55.html",
+    "href": "progress/week-55.html",
+    "title": "Week 55",
+    "section": "",
+    "text": "12/22 - 12/23: * SFI Application"
+  },
+  {
     "objectID": "progress/week-44.html",
     "href": "progress/week-44.html",
     "title": "Week 44",
@@ -376,6 +383,13 @@
     "title": "Week 5",
     "section": "",
     "text": "Done\n\nWrote a predictive modeling pipeline using scikit-learn tools (and repurposing code I had written for previous projects). Worked reasonably well at doing basic model predictions on the HBN dataset. However, I explored pydra-ml, realized it was a lot better than what I had written, and decided to transition to using some of its functionality. My pipeline, for example, did not allow for model comparison as elegantly as pydra-ml. I was having difficulty doing preprocessing (using scikit-learn’s ColumnTransformer) within the framework and ended up trying to debug pydra-ml. This then led me down many hours of exploring (and learning) how to navigate pydra (not wasted time - I learned a lot).\nI also spent a lot of time on feature engineering this week, which I always forget (along with data cleaning, transformation etc.) takes more time than anticipated. .\nI have yet to incorporate jupyter notebooks into quarto framework (which I believe is possible) so I can’t share any of the initial prediction results here. Some of the questions I’ve addressed:\n\nWithin HBN assessment battery, which tests are most useful? (how does this vary across disorders?)\ncan further subtyping of individuals be done based on patterns in behavioral/cognitive assessments? (especially for 200 people who were not diagnosed due to an incomplete evaluation)\n\nI tested python implementation of SUIT on subset (n=10) of hbn participants (T1w + T2). There are still a few bugs to be ironed out in the python library (that don’t exist in matlab) - I will touch base with Joern about this in the next few days if I don’t figure it out myself. As we discussed in our last meeting, there are also deep learning approaches that are comparable (if not better) at isolating and segmenting the cerebellum. I haven’t investigated these approaches much but it might be necessary if we are analyzing cerebella of &gt;3000 participants, and if SUIT is not reliable.\nWrote an ad for two research assistants and circulated broadly (including UROP), have yet to receive any applications so likely that I will need to cast the net more widely.\n\n\n\nTo Do\n\nTry UMap in supervised mode to identify unique patterns in phenotypic data\n\nwhat is the reliability in the KSADS assessment across child and parent measures?\n\nPerform VBM to measure local changes in structural abnormalities, following methods steps implemented in this paper - correcting for brain size etc.\n\n\n\nQuestions\n\nReached out to folks at HBN about getting LORIS access but haven’t heard from them yet. I’m analyzing the data from Openmind which I believe is up-to-date. I have access to all of the phenotypic data and I’ve been able to analyze some of the anatomical data that’s on OpenMind so I don’t think I’m missing anything, but would be nice to have full access so that I can stay current with any changes or updates.\nI’ve scheduled a meeting for next Wednesday to discuss some of the results from HBN and to talk about the CHOP project before our meeting with the Philadelphia group."
+  },
+  {
+    "objectID": "progress/week-54.html",
+    "href": "progress/week-54.html",
+    "title": "Week 54",
+    "section": "",
+    "text": "12/18 - 12/21: * SFI Application"
   },
   {
     "objectID": "progress/week-25.html",
@@ -553,6 +567,13 @@
     "text": "Done and To Do\n\nmore administrative work this week than anticipated:\n\nlots of one-on-one meetings with RAs and graduate students looking for advice etc. ended up taking more time than anticipated\nspent some time writing letters of recommendation for current (and former) RAs\nreviewed 2 papers and started writing an article on cerebellum connectivity for a journal’s invited issue\n\nwriting (and changing) results block for ADHD + sex differences paper\nHBN phenotypes: experimenting with different models + model parameters: SMOTE vs No SMOTE; including comorbidites as variable (not a good idea); LOFO models; full-feature models vs. assessment models; decision tree classifier vs. logistic regression (both do similarly)"
   },
   {
+    "objectID": "progress/week-57.html",
+    "href": "progress/week-57.html",
+    "title": "Week 57",
+    "section": "",
+    "text": "01/08 - 01/12: * SFI Application * CHOP Models * train on precovid, test on covid * new stratification based on number of visits, race, gender * spent full day writing code to merge precovid and covid dataframes (now elina should be able to use this file too) * summary results to answer questions: how many people convert to suicide attempt after having baseline of no suicide attempt, and which zipcodes have highest suicide attempt, demographic groups most likely to attempt suicide, anxiety and depression levels pre- and postcovid * figure out how to optimize secondlevel modeling – currently routine for identifying top features produces variable results"
+  },
+  {
     "objectID": "progress/week-06.html",
     "href": "progress/week-06.html",
     "title": "Week 6",
@@ -630,6 +651,13 @@
     "text": "Project Ideas\n\n\ncan unique cerebellar fingerprints dissociate neuropsychiatric and neurodevelopmental disorders, above and beyond what would be expected from cortical fingerprints? I think I’d be first interested in analyzing the structural data before addressing functional connectivity\n\n\ninspired by RDoC, can we use topic models (e.g., latent dirichlet allocation) to identify latent clinical characteristics derived from HBN behavioral and/or cognitive measures (e.g., positive and negative affect scale, GRIT scale, Wechsler intelligence scale) with the goal of providing individualized risk assessments.\n\n\nIf we can identify groups/clusters by modeling behavioral/cognitive characteristics, can we identify corresponding dissociable neural signatures (whole-brain, not necessarily cerebellum-focused)?\n\n\nRelative to the neocortex, are there differences across disorders in neural signatures/fingerprints from early childhood to adolescence? For example, in developmental disorders (e.g., adhd, autism) do we see more significant changes in cerebellum (as indexed by reduction in grey matter) during early childhood relative to corresponding changes in the neocortex.\n\n\nNext steps: - Once I get access to HBN, I want to do a summary analysis of the phenotypic assessment data to determine the scope of the data (e.g., do some power analyses) - If it seems like there is a sufficient sample and enough complete behavioral measurements, I’ll likely plan on testing cerebellar isolation and segmentation of a few pilot participants (not clear to me yet what technical challenges we may face using SUIT on a developmental dataset). - test some topic models on the HBN phenotypic assessment data - I plan on publishing the website today at some stage so I’ll slack you the link, hopefully that will be an easier way to get a sense of what I’m working on"
   },
   {
+    "objectID": "progress/week-53.html",
+    "href": "progress/week-53.html",
+    "title": "Week 53",
+    "section": "",
+    "text": "12/11 - 12/15: * Finished this latest round of results for reading project * results [here] * next iteration of results, need to: * Two possible stories: 1: student measures outperform parent/teacher measures (esp. early in development) and 2: there are sex biases in how well measures predict diagnosis (we know this from ADHD and ASD diagnosis) * To do: understand what features are most predictive (if we are using individual items or some sort of clustering) across the ages, and what explains sex differences. Finally, we could explore who are the people for whom models do best and for whom they fail. Similar idea to this paper * tentative research statement here"
+  },
+  {
     "objectID": "progress/week-36.html",
     "href": "progress/week-36.html",
     "title": "Week 36",
@@ -655,7 +683,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57"
   },
   {
     "objectID": "progress/week-27.html",
@@ -705,6 +733,13 @@
     "title": "Week 3",
     "section": "",
     "text": "One of the projects that I’m interested in starting addresses the role of the cerebellum in neurodevelopmental disorders. Therefore, I’ve been reading up on cerebellar development this week and a few papers struck me as particularly interesting:\n\nSathyanesan et al. 2019\nStevenson et al. 2014\nTran et al. 2017\nTiemeier et al. 2010\n\nI’ve also been exploring precision medicine/pHealth in other fields, namely genomics, as a way to understand the evoluation of this discipline.\nAlthough I haven’t delved into it much yet, I want to curate a set of guidelines that address ethical considerations in the work that we’re doing. My goal is that others can also contribute to this list.\nI liked this review paper by Woo et al. (2017) a lot. They trace the progress and limitations of translational neuroimaging, offering a roadmap for future utility in precision medicine, focusing on diagnostic value of models, scalability and deployability, and generalizability. I also hadn’t encountered the idea of process-based predictive models before, but it’s compelling to me if we’re going to move beyond DSM-categorization of mental illness to RDoC-like constructs across disorders. I note some of the paper’s key points here"
+  },
+  {
+    "objectID": "progress/week-52.html",
+    "href": "progress/week-52.html",
+    "title": "Week 52",
+    "section": "",
+    "text": "12/04 - 12/08:\n\nFocus this week:\n\ngetting results to Ola for reading project\nresearch statement for SFI application"
   },
   {
     "objectID": "progress/week-37.html",
@@ -768,6 +803,13 @@
     "title": "Week 33",
     "section": "Done and To Do",
     "text": "Done and To Do\n\nPrepared ICoN Presentation\n“Finalized” some HBN phenotypic analyses\nAdded to ADHD + sex differences results\nAdministrative paperwork: OPT STEM Extension + Maternity Leave\nWriting: ADHD + Sex differences paper + narrative for general HBN phenotypes paper\nNext week: return to fMRI preprocessing of HBN data + SUIT scripts\n\nand focus on writing!"
+  },
+  {
+    "objectID": "progress/week-56.html",
+    "href": "progress/week-56.html",
+    "title": "Week 56",
+    "section": "",
+    "text": "01/01 - 01/05: * SFI Application"
   },
   {
     "objectID": "progress/week-07.html",
