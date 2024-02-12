@@ -147,3 +147,17 @@ fi
     ```
     * You'll get a notification saying host added and an option to **connect** 
 * Once you connect for the first time you'll be able to connect easily via **Remote Explorer** on the sidebar. You'll be prompted for your password every time you ssh in. 
+* It's best not to work directly on the head node, which is what you get when you log in using the instructions above. To generate a connection setup dedicated to HPC cluster, see instructions from Caltech [here](https://gist.github.com/haakon-e/e444972b99a5cd885ef6b29c86cb388e) (replace Hostname with `openmind.mit.edu`)
+
+## Transfer data to/from openmind and google drive
+* To setup rclone on hpc, follow instructions outlined [here](https://rclone.org/drive/)
+* Log in to dtn from local: `ssh maedbh@openmind-dtn.mit.edu`
+* Create a screen by typing screen -S File
+* Detach from a screen by typing screen -d File (or ctl + a + d)
+* Reattach a screen by typing screen -r File
+* Once you’re in the screen, you can transfer data. For example:
+> 
+```
+$ cd /om2/user/maedbh
+$ rclone copy --verbose <config name>:<google drive folder> <some_directory> --copy-links
+```
