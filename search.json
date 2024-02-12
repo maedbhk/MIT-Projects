@@ -364,6 +364,20 @@
     "text": "01/09-01/13\n\nDone and To-DO:\n\nWorked on item analysis of HBN questionnaires using sentence transformers\n\nexample notebook here: HBN item analysis\nto-do: between-questionnaire comparison, calculate similarity between questionnaires\n\nWorked on ADHD + profession question - did a deep dive into biobank phenotype data, almost finished “data wrangling” stage\nWorking with Alyson on ADHD + gender differences question. She has done an extensive literature search on ADHD + gender and she has found that:\n\n“Overall: There doesn’t seem to be many comprehensive papers about which measures are most useful in identifying ADHD populations even when not limiting for gender. Overall, even more general papers only examine a few measures, or they focus on a subset (rating scales, neuropsych testing, tasks). Also, these generally seem to focus on adults/young adults rather than children”\nNext steps: Alyson is going to draft a results section and I’ll continue doing analyses on this question\n\nContinuing to amend pipeline for fMRI analysis of HBN data, focusing specifically on connectivity analyses.\n\nto-do: test out different approaches on subset of HBN participants"
   },
   {
+    "objectID": "progress/week-60.html",
+    "href": "progress/week-60.html",
+    "title": "Week 60",
+    "section": "",
+    "text": "02/12 - 02/16:"
+  },
+  {
+    "objectID": "progress/week-60.html#to-do",
+    "href": "progress/week-60.html#to-do",
+    "title": "Week 60",
+    "section": "To Do",
+    "text": "To Do\n\nWrite-up latest round of results of reading impairment analysis and send to Ola\nUpdate Sheeba + Katerina on analysis plans for developing cerebellum project, edit working doc\nWrite-up current CHOP results and propose paper outline (think we have enough now for a first paper)\n\nTouch base with Aaron about geospatial analysis, provide relevent zip codes. Figure out if we need any more information from the U.S. census\n\nMake progress on narrative + research proposal sections of HHMI application\nFinish transfer of cerebellum learning data from google drive and re-run glm (generate new contrasts)\nWrite first paragraph for SPR paper on precision medicine - send email to team reminding them of Feb. 28th deadline."
+  },
+  {
     "objectID": "progress/week-31.html",
     "href": "progress/week-31.html",
     "title": "Week 31",
@@ -683,7 +697,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57\nWeek 58\nWeek 59\nWeek 60"
   },
   {
     "objectID": "progress/week-27.html",
@@ -896,6 +910,20 @@
     "text": "Questions\n\nI’m going to send the CHOP team an email today to enquire about next steps (apologies for the delay on that front) - I’ll send it to you first and let me know if there’s anything you’d like to add. I’ll include summary of meeting along with some follow up questions about data, and some specific project goals we can address, most of which is covered here\nperhaps you could send John a line about monthly meetings? I don’t want to bother him with too many emails."
   },
   {
+    "objectID": "progress/week-59.html",
+    "href": "progress/week-59.html",
+    "title": "Week 59",
+    "section": "",
+    "text": "02/05 - 02/09:"
+  },
+  {
+    "objectID": "progress/week-59.html#done-and-to-do",
+    "href": "progress/week-59.html#done-and-to-do",
+    "title": "Week 59",
+    "section": "Done and To Do",
+    "text": "Done and To Do\n\nRe-ran models for reading impairment, specifically new language models. Updated clustering approach to identify subtypes\n\nTo-do: write-up new results and send to Ola\n\nRe-ran models for ADHD and ASD analysis – new participant filtering, and new stratification of train/test data - now using more comprehensive set of metrics to evaluate test data.\n\nTo-do: next week, update manuscript with new results\n\nMet with Aaron to discuss geospatial analysis of CHOP data, zipcode seems to be an important predictor of suicide attempt. Therefore, I want to do a geospatial analysis of Philadelphia zipcodes to better understand the population makeup of strongly predictive zipcodes as well as information about crime, socioeconomic status, and other environmental variables. I’m envisioning a python function that takes in a given zipcode and returns summary information about the population (gathered from census data). We already have template scripts but I have not yet had time to test it.\nMet with Sheeba and Katerina (co-presenters at OHBM symposium on developing cerebellum) to discuss potential collaborations. We’re compiling a list of available developmental datasets and possible research questions here\nMet with Alina to discuss HBN data – added her to a github repo that Kseniia, Kai, and I worked on last summer to characterize semantic similarity of HBN phenotypic data. Offered to help her think through project ideas + run some simple ML analyses on HBN and ABCD data."
+  },
+  {
     "objectID": "progress/week-48.html",
     "href": "progress/week-48.html",
     "title": "Week 48",
@@ -936,6 +964,20 @@
     "title": "Week 9",
     "section": "Questions",
     "text": "Questions\n\nMeeting with Jaan the week of Oct. 17th to discuss this paper, which should be relevent to CHOP project. I suggested our Wednesday meeting time so we could meet all three of us if that works for you? If that time doesn’t work for him, I can suggest 11am on Monday?"
+  },
+  {
+    "objectID": "progress/week-58.html",
+    "href": "progress/week-58.html",
+    "title": "Week 58",
+    "section": "",
+    "text": "1/29 - 01/02:"
+  },
+  {
+    "objectID": "progress/week-58.html#done-and-to-do",
+    "href": "progress/week-58.html#done-and-to-do",
+    "title": "Week 58",
+    "section": "Done and to do",
+    "text": "Done and to do\n\nDiscuss preprocessing ABCD data with Yibei & Aaron (debbie and alina also interested)\n\ndownload derivatives processed here\n\nStarted rewriting analysis scripts for processing ABCD phenotypic data (to use as generalization set for HBN analysis)\nSpent most of the week running new CHOP models and improving stratification of data\nMet with Debbie about her thesis\n\noffered to review proposal\n\nWorked on HHMI application"
   },
   {
     "objectID": "progress/week-29.html",
@@ -1838,7 +1880,14 @@
     "href": "mentorship/openmind.html#using-vs-code-on-openmind",
     "title": "Getting Started on Openmind",
     "section": "Using VS Code on OpenMind",
-    "text": "Using VS Code on OpenMind\n\nOpen VS Code and add the extensions on the sidebar: Remote - SSH and Remote - SSH: Editing Configuration Files\nGo to View and open Command Palette\n\nClick Remote-SSH: Add New SSH Host &gt; You’ll be prompted to log in to OpenMind\n\n    $ ssh &lt;username&gt;@openmind.mit.edu\n\nYou’ll get a notification saying host added and an option to connect\n\nOnce you connect for the first time you’ll be able to connect easily via Remote Explorer on the sidebar. You’ll be prompted for your password every time you ssh in."
+    "text": "Using VS Code on OpenMind\n\nOpen VS Code and add the extensions on the sidebar: Remote - SSH and Remote - SSH: Editing Configuration Files\nGo to View and open Command Palette\n\nClick Remote-SSH: Add New SSH Host &gt; You’ll be prompted to log in to OpenMind\n\n    $ ssh &lt;username&gt;@openmind.mit.edu\n\nYou’ll get a notification saying host added and an option to connect\n\nOnce you connect for the first time you’ll be able to connect easily via Remote Explorer on the sidebar. You’ll be prompted for your password every time you ssh in.\nIt’s best not to work directly on the head node, which is what you get when you log in using the instructions above. To generate a connection setup dedicated to HPC cluster, see instructions from Caltech here (replace Hostname with openmind.mit.edu)"
+  },
+  {
+    "objectID": "mentorship/openmind.html#transfer-data-tofrom-openmind-and-google-drive",
+    "href": "mentorship/openmind.html#transfer-data-tofrom-openmind-and-google-drive",
+    "title": "Getting Started on Openmind",
+    "section": "Transfer data to/from openmind and google drive",
+    "text": "Transfer data to/from openmind and google drive\n\nTo setup rclone on hpc, follow instructions outlined here\nLog in to dtn from local: ssh maedbh@openmind-dtn.mit.edu\nCreate a screen by typing screen -S File\nDetach from a screen by typing screen -d File (or ctl + a + d)\nReattach a screen by typing screen -r File\nOnce you’re in the screen, you can transfer data. For example: &gt;\n\n$ cd /om2/user/maedbh\n$ rclone copy --verbose &lt;config name&gt;:&lt;google drive folder&gt; &lt;some_directory&gt; --copy-links"
   },
   {
     "objectID": "mentorship/urops.html",

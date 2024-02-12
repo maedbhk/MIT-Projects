@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MIT Projects - Week 15</title>
+<title>MIT Projects - Week 59</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Week 15</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Week 59</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -649,14 +649,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#done-and-to-do" id="toc-done-and-to-do" class="nav-link active" data-scroll-target="#done-and-to-do">Done and To Do</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/progress/week-59.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 15</h1>
+<h1 class="title">Week 59</h1>
 </div>
 
 
@@ -671,21 +677,25 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>02/05 - 02/09:</p>
+<section id="done-and-to-do" class="level2">
+<h2 class="anchored" data-anchor-id="done-and-to-do">Done and To Do</h2>
 <ul>
-<li>ADHD project: waiting to get Biobank access to phenotypic data so that we can explore which professions adults with ADHD gravitate towards, in order to infer adaptive traits and attributes in this population. We also want to assess the modulating factors of race, gender, and SES on this question. I presented an <a href="../notebooks/exploratory-features-adhd.html">exploratory notebook on ADHD</a> from the HBN dataset. Some take-aways:
+<li>Re-ran models for reading impairment, specifically new language models. Updated clustering approach to identify subtypes
 <ul>
-<li>significantly more males are diagnosed with ADHD than females. M/F ratio is smallest however for inattentive subtype</li>
-<li>On average, children with ADHD have comorbidites and on average girls have slightly more than boys</li>
-<li>Girls with inattentive ADHD start puberty earlier than other ADHD subtypes (+ children without an ADHD diagnosis)</li>
-<li>very few children (&lt;15%) are diagnosed with a learning disorder</li>
-<li>50-60% of children with ADHD have individualized education plan compared with 20% of children without a diagnosis</li>
-<li>surprisingly, very few (&lt;1%) of children diagnosed with adhd have parents who also have a diagnosis of adhd. This figure is much lower than expected based on existing literature, therefore, likely that more parents have adhd (but have not received a formal diagnosis) or the reporting is incomplete.</li>
+<li>To-do: write-up new results and send to Ola</li>
 </ul></li>
-<li>set up a data exploration notebook that uses python widgets to explore the different measures (e.g., questionnaires) from the HBN across different diagnoses <img src="../assets/images/python-widgets.png" class="img-fluid" data-fig-align="center" alt="Data Exploration of HBN Data"></li>
-<li>worked on CHOP <a href="https://docs.google.com/document/d/1CzxTSEouYnGT0CYMLGUu2MB_hBWzjMqXCRwUsE_4jzg/edit?usp=sharing">project proposal</a></li>
+<li>Re-ran models for ADHD and ASD analysis – new participant filtering, and new stratification of train/test data - now using more comprehensive set of metrics to evaluate test data.
+<ul>
+<li>To-do: next week, update manuscript with new results</li>
+</ul></li>
+<li>Met with Aaron to discuss geospatial analysis of CHOP data, zipcode seems to be an important predictor of suicide attempt. Therefore, I want to do a geospatial analysis of Philadelphia zipcodes to better understand the population makeup of strongly predictive zipcodes as well as information about crime, socioeconomic status, and other environmental variables. I’m envisioning a python function that takes in a given zipcode and returns summary information about the population (gathered from census data). We already have <a href="https://drive.google.com/drive/folders/1nmQiEPf7VooXW0A2M1P7x0vEVFTypTuq?usp=sharing">template scripts</a> but I have not yet had time to test it.</li>
+<li>Met with Sheeba and Katerina (co-presenters at OHBM symposium on developing cerebellum) to discuss potential collaborations. We’re compiling a list of available developmental datasets and possible research questions <a href="https://docs.google.com/document/d/1K6Bx_-0J9_SUh4zzysbGhYlPTUl7EWhjIDUgFs_ctBo/edit?usp=sharing">here</a></li>
+<li>Met with Alina to discuss HBN data – added her to a github repo that Kseniia, Kai, and I worked on last summer to characterize semantic similarity of HBN phenotypic data. Offered to help her think through project ideas + run some simple ML analyses on HBN and ABCD data.</li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1042,7 +1052,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">MIT Projects<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/maedbhk/MIT-Projects/edit/main/progress/week-15.md" class="toc-action">Edit this page</a></p><p><a href="https://github.com/maedbhk/MIT-Projects/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-center">MIT Projects</div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
