@@ -308,6 +308,20 @@
     "text": "01/02-01/06\n\nFinished notebooks for alyson on gender differences in adhd\n\nChild Measures - ADHD\nParent Measures - ADHD\n\nRe-ran models (including all-feature smote model) that incorporate all feature sets (including teacher measures)\nTested out sentence transformers for CBCL (Parent and Teacher Measures)\nSketched out pipeline for fMRI analysis of HBN data (preprocessing steps + connectivity analysis)\nRequested additional Biobank data for adaptive ADHD project - working with Lexi to get these data into a pandas dataframe\nExplored ABCD repronim project to figure out which data are available (i.e. questionnaires) - need to think about some questions that can be tested on this dataset."
   },
   {
+    "objectID": "progress/week-61.html",
+    "href": "progress/week-61.html",
+    "title": "Week 61",
+    "section": "",
+    "text": "02/19 - 02/23:"
+  },
+  {
+    "objectID": "progress/week-61.html#to-do",
+    "href": "progress/week-61.html#to-do",
+    "title": "Week 61",
+    "section": "To Do",
+    "text": "To Do\n\nFinish CHOP results and paper outline (prep for next Monday’s meeting)\n\nMeet with Aaron about geospatial analysis\n\nRework research proposal for HHMI application, finish narrative + training plan\nFinish write-up of reading results and send to Ola\nIf there’s time, work on ADHD paper\nReview SPR draft from co-authors\nRerun glm on cerebellum data\nCheck status of ABCD derivatives with Aaron, Debbie, Alina\n\ntouch base with Alina about ABCD phenotypic data – optionally run some ML models for her"
+  },
+  {
     "objectID": "progress/week-30.html",
     "href": "progress/week-30.html",
     "title": "Week 30",
@@ -371,11 +385,11 @@
     "text": "02/12 - 02/16:"
   },
   {
-    "objectID": "progress/week-60.html#to-do",
-    "href": "progress/week-60.html#to-do",
+    "objectID": "progress/week-60.html#done",
+    "href": "progress/week-60.html#done",
     "title": "Week 60",
-    "section": "To Do",
-    "text": "To Do\n\nWrite-up latest round of results of reading impairment analysis and send to Ola\nUpdate Sheeba + Katerina on analysis plans for developing cerebellum project, edit working doc\nWrite-up current CHOP results and propose paper outline (think we have enough now for a first paper)\n\nTouch base with Aaron about geospatial analysis, provide relevent zip codes. Figure out if we need any more information from the U.S. census\n\nMake progress on narrative + research proposal sections of HHMI application\nFinish transfer of cerebellum learning data from google drive and re-run glm (generate new contrasts)\nWrite first paragraph for SPR paper on precision medicine - send email to team reminding them of Feb. 28th deadline."
+    "section": "Done",
+    "text": "Done\n\nWrite-up latest round of results of reading impairment analysis and send to Ola\n\ndidn’t get to finish this as OpenMind was down later part of week so couldn’t access notebooks\n\nUpdate Sheeba + Katerina on analysis plans for developing cerebellum project, edit working doc\nStarted writing up CHOP results and propose paper outline (think we have enough now for a first paper)\n\nTouch base with Aaron about geospatial analysis, provide relevent zip codes. Figure out if we need any more information from the U.S. census\n\nMake progress on narrative + research proposal sections of HHMI application\n\nwill be working on this more next week. app is due Feb. 28th\n\nFinished transfer of cerebellum learning data from google drive and re-run glm (generate new contrasts)\nWrote draft for SPR paper on precision medicine - sent email to team reminding them of Feb. 28th deadline.\nWrote 500 word research statement and emailed WIN proposal form to Charlie Stagg for Wellcome Trust Application"
   },
   {
     "objectID": "progress/week-31.html",
@@ -697,7 +711,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57\nWeek 58\nWeek 59\nWeek 60"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57\nWeek 58\nWeek 59\nWeek 60\nWeek 61"
   },
   {
     "objectID": "progress/week-27.html",
