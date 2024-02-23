@@ -315,11 +315,11 @@
     "text": "02/19 - 02/23:"
   },
   {
-    "objectID": "progress/week-61.html#to-do",
-    "href": "progress/week-61.html#to-do",
+    "objectID": "progress/week-61.html#done",
+    "href": "progress/week-61.html#done",
     "title": "Week 61",
-    "section": "To Do",
-    "text": "To Do\n\nFinish CHOP results and paper outline (prep for next Monday’s meeting)\n\nMeet with Aaron about geospatial analysis\n\nRework research proposal for HHMI application, finish narrative + training plan\nFinish write-up of reading results and send to Ola\nIf there’s time, work on ADHD paper\nReview SPR draft from co-authors\nRerun glm on cerebellum data\nCheck status of ABCD derivatives with Aaron, Debbie, Alina\n\ntouch base with Alina about ABCD phenotypic data – optionally run some ML models for her"
+    "section": "Done",
+    "text": "Done\n\nFinish CHOP results (prep for next Monday’s meeting)\n\nMet with Aaron about geospatial analysis - worked on google collab using new libraries: folium, geopandas, us, census\nCouldn’t connect to arcus today, haven’t been able to transfer results to local machine, hopefully will be resolved over the weekend\n\nReworked research proposal for HHMI application, finished:\n\nnarrative\ntraining plan\nprior research\nresearch articles\n\nFinish write-up of reading results and send to Ola\n\nDidn’t get to finish write-up, but models have been run\n\nIf there’s time, work on ADHD paper\n\nthere wasn’t time..\n\nReview SPR draft from co-authors\n\nfinished SPR draft, reviewed and sent edits/comments\n\nReran glm on cerebellum data\n\nneed to check\n\nCheck status of ABCD derivatives with Aaron, Debbie, Alina\n\ntouch base with Alina about ABCD phenotypic data – optionally run some ML models for her"
   },
   {
     "objectID": "progress/week-30.html",
