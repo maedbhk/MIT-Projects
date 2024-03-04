@@ -1929,7 +1929,7 @@
     "href": "mentorship/openmind.html#transfer-data-tofrom-openmind-and-google-drive",
     "title": "Getting Started on Openmind",
     "section": "Transfer data to/from openmind and google drive",
-    "text": "Transfer data to/from openmind and google drive\n\nTo setup rclone on hpc, follow instructions outlined here\nLog in to dtn from local: ssh maedbh@openmind-dtn.mit.edu\nCreate a screen by typing screen -S File\nDetach from a screen by typing screen -d File (or ctl + a + d)\nReattach a screen by typing screen -r File\nOnce you’re in the screen, you can transfer data. For example: &gt;\n\n$ cd /om2/user/maedbh\n$ rclone copy --verbose &lt;config name&gt;:&lt;google drive folder&gt; &lt;some_directory&gt; --copy-links"
+    "text": "Transfer data to/from openmind and google drive\n\nTo setup rclone on hpc, follow instructions outlined here\nLog in to dtn from local: ssh maedbh@openmind-dtn.mit.edu\nCreate a screen by typing screen -S File\nDetach from a screen by typing screen -d File (or ctl + a + d)\nReattach a screen by typing screen -r File\nOnce you’re in the screen, you can transfer data. For example: &gt;\n\n$ cd /om2/user/maedbh\n$ rclone copy --verbose &lt;config name&gt;:&lt;google drive folder&gt; &lt;some_directory&gt; --copy-links\n$ rclone copy --verbose remote-gdrive:rclone-bkp/cerebellum_learning_connect/derivatives/fmriprep cerebellum_cognition --copy-links"
   },
   {
     "objectID": "mentorship/urops.html",
@@ -1957,7 +1957,7 @@
     "href": "mentorship/index.html",
     "title": "Overview",
     "section": "",
-    "text": "Documenting mentorship process from recruitment to project supervision\n\nFall22 Recruitment\nFall22 Onboarding\nSpr23 Onboarding\nSummer23 Onboarding\nOpenMind Setup\nCurrent (and former) UROPs"
+    "text": "Documenting mentorship process from recruitment to project supervision\n\nUseful bash commands\nFall22 Recruitment\nFall22 Onboarding\nSpr23 Onboarding\nSummer23 Onboarding\nOpenMind Setup\nCurrent (and former) UROPs"
   },
   {
     "objectID": "mentorship/weekly-notes.html",
