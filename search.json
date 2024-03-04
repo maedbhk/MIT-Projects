@@ -595,6 +595,20 @@
     "text": "Done and To Do\n\nmore administrative work this week than anticipated:\n\nlots of one-on-one meetings with RAs and graduate students looking for advice etc. ended up taking more time than anticipated\nspent some time writing letters of recommendation for current (and former) RAs\nreviewed 2 papers and started writing an article on cerebellum connectivity for a journal’s invited issue\n\nwriting (and changing) results block for ADHD + sex differences paper\nHBN phenotypes: experimenting with different models + model parameters: SMOTE vs No SMOTE; including comorbidites as variable (not a good idea); LOFO models; full-feature models vs. assessment models; decision tree classifier vs. logistic regression (both do similarly)"
   },
   {
+    "objectID": "progress/week-63.html",
+    "href": "progress/week-63.html",
+    "title": "Week 63",
+    "section": "",
+    "text": "03/04 - 03/08:"
+  },
+  {
+    "objectID": "progress/week-63.html#to-do",
+    "href": "progress/week-63.html#to-do",
+    "title": "Week 63",
+    "section": "To-Do",
+    "text": "To-Do\n\nResults write-up for CHOP\nSet up meeting with Ola to discuss reading impairment results\nTouch base with Debbie about ABCD\nTouch base with Aaron about geospatial analysis\n\ncheck out GIS analysis that Mike added to BHS lab – which data does it use?\n\nWork on ADHD paper – need to touch base with Alyson about intro/discussion"
+  },
+  {
     "objectID": "progress/week-57.html",
     "href": "progress/week-57.html",
     "title": "Week 57",
@@ -711,7 +725,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57\nWeek 58\nWeek 59\nWeek 60\nWeek 61"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57\nWeek 58\nWeek 59\nWeek 60\nWeek 61\nWeek 62\nWeek 63"
   },
   {
     "objectID": "progress/week-27.html",
@@ -831,6 +845,20 @@
     "title": "Week 33",
     "section": "Done and To Do",
     "text": "Done and To Do\n\nPrepared ICoN Presentation\n“Finalized” some HBN phenotypic analyses\nAdded to ADHD + sex differences results\nAdministrative paperwork: OPT STEM Extension + Maternity Leave\nWriting: ADHD + Sex differences paper + narrative for general HBN phenotypes paper\nNext week: return to fMRI preprocessing of HBN data + SUIT scripts\n\nand focus on writing!"
+  },
+  {
+    "objectID": "progress/week-62.html",
+    "href": "progress/week-62.html",
+    "title": "Week 62",
+    "section": "",
+    "text": "02/26 - 03/01:"
+  },
+  {
+    "objectID": "progress/week-62.html#done",
+    "href": "progress/week-62.html#done",
+    "title": "Week 62",
+    "section": "Done:",
+    "text": "Done:\n\nFinished new models for CHOP results - presented summary of findings in Monday’s meeting, couldn’t get access to arcus prior to meeting, no presentation.\n\nWorked with Aaron on geospatial analysis - he’s been working on google collab\n\nFinished HHMI proposal, submitted on Wednesday. Proposal here\nFinished write-up of reading results and sent to Ola\nStarted prepping presentation for MGH ataxia seminar"
   },
   {
     "objectID": "progress/week-56.html",
