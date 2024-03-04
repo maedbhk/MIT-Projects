@@ -160,4 +160,5 @@ fi
 ```
 $ cd /om2/user/maedbh
 $ rclone copy --verbose <config name>:<google drive folder> <some_directory> --copy-links
+$ rclone copy --verbose remote-gdrive:rclone-bkp/cerebellum_learning_connect/derivatives/fmriprep cerebellum_cognition --copy-links
 ```
