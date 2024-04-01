@@ -532,6 +532,20 @@
     "text": "Done and To-Do"
   },
   {
+    "objectID": "progress/week-64.html",
+    "href": "progress/week-64.html",
+    "title": "Week 64",
+    "section": "",
+    "text": "04/01 - 04/05:"
+  },
+  {
+    "objectID": "progress/week-64.html#to-do",
+    "href": "progress/week-64.html#to-do",
+    "title": "Week 64",
+    "section": "To-Do",
+    "text": "To-Do\n\nCHOP To-Do List (results section for next meeting)\n\ngeospatial analysis\ndevelopmental models\ncheck stratification and balanced datasets\n\nOla + reading\n\nwork on methods write-up and results sections\n\nSPR internal review\n\nrewrite sections on diagnostics and intervention\n\nMGH Talk\n\ntalk must be finished by 04/09 lab meeting\ncerebellum learning results - check glm routine - gifti to cifti conversion of contrasts - before modeling routine"
+  },
+  {
     "objectID": "progress/week-16.html",
     "href": "progress/week-16.html",
     "title": "Week 16",
@@ -725,7 +739,7 @@
     "href": "progress/index.html#weeks",
     "title": "Overview",
     "section": "Weeks:",
-    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57\nWeek 58\nWeek 59\nWeek 60\nWeek 61\nWeek 62\nWeek 63"
+    "text": "Weeks:\n\nWeek 0\nWeek 1\nWeek 2\nWeek 3\nWeek 4\nWeek 5\nWeek 6\nWeek 7\nWeek 8\nWeek 9\nWeek 10\nWeek 11\nWeek 12\nWeek 13\nWeek 14\nWeek 15\nWeek 16\nWeek 17\nWeek 18\nWeek 19\nWeek 20\nWeek 21\nWeek 22\nWeek 23\nWeek 24\nWeek 25\nWeek 26\nWeek 27\nWeek 28\nWeek 29\nWeek 30\nWeek 31\nWeek 32\nWeek 33\nWeek 34\nWeek 35\nWeek 36\nWeek 37\nWeek 38\nWeek 39\nWeek 40\nWeek 41\nWeek 42\nWeek 43\nWeek 44\nWeek 45\nWeek 46\nWeek 47\nWeek 48\nWeek 49\nWeek 50\nWeek 51\n`Week 52\nWeek 53\nWeek 54\nWeek 55\nWeek 56\nWeek 57\nWeek 58\nWeek 59\nWeek 60\nWeek 61\nWeek 62\nWeek 63\nWeek 64"
   },
   {
     "objectID": "progress/week-27.html",
@@ -1929,7 +1943,7 @@
     "href": "mentorship/openmind.html#transfer-data-tofrom-openmind-and-google-drive",
     "title": "Getting Started on Openmind",
     "section": "Transfer data to/from openmind and google drive",
-    "text": "Transfer data to/from openmind and google drive\n\nTo setup rclone on hpc, follow instructions outlined here\nLog in to dtn from local: ssh maedbh@openmind-dtn.mit.edu\nCreate a screen by typing screen -S File\nDetach from a screen by typing screen -d File (or ctl + a + d)\nReattach a screen by typing screen -r File\nOnce you’re in the screen, you can transfer data. For example: &gt;\n\n$ cd /om2/user/maedbh\n$ rclone copy --verbose &lt;config name&gt;:&lt;google drive folder&gt; &lt;some_directory&gt; --copy-links\n$ rclone copy --verbose remote-gdrive:rclone-bkp/cerebellum_learning_connect/derivatives/fmriprep cerebellum_cognition --copy-links"
+    "text": "Transfer data to/from openmind and google drive\n\nTo setup rclone on hpc, follow instructions outlined here\nLog in to dtn from local: ssh maedbh@openmind-dtn.mit.edu\nCreate a screen by typing screen -S File\nDetach from a screen by typing screen -d File (or ctl + a + d)\nReattach a screen by typing screen -r File\nOnce you’re in the screen, you can transfer data. For example: &gt;\n\n$ cd /om2/user/maedbh\n$ rclone copy --verbose &lt;config name&gt;:&lt;google drive folder&gt; &lt;some_directory&gt; --copy-links\n$ rclone copy --verbose remote-gdrive:rclone-bkp/cerebellum_learning_connect/derivatives/fmriprep cerebellum_cognition --copy-links\n$ rclone copy --verbose remote-gdrive:rclone-bkp/cerebellum_learning_connect/ /nese/mit/group/sig/projects/cerebellum_cognition/ --copy-links --include \"sub*/ses*/func/*events.tsv\" --dry-run --create-empty-src-dirs"
   },
   {
     "objectID": "mentorship/urops.html",
