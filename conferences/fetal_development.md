@@ -1,8 +1,8 @@
 ---
 title: Fetal Development
-https://ww6.aievolution.com/hbm2401/index.cfm?do=ev.viewEv&ev=1620
 ---
 
+[Web link](https://ww6.aievolution.com/hbm2401/index.cfm?do=ev.viewEv&ev=1620)
 In the beginning… Advances in fetal and infant Imaging
 David Kennedy Organizer
 University of Massachusetts Chan Medical School
@@ -25,7 +25,7 @@ Objective
 Target Audience
 There are at least 2 audiences for this symposium. First are the practitioners of fetal and infant neuroimaging studies, who need to keep abreast of the advances in acquisition, analysis, applications and data sharing. The second group is anyone who cares about the brain and realizes that what happens in the earliest time periods of development has tremendous potential consequences on what happens (neurodevelopmentally and neuropsychologically) later in life. Even if you don’t study fetal or infant imaging data, the structural, connectional, and functional framework that is established in this time period will be critical to what you do.  
 Presentations
-1. fMRIPrep-Infants: Bringing standardized, easy-to-use, transparent preprocessing to the infant MRI space
+fMRIPrep-Infants: Bringing standardized, easy-to-use, transparent preprocessing to the infant MRI space
 Functional magnetic resonance imaging (fMRI) preprocessing encompasses multiple steps aimed at cleansing and standardizing data prior to statistical analysis. Typically, researchers are faced with a few choices: create a customized workflow tailormade for their scanner acquisition protocol, or reuse an existing tool, many of which place the burden of dependency installation compatibility on the user. Furthermore, large, distributed data collection initiatives, such as the ABCD and HBCD studies, require reproducible and standardized data processing to ensure results are comparable across sites.
 
 From this need came fMRIPrep, a preprocessing pipeline designed to provide an easily accessible, state-of-the-art interface that is robust across protocols and requires minimal user input, while providing easily interpretable and comprehensive output reporting. fMRIPrep established a model for developing standardized neuroimaging workflows that build on well-tested, existing tools. However, it was built for and its performance assessed on human adult MRIs, and does not account for the stark structural differences nor variance in tissue contrast across ages due to ongoing myelination. Because of this, we developed fMRIPrep-Infants, an adaptation of fMRIPrep across the entire infant spectrum, from newborns to two-year-olds.

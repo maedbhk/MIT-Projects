@@ -1,5 +1,5 @@
 ---
-title: Roundtable: maximizing the clinical utility of small-scale neuroimaging studies
+title: Roundtable. maximizing the clinical utility of small-scale neuroimaging studies
 ---
 
 ### Benefits, limits and pitfalls of large data approaches - Simon Eickhoff

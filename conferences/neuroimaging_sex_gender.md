@@ -1,5 +1,5 @@
 ---
-title: Exploring Sex and Gender Issues in Neuroimaging Research: Insights from Science to Society
+title: Exploring Sex and Gender Issues in Neuroimaging Research. Insights from Science to Society
 ---
 Hyang Woon Lee, MD, PhD Organizer
 Professor of Neurology, Ewha Womans University School of Medicine

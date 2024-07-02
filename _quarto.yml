@@ -105,13 +105,14 @@ website:
           - methods/smote.md
           - methods/index.md
           - methods/fmri_parcellations.md
-      - section: "Talks"
+      - section: "Conferences"
         contents: 
-          - talks/index.md
-          - talks/determinants_of_mental_health_conference.md
-          - talks/precision-psychiatry-conference.md
-          - talks/SCSB_Colloquium_Series.md
-          - talks/PofP.md
+          - conferences/index.md
+          - conferences/determinants_of_mental_health_conference.md
+          - conferences/precision-psychiatry-conference.md
+          - conferences/SCSB_Colloquium_Series.md
+          - conferences/PofP.md
+          - conferences/ohbm_2024.md
       - section: "Notebooks"
         contents:
           - notebooks/index.md
